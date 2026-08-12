@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Curiosidades SST — insights técnicos | Margus Giuliano</title>
-  <meta name="description" content="Insights técnicos de SST por Margus Giuliano: ISO 31010, Bow-Tie, HAZOP/NR-12, PGR, perigo vs risco, matrizes, ISO 45001 e incerteza de medição.">
+  <meta name="description" content="Insights técnicos de SST por Margus Giuliano: ISO 31010, Bow-Tie, HAZOP/NR-12, PGR, NRs, ergonomia, ISO 45001 e higiene ocupacional.">
   <meta name="author" content="Margus Giuliano">
   <meta name="theme-color" content="#0b1f2a">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Curiosidades SST — insights técnicos | Margus Giuliano">
-  <meta property="og:description" content="Teasers técnicos sobre ISO 31010, Bow-Tie, HAZOP, PGR e ISO 45001 — por Margus Giuliano.">
+  <meta property="og:description" content="Teasers técnicos sobre ISO 31010, Bow-Tie, HAZOP, PGR, NRs e ISO 45001 — por Margus Giuliano.">
   <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/curiosidades.html">
   <meta property="og:site_name" content="Curiosidades SST">
   <link rel="stylesheet" href="styles.css">
@@ -31,7 +31,10 @@
         </svg>
         <span>Curiosidades SST</span>
       </a>
-      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
       <nav class="site-nav" id="menu-principal" aria-label="Principal">
         <ul>
           <li><a href="index.html">Início</a></li>
@@ -43,20 +46,63 @@
     </div>
   </header>
 
-  <main id="conteudo">
-    <header class="page-hero">
-      <div class="container">
-        <h1>Insights técnicos de SST</h1>
-        <p>
-          Teasers curtos, em tom de engenharia, por <strong>Margus Giuliano</strong>. Ideais para
-          abrir debate entre pares — não substituem dossiês SafeEng nem o texto normativo.
-        </p>
-      </div>
-    </header>
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
 
-    <section class="section">
-      <div class="container">
-        <div class="article-list">
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas"></aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <header class="page-hero">
+          <div class="container">
+            <h1>Insights técnicos de SST</h1>
+            <p>
+              Teasers curtos, em tom de engenharia, por <strong>Margus Giuliano</strong>. Navegue pelos
+              temas na barra lateral — ideais para abrir debate entre pares.
+            </p>
+          </div>
+        </header>
+
+        <section class="section">
+          <div class="container">
+            <div class="article-list">
+
+          <article class="article" id="intro-sst">
+            <div class="article-meta">
+              <span class="card-tag">Introdução</span>
+              <time datetime="2026-06-15">Atualizado em 15/06/2026</time>
+            </div>
+            <h2>O que é SST moderna sob o olhar do engenheiro</h2>
+            <p>
+              SST moderna não é só cumprir lista de NR: é gerir riscos do negócio com método, evidência e barreiras verificáveis. O profissional deixa de ser “apagador de fiscalização” e passa a orientar decisões de investimento, projeto e operação.
+            </p>
+            <p>
+              No Curiosidades SST, <strong>Margus Giuliano</strong> trata segurança ocupacional como disciplina de engenharia — alinhada a ISO 31000/31010, desempenho do PGR e integração com sistemas de gestão (ISO 45001).
+            </p>
+            <p>
+              Este espaço oferece teasers: profundidade suficiente para abrir debate entre pares, sem pretender substituir o texto normativo ou o dossiê SafeEng completo.
+            </p>
+            <p class="note">
+              Por Margus Giuliano — Curiosidades SST / linha SafeEng.
+            </p>
+          </article>
+
+          <article class="article" id="perigo-risco">
+            <div class="article-meta">
+              <span class="card-tag">Fundamentos</span>
+              <time datetime="2026-06-12">Atualizado em 12/06/2026</time>
+            </div>
+            <h2>Perigo versus risco: a distinção que muda o inventário</h2>
+            <p>
+              Perigo é a fonte potencial de dano (energia, substância, condição). Risco é o efeito da incerteza nos objetivos — tipicamente a combinação de cenário, probabilidade/frequência e consequência no contexto analisado.
+            </p>
+            <p>
+              Tratar perigo como se já fosse risco engessa o PGR: tudo “existe”, nada é priorizado. Separar os conceitos permite descrever cenários (anatomia causa–evento–consequência) e escolher controles coerentes.
+            </p>
+            <p>
+              Insight prático: inventário maduro nomeia perigos, modela riscos e declara critérios. Sem isso, a matriz só coloriza opiniões.
+            </p>
+          </article>
 
           <article class="article" id="percepcao-risco">
             <div class="article-meta">
@@ -65,22 +111,33 @@
             </div>
             <h2>Percepção de risco versus avaliação técnica</h2>
             <p>
-              Percepção de risco é o julgamento subjetivo — experiência, viés e cultura. Avaliação
-              técnica é o método: critérios explícitos, evidências e registro da incerteza. Confundir
-              os dois é o atalho que transforma “eu acho seguro” em inventário de riscos.
+              Percepção de risco é o julgamento subjetivo — experiência, viés e cultura. Avaliação técnica é o método: critérios explícitos, evidências e registro da incerteza. Confundir os dois é o atalho que transforma “eu acho seguro” em inventário de riscos.
             </p>
             <p>
-              Em plantas maduras, a percepção alimenta hipóteses; a avaliação as testa. Quando a
-              liderança privilegia só o feeling do chão de fábrica — ou só a planilha do escritório —
-              o PGR perde aderência à realidade operacional.
+              Em plantas maduras, a percepção alimenta hipóteses; a avaliação as testa. Quando a liderança privilegia só o feeling do chão de fábrica — ou só a planilha do escritório — o PGR perde aderência à realidade operacional.
             </p>
             <p>
-              Insight prático: documentar <em>como</em> se chegou ao nível de risco importa tanto
-              quanto o nível em si. Sem rastro metodológico, a próxima auditoria (ou o próximo
-              acidente) desmonta a narrativa.
+              Insight prático: documentar <em>como</em> se chegou ao nível de risco importa tanto quanto o nível em si. Sem rastro metodológico, a próxima auditoria (ou o próximo acidente) desmonta a narrativa.
             </p>
             <p class="note">
               Por Margus Giuliano — Curiosidades SST / linha SafeEng.
+            </p>
+          </article>
+
+          <article class="article" id="gestor-riscos">
+            <div class="article-meta">
+              <span class="card-tag">Carreira · SST</span>
+              <time datetime="2026-06-11">Atualizado em 11/06/2026</time>
+            </div>
+            <h2>Do executor de NR ao gestor crítico de riscos</h2>
+            <p>
+              O “executor de NR” responde à pergunta “estamos em conformidade?”. O gestor crítico de riscos pergunta “quais cenários ameaçam pessoas e objetivos — e quais barreiras realmente sustentam a operação?”.
+            </p>
+            <p>
+              Essa transição exige repertório: ISO 31010, análise de barreiras, leitura de higiene com incerteza, ergonomia além do checklist e diálogo com a alta direção em linguagem de negócio.
+            </p>
+            <p>
+              SafeEng e o Curiosidades SST existem para acelerar essa conversa entre pares — sem atalho de compliance cosmético.
             </p>
           </article>
 
@@ -91,19 +148,13 @@
             </div>
             <h2>Anatomia de um risco: causa, evento e consequência</h2>
             <p>
-              A ISO 31000 convida a descrever o risco com estrutura: o que pode iniciar o desvio
-              (causa), o que ocorre (evento) e o que resulta (consequência). Sem essa anatomia,
-              “risco de queda” vira rótulo vazio — e o plano de ação ataca sintomas.
+              A ISO 31000 convida a descrever o risco com estrutura: o que pode iniciar o desvio (causa), o que ocorre (evento) e o que resulta (consequência). Sem essa anatomia, “risco de queda” vira rótulo vazio — e o plano de ação ataca sintomas.
             </p>
             <p>
-              Separar as três partes permite escolher controles certos: prevenção nas causas,
-              mitigação no evento e proteção/recuperação nas consequências. Misturar tudo numa
-              única célula da matriz esconde onde a barreira realmente falha.
+              Separar as três partes permite escolher controles certos: prevenção nas causas, mitigação no evento e proteção/recuperação nas consequências. Misturar tudo numa única célula da matriz esconde onde a barreira realmente falha.
             </p>
             <p>
-              Em gestão de ativos, essa clareza evita tratar perigo (fonte potencial de dano) como
-              se já fosse risco (efeito da incerteza nos objetivos). Perigo existe; risco se
-              avalia no contexto.
+              Em gestão de ativos, essa clareza evita tratar perigo (fonte potencial de dano) como se já fosse risco (efeito da incerteza nos objetivos). Perigo existe; risco se avalia no contexto.
             </p>
           </article>
 
@@ -114,20 +165,13 @@
             </div>
             <h2>ISO 31010: o canivete suíço no coração do PGR</h2>
             <p>
-              A ISO 31010 cataloga técnicas de identificação e análise — brainstorming, HAZOP,
-              FMEA, Bow-Tie, árvores de falha, análise de cenários e muitas outras. A matriz 5×5
-              é só uma opção; não é o padrão ouro por default.
+              A ISO 31010 cataloga técnicas de identificação e análise — brainstorming, HAZOP, FMEA, Bow-Tie, árvores de falha, análise de cenários e muitas outras. A matriz 5×5 é só uma opção; não é o padrão ouro por default.
             </p>
             <p>
-              PGR de alto desempenho escolhe a ferramenta pelo problema: alta severidade com
-              múltiplas barreiras pede Bow-Tie; desvios de processo pedem HAZOP; modos de falha
-              de equipamento pedem FMEA. A escolha justificada valoriza o contrato B2B e a
-              credibilidade da consultoria.
+              PGR de alto desempenho escolhe a ferramenta pelo problema: alta severidade com múltiplas barreiras pede Bow-Tie; desvios de processo pedem HAZOP; modos de falha de equipamento pedem FMEA. A escolha justificada valoriza o contrato B2B e a credibilidade da consultoria.
             </p>
             <p>
-              Curiosidade de engenharia: auditores e clientes sofisticados perguntam “por que esta
-              técnica?”. Quem responde com método (ISO 31010) se diferencia de quem só preenche
-              cor na planilha.
+              Curiosidade de engenharia: auditores e clientes sofisticados perguntam “por que esta técnica?”. Quem responde com método (ISO 31010) se diferencia de quem só preenche cor na planilha.
             </p>
           </article>
 
@@ -138,19 +182,13 @@
             </div>
             <h2>Probabilidade versus frequência: o erro clássico no PGR</h2>
             <p>
-              Frequência descreve quantas vezes algo ocorreu (ou se espera que ocorra) por unidade
-              de tempo ou exposição. Probabilidade expressa a chance de ocorrência no cenário
-              analisado — muitas vezes sem base estatística robusta no inventário ocupacional.
+              Frequência descreve quantas vezes algo ocorreu (ou se espera que ocorra) por unidade de tempo ou exposição. Probabilidade expressa a chance de ocorrência no cenário analisado — muitas vezes sem base estatística robusta no inventário ocupacional.
             </p>
             <p>
-              Trocar um conceito pelo outro sem declarar a base (histórica, julgamento de
-              especialistas, modelo) gera notas de risco incomparáveis entre áreas e turnos. O
-              PGR vira mosaico de opiniões coloridas.
+              Trocar um conceito pelo outro sem declarar a base (histórica, julgamento de especialistas, modelo) gera notas de risco incomparáveis entre áreas e turnos. O PGR vira mosaico de opiniões coloridas.
             </p>
             <p>
-              Boa prática: explicitar a escala, a evidência e a incerteza. Quando os dados são
-              pobres, admitir julgamento estruturado é mais honesto — e mais auditável — do que
-              fingir precisão numérica.
+              Boa prática: explicitar a escala, a evidência e a incerteza. Quando os dados são pobres, admitir julgamento estruturado é mais honesto — e mais auditável — do que fingir precisão numérica.
             </p>
           </article>
 
@@ -161,20 +199,30 @@
             </div>
             <h2>Bow-Tie em cenários de alta severidade</h2>
             <p>
-              O diagrama Bow-Tie liga causas (esquerda) ao evento top e às consequências (direita),
-              com barreiras preventivas e mitigadoras no caminho. Em cenários de alta severidade —
-              energia perigosa, produtos químicos, máquinas críticas — ele torna visível o que a
-              matriz comprime em uma célula.
+              O diagrama Bow-Tie liga causas (esquerda) ao evento top e às consequências (direita), com barreiras preventivas e mitigadoras no caminho. Em cenários de alta severidade — energia perigosa, produtos químicos, máquinas críticas — ele torna visível o que a matriz comprime em uma célula.
             </p>
             <p>
-              O valor não está no desenho bonito: está em testar se cada barreira é independente,
-              verificável e mantida. Barreira “no papel” (procedimento que ninguém segue) não
-              conta na hora do evento.
+              O valor não está no desenho bonito: está em testar se cada barreira é independente, verificável e mantida. Barreira “no papel” (procedimento que ninguém segue) não conta na hora do evento.
             </p>
             <p>
-              Use Bow-Tie quando a pergunta for “o que impede o desastre?” — não quando o risco
-              for trivial e a matriz já bastar. Ferramenta certa no problema certo: espírito da
-              ISO 31010.
+              Use Bow-Tie quando a pergunta for “o que impede o desastre?” — não quando o risco for trivial e a matriz já bastar. Ferramenta certa no problema certo: espírito da ISO 31010.
+            </p>
+          </article>
+
+          <article class="article" id="analise-barreiras">
+            <div class="article-meta">
+              <span class="card-tag">Barreiras</span>
+              <time datetime="2026-05-20">Atualizado em 20/05/2026</time>
+            </div>
+            <h2>Análise de barreiras: além da lista de EPI</h2>
+            <p>
+              Barreira é qualquer medida que previne a ocorrência do evento top ou mitiga sua consequência. Pode ser física, técnica, humana ou organizacional — desde intertravamento até supervisão competente e procedimento vivo.
+            </p>
+            <p>
+              Análise séria pergunta: a barreira é independente? É auditável? Falha de modo comum com outra? Está degradada por produção, manutenção ou cultura? Sem essas perguntas, o inventário só empilha controles nominais.
+            </p>
+            <p>
+              Bow-Tie e árvore de falha/evento são caminhos naturais (ISO 31010) para tornar barreiras discutíveis na sala de engenharia — não só na planilha de SST.
             </p>
           </article>
 
@@ -185,18 +233,13 @@
             </div>
             <h2>HAZOP + NR-12: do checklist à engenharia de processos</h2>
             <p>
-              Checklist de NR-12 verifica requisitos de proteção de máquinas. HAZOP pergunta o que
-              acontece se parâmetros e intenções de projeto desviarem — mais fluxo, menos
-              pressão, sequência invertida, interface homem–máquina falha.
+              Checklist de NR-12 verifica requisitos de proteção de máquinas. HAZOP pergunta o que acontece se parâmetros e intenções de projeto desviarem — mais fluxo, menos pressão, sequência invertida, interface homem–máquina falha.
             </p>
             <p>
-              Combinar os dois move a discussão de “tem guarda?” para “em que condições a guarda,
-              o intertravamento ou o LOTO deixam de ser eficazes?”. É engenharia de processos
-              aplicada à segurança de máquina, não teatro de conformidade.
+              Combinar os dois move a discussão de “tem guarda?” para “em que condições a guarda, o intertravamento ou o LOTO deixam de ser eficazes?”. É engenharia de processos aplicada à segurança de máquina, não teatro de conformidade.
             </p>
             <p>
-              Insight: times que só “fecham NR-12” sem analisar desvios descobrem na operação —
-              ou no acidente — os cenários que o HAZOP teria antecipado na sala.
+              Insight: times que só “fecham NR-12” sem analisar desvios descobrem na operação — ou no acidente — os cenários que o HAZOP teria antecipado na sala.
             </p>
           </article>
 
@@ -207,19 +250,13 @@
             </div>
             <h2>A fragilidade das matrizes sem fundamentação técnica</h2>
             <p>
-              Matriz de risco é útil como linguagem comum — e perigosa como único método. Sem
-              critérios calibrados, evidências e revisão, ela vira consenso político: o risco
-              “amarelo” que ninguém quer pintar de vermelho.
+              Matriz de risco é útil como linguagem comum — e perigosa como único método. Sem critérios calibrados, evidências e revisão, ela vira consenso político: o risco “amarelo” que ninguém quer pintar de vermelho.
             </p>
             <p>
-              Além da matriz, a ISO 31010 no coração do PGR exige combinar técnicas, declarar
-              limitações e conectar inventário a plano de ação mensurável. Cor sem argumento não
-              prioriza investimento.
+              Além da matriz, a ISO 31010 no coração do PGR exige combinar técnicas, declarar limitações e conectar inventário a plano de ação mensurável. Cor sem argumento não prioriza investimento.
             </p>
             <p>
-              Pergunta de auditoria interna: se dois analistas independentes avaliassem o mesmo
-              cenário, chegariam perto do mesmo resultado? Se a resposta for “improvável”, a
-              matriz está frágil.
+              Pergunta de auditoria interna: se dois analistas independentes avaliassem o mesmo cenário, chegariam perto do mesmo resultado? Se a resposta for “improvável”, a matriz está frágil.
             </p>
           </article>
 
@@ -230,19 +267,13 @@
             </div>
             <h2>De OHSAS 18001 à ISO 45001: o que realmente mudou</h2>
             <p>
-              A migração não é troca de logo. ISO 45001 traz estrutura de alto nível (Annex SL),
-              ênfase em contexto, liderança, participação dos trabalhadores e abordagem de riscos
-              e oportunidades — alinhada a outros sistemas de gestão.
+              A migração não é troca de logo. ISO 45001 traz estrutura de alto nível (Annex SL), ênfase em contexto, liderança, participação dos trabalhadores e abordagem de riscos e oportunidades — alinhada a outros sistemas de gestão.
             </p>
             <p>
-              Quem tratava OHSAS como “manual do SESMT” descobriu que 45001 cobra integração com
-              estratégia e cadeia de valor. Documento isolado não sustenta certificado com
-              desempenho.
+              Quem tratava OHSAS como “manual do SESMT” descobriu que 45001 cobra integração com estratégia e cadeia de valor. Documento isolado não sustenta certificado com desempenho.
             </p>
             <p>
-              Para o engenheiro de SST: a norma reforça o papel de gestor de riscos do negócio,
-              não só de compliance trabalhista. É o mesmo movimento — do executor de NR ao
-              interlocutor da alta direção.
+              Para o engenheiro de SST: a norma reforça o papel de gestor de riscos do negócio, não só de compliance trabalhista. É o mesmo movimento — do executor de NR ao interlocutor da alta direção.
             </p>
           </article>
 
@@ -253,19 +284,115 @@
             </div>
             <h2>Incerteza de medição em higiene ocupacional</h2>
             <p>
-              Um número de exposição sem incerteza é incompleto. Amostragem, equipamento,
-              estratégia e variabilidade do processo empurram o resultado para um intervalo — e
-              decisões de controle deveriam considerar esse intervalo, não só a média pontual.
+              Um número de exposição sem incerteza é incompleto. Amostragem, equipamento, estratégia e variabilidade do processo empurram o resultado para um intervalo — e decisões de controle deveriam considerar esse intervalo, não só a média pontual.
             </p>
             <p>
-              Comparar exposição ao limite de tolerância ignorando incerteza pode classificar
-              erroneamente como “conforme” um cenário limítrofe. Em gestão de riscos, falsa
-              precisão é risco operacional disfarçado de laudo.
+              Comparar exposição ao limite de tolerância ignorando incerteza pode classificar erroneamente como “conforme” um cenário limítrofe. Em gestão de riscos, falsa precisão é risco operacional disfarçado de laudo.
             </p>
             <p>
-              Insight: higiene de qualidade comunica método, limite de quantificação e incerteza.
-              O PGR que só copia o valor final perde a informação que mais importa para priorizar
-              ações.
+              Insight: higiene de qualidade comunica método, limite de quantificação e incerteza. O PGR que só copia o valor final perde a informação que mais importa para priorizar ações.
+            </p>
+          </article>
+
+          <article class="article" id="ergonomia">
+            <div class="article-meta">
+              <span class="card-tag">Organização · Ergonomia</span>
+              <time datetime="2026-05-25">Atualizado em 25/05/2026</time>
+            </div>
+            <h2>Ergonomia e organização do trabalho</h2>
+            <p>
+              Ergonomia de verdade olha posto, tarefa, organização e tempo — não só altura de bancada. Demandas cognitivas, ritmo, pausas, interfaces digitais e pressão de produção moldam o risco tanto quanto biometria.
+            </p>
+            <p>
+              Quando a organização do trabalho é ignorada, o laudo ergonômico vira fotografia estática: descreve o posto e perde o sistema. Acidentes e adoecimentos reaparecem com “posto conforme”.
+            </p>
+            <p>
+              Integração com PGR e NR-17 exige analisar como o trabalho é realmente feito (work-as-done), não só como está prescrito (work-as-imagined).
+            </p>
+          </article>
+
+          <article class="article" id="fadiga-turnos">
+            <div class="article-meta">
+              <span class="card-tag">Organização · Turnos</span>
+              <time datetime="2026-05-18">Atualizado em 18/05/2026</time>
+            </div>
+            <h2>Turnos, jornadas e fadiga como fator de risco</h2>
+            <p>
+              Fadiga degrada atenção, tempo de reação e julgamento — barreiras humanas falham antes do equipamento. Escalas agressivas, trocas rápidas de turno e horas extras crônicas são cenários de risco, não “detalhe de RH”.
+            </p>
+            <p>
+              No inventário, trate fadiga como contribuinte em eventos de alta severidade (máquinas, veículos, espaços confinados, trabalho em altura). Controles incluem desenho de escala, limites de jornada, supervisão e direito real de parar.
+            </p>
+            <p>
+              Insight: se o PGR nunca menciona fadiga, provavelmente está modelando um trabalhador ideal que não existe no terceiro turno.
+            </p>
+          </article>
+
+          <article class="article" id="participacao">
+            <div class="article-meta">
+              <span class="card-tag">ISO 45001 · Cultura</span>
+              <time datetime="2026-04-28">Atualizado em 28/04/2026</time>
+            </div>
+            <h2>Participação dos trabalhadores na gestão de riscos</h2>
+            <p>
+              ISO 45001 e boa engenharia de SST convergem: quem executa a tarefa conhece desvios, atalhos e quase-acidentes que a planilha não vê. Participação não é “caixa de sugestões” — é método de identificação e validação de controles.
+            </p>
+            <p>
+              CIPA, SESMT, líderes de área e operadores devem alimentar o PGR com evidência operacional. Sem isso, barreiras nascem no escritório e morrem na produção.
+            </p>
+            <p>
+              Cuidado: participação sem proteção psicológica vira teatro. Relato só floresce onde aprender vale mais do que culpar.
+            </p>
+          </article>
+
+          <article class="article" id="nr1-pgr">
+            <div class="article-meta">
+              <span class="card-tag">NR-1 · PGR</span>
+              <time datetime="2026-06-01">Atualizado em 01/06/2026</time>
+            </div>
+            <h2>NR-1, GRO e PGR: o esqueleto da gestão de riscos</h2>
+            <p>
+              A NR-1 estrutura as disposições gerais e o Gerenciamento de Riscos Ocupacionais (GRO), com o Programa de Gerenciamento de Riscos (PGR) como peça central de inventário e planos de ação.
+            </p>
+            <p>
+              PGR frágil é aquele que só existe para “estar na pasta”: matriz sem critério, controles sem dono, ausência de técnicas da ISO 31010 e zero conexão com mudanças de processo. PGR vivo prioriza, mede e revisa.
+            </p>
+            <p>
+              Para Margus Giuliano, a NR-1 é porta de entrada normativa; o diferencial técnico está em como se analisa e decide — não no número de páginas do PDF.
+            </p>
+          </article>
+
+          <article class="article" id="nr17">
+            <div class="article-meta">
+              <span class="card-tag">NR-17</span>
+              <time datetime="2026-04-12">Atualizado em 12/04/2026</time>
+            </div>
+            <h2>NR-17: ergonomia além do checklist de mobiliário</h2>
+            <p>
+              A NR-17 trata da adaptação das condições de trabalho às características psicofisiológicas dos trabalhadores. Reduzi-la a “cadeira boa” e “altura de monitor” é perder o núcleo: organização, levantamento de carga, trabalho em telas e conforto térmico/acústico no contexto da tarefa.
+            </p>
+            <p>
+              Avaliação ergonômica preliminar e, quando cabível, análise ergonômica do trabalho devem dialogar com o PGR — não viver em silo de RH.
+            </p>
+            <p>
+              Insight: conformidade documental na NR-17 sem mudança na organização do trabalho raramente reduz afastamentos.
+            </p>
+          </article>
+
+          <article class="article" id="nr15-higiene">
+            <div class="article-meta">
+              <span class="card-tag">NR-15 · Higiene</span>
+              <time datetime="2026-03-30">Atualizado em 30/03/2026</time>
+            </div>
+            <h2>NR-15 e higiene: limites, exposição e decisão</h2>
+            <p>
+              A NR-15 estabelece atividades e operações insalubres e referencia limites de tolerância. Higiene ocupacional transforma esses limites em estratégia de amostragem, interpretação e controle — sempre com incerteza de medição no radar.
+            </p>
+            <p>
+              Decisão madura não para no “acima/abaixo do LT”: considera variabilidade, grupos de exposição similar, hierarquia de controles e viabilidade técnica. EPI é última linha, não plano A permanente.
+            </p>
+            <p>
+              No PGR, agentes físicos, químicos e biológicos precisam de narrativa técnica — não só anexo de planilha copiado do laudo.
             </p>
           </article>
 
@@ -276,74 +403,72 @@
             </div>
             <h2>Resiliência versus reação: SST que antecipa</h2>
             <p>
-              Reação espera o evento (ou a fiscalização). Resiliência projeta capacidade de
-              absorver perturbação, detectar desvios cedo e recuperar função sem improvisar sob
-              pressão. Quase-acidentes, indicadores líderes e teste de barreiras são sinais dessa
-              postura.
+              Reação espera o evento (ou a fiscalização). Resiliência projeta capacidade de absorver perturbação, detectar desvios cedo e recuperar função sem improvisar sob pressão. Quase-acidentes, indicadores líderes e teste de barreiras são sinais dessa postura.
             </p>
             <p>
-              Sistemas só reativos acumulam conformidade documental e surpresas operacionais.
-              Sistemas resilientes tratam aprendizado como rotina — inclusive quando “ninguém se
-              machucou”.
+              Sistemas só reativos acumulam conformidade documental e surpresas operacionais. Sistemas resilientes tratam aprendizado como rotina — inclusive quando “ninguém se machucou”.
             </p>
             <p>
-              Para Margus Giuliano, o salto profissional está aí: usar ISO 31010, Bow-Tie e PGR
-              vivo não para enfeitar arquivo, e sim para decidir antes que a consequência chegue.
+              Para Margus Giuliano, o salto profissional está aí: usar ISO 31010, Bow-Tie e PGR vivo não para enfeitar arquivo, e sim para decidir antes que a consequência chegue.
             </p>
           </article>
 
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-band" aria-labelledby="cta-curiosidades">
+          <div class="container">
+            <h2 id="cta-curiosidades">Tem um tema técnico para sugerir?</h2>
+            <p>Envie ideias de insight alinhadas a gestão de riscos, ISO 31010, PGR ou NR-12 para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="curiosidades.html">Curiosidades</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="curiosidades.html#iso-31010">ISO 31010</a></li>
+              <li><a href="curiosidades.html#bow-tie">Bow-Tie</a></li>
+              <li><a href="curiosidades.html#hazop-nr12">HAZOP + NR-12</a></li>
+              <li><a href="curiosidades.html#nr1-pgr">NR-1 e PGR</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
 
-    <section class="cta-band" aria-labelledby="cta-curiosidades">
-      <div class="container">
-        <h2 id="cta-curiosidades">Tem um tema técnico para sugerir?</h2>
-        <p>Envie ideias de insight alinhadas a gestão de riscos, ISO 31010, PGR ou NR-12 para Margus Giuliano.</p>
-        <a class="btn btn-primary" href="contato.html">Enviar sugestão</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a class="logo" href="index.html">
-          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <rect width="64" height="64" rx="14" fill="#0d7377"/>
-            <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
-            <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
-            <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
-          </svg>
-          <span>Curiosidades SST</span>
-        </a>
-        <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
-      </div>
-      <div class="footer-col">
-        <h3>Navegação</h3>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="curiosidades.html">Curiosidades</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Temas</h3>
-        <ul>
-          <li><a href="curiosidades.html#iso-31010">ISO 31010</a></li>
-          <li><a href="curiosidades.html#bow-tie">Bow-Tie</a></li>
-          <li><a href="curiosidades.html#hazop-nr12">HAZOP + NR-12</a></li>
-          <li><a href="curiosidades.html#pgr-matriz">PGR e matrizes</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
-      <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
-    </div>
-  </footer>
+  </div>
 
+  <script src="sidebar.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
