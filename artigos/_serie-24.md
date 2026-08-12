@@ -7,7 +7,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | # | Título | Status | URL |
 |---|--------|--------|-----|
 | 1 | Riscos psicossociais no inventário do PGR: o que é fator de risco e o que não é diagnóstico clínico | **Publicado** | [artigo](riscos-psicossociais-inventario-pgr.html) · [teaser](../curiosidades.html#psicossocial-pgr) |
-| 2 | Inventário de riscos × plano de ação: o elo que mais falha no PGR | Pendente | — |
+| 2 | Como evidenciar metodologia (critério, fonte, participação) sem virar documento de gaveta | **Publicado** | [artigo](metodologia-pgr-evidencias.html) · [teaser](../curiosidades.html#metodologia-pgr) |
 | 3 | AEP e inventário: quando a análise ergonômica alimenta o PGR | Pendente | — |
 | 4 | Assédio e violência no trabalho como perigo da organização | Pendente | — |
 | 5 | Sobrecarga cognitiva e metas agressivas: como registrar sem patologizar | Pendente | — |
@@ -31,8 +31,12 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 23 | Revisão do PGR após mudanças: gatilhos psicossociais e de processo | Pendente | — |
 | 24 | Checklist SafeEng: preparar o inventário psicossocial para a vigência 26/05/2026 | Pendente | — |
 
+## Backlog deslocado do slot #2
+
+- Inventário de riscos × plano de ação: o elo que mais falha no PGR *(reagendar em briefing futuro)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 2–24 até briefing específico de cada tema.
+- Não publicar 3–24 até briefing específico de cada tema.

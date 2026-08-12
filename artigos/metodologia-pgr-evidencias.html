@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como evidenciar metodologia no PGR sem documento de gaveta | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Critério, fonte e participação: como evidenciar a metodologia do inventário/PGR (NR-1 GRO) sem virar PDF engavetado. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/metodologia-pgr-evidencias.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Como evidenciar metodologia no PGR sem documento de gaveta | Margus Giuliano">
+  <meta property="og:description" content="Critério de severidade/probabilidade, fontes de informação e participação dos trabalhadores — evidência de método versus PGR engavetado (NR-1 / GRO).">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/metodologia-pgr-evidencias.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Gestão de SST">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="PGR">
+  <meta property="article:tag" content="Metodologia">
+  <meta property="article:tag" content="GRO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Como evidenciar metodologia no PGR sem documento de gaveta">
+  <meta name="twitter:description" content="Critério, fonte e participação: evidência de método no inventário/PGR. Artigo SafeEng por Margus Giuliano.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/metodologia-pgr-evidencias.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Como evidenciar metodologia no PGR"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/metodologia-pgr-evidencias.html#article",
+        "headline": "Como evidenciar metodologia (critério, fonte, participação) sem virar documento de gaveta",
+        "description": "Como registrar critério de avaliação, fontes de informação e participação dos trabalhadores/CIPA no inventário e no PGR, transformando o GRO em processo contínuo e auditável — não em PDF engavetado.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/metodologia-pgr-evidencias.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-1", "PGR", "GRO", "metodologia", "inventário de riscos", "participação", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">Metodologia e evidências no PGR</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #2 · Em alta 2026</p>
+            <h1>Como evidenciar metodologia (critério, fonte, participação) sem virar documento de gaveta</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros e gestores de SST
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#evolucao">Evolução histórica</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes combinadas</a></li>
+              <li><a href="#analise">Análise didática</a></li>
+              <li><a href="#esquema">Esquema: laço de evidência de método</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Depois de distinguir <em>fator de risco da organização do trabalho</em> de
+                <em>diagnóstico clínico</em> (artigo #1), a pergunta seguinte na prática do GRO é:
+                <strong>como provar que o inventário e o PGR foram construídos com método</strong>
+                — e não apenas “preenchidos” para arquivar?
+              </p>
+              <p>
+                Documento de gaveta é o PDF bonito, com matriz colorida, sem critério declarado,
+                sem fonte rastreável e sem memória de quem participou da identificação dos perigos.
+                Quando a organização muda (processo, jornada, terceirização, metas, layout) e o
+                arquivo não muda, o PGR deixa de ser gerenciamento e vira teatro de conformidade.
+              </p>
+              <p>
+                Este artigo #2 da série SafeEng / Curiosidades SST trata da
+                <strong>evidência de metodologia</strong>: critério de severidade e probabilidade,
+                fontes de informação e participação dos trabalhadores/CIPA — com registro de
+                revisões. O foco é qualidade do inventário (incluindo riscos psicossociais e demais
+                perigos do GRO), alinhado à NR-1 como processo contínuo.
+              </p>
+            </section>
+
+            <section id="evolucao" aria-labelledby="h-evo">
+              <h2 id="h-evo">Evolução histórica</h2>
+              <p>
+                Por décadas, muitos programas de SST no Brasil foram concebidos como
+                <strong>entregáveis anuais em papel</strong>: volume grosso, assinatura, pasta no
+                armário. A lógica implícita era “ter o documento”, não “gerir o risco”. Essa
+                cultura de programa-arquivo ainda aparece quando o inventário é copiado de um
+                exercício anterior sem reabrir o método.
+              </p>
+              <p>
+                A consolidação do <strong>Gerenciamento de Riscos Ocupacionais (GRO)</strong> na
+                NR-1 — com a <strong>Portaria MTE nº 1.419/2024</strong> e o marco de preparação
+                associado a exigências psicossociais em <strong>26/05/2026</strong> — reforça o
+                deslocamento: do programa engessado para o <strong>processo contínuo</strong> de
+                identificar, avaliar, controlar, documentar e revisar. O PGR deixa de ser “o
+                arquivo” e passa a ser a evidência viva desse ciclo.
+              </p>
+              <p>
+                O <strong>Manual GRO/PGR da NR-1 (2026)</strong> e o
+                <strong>Guia da NR-01 (revisão 2025)</strong>, inclusive no eixo de riscos
+                psicossociais, funcionam como <em>contexto metodológico</em>: orientam como
+                estruturar identificação e avaliação com base em condições e organização do
+                trabalho, fontes múltiplas e participação — sem transformar o inventário em
+                prontuário clínico (tema do artigo #1). O material de
+                <strong>Perguntas e Respostas (maio/2026)</strong> ajuda a desfazer dúvidas
+                operacionais, mas não substitui o texto da NR nem a análise do caso concreto.
+              </p>
+              <p>
+                Em paralelo, referências internacionais de gestão (por exemplo
+                <strong>ISO 45001</strong> para sistemas de SST e <strong>ISO 31000</strong> para
+                gestão de riscos) reforçam princípios úteis ao engenheiro: critérios explícitos,
+                informação adequada, participação de partes interessadas e melhoria contínua.
+                São consulta de alinhamento — a obrigação legal brasileira continua no texto
+                oficial da NR-1 e atos do MTE.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Auditabilidade:</strong> critério e fonte permitem explicar <em>por que</em> um risco está alto/médio/baixo — não só a cor da célula.</li>
+                <li><strong>Qualidade do inventário psicossocial e geral:</strong> sem participação e sem evidência do trabalho-como-é-feito, o inventário vira lista genérica (“estresse”, “ergonomia”) sem controle útil.</li>
+                <li><strong>Continuidade do GRO:</strong> registro de revisões liga mudança organizacional a atualização do PGR; evita “versão eterna de 2023”.</li>
+                <li><strong>Priorização justa:</strong> o mesmo critério aplicado a riscos físicos, químicos e organizacionais reduz viés e disputa política na alocação de recursos.</li>
+                <li><strong>Defesa técnica:</strong> perante auditoria interna, cliente, certificação ou fiscalização, método documentado vale mais que PDF decorativo.</li>
+                <li><strong>Preparação para 2026:</strong> quem evidencia método agora chega à vigência com processo, não com improvisação de última hora.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes combinadas</h2>
+              <p>
+                Leia sempre o original. A síntese abaixo é autoral e didática — a obrigação
+                está nos textos oficiais vigentes.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">Página oficial da NR-1 (gov.br / CTPP)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2024/portaria-mte-no-1-419-nr-01-gro-nova-redacao.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 1.419/2024 — nova redação NR-01 / GRO (PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/guia-nr-01-revisado.pdf" target="_blank" rel="noopener noreferrer">Guia NR-01 revisado (PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" target="_blank" rel="noopener noreferrer">Perguntas e Respostas GRO/PGR — maio/2026</a>
+                </li>
+                <li>
+                  <a href="https://www.iso.org/standard/63787.html" target="_blank" rel="noopener noreferrer">ISO 31000 — Risk management (página ISO)</a>
+                  ·
+                  <a href="https://www.iso.org/standard/63783.html" target="_blank" rel="noopener noreferrer">ISO 45001 — Occupational health and safety (página ISO)</a>
+                  <span class="note"> (referência de consulta; adquira textos oficiais pela ISO / organismo normalizador — sem cópia pirata)</span>
+                </li>
+              </ul>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: o que é evidência de método</h2>
+              <p>
+                Evidência de metodologia não é “mais páginas”. É a trilha mínima que permite a
+                um terceiro técnico reconstruir <strong>como</strong> se chegou ao inventário e
+                às prioridades. Três pilares + memória de revisão:
+              </p>
+
+              <h3>1) Critério (severidade × probabilidade / equivalência)</h3>
+              <p>
+                Declare <em>antes</em> de colorir a matriz: escalas de severidade e de
+                probabilidade (ou frequência), regras de combinação, o que é inaceitável, o que
+                exige ação imediata e o que fica em monitoramento. Sem critério, a classificação
+                vira opinião do redator do dia. O critério deve ser o mesmo — ou explicitamente
+                adaptado com justificativa — para riscos físicos, químicos, biológicos,
+                ergonômicos e psicossociais/organizacionais.
+              </p>
+
+              <h3>2) Fontes de informação</h3>
+              <p>
+                O inventário maduro cita <strong>de onde veio o dado</strong>: inspeção de campo,
+                análise de processo, registros de incidentes/quase-acidentes, indicadores
+                operacionais (com cuidado ético), literaturas/normas aplicáveis, resultados de
+                avaliações anteriores, relatos estruturados, AEP, entre outros. Fonte genérica
+                (“conhecimento da empresa”) sem rastro é sinal de documento de gaveta.
+              </p>
+
+              <h3>3) Participação dos trabalhadores / CIPA</h3>
+              <p>
+                Quem vive o trabalho vê cenários que a planilha não inventa. Evidencie
+                <strong>como</strong> a participação ocorreu: reuniões com ata, walkthroughs,
+                formulários estruturados, escuta da CIPA, consulta a grupos expostos — e o que
+                foi incorporado (ou por que um relato não virou linha de inventário). Participação
+                cosmética (assinatura no final) não é método.
+              </p>
+
+              <h3>4) Registro de revisões</h3>
+              <p>
+                GRO é contínuo: mudança de layout, software de metas, turno, terceirizado,
+                acidente relevante ou novo perigo psicossocial deve deixar
+                <strong>marca de revisão</strong> (o quê mudou, quando, quem validou). Versão
+                única “válida para sempre” é o DNA do PDF engavetado.
+              </p>
+
+              <div class="compare-grid" role="group" aria-label="Comparativo evidência de método versus documento de gaveta">
+                <div class="compare-card compare-ok">
+                  <h3>Evidência de método (GRO vivo)</h3>
+                  <ul>
+                    <li>Critério de avaliação declarado e aplicado</li>
+                    <li>Fontes nomeadas e rastreáveis</li>
+                    <li>Participação/CIPA com registro do que entrou</li>
+                    <li>Histórico de revisões ligado a mudanças</li>
+                    <li>Plano de ação com dono, prazo e verificação</li>
+                  </ul>
+                </div>
+                <div class="compare-card compare-no">
+                  <h3>Documento de gaveta</h3>
+                  <ul>
+                    <li>Matriz colorida sem escala explicada</li>
+                    <li>“Baseado na experiência” sem fonte</li>
+                    <li>Lista genérica copiada de outro setor</li>
+                    <li>Assinatura sem escuta real</li>
+                    <li>Mesmo PDF há anos, empresa já mudou</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: laço de evidência de método</h2>
+              <figure class="article-figure" aria-labelledby="fig-loop-cap">
+                <figcaption id="fig-loop-cap" class="article-figure-cap">
+                  Laço SafeEng: critério → fontes → participação → inventário/avaliação → plano e verificação → revisão (evita o PDF de gaveta).
+                </figcaption>
+                <div class="flow-diagram" role="img" aria-label="Diagrama circular de evidência de metodologia do PGR em seis etapas">
+                  <svg viewBox="0 0 920 340" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#0d7377"/>
+                      </marker>
+                    </defs>
+                    <!-- center -->
+                    <circle cx="460" cy="170" r="52" fill="#0b1f2a"/>
+                    <text x="460" y="164" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">PGR / GRO</text>
+                    <text x="460" y="184" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="11">processo vivo</text>
+
+                    <!-- top: Critério -->
+                    <rect x="370" y="18" width="180" height="56" rx="12" fill="#0d7377"/>
+                    <text x="460" y="42" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">1 · Critério</text>
+                    <text x="460" y="60" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="11">severidade × probabilidade</text>
+
+                    <!-- top-right: Fontes -->
+                    <rect x="640" y="70" width="180" height="56" rx="12" fill="#134e4a"/>
+                    <text x="730" y="94" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2 · Fontes</text>
+                    <text x="730" y="112" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">campo, dados, normas</text>
+
+                    <!-- bottom-right: Participação -->
+                    <rect x="640" y="214" width="180" height="56" rx="12" fill="#0d7377"/>
+                    <text x="730" y="238" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">3 · Participação</text>
+                    <text x="730" y="256" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="11">trabalhadores / CIPA</text>
+
+                    <!-- bottom: Inventário -->
+                    <rect x="370" y="266" width="180" height="56" rx="12" fill="#d97706"/>
+                    <text x="460" y="290" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="14" font-weight="700">4 · Inventário</text>
+                    <text x="460" y="308" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="11">avaliação + prioridades</text>
+
+                    <!-- bottom-left: Plano -->
+                    <rect x="100" y="214" width="180" height="56" rx="12" fill="#134e4a"/>
+                    <text x="190" y="238" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">5 · Plano / check</text>
+                    <text x="190" y="256" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">dono, prazo, verificação</text>
+
+                    <!-- top-left: Revisão -->
+                    <rect x="100" y="70" width="180" height="56" rx="12" fill="#0b1f2a" stroke="#d97706" stroke-width="3"/>
+                    <text x="190" y="94" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">6 · Revisão</text>
+                    <text x="190" y="112" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="11">mudança → atualizar</text>
+
+                    <!-- loop arrows (simplified path markers) -->
+                    <path d="M540 46 C620 46, 700 60, 720 70" fill="none" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow2)"/>
+                    <path d="M730 126 C730 160, 730 190, 730 214" fill="none" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow2)"/>
+                    <path d="M640 250 C580 280, 540 290, 550 294" fill="none" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow2)"/>
+                    <path d="M370 294 C300 294, 250 280, 280 270" fill="none" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow2)"/>
+                    <path d="M190 214 C190 180, 190 150, 190 126" fill="none" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow2)"/>
+                    <path d="M200 70 C280 40, 360 30, 370 40" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrow2)"/>
+
+                    <!-- anti-gaveta callout -->
+                    <rect x="708" y="300" width="192" height="32" rx="8" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+                    <text x="804" y="321" text-anchor="middle" fill="#b91c1c" font-family="system-ui,sans-serif" font-size="12" font-weight="700">≠ PDF de gaveta</text>
+                  </svg>
+                </div>
+              </figure>
+              <p>
+                Leitura de engenharia: o laço só fecha quando a <strong>revisão</strong> realimenta
+                o critério/fontes/participação. Parar no passo 4 (inventário publicado) e nunca
+                voltar é exatamente o documento de gaveta.
+              </p>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Indústria</p>
+                <h3>Matriz copiada, critério invisível</h3>
+                <p>
+                  Planta atualiza o PGR trocando só a capa e a data. A matriz mantém “risco alto”
+                  em ruído e “baixo” em organização do trabalho, sem escala anexada. Ninguém
+                  explica por que sobrecarga de turno ficou fora do inventário.
+                </p>
+                <p>
+                  <strong>Com evidência de método:</strong> publicar a tabela de critério;
+                  listar fontes (dosimetrias, atas de CIPA, análise de absenteísmo ético,
+                  walkthroughs); registrar a decisão de incluir ou excluir o fator de turno;
+                  versionar a revisão.
+                </p>
+                <p>
+                  <strong>Documento de gaveta:</strong> PDF “atualizado” que não sobrevive a
+                  três perguntas: qual escala? qual fonte? quem foi ouvido?
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Serviços / psicossocial</p>
+                <h3>Questionário sem critério nem devolutiva</h3>
+                <p>
+                  Empresa aplica pesquisa anônima de clima, arquiva o relatório de RH e declara
+                  no PGR “riscos psicossociais controlados”. Não há ligação entre achados
+                  (baixa autonomia, metas punitivas) e linhas do inventário nem plano de ação.
+                </p>
+                <p>
+                  <strong>Com evidência de método:</strong> tratar a pesquisa como <em>fonte</em>
+                  (não como diagnóstico clínico); traduzir padrões organizacionais em perigos do
+                  inventário; aplicar o mesmo critério de priorização; devolver à CIPA/trabalhadores
+                  o que entrou no plano — sem expor indivíduos.
+                </p>
+                <p>
+                  <strong>Documento de gaveta:</strong> pasta de RH desconectada do GRO; inventário
+                  genérico; zero revisão quando as metas mudam no trimestre seguinte.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Obra / mudança</p>
+                <h3>Novo canteiro, mesmo inventário</h3>
+                <p>
+                  Construtora abre frentes noturnas e inclui novo empreiteiro de montagem. O PGR
+                  do contrato permanece o da fase de terraplenagem. A CIPA aponta fadiga e interface
+                  entre equipes; nada é registrado como revisão.
+                </p>
+                <p>
+                  <strong>Com evidência de método:</strong> gatilho de revisão por mudança
+                  organizacional; atualizar fontes (cronograma, análise de interface, escuta CIPA);
+                  reavaliar com o critério vigente; plano com controles de jornada e coordenação
+                  entre contratadas.
+                </p>
+                <p>
+                  <strong>Documento de gaveta:</strong> inventário “válido” que descreve uma obra
+                  que já não existe.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Publique o critério antes da cor:</strong> anexe ou referencie escalas e regras de combinação no PGR.</li>
+                <li><strong>Nomeie as fontes:</strong> cada família relevante de perigos deve apontar de onde veio a informação (campo, dado, norma, participação).</li>
+                <li><strong>Desenhe participação real:</strong> método, público, registro do que foi acolhido; CIPA como canal estruturado, não só assinatura.</li>
+                <li><strong>Versionar é gerir:</strong> mudanças de processo, pessoas-chave, tecnologia de metas, layout ou eventos relevantes disparam revisão documentada.</li>
+                <li><strong>Ligue inventário ao plano:</strong> prioridade sem dono e sem verificação volta a ser gaveta — mesmo com método bem escrito.</li>
+                <li><strong>Mantenha a fronteira do artigo #1:</strong> evidência de método no psicossocial descreve organização do trabalho; não transforma inventário em prontuário.</li>
+                <li><strong>Confronte o oficial:</strong> NR-1, Portaria 1.419/2024, Guia, Manual GRO/PGR e Q&amp;A — e use ISO 45001/31000 só como referência de sistema, sem confundir com obrigação legal brasileira.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> evidenciar metodologia é tornar o PGR
+                <em>explicável e revisável</em>. Critério, fonte e participação — com histórico
+                de revisões — separam o GRO vivo do documento de gaveta. Na linha SafeEng, o
+                bom inventário não é o mais longo: é o que um terceiro técnico consegue auditar
+                e a operação consegue atualizar quando o trabalho muda.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para fins
+                  informativos e de debate técnico. Verifique sempre os textos oficiais vigentes
+                  no gov.br. Este conteúdo <strong>não substitui</strong> assessoria jurídica,
+                  avaliação médica, laudos ou análise específica da sua organização.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#metodologia-pgr">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="riscos-psicossociais-inventario-pgr.html">Artigo #1</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a GRO/PGR, NR-1 e organização do trabalho para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="riscos-psicossociais-inventario-pgr.html">#1 Psicossocial no PGR</a></li>
+              <li><a href="../curiosidades.html#metodologia-pgr">Teaser metodologia</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+              <li><a href="../curiosidades.html#nr1-pgr">NR-1 e PGR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
