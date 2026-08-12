@@ -99,7 +99,8 @@
         { href: "artigos/nr33-espaco-confinado-analise-risco.html", label: "#19 NR-33 · espaço confinado · falha antes do gás" },
         { href: "artigos/nr23-incendio-vs-bombeiros.html", label: "#20 NR-23 · incêndio vs IT Bombeiros" },
         { href: "artigos/ia-checklist-digital-risco.html", label: "#21 IA · checklist digital · risco" },
-        { href: "artigos/sensores-iot-sst-decisao.html", label: "#22 Sensores / IoT · decisão de engenharia" }
+        { href: "artigos/sensores-iot-sst-decisao.html", label: "#22 Sensores / IoT · decisão de engenharia" },
+        { href: "artigos/treinamento-imersivo-vr-sst.html", label: "#23 Treinamento imersivo (VR) · valor vs marketing" }
       ]
     },
     {

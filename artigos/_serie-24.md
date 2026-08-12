@@ -28,7 +28,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 20 | Incêndio (NR-23) vs IT do Corpo de Bombeiros: NR federal não fecha o projeto sozinha | **Publicado** | [artigo](nr23-incendio-vs-bombeiros.html) · [teaser](../curiosidades.html#nr23-incendio-vs-bombeiros) |
 | 21 | IA e checklist digital: antecipação de risco ou só automação de papel? | **Publicado** | [artigo](ia-checklist-digital-risco.html) · [teaser](../curiosidades.html#ia-checklist-digital-risco) |
 | 22 | Sensores / IoT em SST: dado em tempo real vs decisão de engenharia | **Publicado** | [artigo](sensores-iot-sst-decisao.html) · [teaser](../curiosidades.html#sensores-iot-sst-decisao) |
-| 23 | Revisão do PGR após mudanças: gatilhos psicossociais e de processo | Pendente | — |
+| 23 | Treinamento imersivo (VR): quando vale e quando é marketing | **Publicado** | [artigo](treinamento-imersivo-vr-sst.html) · [teaser](../curiosidades.html#treinamento-imersivo-vr-sst) |
 | 24 | Checklist SafeEng: preparar o inventário psicossocial para a vigência 26/05/2026 | Pendente | — |
 
 ## Backlog deslocado do slot #2
@@ -281,8 +281,21 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Integração NR-17 × riscos psicossociais na prática do inventário *(reagendar em briefing futuro; slot #22 ocupado por sensores / IoT · dado vs decisão de engenharia em 12/08/2026)*
 
+
+## Nota editorial slot #23
+
+- Tema publicado em #23: Treinamento imersivo (VR) — quando vale e quando é marketing (briefing 12/08/2026).
+- Bloco editorial **Tendências SafeEng** em `curiosidades.html` (artigos 21–24); teaser #23 ao lado de #21–#22.
+- Fontes: NR-1 (competência/capacitação no GRO) + Manual GRO/PGR 2026; NR-10 / NR-33 / NR-35 PDF oficiais (sidebar.js / gov.br); hub oficial gratuito NIOSH/CDC · VR Mine Rescue Training (VR-MRT) — descrito como **suplemento** ao treinamento, não substituto.
+- Distinção crítica: VR/AR = borda (ensaio · papéis · debrief); competência tipificada + procedimento + barreiras = núcleo; demo WOW / “substitui curso da NR” = teatro de fornecedor.
+- O antigo slot #23 (Revisão do PGR após mudanças: gatilhos psicossociais e de processo) foi para backlog deslocado.
+
+## Backlog deslocado do slot #23
+
+- Revisão do PGR após mudanças: gatilhos psicossociais e de processo *(reagendar em briefing futuro; slot #23 ocupado por treinamento imersivo VR · valor vs marketing em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 23–24 até briefing específico de cada tema.
+- Não publicar #24 até briefing específico do tema.
