@@ -11,7 +11,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 3 | PGR × PCMSO na saúde mental: onde os dois se encontram e onde o auditor costuma achar buraco | **Publicado** | [artigo](pgr-pcmso-saude-mental.html) · [teaser](../curiosidades.html#pgr-pcmso-saude-mental) |
 | 4 | ADPF 1316 / suspensão de multas: o que muda na prática (sanção vs obrigação técnica) | **Publicado** | [artigo](adpf-1316-sancao-vs-obrigacao.html) · [teaser](../curiosidades.html#adpf-1316-sancao) |
 | 5 | Guia MTE de fatores psicossociais: leitura crítica do que vira controle operacional | **Publicado** | [artigo](guia-mte-psicossociais-leitura-critica.html) · [teaser](../curiosidades.html#guia-mte-psicossociais) |
-| 6 | Home office e teletrabalho no GRO: isolamento, disponibilidade e fronteiras | Pendente | — |
+| 6 | Liderança, metas e jornada como perigo: como registrar no GRO sem moralismo | **Publicado** | [artigo](lideranca-metas-jornada-perigo-gro.html) · [teaser](../curiosidades.html#lideranca-metas-jornada) |
 | 7 | Participação dos trabalhadores na identificação de riscos psicossociais | Pendente | — |
 | 8 | Evidências e indicadores: o que medir sem transformar SST em RH clínico | Pendente | — |
 | 9 | AEP e inventário: quando a análise ergonômica alimenta o PGR *(slot liberado; tema #3 antigo)* | Pendente | — |
@@ -58,6 +58,18 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 - Tema publicado em #5: Guia MTE de fatores psicossociais — leitura crítica do que vira controle operacional (briefing 12/08/2026).
 - Sobrecarga cognitiva e metas agressivas (antigo #5) foi para backlog deslocado.
 - O slot #10 (leitura ampla Guia/Manual/Q&A) permanece pendente com foco residual; #5 cobre a conversão orientação → controle.
+
+
+## Nota editorial slot #6
+
+- Tema publicado em #6: Liderança, metas e jornada como perigo no GRO — registro sem moralismo (briefing 12/08/2026).
+- Home office e teletrabalho (antigo #6) foi para backlog deslocado.
+- Sobreposição parcial com slots #13 (jornada/fadiga) e #14 (liderança/autonomia): permanecem pendentes com foco residual / aprofundamento; #6 cobre o registro no inventário sem moralismo.
+- Conecta também o backlog de “sobrecarga cognitiva e metas agressivas” (deslocado do #5).
+
+## Backlog deslocado do slot #6
+
+- Home office e teletrabalho no GRO: isolamento, disponibilidade e fronteiras *(reagendar em briefing futuro; slot #6 ocupado por liderança/metas/jornada em 12/08/2026)*
 
 ## Regra editorial
 
