@@ -887,7 +887,7 @@ main {
 
 /* ===== Layout com sidebar ===== */
 :root {
-  --sidebar-w: 280px;
+  --sidebar-w: 300px;
   --header-h: 64px;
 }
 
@@ -901,13 +901,18 @@ main {
 
 .site-sidebar {
   width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
   flex-shrink: 0;
-  background: var(--white);
-  border-right: 1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff 0%, #f4fafb 100%);
+  border-right: 2px solid rgba(13, 115, 119, 0.28);
+  box-shadow: 2px 0 16px rgba(11, 31, 42, 0.06);
   position: sticky;
   top: var(--header-h);
+  align-self: flex-start;
   height: calc(100vh - var(--header-h));
+  max-height: calc(100vh - var(--header-h));
   overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 1.15rem 0.85rem 1.5rem;
   z-index: 40;
 }
@@ -1241,4 +1246,103 @@ main {
   font-size: 0.72em;
   opacity: 0.7;
   margin-left: 0.1rem;
+}
+
+
+/* Nested groups inside topic panels (NR access list) */
+.sidebar-group {
+  margin: 0.25rem 0 0.45rem;
+}
+
+.sidebar-group-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  background: rgba(13, 115, 119, 0.08);
+  border: 1px solid rgba(13, 115, 119, 0.2);
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.78rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.sidebar-group-btn:hover {
+  background: rgba(13, 115, 119, 0.14);
+  color: var(--teal);
+  border-color: rgba(13, 115, 119, 0.35);
+}
+
+.sidebar-group-btn[aria-expanded="true"] {
+  background: rgba(13, 115, 119, 0.14);
+  color: var(--teal);
+}
+
+.sidebar-group-items {
+  list-style: none;
+  margin: 0.3rem 0 0.2rem 0.35rem;
+  padding: 0.15rem 0 0.25rem 0.45rem;
+  border-left: 2px dashed rgba(13, 115, 119, 0.35);
+  max-height: min(55vh, 420px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.sidebar-group-items a {
+  display: block;
+  padding: 0.28rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.sidebar-group-items a:hover {
+  color: var(--teal);
+  background: var(--bg);
+}
+
+.sidebar-group-items a[aria-current="true"] {
+  color: var(--navy);
+  background: var(--amber-pale);
+  font-weight: 600;
+}
+
+/* Highlight hub link to NR access page */
+.sidebar-sub a.sidebar-nr-hub {
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--amber-pale);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-sub a.sidebar-nr-hub:hover {
+  color: var(--navy);
+  background: #ffedd5;
+  border-color: var(--amber);
+}
+
+.sidebar-sub a.sidebar-nr-hub[aria-current="true"] {
+  border-left: none;
+  padding-left: 0.55rem;
+  box-shadow: inset 3px 0 0 var(--amber);
+}
+
+/* Static fallback link before JS hydrates */
+.site-sidebar > .sidebar-nav .sidebar-nr-hub {
+  display: block;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--navy);
+  background: var(--amber-pale);
+  border: 1px solid rgba(217, 119, 6, 0.35);
 }

@@ -8,6 +8,51 @@
   var NR_BASE =
     "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/";
 
+  var NR_OFFICIAL_LINKS = [
+    { href: NR_BASE + "nr-1", label: "NR-1 — Disposições gerais", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-2-nr-2", label: "NR-2 — Revogada", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-3-nr-3", label: "NR-3 — Embargo", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-4-nr-4", label: "NR-4 — SESMT", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-5-nr-5", label: "NR-5 — CIPA", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-6-nr-6", label: "NR-6 — EPI", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-7-nr-7", label: "NR-7 — PCMSO", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-8-nr-8", label: "NR-8 — Edificações", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-9-nr-9", label: "NR-9 — Agentes", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-10-nr-10", label: "NR-10 — Eletricidade", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-11-nr-11", label: "NR-11 — Transporte", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-12-nr-12", label: "NR-12 — Máquinas", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-13-nr-13", label: "NR-13 — Caldeiras", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-14-nr-14", label: "NR-14 — Fornos", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-15-nr-15", label: "NR-15 — Insalubridade", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-16-nr-16", label: "NR-16 — Periculosidade", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-17-nr-17", label: "NR-17 — Ergonomia", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-18-nr-18", label: "NR-18 — Construção", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-19-nr-19", label: "NR-19 — Explosivos", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-20-nr-20", label: "NR-20 — Inflamáveis", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-21-nr-21", label: "NR-21 — Céu aberto", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-22-nr-22", label: "NR-22 — Mineração", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-23-nr-23", label: "NR-23 — Incêndios", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-24-nr-24", label: "NR-24 — Sanitárias", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-25-nr-25", label: "NR-25 — Resíduos", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-26-nr-26", label: "NR-26 — Sinalização", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-27-nr-27", label: "NR-27 — Revogada", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-28-nr-28", label: "NR-28 — Fiscalização", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-29-nr-29", label: "NR-29 — Portuário", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-30-nr-30", label: "NR-30 — Aquaviário", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-31-nr-31", label: "NR-31 — Agropecuária", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-32-nr-32", label: "NR-32 — Saúde", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-33-nr-33", label: "NR-33 — Confinados", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-34-nr-34", label: "NR-34 — Naval", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-35-nr-35", label: "NR-35 — Altura", external: true },
+    { href: NR_BASE + "norma-regulamentadora-no-36-nr-36", label: "NR-36 — Abate/carnes", external: true },
+    {
+      href: "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/norma-regulamentadora-no-37-nr-37",
+      label: "NR-37 — Petróleo",
+      external: true
+    },
+    { href: NR_BASE + "norma-regulamentadora-no-38-nr-38", label: "NR-38 — Limpeza urbana", external: true }
+  ];
+
   var TOPICS = [
     {
       id: "introducao",
@@ -55,49 +100,18 @@
       id: "nr",
       label: "NR",
       items: [
-        { href: "nrs.html#acesso-nrs", label: "Acesso às NR atualizadas" },
-        { href: NR_BASE + "nr-1", label: "NR-1 — Disposições gerais", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-2-nr-2", label: "NR-2 — Revogada", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-3-nr-3", label: "NR-3 — Embargo", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-4-nr-4", label: "NR-4 — SESMT", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-5-nr-5", label: "NR-5 — CIPA", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-6-nr-6", label: "NR-6 — EPI", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-7-nr-7", label: "NR-7 — PCMSO", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-8-nr-8", label: "NR-8 — Edificações", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-9-nr-9", label: "NR-9 — Agentes", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-10-nr-10", label: "NR-10 — Eletricidade", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-11-nr-11", label: "NR-11 — Transporte", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-12-nr-12", label: "NR-12 — Máquinas", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-13-nr-13", label: "NR-13 — Caldeiras", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-14-nr-14", label: "NR-14 — Fornos", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-15-nr-15", label: "NR-15 — Insalubridade", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-16-nr-16", label: "NR-16 — Periculosidade", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-17-nr-17", label: "NR-17 — Ergonomia", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-18-nr-18", label: "NR-18 — Construção", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-19-nr-19", label: "NR-19 — Explosivos", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-20-nr-20", label: "NR-20 — Inflamáveis", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-21-nr-21", label: "NR-21 — Céu aberto", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-22-nr-22", label: "NR-22 — Mineração", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-23-nr-23", label: "NR-23 — Incêndios", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-24-nr-24", label: "NR-24 — Sanitárias", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-25-nr-25", label: "NR-25 — Resíduos", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-26-nr-26", label: "NR-26 — Sinalização", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-27-nr-27", label: "NR-27 — Revogada", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-28-nr-28", label: "NR-28 — Fiscalização", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-29-nr-29", label: "NR-29 — Portuário", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-30-nr-30", label: "NR-30 — Aquaviário", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-31-nr-31", label: "NR-31 — Agropecuária", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-32-nr-32", label: "NR-32 — Saúde", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-33-nr-33", label: "NR-33 — Confinados", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-34-nr-34", label: "NR-34 — Naval", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-35-nr-35", label: "NR-35 — Altura", external: true },
-        { href: NR_BASE + "norma-regulamentadora-no-36-nr-36", label: "NR-36 — Abate/carnes", external: true },
         {
-          href: "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/norma-regulamentadora-no-37-nr-37",
-          label: "NR-37 — Petróleo",
-          external: true
+          href: "nrs.html#acesso-nrs",
+          label: "Acesso às NR atualizadas",
+          className: "sidebar-nr-hub"
         },
-        { href: NR_BASE + "norma-regulamentadora-no-38-nr-38", label: "NR-38 — Limpeza urbana", external: true },
+        {
+          type: "group",
+          id: "nr-acesso",
+          label: "Acesso às NR atualizadas",
+          open: true,
+          items: NR_OFFICIAL_LINKS
+        },
         { href: "curiosidades.html#nr1-pgr", label: "Insight: NR-1 GRO" },
         { href: "curiosidades.html#hazop-nr12", label: "Insight: NR-12 HAZOP" },
         { href: "curiosidades.html#nr17", label: "Insight: NR-17" },
@@ -144,8 +158,101 @@
   }
 
   function topicShouldExpand(topic) {
-    if (topic.id === "nr" && currentFile() === "nrs.html") return true;
+    // Introdução and NR always open on every page
+    if (topic.id === "introducao" || topic.id === "nr") return true;
     return false;
+  }
+
+  function groupShouldExpand(group) {
+    if (group.open) return true;
+    if (group.id === "nr-acesso" && currentFile() === "nrs.html") return true;
+    return false;
+  }
+
+  function applyLinkAttrs(a, item) {
+    a.href = item.href;
+    a.textContent = item.label;
+    var classes = [];
+    if (item.className) classes.push(item.className);
+    if (item.external) {
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      classes.push("sidebar-external");
+      a.setAttribute("title", "Abre site oficial (gov.br) em nova aba");
+      var cue = document.createElement("span");
+      cue.className = "external-cue";
+      cue.setAttribute("aria-hidden", "true");
+      cue.textContent = " ↗";
+      a.appendChild(cue);
+    }
+    if (classes.length) a.className = classes.join(" ");
+    return a;
+  }
+
+  function appendLinkItem(parentUl, item, onActive) {
+    var subLi = document.createElement("li");
+    var a = document.createElement("a");
+    applyLinkAttrs(a, item);
+    if (isActiveHref(item.href)) {
+      a.setAttribute("aria-current", "true");
+      if (onActive) onActive();
+    }
+    subLi.appendChild(a);
+    parentUl.appendChild(subLi);
+  }
+
+  function appendGroupItem(parentUl, group, onActive) {
+    var groupLi = document.createElement("li");
+    groupLi.className = "sidebar-group";
+
+    var startOpen = groupShouldExpand(group);
+    // If any child is active, force open
+    var childActive = (group.items || []).some(function (it) {
+      return it.href && isActiveHref(it.href);
+    });
+    if (childActive) startOpen = true;
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "sidebar-group-btn";
+    btn.setAttribute("aria-expanded", startOpen ? "true" : "false");
+    btn.setAttribute("aria-controls", "sidebar-group-" + group.id);
+    btn.id = "sidebar-group-btn-" + group.id;
+
+    var label = document.createElement("span");
+    label.textContent = group.label;
+    btn.appendChild(label);
+
+    var chevron = document.createElement("span");
+    chevron.className = "sidebar-chevron";
+    chevron.setAttribute("aria-hidden", "true");
+    chevron.textContent = "▾";
+    btn.appendChild(chevron);
+
+    var panel = document.createElement("ul");
+    panel.className = "sidebar-group-items";
+    panel.id = "sidebar-group-" + group.id;
+    panel.hidden = !startOpen;
+
+    (group.items || []).forEach(function (item) {
+      appendLinkItem(panel, item, function () {
+        btn.setAttribute("aria-expanded", "true");
+        panel.hidden = false;
+        if (onActive) onActive();
+      });
+    });
+
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", open ? "false" : "true");
+      panel.hidden = open;
+    });
+
+    groupLi.appendChild(btn);
+    groupLi.appendChild(panel);
+    parentUl.appendChild(groupLi);
+
+    if (startOpen && onActive && childActive) onActive();
   }
 
   function buildSidebar() {
@@ -164,12 +271,11 @@
     var list = document.createElement("ul");
     list.className = "sidebar-topics";
 
-    TOPICS.forEach(function (topic, index) {
+    TOPICS.forEach(function (topic) {
       var li = document.createElement("li");
       li.className = "sidebar-topic";
 
-      var forceOpen = topicShouldExpand(topic);
-      var startOpen = forceOpen || index === 0;
+      var startOpen = topicShouldExpand(topic);
 
       var btn = document.createElement("button");
       btn.type = "button";
@@ -193,29 +299,17 @@
       panel.id = "sidebar-panel-" + topic.id;
       panel.hidden = !startOpen;
 
-      topic.items.forEach(function (item) {
-        var subLi = document.createElement("li");
-        var a = document.createElement("a");
-        a.href = item.href;
-        a.textContent = item.label;
-        if (item.external) {
-          a.target = "_blank";
-          a.rel = "noopener noreferrer";
-          a.className = "sidebar-external";
-          a.setAttribute("title", "Abre site oficial (gov.br) em nova aba");
-          var cue = document.createElement("span");
-          cue.className = "external-cue";
-          cue.setAttribute("aria-hidden", "true");
-          cue.textContent = " ↗";
-          a.appendChild(cue);
+      function forceTopicOpen() {
+        btn.setAttribute("aria-expanded", "true");
+        panel.hidden = false;
+      }
+
+      (topic.items || []).forEach(function (item) {
+        if (item && item.type === "group") {
+          appendGroupItem(panel, item, forceTopicOpen);
+        } else {
+          appendLinkItem(panel, item, forceTopicOpen);
         }
-        if (isActiveHref(item.href)) {
-          a.setAttribute("aria-current", "true");
-          btn.setAttribute("aria-expanded", "true");
-          panel.hidden = false;
-        }
-        subLi.appendChild(a);
-        panel.appendChild(subLi);
       });
 
       btn.addEventListener("click", function () {
@@ -247,11 +341,33 @@
     var overlay = document.getElementById("sidebar-overlay");
     if (!sidebar || !toggle) return;
 
+    function ensureNrOpen() {
+      var nrBtn = document.getElementById("sidebar-btn-nr");
+      var nrPanel = document.getElementById("sidebar-panel-nr");
+      if (nrBtn && nrPanel) {
+        nrBtn.setAttribute("aria-expanded", "true");
+        nrPanel.hidden = false;
+      }
+      var introBtn = document.getElementById("sidebar-btn-introducao");
+      var introPanel = document.getElementById("sidebar-panel-introducao");
+      if (introBtn && introPanel) {
+        introBtn.setAttribute("aria-expanded", "true");
+        introPanel.hidden = false;
+      }
+      var groupBtn = document.getElementById("sidebar-group-btn-nr-acesso");
+      var groupPanel = document.getElementById("sidebar-group-nr-acesso");
+      if (groupBtn && groupPanel) {
+        groupBtn.setAttribute("aria-expanded", "true");
+        groupPanel.hidden = false;
+      }
+    }
+
     function setOpen(open) {
       document.body.classList.toggle("sidebar-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Fechar temas" : "Abrir temas");
       if (overlay) overlay.hidden = !open;
+      if (open) ensureNrOpen();
     }
 
     toggle.addEventListener("click", function () {
