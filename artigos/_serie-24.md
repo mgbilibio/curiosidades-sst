@@ -16,7 +16,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 8 | MEI / ME / EPP: AEP, dispensas e o mito de que “empresa pequena não entra” | **Publicado** | [artigo](mei-me-epp-aep-dispensas.html) · [teaser](../curiosidades.html#mei-me-epp-aep-dispensas) |
 | 9 | Integração NR-1 + NR-17: AEP obrigatória e quando a AET deixa de ser “opcional” | **Publicado** | [artigo](integracao-nr1-nr17-aep-aet.html) · [teaser](../curiosidades.html#integracao-nr1-nr17-aep-aet) |
 | 10 | NR-9 depois do GRO maduro: agentes clássicos ainda importam (e como não sumirem no PGR “mental”) | **Publicado** | [artigo](nr9-gro-maduro-agentes-classicos.html) · [teaser](../curiosidades.html#nr9-gro-maduro-agentes-classicos) |
-| 11 | Matriz de risco psicossocial: limites, armadilhas e alternativas | Pendente | — |
+| 11 | Terceirizadas e item de interação de riscos: comunicação bidirecional que aguenta fiscalização | **Publicado** | [artigo](terceirizadas-interacao-riscos.html) · [teaser](../curiosidades.html#terceirizadas-interacao-riscos) |
 | 12 | Segurança psicológica e clima tóxico: fator de proteção versus perigo | Pendente | — |
 | 13 | Jornada, turnos e fadiga no inventário do PGR | Pendente | — |
 | 14 | Liderança, autonomia e suporte social como controles organizacionais | Pendente | — |
@@ -119,6 +119,19 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #10
 
 - Guia, Manual GRO/PGR e Q&A: como ler os documentos oficiais de 2025–2026 *(reagendar em briefing futuro; slot #10 ocupado por NR-9 / agentes clássicos no GRO maduro em 12/08/2026)*
+
+
+
+## Nota editorial slot #11
+
+- Tema publicado em #11: Terceirizadas e item de interação de riscos — comunicação bidirecional (NR-1 1.5.8) que aguenta fiscalização; Manual cap. 15 (“receber documento não basta”; encontra/traz/interação) (briefing 12/08/2026).
+- Bloco editorial **Integração técnica** em `curiosidades.html` (artigos 9+); teaser #11 ao lado de #9–#10.
+- O antigo slot #11 (Matriz de risco psicossocial) foi para backlog deslocado.
+- Sobreposição com slot #15 (Terceirização e cadeia de valor / psicossocial): #11 cobre o **1.5.8** (comunicação bidirecional + interação + vigilância); #15 permanece com foco residual psicossocial na cadeia, se briefing futuro pedir.
+
+## Backlog deslocado do slot #11
+
+- Matriz de risco psicossocial: limites, armadilhas e alternativas *(reagendar em briefing futuro; slot #11 ocupado por terceirizadas / interação de riscos · 1.5.8 em 12/08/2026)*
 
 ## Regra editorial
 
