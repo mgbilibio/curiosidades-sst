@@ -78,6 +78,8 @@
         { href: "curiosidades.html#tema-integracao-tecnica", label: "Integração técnica (teasers)" },
         { href: "curiosidades.html#tema-classicos-2026", label: "Clássicos 2026 (teasers)" },
         { href: "curiosidades.html#tema-tendencias-safeeng", label: "Tendências SafeEng (teasers)" },
+        { href: "curiosidades.html#tema-barragens-estruturas", label: "Barragens e estruturas críticas" },
+        { href: "artigos/seguranca-barragens-legislacao-casos.html", label: "EXTRA · Segurança de barragens" },
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
         { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },

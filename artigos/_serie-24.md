@@ -317,3 +317,16 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
 - Série planejada de 24 temas encerrada com o briefing #24 (12/08/2026); novos temas exigem briefing futuro (backlogs deslocados permanecem elegíveis).
+
+## Especiais EXTRA (além da série 24 — não substituem slot)
+
+| ID | Título | Status | URL |
+|----|--------|--------|-----|
+| EXTRA | Segurança de barragens: legislação, instrumentos, liquefação e casos | **Publicado** 12/08/2026 | [artigo](seguranca-barragens-legislacao-casos.html) · [teaser](../curiosidades.html#seguranca-barragens-legislacao-casos) |
+
+### Nota editorial — Especial barragens (12/08/2026)
+
+- Artigo longo SafeEng fora da meta dos 24: PNSB (Leis 12.334/2010 e 14.066/2020), CNRH 241/2024, ANM 95/2022 e transição 220/2025, instrumentos (CRI/DPA, PSB, PAEBM, DCE, SIGBM, SNISB), normas ABNT só via catálogo, GISTM/ICMM, NR-22, casos Herculano/Fundão/Brumadinho/Vajont/Teton com fontes.
+- Teaser em accordion próprio **Barragens e estruturas críticas** (`#tema-barragens-estruturas`), não desloca Integração técnica / Clássicos / Tendências.
+- Disclaimer forte sobre cronograma de vigência da Res. ANM 220/2025 — verificar hub oficial.
+

@@ -248,5 +248,13 @@ window.SST_SEARCH_INDEX = [
     type: "artigo",
     summary: "ESG/EHS só sustentam reputação com controles reais e eliminação de perigos no projeto (Prevention through Design).",
     tags: ["ESG", "EHS", "Safety by Design", "Prevention through Design", "PtD", "ISO 45001", "NR-1", "GRO"]
+  },
+  {
+    title: "Segurança de barragens: legislação, instrumentos e casos",
+    url: "artigos/seguranca-barragens-legislacao-casos.html",
+    type: "artigo",
+    summary: "Especial SafeEng: PNSB, ANM, PAEBM, CRI/DPA, liquefação, ZAS e casos (Herculano, Fundão, Brumadinho, Vajont, Teton) com fontes.",
+    tags: ["barragem", "barragens", "PNSB", "ANM", "Brumadinho", "Mariana", "PAEBM", "rejeitos", "liquefação", "ZAS", "SIGBM", "SNISB", "Fundão", "Herculano"]
   }
 ];
+

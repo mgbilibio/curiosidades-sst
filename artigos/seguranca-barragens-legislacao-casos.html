@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Segurança de barragens: PNSB, ANM, PAEBM, liquefação e lições de Mariana/Brumadinho | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Artigo especial SafeEng: segurança de barragens no Brasil — Lei 12.334/2010, Lei 14.066/2020, CNRH 241/2024, ANM 95/2022 e 220/2025, PSB/PAEBM, ZAS, liquefação e casos (Herculano, Fundão, Brumadinho, Vajont, Teton). Por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/seguranca-barragens-legislacao-casos.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Segurança de barragens · PNSB, ANM, PAEBM e casos | Margus Giuliano">
+  <meta property="og:description" content="Marco legal brasileiro, instrumentos (CRI/DPA, PSB, PAEBM, SIGBM), liquefação, ZAS e acidentes históricos com fontes — leitura SafeEng para engenheiro SST e gestor de risco.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/seguranca-barragens-legislacao-casos.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Especiais SafeEng">
+  <meta property="article:tag" content="barragem">
+  <meta property="article:tag" content="PNSB">
+  <meta property="article:tag" content="ANM">
+  <meta property="article:tag" content="Brumadinho">
+  <meta property="article:tag" content="Mariana">
+  <meta property="article:tag" content="PAEBM">
+  <meta property="article:tag" content="rejeitos">
+  <meta property="article:tag" content="liquefação">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Segurança de barragens · especial SafeEng">
+  <meta name="twitter:description" content="PNSB, ANM, PAEBM, ZAS, liquefação e casos com fontes — SST + geotécnica + emergência.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/seguranca-barragens-legislacao-casos.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Segurança de barragens"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/seguranca-barragens-legislacao-casos.html#article",
+        "headline": "Segurança de barragens: legislação, instrumentos, liquefação e casos — leitura SafeEng para SST e gestão de risco",
+        "description": "Síntese autoral sobre a Política Nacional de Segurança de Barragens, competências (ANM, ANA, ANEEL), instrumentos (PSB, PAEBM, CRI/DPA, SIGBM/SNISB), barreiras e acidentes históricos com fontes.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/seguranca-barragens-legislacao-casos.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["barragem", "PNSB", "ANM", "Brumadinho", "Mariana", "PAEBM", "rejeitos", "liquefação", "ZAS", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">Segurança de barragens</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Especial SafeEng · EXTRA (fora da série 24) · Barragens e estruturas críticas</p>
+            <h1>Segurança de barragens: legislação, instrumentos, liquefação e casos — leitura SafeEng para SST e gestão de risco</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Artigo longo para engenheiros de SST, gestores de risco, EHS e equipes
+              que precisam integrar <em>geotécnica</em>, <em>emergência</em> e
+              <em>marco legal</em> sem confundir fiscalização setorial com NR de higiene
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#evolucao">Evolução histórica da regulação no Brasil</a></li>
+              <li><a href="#importancia">Importância (vidas, ambiente, SST, ZAS)</a></li>
+              <li><a href="#marco-legal">Marco legal e competências</a></li>
+              <li><a href="#instrumentos">Instrumentos: CRI/DPA, PSB, PAE/PAEBM, DCE, SIGBM, SNISB</a></li>
+              <li><a href="#normas">Normas técnicas setoriais e internacionais</a></li>
+              <li><a href="#acidentes">Acidentes históricos (com fontes)</a></li>
+              <li><a href="#analise">Análise: Bow-Tie, liquefação, Safety by Design</a></li>
+              <li><a href="#esquema">Esquema SVG: PNSB → PSB → PAE → monitoramento</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações práticas para engenheiro SST / gestor de risco</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Segurança de barragens não é “tema só de geotécnica” nem “só de Defesa Civil”.
+                Para o engenheiro de SST e o gestor de risco, a estrutura aparece em três
+                camadas que se cruzam: (1)&nbsp;<strong>integridade física</strong> do maciço e do
+                reservatório; (2)&nbsp;<strong>exposição ocupacional</strong> de trabalhadores na
+                estrutura, em obras de alteamento/descaracterização e a jusante; e
+                (3)&nbsp;<strong>emergência e autossalvamento</strong> quando o tempo de chegada da
+                onda não permite resposta externa. O descuido em qualquer camada transforma
+                inventário de risco e PAE em teatro documental.
+              </p>
+              <p>
+                Este artigo especial SafeEng — <strong>EXTRA</strong>, além dos 24 temas da série
+                planejada — sintetiza o arco regulatório brasileiro (PNSB), competências
+                fiscalizadoras, instrumentos operacionais (PSB, PAE/PAEBM, CRI/DPA, DCE,
+                SIGBM, SNISB), referências normativas sem PDF pirateado, e acidentes
+                históricos com <strong>fontes atribuídas</strong>. Não é parecer jurídico nem
+                laudo de estabilidade. É leitura de engenharia para quem precisa conectar
+                GRO/NR, NR-22 (mineração), barreiras e Zona de Autossalvamento (ZAS) ao que
+                a legislação setorial já exige.
+              </p>
+              <aside class="legal-callout" aria-label="Aviso rápido">
+                <p>
+                  <strong>Atenção transitória:</strong> a
+                  <strong>Resolução ANM nº&nbsp;220/2025</strong> atualiza a disciplina de
+                  barragens de mineração com <em>cronograma escalonado</em> de vigência
+                  (conforme notícias e textos oficiais/compilados). Verifique sempre o texto
+                  vigente no hub ANM e no DOU antes de decidir — prazos de transição mudam.
+                </p>
+              </aside>
+            </section>
+
+            <section id="evolucao" aria-labelledby="h-evolucao">
+              <h2 id="h-evolucao">Evolução histórica da regulação no Brasil</h2>
+              <p>
+                Antes da Política Nacional de Segurança de Barragens (PNSB), a segurança de
+                barragens no Brasil dependia de um mosaico setorial e estadual — com
+                cadastros e exigências heterogêneas. A consolidação federal veio com a
+                <a href="http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12334.htm" target="_blank" rel="noopener noreferrer">Lei nº&nbsp;12.334/2010</a>,
+                que instituiu a PNSB, definiu instrumentos (PSB, classificação por CRI e DPA,
+                PAE quando aplicável) e atribuiu papéis a órgãos fiscalizadores por tipologias
+                de uso (mineração, água de usos múltiplos, geração hidrelétrica etc.).
+              </p>
+              <p>
+                Os desastres de <strong>Mariana/Fundão (05/11/2015)</strong> e
+                <strong>Brumadinho/B1 (25/01/2019)</strong> atuaram como
+                <strong>catalisadores regulatórios</strong>: ampliaram a pressão por
+                transparência, monitoramento, proibição de alteamento a montante, reforço de
+                emergência e responsabilização. A resposta legislativa mais estruturante veio
+                com a
+                <a href="http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L14066.htm" target="_blank" rel="noopener noreferrer">Lei nº&nbsp;14.066/2020</a>,
+                que alterou a Lei&nbsp;12.334 e endureceu dispositivos sobre segurança,
+                emergência e obrigações do empreendedor (incluindo temas de ZAS e
+                descaracterização no desenho legal — detalhe sempre no texto vigente).
+              </p>
+              <p>
+                No plano infralegal, o
+                <a href="https://www.gov.br/anm/pt-br/assuntos/barragens/legislacao/cnrh-no-241-2024.pdf" target="_blank" rel="noopener noreferrer">CNRH nº&nbsp;241/2024</a>
+                atualizou critérios de classificação no âmbito da PNSB. Na mineração, a
+                <a href="https://www.gov.br/anm/pt-br/assuntos/barragens/legislacao/resolucao-no-95-2022.pdf" target="_blank" rel="noopener noreferrer">Resolução ANM nº&nbsp;95/2022</a>
+                consolidou obrigações (SIGBM, DCE, PAEBM, proibição de alteamento a montante,
+                descaracterização etc.). Em outubro de 2025, a ANM publicou a
+                <strong>Resolução nº&nbsp;220/2025</strong>, anunciada como atualização/substituição
+                gradual da 95/2022, com alinhamento ao CNRH&nbsp;241 e
+                <strong>vigência escalonada</strong>
+                (<a href="https://www.gov.br/anm/pt-br/assuntos/noticias/nova-resolucao-reforca-seguranca-de-barragens-no-pais" target="_blank" rel="noopener noreferrer">notícia oficial ANM</a>).
+                O acompanhamento nacional de cadastro e relatórios da PNSB passa também pela
+                ANA via
+                <a href="https://www.snisb.gov.br/" target="_blank" rel="noopener noreferrer">SNISB</a>
+                e leituras de política pública como o
+                <a href="https://sites.tcu.gov.br/relatorio-de-politicas/politica-nacional-de-seguranca-de-barragens.html" target="_blank" rel="noopener noreferrer">painel TCU sobre a PNSB</a>.
+              </p>
+              <ol>
+                <li><strong>Pré-PNSB:</strong> fragmentação setorial/estadual.</li>
+                <li><strong>Lei 12.334/2010:</strong> nasce a PNSB e os instrumentos-base.</li>
+                <li><strong>2015–2019:</strong> Fundão e Brumadinho aceleram reforma.</li>
+                <li><strong>Lei 14.066/2020:</strong> endurecimento da PNSB.</li>
+                <li><strong>CNRH 241/2024 + ANM 95/2022 → 220/2025:</strong> classificação e disciplina setorial em transição.</li>
+                <li><strong>ANA/SNISB + TCU:</strong> visão sistêmica e accountability pública.</li>
+              </ol>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-import">
+              <h2 id="h-import">Importância: vidas, meio ambiente, SST e ZAS</h2>
+              <p>
+                Uma falha catastrófica de barragem combina energia gravitacional, volume
+                mobilizável e vulnerabilidade a jusante. Em rejeitos, a onda pode ser uma
+                <em>flowslide</em> de lama — não “água limpa com aviso confortável”. Em
+                barragens de água, erosão interna (piping), galgamento e falhas de fundação
+                também produzem inundação rápida. Em ambos os casos, o tempo de chegada na
+                <strong>Zona de Autossalvamento (ZAS)</strong> é o critério que separa
+                “evacuação guiada pela Defesa Civil” de “alerta e autossalvamento sob
+                responsabilidade do empreendedor”.
+              </p>
+              <p>
+                Para SST, o mapa de exposição inclui: equipes de inspeção e instrumentação;
+                operadores em alteamento; trabalhadores em obras de reforço e
+                descaracterização; terceirizados em topografia e drenagem; e pessoas em
+                áreas administrativas/vivência indevidamente posicionadas a jusante. A
+                NR-22 (segurança e saúde ocupacional na mineração) dialoga com o risco da
+                estrutura, mas <strong>não substitui</strong> PSB/PAEBM nem a fiscalização
+                ANM. GRO/NR-1 continua válido para perigos ocupacionais — o erro clássico é
+                tratar barragem só como “tema ambiental” e deixar o inventário cego a
+                inundação, liquefação e emergência.
+              </p>
+              <ul>
+                <li><strong>Vidas humanas:</strong> trabalhadores na estrutura e comunidades na mancha.</li>
+                <li><strong>Meio ambiente:</strong> corpos hídricos, solo, biodiversidade e uso da água a jusante.</li>
+                <li><strong>SST:</strong> exposição ocupacional + interface com emergência (sirenes, rotas, simulados).</li>
+                <li><strong>ZAS:</strong> onde 30&nbsp;min ou 10&nbsp;km (critério legal/regulatório aplicável) definem autonomia de alerta do empreendedor — ver definição na Res.&nbsp;ANM&nbsp;95 e textos sucessores.</li>
+              </ul>
+            </section>
+
+            <section id="marco-legal" aria-labelledby="h-marco">
+              <h2 id="h-marco">Marco legal e competências (quem regula o quê)</h2>
+              <p>
+                A PNSB organiza a segurança por <strong>tipologia e uso</strong>. Em termos
+                didáticos (sempre confirme no texto legal e nos atos do órgão):
+              </p>
+              <ul>
+                <li>
+                  <strong>ANM — barragens de mineração / rejeitos:</strong> classificação,
+                  SIGBM, DCE, PAEBM, descaracterização, proibição de alteamento a montante,
+                  fiscalização setorial. Hub:
+                  <a href="https://www.gov.br/anm/pt-br/assuntos/barragens" target="_blank" rel="noopener noreferrer">gov.br/anm · barragens</a>.
+                  No site: <a href="../orgaos-setoriais.html#orgao-anm">Órgãos setoriais · ANM</a>.
+                </li>
+                <li>
+                  <strong>ANA — barragens de água de usos múltiplos e coordenação SNISB:</strong>
+                  cadastro nacional, relatórios da PNSB, articulação com órgãos estaduais de
+                  recursos hídricos. Portal:
+                  <a href="https://www.snisb.gov.br/" target="_blank" rel="noopener noreferrer">snisb.gov.br</a>.
+                </li>
+                <li>
+                  <strong>ANEEL — barragens associadas à geração hidrelétrica:</strong>
+                  fiscalização setorial no segmento elétrico (complementar à PNSB; ver atos
+                  ANEEL e interface com órgãos estaduais quando couber).
+                </li>
+                <li>
+                  <strong>Órgãos estaduais / Sisnama / Defesa Civil:</strong> licenciamento
+                  ambiental, planos de contingência municipais, resposta a desastres e
+                  articulação com PAE/PAEBM.
+                </li>
+              </ul>
+              <p>
+                Competência <em>não é</em> “um PDF único”. Empreendedor com barragem de
+                rejeitos responde à ANM; com barragem de água multiúso, à ANA/órgão estadual;
+                com UHE, à ANEEL — e, em todos os casos, a obrigações de emergência e a
+                interface com municípios. O engenheiro SST precisa saber
+                <strong>qual órgão manda na estrutura</strong> antes de misturar checklists.
+              </p>
+            </section>
+
+            <section id="instrumentos" aria-labelledby="h-inst">
+              <h2 id="h-inst">Instrumentos: classificação, planos, declarações e sistemas</h2>
+              <dl>
+                <dt>CRI e DPA</dt>
+                <dd>
+                  <strong>Categoria de Risco (CRI)</strong> reflete aspectos que influenciam a
+                  probabilidade de acidente (características técnicas, estado de conservação,
+                  método construtivo, atendimento ao PSB etc.).
+                  <strong>Dano Potencial Associado (DPA)</strong> gradua consequências
+                  potenciais (vidas, impactos sociais, econômicos e ambientais),
+                  independentemente da probabilidade. Ambos orientam periodicidade de
+                  revisões, monitoramento e exigências de PAEBM.
+                </dd>
+                <dt>PSB — Plano de Segurança da Barragem</dt>
+                <dd>
+                  Repositório vivo de dados, procedimentos, registros, RPSB, PAEBM e gestão
+                  de risco. Não é pasta morta: alimenta inspeções, DCE e decisões de
+                  operação/descaracterização.
+                </dd>
+                <dt>PAE / PAEBM</dt>
+                <dd>
+                  Plano de Ação de Emergência (PAE) na PNSB; na mineração, tipicamente
+                  <strong>PAEBM</strong> — cenários, fluxos de notificação, mapa de inundação,
+                  ZAS/ZSS, sirenes, simulados e articulação com Defesa Civil.
+                </dd>
+                <dt>DCE — Declaração de Condição de Estabilidade</dt>
+                <dd>
+                  Declaração periódica (empreendedor + responsável técnico) sobre condição de
+                  estabilidade, com ART — eixo de accountability no SIGBM (prazos e
+                  consequências no regulamento ANM vigente).
+                </dd>
+                <dt>SIGBM e SNISB</dt>
+                <dd>
+                  <strong>SIGBM</strong>: sistema ANM para gestão/cadastro de barragens de
+                  mineração (extratos de inspeção, DCE, mapas etc.).
+                  <strong>SNISB</strong>: Sistema Nacional de Informações sobre Segurança de
+                  Barragens (visão PNSB / ANA e órgãos).
+                </dd>
+                <dt>Mapa de inundação</dt>
+                <dd>
+                  Produto do estudo de ruptura hipotética: delimita áreas afetadas, tempos de
+                  chegada, ZAS e ZSS — base do PAEBM e da classificação de DPA.
+                </dd>
+                <dt>Descaracterização e alteamento a montante</dt>
+                <dd>
+                  A disciplina ANM <strong>proíbe</strong> construção/alteamento a montante e
+                  exige caminhos de descaracterização (descomissionamento, controle
+                  hidrológico, estabilização, monitoramento) para estruturas que deixam de
+                  exercer função de barragem. Detalhe e prazos: texto vigente (95/2022 e
+                  transição 220/2025).
+                </dd>
+              </dl>
+            </section>
+
+            <section id="normas" aria-labelledby="h-normas">
+              <h2 id="h-normas">Normas técnicas setoriais e internacionais</h2>
+              <p>
+                Normas ABNT são <strong>títulos</strong> — obtenha pelo
+                <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                (ou convênio Confea/Crea quando aplicável). Este site
+                <strong>não</strong> hospeda nem linka PDF pirateado.
+              </p>
+              <ul>
+                <li>
+                  <strong>ABNT NBR 13028</strong> (família / revisões): elaboração e
+                  apresentação de projetos e avaliação de segurança de estruturas para
+                  disposição de rejeitos, sedimentos e reservação de água em mineração —
+                  consulte o catálogo pela numeração vigente (partes/edições atualizadas).
+                </li>
+                <li>
+                  <strong>ABNT NBR 17188</strong>: diretrizes para estudos de ruptura
+                  hipotética de barragens — título de referência crescente nos atos ANM;
+                  consulte o catálogo.
+                </li>
+                <li>
+                  <strong>ISO 31000</strong> (gestão de riscos): título de referência para
+                  processo de risco — não substitui PSB/PAEBM nem fator de segurança geotécnico.
+                </li>
+                <li>
+                  <strong>GISTM / ICMM</strong> — <em>Global Industry Standard on Tailings
+                  Management</em>: padrão industrial internacional pós-Brumadinho (ICMM/UNEP/PRI).
+                  Hub oficial:
+                  <a href="https://www.icmm.com/our-principles/gistm" target="_blank" rel="noopener noreferrer">icmm.com · GISTM</a>.
+                  É padrão de indústria — <strong>não</strong> revoga Lei/Resolução ANM no Brasil.
+                </li>
+                <li>
+                  <strong>NR-22</strong>: interface de SST na mineração (acesso oficial via
+                  <a href="../nrs.html#acesso-nrs">hub de NRs</a>). Complementa; não dispensa
+                  instrumentos da PNSB/ANM.
+                </li>
+              </ul>
+            </section>
+
+            <section id="acidentes" aria-labelledby="h-acid">
+              <h2 id="h-acid">Acidentes históricos (com fontes)</h2>
+              <p>
+                Casos abaixo são <strong>síntese didática</strong>. Números de vítimas e
+                conclusões técnicas seguem a formulação “conforme [fonte]”. Não inventamos
+                desfechos judiciais finais.
+              </p>
+
+              <h3>Pequeno/médio (BR) — Herculano / Itabirito · 10/09/2014</h3>
+              <p>
+                Conforme notícia do
+                <a href="https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/justica-decide-que-diretores-da-mineradora-herculano-devem-ser-julgados-pelo-tribunal-do-juri-por-mortes-ocorridas-em-rompimento-de-barragem.shtml" target="_blank" rel="noopener noreferrer">MPMG</a>
+                e cobertura de
+                <a href="https://www.otempo.com.br/cidades/diretores-de-mineradora-vao-a-juri-por-rompimento-que-matou-tres-em-itabirito-1.2719336" target="_blank" rel="noopener noreferrer">O Tempo</a>,
+                o rompimento em 10/09/2014 no complexo Mina Retiro do Sapecado (Itabirito/MG),
+                associado à Herculano Mineração, envolveu o escorregamento de cerca de
+                <strong>300 mil m³</strong> de rejeitos e a morte de
+                <strong>três trabalhadores</strong> que atuavam na estrutura. Em escala, o
+                volume e o número de vítimas são menores que Fundão e Brumadinho — mas o
+                padrão de falha (trabalhadores expostos na estrutura + gestão precária
+                alegada pelo MP) já sinalizava o custo humano de barreiras frágeis
+                <em>antes</em> das tragédias de 2015 e 2019.
+              </p>
+
+              <h3>Grande (BR) — Fundão / Mariana · 05/11/2015</h3>
+              <p>
+                O rompimento da barragem de Fundão (Samarco) em Mariana/MG é referido por
+                órgãos oficiais e fontes reputáveis como tragédia com
+                <strong>19 mortes</strong> e devastação socioambiental ao longo da bacia do
+                Rio Doce (ex.:
+                <a href="https://www.saude.mg.gov.br/desastreriodoce/" target="_blank" rel="noopener noreferrer">SES-MG · Desastre Rio Doce</a>).
+                O <em>Fundão Tailings Dam Review Panel</em> (painel presidido por
+                Norbert&nbsp;R. Morgenstern) concluiu, em alto nível, que a falha ocorreu como
+                <strong>liquefaction flowslide</strong> associada a uma cadeia de condições e
+                eventos (incluindo extrusão de <em>slimes</em> e saturação/rearranjo de
+                areias), conforme resumo público do relatório — ver página estável
+                <a href="https://www.resolutionmineeis.us/documents/fundao-2016" target="_blank" rel="noopener noreferrer">Resolution Mine EIS · Fundão 2016</a>
+                e registro em
+                <a href="https://damsafety.org/content/report-immediate-causes-failure-fund%C3%A3o-dam" target="_blank" rel="noopener noreferrer">ASDSO / damsafety.org</a>.
+                No plano de política pública, Fundão acelerou o debate que culminaria na
+                Lei&nbsp;14.066/2020 e no endurecimento infralegal (contexto PNSB/Planalto).
+              </p>
+
+              <h3>Grande (BR) — Brumadinho B1 · 25/01/2019</h3>
+              <p>
+                O rompimento da Barragem&nbsp;1 da Mina Córrego do Feijão (Vale) em
+                Brumadinho/MG é associado, conforme cobertura de imprensa majoritária e
+                comunicação recente sobre o encerramento das buscas, a
+                <strong>cerca de 270 mortes</strong> (contagem frequentemente citada pelo
+                governo de Minas / reportagens como
+                <a href="https://g1.globo.com/mg/minas-gerais/noticia/2026/01/25/brumadinho-apos-sete-anos-bombeiros-encerram-buscas-por-vitimas-da-tragedia-duas-pessoas-nao-foram-encontradas.ghtml" target="_blank" rel="noopener noreferrer">G1, 25/01/2026</a>
+                — “270 pessoas mortas”; associações de familiares às vezes contabilizam 272
+                ao incluir nascituros). Em termos técnicos de SST e emergência, o caso
+                ilustra falha catastrófica com trabalhadores e instalações a jusante na
+                trajetória da lama. Análise CIMNE/MPF disponível publicamente via
+                <a href="https://www.conjur.com.br/dl/re/relatorio-brumadinho.pdf" target="_blank" rel="noopener noreferrer">PDF hospedado em ConJur</a>
+                (cite o documento; não o trate como norma). Brumadinho também catalisou o
+                GISTM/ICMM no plano internacional.
+              </p>
+
+              <h3>Internacional grande — Vajont · 09/10/1963</h3>
+              <p>
+                O desastre de Vajont (Itália) envolveu deslizamento massivo no reservatório e
+                onda sobre a barragem, com devastação a jusante. Registros de memória e
+                análise histórica:
+                <a href="https://www.unesco.org/en/memory-world/criminal-proceedings-vajont-dam-disaster" target="_blank" rel="noopener noreferrer">UNESCO Memory of the World · proceedings Vajont</a>
+                e
+                <a href="https://www.environmentandsociety.org/arcadia/expecting-disaster-1963-landslide-vajont-dam" target="_blank" rel="noopener noreferrer">Environment &amp; Society Portal · Arcadia</a>.
+                Lição clássica: estabilidade da encosta e do sistema reservatório–vale pode
+                ser tão crítica quanto o maciço da barragem.
+              </p>
+
+              <h3>Internacional (água) — Teton Dam (EUA) · 05/06/1976</h3>
+              <p>
+                A falha da Teton Dam (Idaho) durante o primeiro enchimento é estudo de caso
+                clássico de erosão interna/piping em aterro. Conforme
+                <a href="https://damfailures.org/case-study/teton-dam-idaho-1976" target="_blank" rel="noopener noreferrer">damfailures.org · Teton Dam</a>
+                e materiais do
+                <a href="https://www.usbr.gov/pn/snakeriver/dams/uppersnake/teton/index.html" target="_blank" rel="noopener noreferrer">U.S. Bureau of Reclamation</a>,
+                o colapso causou mortes (ordem de grandeza citada nas fontes: cerca de 11)
+                e danos materiais extensos. Lição: fundação, filtros/drenagem e preenchimento
+                controlado não são detalhes — são barreiras.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: Bow-Tie, liquefação e Safety by Design</h2>
+              <p>
+                Em linguagem Bow-Tie (ameaça → evento topo → consequências), o evento topo
+                típico é <strong>perda de contenção / ruptura com liberação incontrolável</strong>.
+                Barreiras preventivas à esquerda: investigação geotécnica, drenagem e filtros,
+                controle de alteamento, monitoramento (piezômetros, deslocamentos, vazões),
+                fatores de segurança, inspeções, DCE honesta, proibição/remoção de método a
+                montante. Barreiras mitigadoras à direita: PAE/PAEBM operacional, sirenes e
+                redundância, mapa de inundação atualizado, ZAS sem ocupação indevida,
+                simulados, articulação Defesa Civil, centros de monitoramento.
+              </p>
+              <p>
+                <strong>Liquefação</strong> (em rejeitos saturados fofos) é mecanismo em que
+                o material perde resistência de forma abrupta e flui — exatamente o tipo de
+                falha discutido no painel Morgenstern para Fundão. Monitorar “só o fator de
+                segurança drenado de ontem” sem olhar saturação, drenagem, susceptibilidade
+                não drenada e alterações de geometria é barreira ilusória.
+              </p>
+              <p>
+                <strong>Safety by Design / Prevention through Design</strong> aplica-se aqui
+                com força: eliminar alteamento a montante, não colocar refeitório/escritório
+                na ZAS, projetar drenagem e instrumentação desde o dia zero, descaracterizar
+                em vez de “empilhar risco”. Diálogo com o artigo
+                <a href="esg-ehs-safety-by-design.html">ESG / EHS e Safety by Design (#24)</a>:
+                métrica e relatório sem decisão de projeto é cosmética — em barragem, cosmética
+                mata.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema SVG: PNSB → PSB → PAE → monitoramento</h2>
+              <figure class="article-figure">
+                <div class="svg-wrap" role="img" aria-label="Diagrama em camadas: PNSB, classificação CRI/DPA, PSB, PAE/PAEBM, monitoramento e emergência ZAS">
+                  <svg viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrowB" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                        <path d="M0,0 L8,3 L0,6 Z" fill="#f0c674"/>
+                      </marker>
+                    </defs>
+                    <rect width="960" height="720" fill="#0b1f2a" rx="16"/>
+                    <text x="480" y="36" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Camadas de segurança de barragens · SafeEng</text>
+                    <text x="480" y="58" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">PNSB → classificação → PSB → PAE/PAEBM → monitoramento / emergência</text>
+
+                    <rect x="60" y="80" width="840" height="70" rx="12" fill="#0f766e"/>
+                    <text x="480" y="110" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">1 · PNSB (Lei 12.334 / 14.066) + CNRH</text>
+                    <text x="480" y="132" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">política nacional · instrumentos · competências</text>
+
+                    <path d="M480 150 V168" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrowB)"/>
+
+                    <rect x="60" y="170" width="400" height="90" rx="12" fill="#1d4ed8"/>
+                    <text x="260" y="205" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2a · CRI</text>
+                    <text x="260" y="228" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="12">categoria de risco</text>
+                    <text x="260" y="248" text-anchor="middle" fill="#93c5fd" font-family="system-ui,sans-serif" font-size="11">técnico · conservação · método</text>
+
+                    <rect x="500" y="170" width="400" height="90" rx="12" fill="#1d4ed8"/>
+                    <text x="700" y="205" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2b · DPA</text>
+                    <text x="700" y="228" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="12">dano potencial associado</text>
+                    <text x="700" y="248" text-anchor="middle" fill="#93c5fd" font-family="system-ui,sans-serif" font-size="11">vidas · social · ambiental</text>
+
+                    <path d="M260 260 V278" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrowB)"/>
+                    <path d="M700 260 V278" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrowB)"/>
+
+                    <rect x="60" y="280" width="840" height="70" rx="12" fill="#b45309" stroke="#f0c674" stroke-width="2"/>
+                    <text x="480" y="310" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">3 · PSB (plano vivo) + DCE / RPSB</text>
+                    <text x="480" y="332" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">projeto · inspeções · estabilidade · registros</text>
+
+                    <path d="M480 350 V368" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrowB)"/>
+
+                    <rect x="60" y="370" width="840" height="70" rx="12" fill="#7c3aed"/>
+                    <text x="480" y="400" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">4 · PAE / PAEBM + mapa de inundação (ZAS / ZSS)</text>
+                    <text x="480" y="422" text-anchor="middle" fill="#ddd6fe" font-family="system-ui,sans-serif" font-size="12">sirenes · fluxos · simulados · Defesa Civil</text>
+
+                    <path d="M480 440 V458" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrowB)"/>
+
+                    <rect x="60" y="460" width="400" height="100" rx="12" fill="#134e4a"/>
+                    <text x="260" y="500" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">5a · Monitoramento</text>
+                    <text x="260" y="524" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">instrumentação · SIGBM</text>
+                    <text x="260" y="544" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">inspeção · anomalias</text>
+
+                    <rect x="500" y="460" width="400" height="100" rx="12" fill="#7f1d1d"/>
+                    <text x="700" y="500" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">5b · Emergência</text>
+                    <text x="700" y="524" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">NE1–NE3 · autossalvamento</text>
+                    <text x="700" y="544" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">evacuação · RCCA</text>
+
+                    <rect x="60" y="590" width="840" height="100" rx="14" fill="#065f46"/>
+                    <text x="480" y="625" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Competências: ANM (mineração) · ANA/SNISB (água / PNSB) · ANEEL (hidro) · estados / Defesa Civil</text>
+                    <text x="480" y="652" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">SST (NR-1 / NR-22) integra exposição ocupacional — não substitui PSB/PAEBM</text>
+                    <text x="480" y="674" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">Diagrama didático SafeEng — não é organograma oficial ANM/ANA/ANEEL</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  Camada normativa (PNSB/CNRH) → classificação CRI/DPA → PSB e DCE →
+                  PAE/PAEBM com mapa e ZAS → monitoramento (SIGBM) e resposta de emergência.
+                  Competências setoriais na base; SST ocupa a exposição ocupacional sem
+                  substituir o plano da barragem.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais nem processos judiciais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · DCE “verde” com barreira morta</p>
+                <h3>“A declaração de estabilidade foi enviada no prazo — o piezômetro crítico está sem leitura há 40 dias e a drenagem está entupida”</h3>
+                <p>
+                  O SIGBM recebe DCE atestando estabilidade. Em campo, instrumentação crítica
+                  falhou, FIR marca anomalias recorrentes e a equipe de SST não foi informada
+                  sobre restrição de acesso a jusante. O PAEBM existe em PDF vermelho na
+                  estante.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> declaração sem monitoramento vivo é
+                  cosmética de compliance. Barreira preventiva (instrumentação/drenagem) e
+                  mitigadora (PAEBM) falharam juntas.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · ZAS com “área de vivência necessária”</p>
+                <h3>“O refeitório e o ambulatório ficaram na ZAS porque ‘sempre foi assim’ e o alteamento a montante ainda aguarda descaracterização”</h3>
+                <p>
+                  Trabalhadores próprios e terceiros almoçam na trajetória da mancha. Sirenes
+                  existem, mas o último simulado foi cancelado. O inventário GRO cita “risco
+                  de inundação” sem rota, tempo de chegada nem restrição de ocupação.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> Safety by Design invertido. ZAS com
+                  vivência é exposição ocupacional e comunitária acumulada — NR-22 e GRO não
+                  apagam a vedação regulatória setorial.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Integração madura PNSB × SST</p>
+                <h3>Mapa de inundação atualizado + PSB vivo + PAEBM treinado + inventário GRO com exposição na estrutura e a jusante</h3>
+                <p>
+                  Classificação CRI/DPA coerente com inspeções. DCE amparada em fatores de
+                  segurança e ensaios. Descaracterização/reforço com plano e monitoramento.
+                  SST restringe acesso, integra simulados, articula terceiros (item de
+                  interação de riscos) e trata liquefação/emergência como perigos reais — não
+                  como anexo ambiental. GISTM, se adotado pela corporação, não substitui ANM:
+                  soma governança.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> engenharia de barreiras + accountability
+                  documental. Relatório ESG só comunica o que o PSB e o GRO já sustentam.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas para engenheiro SST / gestor de risco</h2>
+              <ol>
+                <li><strong>Identifique o órgão fiscalizador da estrutura</strong> (ANM, ANA/estado, ANEEL) antes de montar checklist genérico.</li>
+                <li><strong>Leia a Lei 12.334 e a 14.066</strong> no Planalto; depois o ato setorial vigente (ANM 95/2022 e cronograma da 220/2025).</li>
+                <li><strong>Trate PSB e PAEBM como sistemas vivos</strong> — não como PDF de auditoria anual.</li>
+                <li><strong>Coloque a ZAS no inventário GRO:</strong> quem trabalha lá, tempos de chegada, sirenes, rotas, proibições de vivência.</li>
+                <li><strong>Integre NR-22 e NR-1</strong> à emergência da barragem; não terceirize mentalmente o risco para “o geotécnico”.</li>
+                <li><strong>Desconfie de DCE sem instrumentação e sem anomalias tratadas</strong> — barreira documental ≠ barreira física.</li>
+                <li><strong>Use ABNT só via catálogo oficial</strong> (NBR 13028, NBR 17188); ISO 31000 e GISTM como referência de processo/indústria.</li>
+                <li><strong>Estude casos com fonte:</strong> Herculano (escala menor), Fundão (liquefação/flowslide), Brumadinho (centenas de mortes conforme fontes), Vajont e Teton.</li>
+                <li><strong>Safety by Design:</strong> elimine ocupação indevida a jusante e métodos construtivos proibidos; redesenhe em vez de compensar com EPI.</li>
+                <li><strong>Revalide prazos de transição da Res. ANM 220</strong> no hub oficial antes de qualquer cronograma interno.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> segurança de barragens é gestão de risco de
+                alta consequência. A PNSB fornece o marco; ANM/ANA/ANEEL fiscalizam por
+                tipologia; PSB/PAEBM/DCE/SIGBM são instrumentos — não talismãs. SST entra
+                na exposição humana e na disciplina de barreiras. Sem monitoramento real,
+                sem ZAS respeitada e sem aprendizado dos casos, o próximo inventário será
+                só mais um PDF entre o maciço e a lama.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng
+                  para fins informativos e de debate técnico em SST e gestão de riscos.
+                  <strong>Não constitui</strong> aconselhamento jurídico, parecer, laudo de
+                  estabilidade, ART/RRT, projeto de engenharia, PAEBM pronto, classificação
+                  oficial CRI/DPA nem substituição da responsabilidade do empreendedor ou do
+                  profissional legalmente habilitado. Verifique sempre o texto vigente da
+                  Lei&nbsp;12.334/2010, Lei&nbsp;14.066/2020, atos CNRH, Resoluções ANM
+                  (incluindo <strong>cronogramas de transição da Resolução ANM nº&nbsp;220/2025</strong>),
+                  normas ABNT pelo catálogo oficial, e páginas ANA/SNISB/ANEEL atualizadas.
+                  Números de vítimas e conclusões técnicas foram atribuídos a fontes
+                  citadas — não inventados. Cenários e o diagrama SVG são didáticos e
+                  hipotéticos.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#seguranca-barragens-legislacao-casos">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="esg-ehs-safety-by-design.html">Safety by Design (#24)</a>
+                <a class="btn btn-primary" href="index.html">Índice · série + especiais</a>
+              </p>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <ul>
+                <li>Lei nº 12.334/2010 (PNSB) — <a href="http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12334.htm" target="_blank" rel="noopener noreferrer">Planalto</a></li>
+                <li>Lei nº 14.066/2020 — <a href="http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L14066.htm" target="_blank" rel="noopener noreferrer">Planalto</a></li>
+                <li>Resolução ANM nº 95/2022 (PDF) — <a href="https://www.gov.br/anm/pt-br/assuntos/barragens/legislacao/resolucao-no-95-2022.pdf" target="_blank" rel="noopener noreferrer">gov.br/anm</a></li>
+                <li>Hub ANM barragens — <a href="https://www.gov.br/anm/pt-br/assuntos/barragens" target="_blank" rel="noopener noreferrer">gov.br/anm/assuntos/barragens</a></li>
+                <li>Notícia ANM · Resolução 220/2025 — <a href="https://www.gov.br/anm/pt-br/assuntos/noticias/nova-resolucao-reforca-seguranca-de-barragens-no-pais" target="_blank" rel="noopener noreferrer">Nova resolução reforça segurança…</a></li>
+                <li>CNRH nº 241/2024 (PDF) — <a href="https://www.gov.br/anm/pt-br/assuntos/barragens/legislacao/cnrh-no-241-2024.pdf" target="_blank" rel="noopener noreferrer">gov.br/anm · legislação</a></li>
+                <li>SNISB — <a href="https://www.snisb.gov.br/" target="_blank" rel="noopener noreferrer">snisb.gov.br</a></li>
+                <li>TCU · PNSB — <a href="https://sites.tcu.gov.br/relatorio-de-politicas/politica-nacional-de-seguranca-de-barragens.html" target="_blank" rel="noopener noreferrer">sites.tcu.gov.br</a></li>
+                <li>Curiosidades SST · ANM — <a href="../orgaos-setoriais.html#orgao-anm">orgaos-setoriais.html#orgao-anm</a></li>
+                <li>ABNT Catálogo — <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">abntcatalogo.com.br</a> (NBR 13028; NBR 17188 — títulos)</li>
+                <li>GISTM / ICMM — <a href="https://www.icmm.com/our-principles/gistm" target="_blank" rel="noopener noreferrer">icmm.com/our-principles/gistm</a></li>
+                <li>MPMG · Herculano / júri — <a href="https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/justica-decide-que-diretores-da-mineradora-herculano-devem-ser-julgados-pelo-tribunal-do-juri-por-mortes-ocorridas-em-rompimento-de-barragem.shtml" target="_blank" rel="noopener noreferrer">mpmg.mp.br</a></li>
+                <li>O Tempo · Herculano — <a href="https://www.otempo.com.br/cidades/diretores-de-mineradora-vao-a-juri-por-rompimento-que-matou-tres-em-itabirito-1.2719336" target="_blank" rel="noopener noreferrer">otempo.com.br</a></li>
+                <li>SES-MG · Desastre Rio Doce / Fundão — <a href="https://www.saude.mg.gov.br/desastreriodoce/" target="_blank" rel="noopener noreferrer">saude.mg.gov.br</a></li>
+                <li>Fundão Panel (página pública) — <a href="https://www.resolutionmineeis.us/documents/fundao-2016" target="_blank" rel="noopener noreferrer">resolutionmineeis.us</a></li>
+                <li>ASDSO · Fundão report record — <a href="https://damsafety.org/content/report-immediate-causes-failure-fund%C3%A3o-dam" target="_blank" rel="noopener noreferrer">damsafety.org</a></li>
+                <li>CIMNE/MPF · Brumadinho (PDF) — <a href="https://www.conjur.com.br/dl/re/relatorio-brumadinho.pdf" target="_blank" rel="noopener noreferrer">conjur.com.br/dl/…</a></li>
+                <li>G1 · Brumadinho buscas / 270 mortes — <a href="https://g1.globo.com/mg/minas-gerais/noticia/2026/01/25/brumadinho-apos-sete-anos-bombeiros-encerram-buscas-por-vitimas-da-tragedia-duas-pessoas-nao-foram-encontradas.ghtml" target="_blank" rel="noopener noreferrer">g1.globo.com</a></li>
+                <li>UNESCO · Vajont — <a href="https://www.unesco.org/en/memory-world/criminal-proceedings-vajont-dam-disaster" target="_blank" rel="noopener noreferrer">unesco.org</a></li>
+                <li>Environment &amp; Society · Vajont — <a href="https://www.environmentandsociety.org/arcadia/expecting-disaster-1963-landslide-vajont-dam" target="_blank" rel="noopener noreferrer">environmentandsociety.org</a></li>
+                <li>ASDSO Dam Failures · Teton — <a href="https://damfailures.org/case-study/teton-dam-idaho-1976" target="_blank" rel="noopener noreferrer">damfailures.org</a></li>
+                <li>USBR · Teton — <a href="https://www.usbr.gov/pn/snakeriver/dams/uppersnake/teton/index.html" target="_blank" rel="noopener noreferrer">usbr.gov</a></li>
+                <li>SafeEng · Safety by Design — <a href="esg-ehs-safety-by-design.html">esg-ehs-safety-by-design.html</a></li>
+                <li>NRs oficiais — <a href="../nrs.html#acesso-nrs">nrs.html#acesso-nrs</a></li>
+              </ul>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Especial SafeEng — e a série 24?</h2>
+            <p>Este texto é EXTRA (não substitui slot da série). Explore o teaser em Barragens e estruturas críticas ou envie sugestões a Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../curiosidades.html#tema-barragens-estruturas">Abrir Barragens e estruturas críticas</a>
+            <a class="btn btn-outline" href="../contato.html" style="margin-left:0.5rem">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng (série + especiais)</a></li>
+              <li><a href="../curiosidades.html#seguranca-barragens-legislacao-casos">Teaser · barragens</a></li>
+              <li><a href="../orgaos-setoriais.html#orgao-anm">Órgão ANM</a></li>
+              <li><a href="esg-ehs-safety-by-design.html">#24 Safety by Design</a></li>
+              <li><a href="https://www.gov.br/anm/pt-br/assuntos/barragens" target="_blank" rel="noopener noreferrer">ANM · barragens (oficial)</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../search.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
