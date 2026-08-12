@@ -18,7 +18,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 10 | NR-9 depois do GRO maduro: agentes clássicos ainda importam (e como não sumirem no PGR “mental”) | **Publicado** | [artigo](nr9-gro-maduro-agentes-classicos.html) · [teaser](../curiosidades.html#nr9-gro-maduro-agentes-classicos) |
 | 11 | Terceirizadas e item de interação de riscos: comunicação bidirecional que aguenta fiscalização | **Publicado** | [artigo](terceirizadas-interacao-riscos.html) · [teaser](../curiosidades.html#terceirizadas-interacao-riscos) |
 | 12 | Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar | **Publicado** | [artigo](perigo-externo-risco-evidente.html) · [teaser](../curiosidades.html#perigo-externo-risco-evidente) |
-| 13 | Jornada, turnos e fadiga no inventário do PGR | Pendente | — |
+| 13 | eSocial SST + PGR: inconsistência documental como sinal de fiscalização | **Publicado** | [artigo](esocial-sst-pgr-inconsistencia.html) · [teaser](../curiosidades.html#esocial-sst-pgr-inconsistencia) |
 | 14 | Liderança, autonomia e suporte social como controles organizacionais | Pendente | — |
 | 15 | Terceirização e cadeia de valor: quem gerencia o risco psicossocial? | Pendente | — |
 | 16 | ISO 45003 e alinhamento com a NR-1 (GRO/PGR) | Pendente | — |
@@ -64,7 +64,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Tema publicado em #6: Liderança, metas e jornada como perigo no GRO — registro sem moralismo (briefing 12/08/2026).
 - Home office e teletrabalho (antigo #6) foi para backlog deslocado.
-- Sobreposição parcial com slots #13 (jornada/fadiga) e #14 (liderança/autonomia): permanecem pendentes com foco residual / aprofundamento; #6 cobre o registro no inventário sem moralismo.
+- Sobreposição parcial com backlog de jornada/fadiga (antigo #13, deslocado) e slot #14 (liderança/autonomia): #6 cobre o registro no inventário sem moralismo; #13 publicado como eSocial SST × PGR (12/08/2026).
 - Conecta também o backlog de “sobrecarga cognitiva e metas agressivas” (deslocado do #5).
 
 ## Backlog deslocado do slot #6
@@ -145,6 +145,20 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #12
 
 - Segurança psicológica e clima tóxico: fator de proteção versus perigo *(reagendar em briefing futuro; slot #12 ocupado por perigo externo / risco evidente · levantamento preliminar em 12/08/2026)*
+
+
+
+## Nota editorial slot #13
+
+- Tema publicado em #13: eSocial SST + PGR — inconsistência documental como sinal de fiscalização; alinhamento inventário/controles (NR-1 1.5.7) × eventos MOS S-2210 / S-2220 / S-2240 (briefing 12/08/2026).
+- Bloco editorial **Integração técnica** em `curiosidades.html` (artigos 9+); teaser #13 ao lado de #9–#12.
+- Códigos de evento citados após verificação no MOS S-1.3 consolidado até NO 11/2026 (retificado), cap. 19; não inventar evento/tabela. Tabela 24 = Anexo IV Decreto 3.048/1999 ≠ inventário completo do GRO.
+- O antigo slot #13 (Jornada, turnos e fadiga no inventário do PGR) foi para backlog deslocado.
+- Sobreposição parcial com #3 (PGR×PCMSO) e #20 (documentação auditável): #13 cobre o cruzamento digital eSocial ↔ PGR; #3 permanece na interface saúde mental; #20 pode aprofundar registro/exposição indevida.
+
+## Backlog deslocado do slot #13
+
+- Jornada, turnos e fadiga no inventário do PGR *(reagendar em briefing futuro; slot #13 ocupado por eSocial SST × PGR inconsistência documental em 12/08/2026)*
 
 ## Regra editorial
 

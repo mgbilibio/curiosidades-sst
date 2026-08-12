@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eSocial SST + PGR: inconsistência documental como sinal de fiscalização | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Alinhamento entre inventário/controles do PGR e eventos eSocial SST (S-2210, S-2220, S-2240): inconsistência documental como sinal de fiscalização — leitura SafeEng com MOS e NR-1, por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="eSocial SST + PGR: inconsistência documental como sinal de fiscalização | Margus Giuliano">
+  <meta property="og:description" content="PGR inventário/controles × eventos eSocial SST (S-2210, S-2220, S-2240): coerência documental; inconsistência é sinal de fiscalização — sem inventar código de evento.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Integração técnica">
+  <meta property="article:tag" content="eSocial">
+  <meta property="article:tag" content="SST">
+  <meta property="article:tag" content="PGR">
+  <meta property="article:tag" content="S-2210">
+  <meta property="article:tag" content="S-2220">
+  <meta property="article:tag" content="S-2240">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="Fiscalização">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="eSocial SST + PGR: inconsistência documental como sinal de fiscalização">
+  <meta name="twitter:description" content="MOS S-1.3 + NR-1: alinhar inventário/controles do PGR aos eventos S-2210, S-2220 e S-2240 — inconsistência é bandeira vermelha.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "eSocial SST × PGR"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html#article",
+        "headline": "eSocial SST + PGR: inconsistência documental como sinal de fiscalização",
+        "description": "Leitura SafeEng do alinhamento entre inventário/controles do PGR (NR-1) e eventos eSocial SST S-2210, S-2220 e S-2240 (MOS) — inconsistência documental como sinal de fiscalização, sem inventar código de evento.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["eSocial", "SST", "PGR", "S-2210", "S-2220", "S-2240", "NR-1", "MOS", "fiscalização", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">eSocial SST × PGR</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #13 · Integração técnica</p>
+            <h1>eSocial SST + PGR: inconsistência documental como sinal de fiscalização</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, médicos do trabalho, DP/RH e quem fecha inventário e eventos digitais
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: MOS e o trio SST</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: alinhamento × falsa equivalência</a></li>
+              <li><a href="#esquema">Esquema: PGR ↔ eSocial SST</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Depois do filtro preliminar e das interfaces de inventário (#9–#12), o buraco
+                muda de endereço outra vez: a <strong>coerência entre o PGR que a
+                organização diz gerenciar</strong> e os <strong>eventos de SST que ela
+                declara no eSocial</strong>. Em muita planta, o inventário e o plano de
+                ação vivem no SESMT; o XML mora no DP/RH ou no software de folha. Quando
+                os dois mundos não se falam, a fiscalização — trabalhista, previdenciária
+                ou de inspeção — encontra um sinal clássico: <em>documento A</em> conta
+                uma história de exposição e controle; <em>evento B</em> conta outra.
+              </p>
+              <p>
+                Este artigo #13 SafeEng (bloco <strong>Integração técnica</strong>) lê o
+                alinhamento entre inventário/controles do PGR (NR-1) e os eventos de SST
+                do eSocial — <strong>S-2210</strong>, <strong>S-2220</strong> e
+                <strong>S-2240</strong> — conforme o <strong>Manual de Orientação do
+                eSocial (MOS)</strong> versão S-1.3. Códigos citados aqui foram
+                <strong>verificados</strong> no MOS oficial; não inventamos evento nem
+                tabela. Também não trataremos “inconsistência” como sinônimo de
+                “qualquer diferença de escopo”: o S-2240 <em>não</em> é espelho integral
+                do inventário do PGR. A bandeira vermelha é a
+                <strong>contradição documental</strong>, não a diferença legítima de
+                finalidade. Não é parecer jurídico nem tutorial de XML.
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: MOS cap. 19 e o trio SST</h2>
+              <p>
+                O MOS S-1.3 (consolidado até a NO S-1.3 – 11.2026, retificado) define, no
+                capítulo <strong>19</strong>, os eventos de Segurança e Saúde no Trabalho:
+              </p>
+              <ul>
+                <li>
+                  <strong>S-2210 — Comunicação de Acidente de Trabalho:</strong> envio da
+                  CAT pelo empregador (e figuras equivalentes previstas no MOS).
+                </li>
+                <li>
+                  <strong>S-2220 — Monitoramento da Saúde do Trabalhador:</strong>
+                  acompanhamento da saúde durante o contrato, com informações relativas
+                  aos <strong>ASO</strong> e exames complementares.
+                </li>
+                <li>
+                  <strong>S-2240 — Condições Ambientais do Trabalho - Agentes Nocivos:</strong>
+                  exposição do trabalhador a agentes nocivos conforme a
+                  <strong>Tabela 24</strong> do eSocial; declaração de EPC instalados e
+                  EPI disponibilizados (a informação de EPI no evento
+                  <em>não substitui</em> o registro de entrega exigido nas NRs).
+                </li>
+              </ul>
+              <p>
+                O próprio MOS deixa claro o enquadramento: esses eventos constituem a
+                nova forma de cumprimento das obrigações acessórias referentes à
+                <strong>CAT</strong> e à elaboração/atualização do <strong>PPP</strong>,
+                substituindo formulários anteriores. Há outros eventos com dados que
+                compõem o quadro (ex.: grau de exposição no S-1200; exame toxicológico
+                do motorista profissional no <strong>S-2221</strong>), mas o núcleo SST
+                do cap. 19 é o trio acima — e é nele que a coerência com PGR/PCMSO mais
+                aparece na prática de inspeção.
+              </p>
+              <p>
+                Do lado NR-1, o <strong>PGR</strong> tem inventário de riscos (item
+                <strong>1.5.7</strong>) e plano de ação. O MOS amarra explicitamente o
+                inventário do PGR à declaração de <em>inexistência</em> de riscos
+                físicos/químicos/biológicos previstos no Anexo IV do Decreto 3.048/1999
+                para fins do S-2240 (item 1.6, alínea “c”, do evento). Em SafeEng: o
+                inventário não é “só NR”; ele também é <strong>fonte de verdade</strong>
+                para o que se pode (ou não) declarar no ambiente digital.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Fiscalização cruza mundos:</strong> inventário/plano (NR-1) × ASO/PCMSO (NR-7) × CAT/PPP digitais (eSocial) — inconsistência vira pergunta na visita.</li>
+                <li><strong>Sinal ≠ multa automática:</strong> o ponto SafeEng é engenharia de coerência: se A e B se contradizem, o auditor não precisa “inventar” o buraco.</li>
+                <li><strong>Escopo diferente ≠ incoerência:</strong> Tabela 24 (aposentadoria especial) ≠ inventário completo do GRO; confundir os dois gera tanto omissão indevida quanto “pânico de XML”.</li>
+                <li><strong>Controles também contam:</strong> PGR com EPI/EPC e S-2240 com exposição sem EPC/EPI (ou o inverso sem lastro) é narrativa quebrada.</li>
+                <li><strong>Saúde ocupacional amarra:</strong> S-2220 puxa exames do PCMSO conforme o risco — PCMSO sem lastro no inventário (ou inventário sem eco no ASO) é o buraco do #3 em versão digital.</li>
+                <li><strong>Governança:</strong> SESMT, medicina do trabalho e DP/RH precisam de um único processo de reconciliação — não três verdades paralelas.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática — obrigação, prazo e
+                detalhe de leiaute estão nos textos oficiais vigentes. MOS e manuais de
+                usuário são <em>orientação</em> ao preenchimento; NR e legislação
+                previdenciária/trabalhista prevalecem no mérito.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica" target="_blank" rel="noopener noreferrer">Documentação técnica do eSocial (gov.br)</a>
+                  ·
+                  <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-11-2026-retificada.pdf" target="_blank" rel="noopener noreferrer">MOS S-1.3 consolidado até NO 11/2026 — retificado (PDF)</a>
+                  — cap. <strong>19</strong> (eventos SST: S-2210, S-2220, S-2240); orientações específicas dos eventos (CAT/ASO/agentes nocivos; Tabela 24; vínculo com inventário do PGR no item 1.6 do S-2240)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-orientativa-s-1-3-11-2026.pdf" target="_blank" rel="noopener noreferrer">Nota Orientativa S-1.3 – 11/2026 (PDF)</a>
+                  — alterações incorporadas à consolidação do MOS
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">Página oficial da NR-1 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf" target="_blank" rel="noopener noreferrer">NR-1 atualizada (PDF)</a>
+                  — GRO/PGR; inventário de riscos (<strong>1.5.7</strong>); plano de ação
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — leitura orientativa do inventário e do plano (não substitui a NR)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" target="_blank" rel="noopener noreferrer">Perguntas e Respostas GRO/PGR — maio/2026</a>
+                  — caráter orientativo
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr" target="_blank" rel="noopener noreferrer">Página MTE — Programa de Gerenciamento de Riscos (PGR)</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> não cite código de evento, tabela ou
+                prazo sem abrir o MOS/leiaute vigente. A Tabela 24 lista agentes/atividades
+                do <strong>Anexo IV do Decreto nº 3.048/1999</strong> (aposentadoria
+                especial) — não é catálogo do inventário NR-1. Em tensão entre síntese e
+                texto oficial, <strong>prevalece o oficial</strong>. Confira sempre o PDF
+                atualizado no gov.br/esocial e no gov.br/trabalho-e-emprego.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: alinhamento × falsa equivalência</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>reconciliar PGR ↔ eSocial SST sem forçar espelhamento cego</strong>.
+                O que a fiscalização cheira de longe é contradição; o que o engenheiro
+                precisa dominar é <em>onde</em> os escopos se cruzam e onde divergem por
+                desenho.
+              </p>
+
+              <h3>1) Três eventos, três “verdades” que precisam conversar</h3>
+              <p>
+                Em linguagem de processo:
+              </p>
+              <ul>
+                <li>
+                  <strong>S-2240</strong> fala do <em>ambiente/exposição</em> (agentes da
+                  Tabela 24 + EPC/EPI) — lastro típico em LTCAT/documentos ambientais e,
+                  para ausência de riscos Anexo IV, no inventário do PGR (MOS S-2240 1.6).
+                </li>
+                <li>
+                  <strong>S-2220</strong> fala do <em>monitoramento clínico</em> (ASO e
+                  complementares) — MOS: exames obrigatórios nas NRs e os indicados no
+                  <strong>PCMSO</strong> conforme o risco ao qual o trabalhador está
+                  exposto.
+                </li>
+                <li>
+                  <strong>S-2210</strong> fala do <em>evento adverso</em> (CAT) — acidente
+                  ou doença relacionados ao trabalho, ainda que sem afastamento (orientação
+                  do MOS no evento).
+                </li>
+              </ul>
+              <p>
+                O PGR (inventário + plano) é o mapa de perigos/riscos e controles da
+                organização. Se o mapa diz “ruído relevante + protetor auditivo + EPC X”
+                e o S-2240 diz “09.01.001 — ausência de fator de risco Anexo IV” <em>sem</em>
+                lastro técnico (nível de ação, enquadramento), a narrativa racha. Se o
+                PCMSO pede audiometria por exposição e o S-2220 nunca espelha ASO com esse
+                exame enquanto o inventário insiste no agente, racha de novo.
+              </p>
+
+              <h3>2) S-2240 não é o inventário do PGR (e isso é bom)</h3>
+              <p>
+                Erro clássico de gestão: achar que “tudo que está no PGR tem que ir no
+                S-2240” ou o inverso. O MOS é explícito:
+              </p>
+              <ul>
+                <li>
+                  A Tabela 24 inclui <strong>somente</strong> agentes nocivos e atividades
+                  do Anexo IV do Decreto 3.048/1999 (aposentadoria especial).
+                </li>
+                <li>
+                  Sem exposição a risco da tabela, informa-se o código
+                  <strong>09.01.001</strong> (ausência de fator de risco/atividades do
+                  Anexo IV) — e, nesse caso, o grupo EPC/EPI não é preenchido.
+                </li>
+                <li>
+                  Exemplo didático do MOS: ruído medido abaixo do
+                  <strong>nível de ação</strong> pode justificar 09.01.001 para fins de
+                  PPP/S-2240, <em>ainda que</em> a organização continue gerenciando o
+                  agente no GRO/PGR. O MOS até admite reportar como medida de gestão, mas
+                  não confunde obrigatoriedade previdenciária com inventário trabalhista
+                  completo.
+                </li>
+              </ul>
+              <p>
+                Logo: psicossocial, ergonomia organizacional, muitos agentes abaixo de
+                critérios previdenciários — podem (e devem, quando couber) viver no PGR
+                <strong>sem</strong> “caber” na Tabela 24. Isso <em>não</em> é
+                inconsistência. Inconsistência é inventário afirmando exposição Anexo IV
+                relevante e S-2240 negando sem critério; ou S-2240 afirmando agente e
+                inventário/plano mudos sobre o mesmo posto.
+              </p>
+
+              <h3>3) Controles: o elo que o XML também enxerga</h3>
+              <p>
+                No S-2240, além do agente, declara-se existência de EPC e EPI
+                disponibilizados; o campo de eficácia do EPI ({eficEpi}) avalia se o
+                equipamento neutraliza a exposição informada. No PGR, hierarquia de
+                controles e plano de ação descrevem o que a organização
+                <em>disse que faz</em>. Quando o plano jura EPC e o evento declara
+                exposição sem EPC (ou EPI “eficaz” sem lastro de entrega/treinamento —
+                lembrando que o MOS diz que o evento <strong>não substitui</strong> o
+                registro de entrega), a inspeção ganha roteiro pronto. SafeEng: controle
+                no papel do PGR precisa ter eco verificável no processo <em>e</em> no que
+                se declara quando a exposição Anexo IV existe.
+              </p>
+
+              <h3>4) S-2220 e o PCMSO: risco → exame → ASO → evento</h3>
+              <p>
+                O MOS amarra o S-2220 ao ASO (documento administrativo, fonte do evento)
+                e aos exames do PCMSO conforme o risco. A série já tratou o buraco
+                PGR × PCMSO (#3). Em versão digital: se o inventário/PCMSO prevê
+                monitoramento por agente X e os ASO/S-2220 nunca refletem a família de
+                exames — ou refletem exames “órfãos” sem risco correspondente — a
+                inconsistência documental escala do dossiê para a base federal.
+              </p>
+
+              <h3>5) S-2210 como termômetro de narrativa</h3>
+              <p>
+                CAT recorrente de um posto/agente que o inventário classifica como
+                “inexistente” ou “sob controle total” sem plano vivo é sinal de gestão
+                (e de fiscalização). O inverso também: inventário inflamado de risco grave
+                e zero aprendizado pós-CAT. O eSocial não inventa a investigação; ele
+                torna o padrão <em>visível</em> e cruzável.
+              </p>
+
+              <h3>6) Comparativo rápido</h3>
+              <div class="compare-grid" role="group" aria-label="Comparativo alinhamento maduro versus silos documentais">
+                <div class="compare-card compare-ok">
+                  <h3>Alinhamento que aguenta cruzamento</h3>
+                  <ul>
+                    <li>Inventário PGR como fonte para ausência/exposição Anexo IV (S-2240)</li>
+                    <li>PCMSO/ASO coerentes com riscos → S-2220</li>
+                    <li>CAT (S-2210) alimenta revisão de inventário/plano</li>
+                    <li>EPC/EPI declarados com lastro de processo (NR-6 etc.)</li>
+                    <li>Diferença de escopo Tabela 24 × GRO explicada e documentada</li>
+                    <li>SESMT + medicina + DP/RH no mesmo ciclo de reconciliação</li>
+                  </ul>
+                </div>
+                <div class="compare-card compare-no">
+                  <h3>Teatro de silos (sinal de fiscalização)</h3>
+                  <ul>
+                    <li>PGR “rico” e S-2240 eterno 09.01.001 sem critério</li>
+                    <li>Exames no PCMSO sem eco no ASO/S-2220 (ou o inverso)</li>
+                    <li>CATs sem gatilho de revisão do inventário</li>
+                    <li>Controle no plano, vazio no evento (ou eficácia de papel)</li>
+                    <li>“Tudo no XML” = inventário; “nada no XML” = sumiu do GRO</li>
+                    <li>Três donos, três verdades, zero ata de reconciliação</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: PGR ↔ eSocial SST (coerência sem falsa equivalência)</h2>
+              <figure class="article-figure" aria-labelledby="fig-eso-cap">
+                <figcaption id="fig-eso-cap" class="article-figure-cap">
+                  SafeEng / NR-1 + MOS: inventário e controles do PGR alimentam (e devem reconciliar) S-2240, S-2220 e S-2210 — Tabela 24 ≠ inventário completo; contradição documental é o sinal.
+                </figcaption>
+                <div class="flow-diagram" role="img" aria-label="Diagrama de alinhamento entre PGR e eventos eSocial SST">
+                  <svg viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#0d7377"/>
+                      </marker>
+                      <marker id="arrow13a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#d97706"/>
+                      </marker>
+                    </defs>
+
+                    <rect x="40" y="16" width="880" height="52" rx="12" fill="#0b1f2a"/>
+                    <text x="480" y="38" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">NR-1 · PGR (inventário + plano)  ↔  eSocial SST (MOS cap. 19)</text>
+                    <text x="480" y="56" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12">coerência documental · sem espelhar cegamente a Tabela 24</text>
+
+                    <rect x="48" y="90" width="420" height="150" rx="12" fill="#0d7377"/>
+                    <text x="258" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">PGR / GRO (NR-1)</text>
+                    <text x="258" y="148" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="12">Inventário 1.5.7 · perigos e riscos</text>
+                    <text x="258" y="170" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="12">Plano de ação · hierarquia de controles</text>
+                    <text x="258" y="192" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">PCMSO (NR-7) alinhado aos riscos</text>
+                    <text x="258" y="214" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">Evidência de método e revisão</text>
+
+                    <rect x="492" y="90" width="420" height="150" rx="12" fill="#134e4a"/>
+                    <text x="702" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">eSocial · eventos SST</text>
+                    <text x="702" y="148" text-anchor="middle" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="12">S-2240 · agentes Tabela 24 + EPC/EPI</text>
+                    <text x="702" y="170" text-anchor="middle" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="12">S-2220 · ASO / monitoramento</text>
+                    <text x="702" y="192" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">S-2210 · CAT</text>
+                    <text x="702" y="214" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">histórico PPP / obrigações acessórias</text>
+
+                    <line x1="468" y1="165" x2="492" y2="165" stroke="#d97706" stroke-width="3" marker-end="url(#arrow13a)"/>
+                    <line x1="492" y1="185" x2="468" y2="185" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow13)"/>
+
+                    <rect x="80" y="268" width="800" height="70" rx="12" fill="#0b1f2a"/>
+                    <text x="480" y="298" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Zona de cruzamento (sinal se rachar)</text>
+                    <text x="480" y="320" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12">exposição Anexo IV · exames do PCMSO · CAT × posto · EPC/EPI declarados</text>
+
+                    <rect x="48" y="360" width="420" height="120" rx="12" fill="#065f46"/>
+                    <text x="258" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Diferença legítima de escopo</text>
+                    <text x="258" y="416" text-anchor="middle" fill="#d1fae5" font-family="system-ui,sans-serif" font-size="12">psicossocial / ergonomia no PGR</text>
+                    <text x="258" y="438" text-anchor="middle" fill="#d1fae5" font-family="system-ui,sans-serif" font-size="12">ruído &lt; nível de ação → 09.01.001 ok</text>
+                    <text x="258" y="460" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">Tabela 24 ≠ inventário completo</text>
+
+                    <rect x="492" y="360" width="420" height="120" rx="12" fill="#9a3412"/>
+                    <text x="702" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Contradição = bandeira</text>
+                    <text x="702" y="416" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">PGR afirma Anexo IV · S-2240 nega</text>
+                    <text x="702" y="438" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">PCMSO/ASO ≠ risco do inventário</text>
+                    <text x="702" y="460" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="12">CAT recorrente · plano mudo</text>
+
+                    <rect x="80" y="506" width="800" height="56" rx="12" fill="#134e4a"/>
+                    <text x="480" y="530" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Processo SafeEng: inventário → critérios Tabela 24 / PCMSO → XML → revisão pós-CAT</text>
+                    <text x="480" y="550" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">uma narrativa · três eventos · um ciclo de reconciliação</text>
+
+                    <rect x="100" y="580" width="760" height="44" rx="12" fill="#7f1d1d"/>
+                    <text x="480" y="608" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Armadilha: silos SESMT × DP · “09.01.001 eterno” · XML sem lastro no PGR</text>
+                  </svg>
+                </div>
+              </figure>
+              <p>
+                Leitura de engenharia: a seta âmbar é o que o PGR <em>empurra</em> para o
+                digital; a seta teal é o retorno (CAT, ASO, críticas de preenchimento) que
+                deve realimentar inventário e plano. O cartão verde é diferença legítima;
+                o cartão terracota é o sinal de fiscalização.
+              </p>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Inventário rico × S-2240 “zerado”</p>
+                <h3>“No PGR tem químico e ruído; no eSocial é sempre 09.01.001”</h3>
+                <p>
+                  A organização mantém inventário com postos de pintura (solventes) e
+                  utilidades (ruído com NEN acima do nível de ação), plano de ação com
+                  ventilação e audiometria no PCMSO. O DP envia S-2240 em massa com código
+                  09.01.001 “para não complicar aposentadoria”. Não há ata de critério
+                  técnico nem laudo que sustente a ausência Anexo IV.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> contradição documental clássica. O MOS
+                  liga a declaração de inexistência de riscos físicos/químicos/biológicos
+                  do Anexo IV ao inventário do PGR (1.5.7) quando for o caso — não a um
+                  atalho de folha. Aqui o sinal de fiscalização escreve sozinho.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · PCMSO/ASO órfãos do mapa de risco</p>
+                <h3>“Exame vai no S-2220; o risco ‘não está’ no inventário daquele GHE”</h3>
+                <p>
+                  Medicina do trabalho envia S-2220 com ASO e bateria de exames típicos de
+                  exposição a agente biológico em área assistencial. O inventário do PGR
+                  daquele GHE omite o agente (ou o trata como “risco genérico de
+                  hospital” sem posto). O S-2240, quando enviado, não reflete a exposição
+                  qualitativa efetiva que o MOS exemplifica para contato com pacientes.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> o trio rachou no meio. S-2220 puxa
+                  exames do PCMSO conforme o risco; se o risco não está no inventário (ou
+                  no S-2240 quando Anexo IV couber), a narrativa digital e a trabalhista
+                  se desencontram — eco do buraco PGR × PCMSO (#3), agora cruzável na base.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Reconciliação madura (diferença legítima)</p>
+                <h3>PGR completo; S-2240 só onde a Tabela 24 pede; CAT revisa o plano</h3>
+                <p>
+                  Inventário cobre psicossocial, ergonomia, ruído abaixo do nível de ação
+                  e um posto com calor acima dos critérios aplicáveis. O S-2240 registra o
+                  calor (Tabela 24) com EPC/EPI e lastro; para o ruído abaixo do nível de
+                  ação, 09.01.001 com critério documentado (exemplo alinhado ao MOS);
+                  psicossocial permanece só no GRO/PGR. ASOs do S-2220 batem com o PCMSO.
+                  Uma CAT (S-2210) em posto auxiliar dispara revisão do inventário e
+                  atualização do S-2240 na janela de alteração.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> alinhamento sem falsa equivalência.
+                  Diferença de escopo explicada; cruzamento saúde–ambiente–evento adverso
+                  fechando o ciclo. Isso é o oposto do teatro de silos.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Mapeie o trio SST do MOS:</strong> S-2210 (CAT), S-2220 (ASO), S-2240 (agentes Tabela 24 + EPC/EPI) — não invente código.</li>
+                <li><strong>Use o inventário 1.5.7 como fonte:</strong> sobretudo para sustentar ausência/exposição Anexo IV no S-2240 (MOS 1.6).</li>
+                <li><strong>Separe escopo:</strong> PGR (GRO completo) ≠ Tabela 24 (aposentadoria especial). Documente o critério da diferença.</li>
+                <li><strong>Reconcilie PCMSO ↔ S-2220:</strong> exames indicados pelo risco precisam ecoar no ASO/evento — sem prontuário clínico no XML.</li>
+                <li><strong>Trate CAT como gatilho de revisão:</strong> S-2210 que não mexe em inventário/plano é sinal de gestão oca.</li>
+                <li><strong>Controle declarado = controle verificável:</strong> EPC/EPI no evento com lastro de processo; entrega de EPI continua nas NRs.</li>
+                <li><strong>Quebre o silo SESMT × DP/RH:</strong> um ciclo periódico de conferência PGR/PCMSO × base eSocial antes da inspeção achar por você.</li>
+                <li><strong>Cuidado com 09.01.001 “eterno”:</strong> só com lastro (incl. nível de ação / inexistência no inventário quando aplicável).</li>
+                <li><strong>Cite o oficial na dúvida:</strong> MOS S-1.3 vigente, leiautes/NT, NR-1 1.5.7, Manual GRO/PGR — prevalece o texto oficial.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> eSocial SST e PGR não são sistemas rivais —
+                são <strong>duas faces da mesma narrativa de risco</strong>. O MOS fixa o
+                trio S-2210 / S-2220 / S-2240 e até amarra o inventário do PGR à declaração
+                de ausência de riscos Anexo IV. A NR-1 exige inventário e plano vivos. Na
+                linha SafeEng: alinhe o que você gerencia ao que você declara; preserve a
+                diferença legítima de escopo; mate a contradição documental — porque
+                inconsistência, para a fiscalização, já é sinal.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral do MOS/leiautes/Notas Técnicas e Orientativas do eSocial,
+                  da NR-1 (em especial o inventário e o plano do PGR), do Manual GRO/PGR, do
+                  Q&amp;A, da NR-7/PCMSO, da legislação previdenciária aplicável (incl. Decreto
+                  3.048/1999 e atos do INSS citados pelo MOS) nem de outros atos oficiais
+                  vigentes. Também <strong>não constitui</strong> aconselhamento jurídico,
+                  parecer previdenciário, configuração de software, inventário pronto, LTCAT,
+                  PPP, CAT, ASO ou substituição da responsabilidade da organização.
+                  Códigos de evento e de tabela foram citados com base no MOS S-1.3
+                  consolidado até a NO 11/2026 (retificado); confira sempre a versão vigente
+                  no gov.br/esocial — leiautes e tabelas mudam. Cenários são didáticos e
+                  hipotéticos. Verifique os PDFs oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#esocial-sst-pgr-inconsistencia">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="perigo-externo-risco-evidente.html">Artigo #12</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a GRO/PGR, eSocial SST, inventário e integração técnica para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="perigo-externo-risco-evidente.html">#12 Perigo externo · risco evidente</a></li>
+              <li><a href="../curiosidades.html#esocial-sst-pgr-inconsistencia">Teaser eSocial SST × PGR</a></li>
+              <li><a href="../curiosidades.html#tema-integracao-tecnica">Integração técnica</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
