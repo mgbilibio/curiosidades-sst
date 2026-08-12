@@ -26,7 +26,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 18 | NR-18 / OIT construção: o que o Code of Practice internacional acrescenta ao canteiro brasileiro | **Publicado** | [artigo](nr18-oit-construcao.html) · [teaser](../curiosidades.html#nr18-oit-construcao) |
 | 19 | Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás | **Publicado** | [artigo](nr33-espaco-confinado-analise-risco.html) · [teaser](../curiosidades.html#nr33-espaco-confinado-analise-risco) |
 | 20 | Incêndio (NR-23) vs IT do Corpo de Bombeiros: NR federal não fecha o projeto sozinha | **Publicado** | [artigo](nr23-incendio-vs-bombeiros.html) · [teaser](../curiosidades.html#nr23-incendio-vs-bombeiros) |
-| 21 | Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico | Pendente | — |
+| 21 | IA e checklist digital: antecipação de risco ou só automação de papel? | **Publicado** | [artigo](ia-checklist-digital-risco.html) · [teaser](../curiosidades.html#ia-checklist-digital-risco) |
 | 22 | Integração NR-17 × riscos psicossociais na prática do inventário | Pendente | — |
 | 23 | Revisão do PGR após mudanças: gatilhos psicossociais e de processo | Pendente | — |
 | 24 | Checklist SafeEng: preparar o inventário psicossocial para a vigência 26/05/2026 | Pendente | — |
@@ -254,8 +254,22 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Documentação auditável: o que registrar e o que não expor indevidamente *(reagendar em briefing futuro; slot #20 ocupado por NR-23 / IT Bombeiros / NBR 9077 · NFPA 101 em 12/08/2026)*
 
+
+
+## Nota editorial slot #21
+
+- Tema publicado em #21: IA e checklist digital — antecipação de risco vs automação de papel (briefing 12/08/2026).
+- Abre o bloco editorial **Tendências SafeEng** em `curiosidades.html` (artigos 21–24), após fechar Clássicos 2026 (#15–#20).
+- Fontes: Manual GRO/PGR da NR-1 (2026) para processo; ISO 45001 e ISO/IEC 31010 (IEC 31010) como **títulos + links de compra/consulta** (ISO Store / ABNT) — sem texto pirateado; NR-1 oficial no gov.br.
+- Distinção crítica: checklist digital/IA = borda (cadência · dados · alertas); GRO + hierarquia de controles = núcleo; digitalizar item frágil = automação de papel; sem hype de “previsão de acidente”.
+- O antigo slot #21 (Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico) foi para backlog deslocado.
+
+## Backlog deslocado do slot #21
+
+- Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico *(reagendar em briefing futuro; slot #21 ocupado por IA / checklist digital · automação de papel em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 20–24 até briefing específico de cada tema.
+- Não publicar 22–24 até briefing específico de cada tema.

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IA e checklist digital: antecipação de risco ou só automação de papel? | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Checklist digital e IA podem melhorar cadência e dados, mas não substituem identificação de perigos, hierarquia de controles nem a metodologia do GRO — risco de automação de papel. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/ia-checklist-digital-risco.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="IA e checklist digital · antecipação ou automação de papel? | Margus Giuliano">
+  <meta property="og:description" content="Ferramenta digital/IA melhora cadência e dados; não substitui GRO, hierarquia de controles nem identificação de perigos. Sem hype.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/ia-checklist-digital-risco.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Tendências SafeEng">
+  <meta property="article:tag" content="checklist digital">
+  <meta property="article:tag" content="IA">
+  <meta property="article:tag" content="GRO">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="ISO 45001">
+  <meta property="article:tag" content="ISO/IEC 31010">
+  <meta property="article:tag" content="hierarquia de controles">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IA e checklist digital · SafeEng #21">
+  <meta name="twitter:description" content="Antecipação de risco ou automação de papel? Cadência e dados sim; substituir GRO e hierarquia, não.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/ia-checklist-digital-risco.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IA e checklist digital · risco"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/ia-checklist-digital-risco.html#article",
+        "headline": "IA e checklist digital: antecipação de risco ou só automação de papel?",
+        "description": "Leitura SafeEng: checklist digital e IA podem melhorar cadência e dados, mas não substituem identificação de perigos, hierarquia de controles nem a metodologia do GRO — risco de automação de papel.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/ia-checklist-digital-risco.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["checklist digital", "IA", "GRO", "NR-1", "ISO 45001", "ISO/IEC 31010", "hierarquia de controles", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">IA e checklist digital · risco</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #21 · Tendências SafeEng</p>
+            <h1>IA e checklist digital: antecipação de risco ou só automação de papel?</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura crítica para engenheiros, SESMT e gestores que tratam app, dashboard
+              e “IA de SST” como suporte de processo — não como substituto do GRO
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: ferramenta ≠ método</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: o que digitaliza e o que não</a></li>
+              <li><a href="#esquema">Esquema SVG: GRO no núcleo · app na borda</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Abre o bloco editorial <strong>Tendências SafeEng</strong> (artigos #21–#24).
+                Depois dos clássicos de engenharia de barreiras (#15–#20), a pressão do
+                mercado é outra: <em>digitalizar o checklist, “colocar IA no PGR” e
+                declarar antecipação de risco</em>. Em SafeEng, o ponto crítico é
+                sóbrio: <strong>app, formulário digital e modelo estatístico podem
+                melhorar cadência, rastreio e qualidade de dados</strong> — e
+                <strong>não substituem</strong> identificação de perigos, hierarquia de
+                controles nem a metodologia do GRO descrita no Manual da NR-1.
+              </p>
+              <p>
+                Este artigo #21 ancora no <strong>Manual GRO/PGR da NR-1 (2026)</strong>
+                para o processo, cita <strong>ISO&nbsp;45001</strong> e
+                <strong>ISO/IEC&nbsp;31010</strong> (IEC&nbsp;31010) apenas como
+                <strong>referências de título</strong> (compra/consulta legal — sem texto
+                pirateado) e recusa hype. A pergunta de engenharia é:
+                <strong>a ferramenta está alimentando o ciclo de gestão de riscos — ou
+                só está automatizando o papel que antes ninguém lia?</strong>
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: ferramenta digital ≠ método de gestão de riscos</h2>
+              <ul>
+                <li>
+                  <strong>NR-1 / GRO / PGR (gov.br):</strong> o Gerenciamento de Riscos
+                  Ocupacionais é processo contínuo — levantamento preliminar, identificação
+                  de perigos, avaliação, controle na hierarquia, plano de ação, acompanhamento
+                  e revisão. O PGR documenta; o GRO opera. Texto oficial + Manual — este
+                  site aponta, não substitui.
+                </li>
+                <li>
+                  <strong>Manual GRO/PGR da NR-1 (2026):</strong> enquadra o GRO no PDCA
+                  e deixa claro que evidência, participação, critério e melhoria contínua
+                  não se resumem a “ter documento”. Em SafeEng (#14): processo vivo versus
+                  PDF/app de gaveta.
+                </li>
+                <li>
+                  <strong>ISO&nbsp;45001 (título · compra/consulta):</strong> sistema de
+                  gestão de SSO — liderança, participação, planejamento de riscos/oportunidades,
+                  operação, avaliação de desempenho e melhoria. Útil para estruturar SGSSO;
+                  <em>não</em> é obrigação automática brasileira nem “selo de IA”.
+                  Hub: <a href="../normas-internacionais.html#iso-45001">Normas internacionais · ISO 45001</a>.
+                </li>
+                <li>
+                  <strong>ISO/IEC&nbsp;31010 / IEC&nbsp;31010 (título · compra/consulta):</strong>
+                  catálogo de técnicas de avaliação de risco (HAZOP, Bow-Tie, FMEA, what-if
+                  etc.). Checklist operacional <em>não</em> é técnica de exploração de
+                  cenários. Hub:
+                  <a href="../normas-internacionais.html#iec-31010">Normas internacionais · IEC 31010</a>.
+                </li>
+                <li>
+                  <strong>Checklist digital / “IA de SST”:</strong> no mercado, vão de
+                  formulário mobile com foto e geolocalização a dashboards e sugestões
+                  automatizadas. Em SafeEng: <strong>instrumento de captura e cadência</strong>
+                  — não inventário completo, não hierarquia de controles, não análise de
+                  perigo. Digitalizar o item errado só acelera a falha.
+                </li>
+              </ul>
+              <p>
+                Em SafeEng: <strong>o GRO (NR-1 + Manual) permanece o núcleo metodológico</strong>;
+                <strong>ISO&nbsp;45001 / 31010 entram como títulos de referência</strong>;
+                <strong>checklist digital e IA entram na borda — cadência, dados, alertas</strong>.
+                Confundir borda com núcleo é automação de papel com Wi-Fi.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Cadência sem método vira volume inútil:</strong> mil checklists/dia não corrigem inventário raso nem controle só em EPI.</li>
+                <li><strong>Dados bons exigem pergunta boa:</strong> app que só marca “OK/NOK” sem vínculo a perigo, barreira e plano de ação alimenta dashboard vazio.</li>
+                <li><strong>Hierarquia de controles não cabe num tick:</strong> eliminar/substituir/engenharizar não nasce de “conformidade 98% no app”.</li>
+                <li><strong>IA sem escopo é risco de falsa antecipação:</strong> correlacionar atraso de checklist com “previsão de acidente” sem técnica (31010) e sem validação de campo é narrativa, não engenharia.</li>
+                <li><strong>Auditor e fiscal olham processo:</strong> Manual/NR-1 pedem método e evidência do GRO — não print de ranking de equipes no celular.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática. A NR-1 e o Manual são
+                textos oficiais no gov.br. <strong>Não reproduzimos</strong> texto
+                integral da ISO&nbsp;45001 nem da ISO/IEC&nbsp;31010 — só título e
+                links de compra/consulta.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">NR-1 / GRO / PGR (gov.br / CTPP)</a>
+                  — processo de gerenciamento de riscos ocupacionais (cap. 1.5)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — processo, PDCA, evidências e melhoria contínua (referência de processo deste artigo)
+                </li>
+                <li>
+                  <strong>ISO&nbsp;45001</strong> — Sistemas de gestão de SSO (título)
+                  ·
+                  <a href="https://www.iso.org/store.html" target="_blank" rel="noopener noreferrer">ISO Store</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="../normas-internacionais.html#iso-45001">Normas internacionais · ISO 45001</a>
+                  — sem texto pirateado
+                </li>
+                <li>
+                  <strong>ISO/IEC&nbsp;31010 / IEC&nbsp;31010</strong> — Técnicas de avaliação de riscos (título)
+                  ·
+                  <a href="https://www.iso.org/store.html" target="_blank" rel="noopener noreferrer">ISO Store</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="../normas-internacionais.html#iec-31010">Normas internacionais · IEC 31010</a>
+                  — sem texto pirateado
+                </li>
+                <li>
+                  <a href="../curiosidades.html#manual-nr1-pdca-gro">Artigo #14: Manual NR-1 · PDCA do GRO</a>
+                  ·
+                  <a href="../curiosidades.html#metodologia-pgr">Artigo #2: metodologia no PGR</a>
+                  ·
+                  <a href="../curiosidades.html#nr12-seguranca-funcional-hazop">Artigo #15: NR-12 · HAZOP ≠ checklist</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> citar ISO&nbsp;45001 ou 31010
+                <strong>não</strong> cria obrigação de software, certificação ou
+                “IA homologada”. Em conflito entre síntese, norma técnica paga e
+                NR-1 vigente, <strong>prevalece o texto oficial do domínio
+                correspondente</strong>: NR-1/Manual no GRO brasileiro; ISO como
+                referência de sistema/técnica via compra/consulta.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: o que digitaliza com ganho — e o que vira automação de papel</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>digitalizar sem método é acelerar o teatro</strong>.
+                Ferramenta boa reduz atrito de registro, fecha loop de NC e
+                expõe tendência; ferramenta mal posicionada só multiplica ticks
+                verdes sobre perigos mal identificados.
+              </p>
+
+              <h3>1) Núcleo que não se terceiriza ao app: GRO / Manual NR-1</h3>
+              <p>
+                Identificar perigos (incluindo organização do trabalho e perigos
+                externos, quando cabível), avaliar riscos com critério declarado,
+                aplicar <strong>hierarquia de controles</strong>, planejar ações,
+                acompanhar e revisar após mudança — isso é o GRO. O Manual 2026
+                sustenta o PDCA. Nenhum fornecedor de checklist digital “cumpre a
+                NR-1” no lugar da organização. O app no máximo <em>registra</em>
+                elos do ciclo.
+              </p>
+
+              <h3>2) Onde o digital agrega de verdade</h3>
+              <p>
+                Cadência de inspeções e PET/PT; timestamp, foto e localização;
+                fila de não conformidades com responsável e prazo; vínculo item →
+                perigo do inventário → controle do plano; indicadores de atraso e
+                reincidência; trilha de auditoria. Isso é
+                <strong>infraestrutura de evidência</strong> — alinhável a lógica
+                de SGSSO (ISO&nbsp;45001 como título de referência) sem confundir
+                dashboard com sistema de gestão maduro.
+              </p>
+
+              <h3>3) Checklist ≠ técnica de avaliação (31010)</h3>
+              <p>
+                Na IEC&nbsp;31010 / ISO/IEC&nbsp;31010, técnicas como HAZOP,
+                Bow-Tie e FMEA exploram desvios e cenários. Checklist operacional
+                verifica condição conhecida (“guarda no lugar?”, “LOTO aplicado?”).
+                Em SafeEng (#15): HAZOP não é formulário. Digitalizar um checklist
+                frágil não o transforma em análise de risco — só o torna mais rápido
+                de arquivar.
+              </p>
+
+              <h3>4) IA: apoio estatístico, não oráculo de SST</h3>
+              <p>
+                Uso sóbrio: priorizar inspeções por histórico de falha, sugerir
+                campos faltantes, detectar inconsistência documental (eco do
+                problema #13 eSocial×PGR), apoiar busca em base interna. Uso
+                hipado: “prever acidente” sem definição de evento, sem qualidade
+                de dado, sem validação e sem responsável técnico. Em SafeEng:
+                <strong>modelo sugere; engenheiro decide; GRO manda no critério</strong>.
+              </p>
+
+              <h3>5) Sintomas de automação de papel</h3>
+              <p>
+                Inventário estático copiado para o app; 100% de conformidade com
+                acidentes/quase-acidentes em alta; itens genéricos (“usar EPI”)
+                sem barreira específica; IA que só reescreve o mesmo checklist;
+                ranking de “equipes verdes” sem auditoria de campo; ausência de
+                gatilho de revisão do PGR quando o app acumula NC sistêmica.
+              </p>
+
+              <h3>6) O fio SafeEng completo</h3>
+              <p>
+                <strong>GRO / Manual NR-1 (núcleo)</strong> →
+                <strong>técnicas quando cabíveis (31010 como título)</strong> →
+                <strong>hierarquia de controles + plano</strong> →
+                <strong>checklist digital / IA na borda (cadência · dados · alertas)</strong> →
+                <strong>evidência e revisão no PDCA</strong> →
+                <strong>SGSSO de referência (45001 como título), se a organização adotar</strong>.
+                O app entra no fio — nunca no lugar do núcleo.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema SVG: GRO no núcleo · checklist/IA na borda</h2>
+              <p>
+                Diagrama didático — não reproduz figuras oficiais da NR-1, do Manual
+                GRO/PGR, da ISO&nbsp;45001 nem da ISO/IEC&nbsp;31010. Leitura: à
+                esquerda, o ciclo de método; à direita, o atalho “app = prevenção”.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Núcleo GRO Manual NR-1 com identificação, hierarquia e PDCA; borda com checklist digital e IA para cadência e dados; à direita automação de papel com ticks verdes sem método">
+                  <svg viewBox="0 0 960 900" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow21" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                        <path d="M0,0 L6,3 L0,6 Z" fill="#f0c674"/>
+                      </marker>
+                    </defs>
+                    <rect width="960" height="900" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="32" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">IA e checklist digital · SafeEng #21</text>
+                    <text x="480" y="54" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">antecipação de risco exige método · app só acelera o que já existe</text>
+
+                    <text x="240" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Caminho de engenharia</text>
+
+                    <rect x="40" y="100" width="400" height="70" rx="10" fill="#0f766e"/>
+                    <text x="240" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">1 · GRO / Manual NR-1 (núcleo)</text>
+                    <text x="240" y="150" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">identificar · avaliar · controlar · revisar</text>
+
+                    <path d="M240 170 V186" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow21)"/>
+
+                    <rect x="40" y="188" width="400" height="70" rx="10" fill="#1d4ed8"/>
+                    <text x="240" y="216" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2 · Técnicas 31010 (quando cabível)</text>
+                    <text x="240" y="238" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="11">HAZOP · Bow-Tie · FMEA — título / consulta</text>
+
+                    <path d="M240 258 V274" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow21)"/>
+
+                    <rect x="40" y="276" width="400" height="70" rx="10" fill="#b45309" stroke="#f0c674" stroke-width="2"/>
+                    <text x="240" y="304" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">3 · Hierarquia + plano de ação</text>
+                    <text x="240" y="326" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">eliminar → engenharia → admin → EPI</text>
+
+                    <path d="M240 346 V362" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow21)"/>
+
+                    <rect x="40" y="364" width="400" height="70" rx="10" fill="#134e4a"/>
+                    <text x="240" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">4 · Checklist digital / IA (borda)</text>
+                    <text x="240" y="414" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">cadência · dados · alertas · evidência</text>
+
+                    <text x="720" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Atalho “app = prevenção”</text>
+
+                    <rect x="500" y="100" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="128" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Digitalizar o papel frágil</text>
+                    <text x="710" y="150" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">mesmo item genérico · mais rápido</text>
+
+                    <rect x="500" y="188" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="216" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">“IA prevê acidente”</text>
+                    <text x="710" y="238" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">sem técnica · sem validação de campo</text>
+
+                    <rect x="500" y="276" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="304" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">98% OK no dashboard</text>
+                    <text x="710" y="326" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">hierarquia e inventário intocados</text>
+
+                    <rect x="500" y="364" width="420" height="70" rx="10" fill="#78350f"/>
+                    <text x="710" y="392" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="13" font-weight="700">PGR/app de gaveta</text>
+                    <text x="710" y="414" text-anchor="middle" fill="#fdba74" font-family="system-ui,sans-serif" font-size="11">volume sem revisão do GRO</text>
+
+                    <path d="M500 135 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M500 223 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M500 311 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+                    <rect x="40" y="460" width="880" height="70" rx="12" fill="#065f46"/>
+                    <text x="480" y="490" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Referências: Manual GRO/PGR 2026 · ISO 45001 / ISO/IEC 31010 (título · compra/consulta)</text>
+                    <text x="480" y="514" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR-1 manda no GRO brasileiro · ISO não é “selo de app” · sem texto pirateado</text>
+
+                    <rect x="40" y="555" width="430" height="150" rx="14" fill="#065f46"/>
+                    <text x="255" y="595" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Ganho real do digital</text>
+                    <text x="255" y="625" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">cadência · trilha · vínculo ao plano</text>
+                    <text x="255" y="649" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">alerta de reincidência · evidência</text>
+                    <text x="255" y="673" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">IA sóbria: priorizar / inconsistência</text>
+
+                    <rect x="490" y="555" width="430" height="150" rx="14" fill="#7f1d1d"/>
+                    <text x="705" y="595" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Automação de papel</text>
+                    <text x="705" y="625" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">tick verde · inventário raso</text>
+                    <text x="705" y="649" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">controle só administrativo/EPI</text>
+                    <text x="705" y="673" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">hype de previsão sem método</text>
+
+                    <rect x="40" y="730" width="880" height="140" rx="14" fill="#134e4a"/>
+                    <text x="480" y="770" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Ferramenta melhora cadência e dados · GRO + hierarquia sustentam antecipação de risco</text>
+                    <text x="480" y="798" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">ISO 45001 / 31010: título + compra/consulta — sem texto pirateado · Manual NR-1 no gov.br</text>
+                    <text x="480" y="826" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">Diagrama didático SafeEng — não é figura oficial NR / Manual / ISO · borda não substitui núcleo</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  À esquerda: GRO/Manual no núcleo, técnicas 31010 quando cabíveis,
+                  hierarquia e plano, checklist/IA na borda. À direita: automação de
+                  papel — ticks, hype de previsão e PGR/app de gaveta. Referências de
+                  título em
+                  <a href="../normas-internacionais.html">Normas internacionais</a>.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais nem produtos comerciais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Automação de papel</p>
+                <h3>“Migrámos 120 itens do Excel para o app; a conformidade subiu para 99% — e o inventário continua de 2019”</h3>
+                <p>
+                  A organização celebra dashboard verde. Itens genéricos (“EPI ok”,
+                  “área limpa”) são marcados em massa. Quase-acidentes por falha de
+                  isolamento e pressão de prazo não entram no app nem no PGR. A
+                  “antecipação” declarada na apresentação é volume de ticks.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> digitalizou o papel frágil. Sem
+                  vínculo a perigos atualizados, hierarquia e revisão (Manual/NR-1),
+                  o app só acelera falsa segurança.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · IA sem técnica</p>
+                <h3>“O modelo avisou risco alto na linha 3 porque os checklists atrasaram — e ninguém validou o cenário”</h3>
+                <p>
+                  Um score automático sobe após atraso de inspeções. A gestão trata
+                  o alerta como previsão de acidente e lança campanha de EPI. Não há
+                  HAZOP/what-if, não há análise de barreira, não há mudança de
+                  engenharia. O atraso era sintoma de falta de gente — o perigo real
+                  era outro.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> correlacionar ≠ antecipar com
+                  método. IEC&nbsp;31010 (título) lembra que técnica se escolhe e se
+                  justifica; IA sem escopo e sem validação de campo vira narrativa.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Digital na borda, GRO no núcleo</p>
+                <h3>Inventário vivo + hierarquia + app que fecha loop de NC e alimenta o PDCA</h3>
+                <p>
+                  Perigos e controles saem do GRO (Manual/NR-1). Checklists digitais
+                  cobrem barreiras específicas (ex.: guarda, LOTO, PET) com foto e
+                  responsável. NC sistêmica dispara revisão do plano — não só “retrão
+                  no app”. Quando o cenário pede, usa-se técnica (Bow-Tie/HAZOP) com
+                  referência 31010 via compra/consulta. Dashboard serve ao PDCA, não
+                  ao ranking cosmética. ISO&nbsp;45001, se adotada, estrutura o SGSSO
+                  — sem vender o app como certificação.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> tendência madura. Cadência e dados
+                  melhoram; antecipação continua sendo identificação + controle +
+                  revisão — não o logo da ferramenta.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Comece pelo GRO, não pelo fornecedor:</strong> leia NR-1 e Manual GRO/PGR 2026; defina perigos, critérios e hierarquia antes de escolher campos do app.</li>
+                <li><strong>Exija vínculo item → perigo → controle → plano:</strong> checklist órfão é automação de papel.</li>
+                <li><strong>Separe verificação de exploração:</strong> checklist operacional ≠ HAZOP/Bow-Tie/FMEA (ISO/IEC&nbsp;31010 como título).</li>
+                <li><strong>Use IA só com escopo e dono técnico:</strong> priorização, inconsistência, busca — não oráculo de acidente sem validação.</li>
+                <li><strong>Meça o que importa:</strong> reincidência de NC, tempo até contenção, revisões do PGR disparadas por evidência — não só % de ticks verdes.</li>
+                <li><strong>Preserve hierarquia de controles:</strong> app que só cobra EPI/procedimento sem empurrar eliminação/engenharia reforça o andar de baixo da hierarquia.</li>
+                <li><strong>Trate ISO&nbsp;45001 como referência de SGSSO (compra/consulta):</strong> não como selo do aplicativo nem substituto da NR-1.</li>
+                <li><strong>Audite o campo:</strong> amostra de checklists “OK” versus condição real — dashboard sem verificação é teatro digital.</li>
+                <li><strong>Recuse hype:</strong> tendência SafeEng é ferramenta a serviço do método — não método a serviço do slide de IA.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> checklist digital e IA podem
+                <strong>melhorar cadência e dados</strong>;
+                <strong>não antecipam risco sozinhos</strong>. Antecipação exige
+                identificação de perigos, avaliação com critério, hierarquia de
+                controles e revisão no GRO — processo do Manual da NR-1 —
+                eventualmente apoiado por técnicas da ISO/IEC&nbsp;31010 e por
+                estrutura de SGSSO (ISO&nbsp;45001), ambas como
+                <strong>referências de título</strong>. Sem isso, o que se publica
+                como inovação é só <strong>automação de papel</strong>.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-1 vigente, do Manual GRO/PGR da NR-1, nem da
+                  ISO&nbsp;45001 ou da ISO/IEC&nbsp;31010 / IEC&nbsp;31010. Também
+                  <strong>não constitui</strong> aconselhamento jurídico, parecer, especificação
+                  de software, homologação de produto, modelo de IA pronto, inventário de
+                  riscos, plano de ação, sistema de gestão certificado, laudo, ART/RRT ou
+                  substituição da responsabilidade da organização ou do profissional
+                  legalmente habilitado. Este site <strong>não hospeda</strong> textos
+                  integrais protegidos de ISO/ABNT — use ISO Store, ABNT Catálogo ou consulta
+                  autorizada (ex.: ABNT×Confea/Crea). Cenários e o diagrama são didáticos e
+                  hipotéticos; não endossam fornecedores. Verifique os PDFs e catálogos
+                  oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#ia-checklist-digital-risco">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="nr23-incendio-vs-bombeiros.html">Artigo #20</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a tendências de SST digital, GRO/PGR, hierarquia de controles e uso sóbrio de dados/IA para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="nr23-incendio-vs-bombeiros.html">#20 NR-23 · incêndio vs IT Bombeiros</a></li>
+              <li><a href="../curiosidades.html#ia-checklist-digital-risco">Teaser IA · checklist digital</a></li>
+              <li><a href="../curiosidades.html#tema-tendencias-safeeng">Tendências SafeEng</a></li>
+              <li><a href="../normas-internacionais.html#iso-45001">ISO 45001 (título)</a></li>
+              <li><a href="../normas-internacionais.html#iec-31010">IEC 31010 (título)</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

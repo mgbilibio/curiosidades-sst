@@ -77,6 +77,7 @@
         { href: "curiosidades.html#tema-em-alta", label: "Em alta 2026 (teasers)" },
         { href: "curiosidades.html#tema-integracao-tecnica", label: "Integração técnica (teasers)" },
         { href: "curiosidades.html#tema-classicos-2026", label: "Clássicos 2026 (teasers)" },
+        { href: "curiosidades.html#tema-tendencias-safeeng", label: "Tendências SafeEng (teasers)" },
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
         { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },
@@ -96,7 +97,8 @@
         { href: "artigos/nr10-energia-residual-bowtie.html", label: "#17 NR-10 · energia residual · Bow-Tie" },
         { href: "artigos/nr18-oit-construcao.html", label: "#18 NR-18 · OIT construção · CoP" },
         { href: "artigos/nr33-espaco-confinado-analise-risco.html", label: "#19 NR-33 · espaço confinado · falha antes do gás" },
-        { href: "artigos/nr23-incendio-vs-bombeiros.html", label: "#20 NR-23 · incêndio vs IT Bombeiros" }
+        { href: "artigos/nr23-incendio-vs-bombeiros.html", label: "#20 NR-23 · incêndio vs IT Bombeiros" },
+        { href: "artigos/ia-checklist-digital-risco.html", label: "#21 IA · checklist digital · risco" }
       ]
     },
     {
