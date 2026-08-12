@@ -20,7 +20,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 12 | Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar | **Publicado** | [artigo](perigo-externo-risco-evidente.html) · [teaser](../curiosidades.html#perigo-externo-risco-evidente) |
 | 13 | eSocial SST + PGR: inconsistência documental como sinal de fiscalização | **Publicado** | [artigo](esocial-sst-pgr-inconsistencia.html) · [teaser](../curiosidades.html#esocial-sst-pgr-inconsistencia) |
 | 14 | Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia | **Publicado** | [artigo](manual-nr1-pdca-gro.html) · [teaser](../curiosidades.html#manual-nr1-pdca-gro) |
-| 15 | Terceirização e cadeia de valor: quem gerencia o risco psicossocial? | Pendente | — |
+| 15 | NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist) | **Publicado** | [artigo](nr12-seguranca-funcional-hazop.html) · [teaser](../curiosidades.html#nr12-seguranca-funcional-hazop) |
 | 16 | ISO 45003 e alinhamento com a NR-1 (GRO/PGR) | Pendente | — |
 | 17 | Mudança organizacional mal conduzida como fator psicossocial | Pendente | — |
 | 18 | Investigação de eventos com contribuintes psicossociais e organizacionais | Pendente | — |
@@ -174,8 +174,22 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Liderança, autonomia e suporte social como controles organizacionais *(reagendar em briefing futuro; slot #14 ocupado por Manual NR-1 / PDCA do GRO em 12/08/2026)*
 
+
+
+## Nota editorial slot #15
+
+- Tema publicado em #15: NR-12 e segurança funcional — do HAZOP à hierarquia de controle (sem confundir com checklist) (briefing 12/08/2026).
+- Abre o bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20), para manter o bloco Integração técnica limpo (#9–#14).
+- Fontes: NR-12 PDF oficial (sidebar.js / gov.br); ISO 12100 e ISO 13849-1 como **títulos + links de compra/consulta** (ISO Store / ABNT) — sem texto pirateado; IEC 31010 / ISO/IEC 31010 como catálogo de técnicas (HAZOP).
+- Distinção crítica: checklist NR-12 = verificação; HAZOP = técnica que alimenta barreiras; 12100 = hierarquia de redução; 13849 = desempenho de funções de segurança (SRP/CS / PL).
+- O antigo slot #15 (Terceirização e cadeia de valor / psicossocial) foi para backlog deslocado; sobreposição parcial com #11 (1.5.8 interação) permanece.
+
+## Backlog deslocado do slot #15
+
+- Terceirização e cadeia de valor: quem gerencia o risco psicossocial? *(reagendar em briefing futuro; slot #15 ocupado por NR-12 / segurança funcional / HAZOP em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 15–24 até briefing específico de cada tema.
+- Não publicar 16–24 até briefing específico de cada tema.

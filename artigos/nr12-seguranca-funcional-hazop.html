@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist) | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="NR-12, segurança funcional e HAZOP: ISO 12100 / ISO 13849 como referências (títulos + compra/consulta), IEC 31010 e hierarquia de controle — sem reduzir máquina a checklist. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/nr12-seguranca-funcional-hazop.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="NR-12 e segurança funcional: do HAZOP à hierarquia de controle | Margus Giuliano">
+  <meta property="og:description" content="HAZOP (IEC 31010) alimenta barreiras; ISO 12100 / ISO 13849 como referências; NR-12 oficial — sem confundir engenharia de máquina com checklist de papel.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/nr12-seguranca-funcional-hazop.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Clássicos 2026">
+  <meta property="article:tag" content="NR-12">
+  <meta property="article:tag" content="HAZOP">
+  <meta property="article:tag" content="ISO 12100">
+  <meta property="article:tag" content="ISO 13849">
+  <meta property="article:tag" content="segurança funcional">
+  <meta property="article:tag" content="IEC 31010">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NR-12 · segurança funcional · HAZOP → hierarquia">
+  <meta name="twitter:description" content="Do HAZOP às barreiras e à hierarquia de controle — sem checklist de teatro. SafeEng.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr12-seguranca-funcional-hazop.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "NR-12 · segurança funcional · HAZOP"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr12-seguranca-funcional-hazop.html#article",
+        "headline": "NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist)",
+        "description": "Leitura SafeEng: HAZOP (IEC 31010) alimenta barreiras; ISO 12100 e ISO 13849 como referências de título/compra; NR-12 oficial — engenharia de máquina versus checklist de papel.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr12-seguranca-funcional-hazop.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-12", "HAZOP", "ISO 12100", "ISO 13849", "segurança funcional", "IEC 31010", "hierarquia de controle", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">NR-12 · segurança funcional · HAZOP</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #15 · Clássicos 2026</p>
+            <h1>NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist)</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, projetistas e quem transforma análise de máquina em barreira — não em planilha de “itens marcados”
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: NR-12, 12100, 13849 e HAZOP</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: técnica → barreiras → hierarquia</a></li>
+              <li><a href="#esquema">Esquema: do HAZOP à barreira</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Depois do bloco de integração técnica (#9–#14), a série abre
+                <strong>Clássicos 2026</strong> com um tema que nunca envelheceu:
+                <strong>segurança de máquinas</strong>. A <strong>NR-12</strong> fixa
+                requisitos brasileiros de proteção; a engenharia internacional organiza
+                o raciocínio em princípios de projeto e redução de risco
+                (<strong>ISO&nbsp;12100</strong>) e em desempenho de partes de controle
+                relacionadas à segurança (<strong>ISO&nbsp;13849</strong> — família /
+                parte&nbsp;1). O <strong>HAZOP</strong>, por sua vez, é
+                <em>técnica de avaliação</em> catalogada em
+                <strong>IEC&nbsp;31010</strong> / ISO/IEC&nbsp;31010 — não um
+                “checklist de NR-12 em outra planilha”.
+              </p>
+              <p>
+                Este artigo #15 SafeEng desenha o fio correto:
+                <strong>HAZOP (e congêneres) → cenários e desvios → barreiras e
+                hierarquia de controle → especificação de funções de segurança →
+                conformidade NR-12 como <em>resultado</em></strong>. O erro clássico
+                é inverter a ordem: marcar itens da norma e chamar isso de análise.
+                Não hospedamos texto integral de ISO/ABNT; citamos
+                <em>títulos</em> e links oficiais de compra/consulta.
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: NR-12, ISO 12100, ISO 13849 e HAZOP</h2>
+              <ul>
+                <li>
+                  <strong>NR-12 (oficial, gov.br):</strong> Norma Regulamentadora de
+                  Segurança no Trabalho em Máquinas e Equipamentos — requisitos
+                  nacionais de proteções, dispositivos, sistemas de segurança,
+                  procedimentos e informações. Texto vigente no PDF/CTPP; este site
+                  aponta o link oficial, não o substitui.
+                </li>
+                <li>
+                  <strong>ISO 12100 — Safety of machinery — General principles for
+                  design — Risk assessment and risk reduction:</strong> princípios
+                  gerais de projeto seguro e processo de avaliação/redução de risco
+                  (estratégia de redução: inerentemente seguro → proteções técnicas →
+                  informação de uso). Referência clássica de máquina; <em>não</em> é
+                  texto hospedado aqui — comprar/consultar em ISO Store / ABNT.
+                </li>
+                <li>
+                  <strong>ISO 13849-1 — Safety of machinery — Safety-related parts of
+                  control systems — Part 1: General principles for design:</strong>
+                  metodologia para partes de sistemas de comando relacionadas à
+                  segurança (SRP/CS), desempenho (Performance Level) e integração de
+                  funções de segurança. Edição vigente de referência na família:
+                  2023 (verifique sempre o catálogo). Também só via compra/consulta
+                  oficial.
+                </li>
+                <li>
+                  <strong>HAZOP (Hazard and Operability Study):</strong> técnica
+                  estruturada de desvios (guia de palavras + intenção de projeto /
+                  parâmetros), listada entre as técnicas de avaliação de riscos em
+                  <strong>IEC 31010</strong> / ISO/IEC 31010. Serve para
+                  <em>gerar cenários</em> e alimentar barreiras — não para “fechar
+                  NR-12” com caixinhas.
+                </li>
+                <li>
+                  <strong>Hierarquia de controle (leitura de engenharia):</strong> no
+                  GRO/NR-1 e na lógica de máquina (12100), prioriza-se eliminação /
+                  redução na origem, depois proteções técnicas (guarda, intertravamento,
+                  função de segurança com PL adequado), depois informação/procedimentos
+                  e, por fim, EPI — nunca o contrário como plano A permanente.
+                </li>
+              </ul>
+              <p>
+                Em SafeEng: <strong>checklist verifica presença</strong>;
+                <strong>HAZOP pergunta eficácia sob desvio</strong>;
+                <strong>segurança funcional pergunta se a função de segurança
+                performa o que o risco exige</strong>. Os três se conversam — um não
+                substitui o outro.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Acidente de máquina raramente “falta item no checklist”:</strong> costuma ser desvio de processo, bypass, modo de falha do comando ou barreira inadequada ao cenário.</li>
+                <li><strong>NR-12 sem análise vira teatro:</strong> guarda instalada sem estudo de acesso, modo de manutenção e falha do intertravamento não é engenharia — é foto para auditoria.</li>
+                <li><strong>HAZOP mal usado vira papel:</strong> sessão sem intenção de projeto, sem multidisciplinaridade e sem rastreio até barreira/PLr é checklist com palavras-guia.</li>
+                <li><strong>ISO 12100 / 13849 como mapa, não como PDF pirateado:</strong> o valor está no método (redução de risco + desempenho do SRP/CS); texto integral se obtém legalmente.</li>
+                <li><strong>Integra com GRO/PGR:</strong> cenários de máquina entram no inventário e no plano (#2, #10, #14); interação com terceiros na linha (#11) também é desvio operacional.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática. <strong>Não
+                reproduzimos</strong> texto normativo pago de ISO/IEC/ABNT — só
+                títulos, links de compra/consulta e leitura de engenharia.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-nr-12" target="_blank" rel="noopener noreferrer">Página oficial da NR-12 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-12-atualizada-2025.pdf" target="_blank" rel="noopener noreferrer">NR-12 atualizada (PDF oficial)</a>
+                  — Segurança no Trabalho em Máquinas e Equipamentos (texto vigente no gov.br)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2022/manual-de-aplicacao-da-nr-12.pdf" target="_blank" rel="noopener noreferrer">Manual de aplicação da NR-12 (MTE, PDF orientativo)</a>
+                  — apoio à interpretação; prevalece o texto da NR em caso de tensão
+                </li>
+                <li>
+                  <strong>ISO 12100:2010</strong> —
+                  <em>Safety of machinery — General principles for design — Risk assessment and risk reduction</em>
+                  ·
+                  <a href="https://www.iso.org/standard/51528.html" target="_blank" rel="noopener noreferrer">Página ISO (consultar/comprar)</a>
+                  ·
+                  <a href="https://www.iso.org/store.html" target="_blank" rel="noopener noreferrer">ISO Store</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/confea/" target="_blank" rel="noopener noreferrer">ABNT × Confea/Crea</a>
+                  (visualização para profissionais adimplentes, quando disponível)
+                </li>
+                <li>
+                  <strong>ISO 13849-1:2023</strong> —
+                  <em>Safety of machinery — Safety-related parts of control systems — Part 1: General principles for design</em>
+                  ·
+                  <a href="https://www.iso.org/standard/73481.html" target="_blank" rel="noopener noreferrer">Página ISO (consultar/comprar)</a>
+                  — referência de desempenho de SRP/CS / Performance Level; confirme edição vigente no catálogo
+                </li>
+                <li>
+                  <strong>IEC 31010 / ISO/IEC 31010</strong> —
+                  <em>Risk management — Risk assessment techniques</em>
+                  (catálogo de técnicas, incluindo HAZOP)
+                  ·
+                  <a href="https://www.iso.org/store.html" target="_blank" rel="noopener noreferrer">ISO Store</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  · síntese no portal:
+                  <a href="../normas-internacionais.html#iec-31010">Normas internacionais · IEC 31010</a>
+                </li>
+                <li>
+                  <a href="../normas-internacionais.html#iso-12100">Normas internacionais · ISO 12100 (síntese SafeEng)</a>
+                  ·
+                  <a href="../curiosidades.html#hazop-nr12">Insight teaser histórico: HAZOP + NR-12</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> citar ISO/IEC <strong>não</strong>
+                torna a NR-12 “automática” nem cria certificação. Em conflito entre
+                síntese, manual orientativo e norma regulamentadora,
+                <strong>prevalece o texto oficial da NR-12</strong> no DOU/gov.br.
+                Normas ISO/ABNT exigem aquisição ou consulta legal — este site
+                <strong>não hospeda</strong> o texto integral.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: técnica → barreiras → hierarquia (não checklist)</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>HAZOP alimenta engenharia; checklist verifica requisitos —
+                nenhum dos dois sozinho fecha segurança de máquina</strong>.
+              </p>
+
+              <h3>1) Checklist de NR-12: o que ele faz (e o que não faz)</h3>
+              <p>
+                Um checklist bem montado ajuda a <em>verificar</em> se proteções,
+                dispositivos de segurança, sinalização, procedimentos de intervenção
+                e documentação mínima estão presentes e aparentam conformidade. Isso
+                é útil na inspeção e no gap analysis. O que ele <strong>não</strong>
+                faz: modelar desvios (“mais pressão”, “sem sinal”, “modo manutenção
+                com guarda aberta”), dimensionar Performance Level, nem provar que a
+                barreira aguenta o cenário real de uso indevido previsível.
+              </p>
+
+              <h3>2) HAZOP como técnica (IEC 31010), não como formulário</h3>
+              <p>
+                No espírito da IEC&nbsp;31010, HAZOP é sessão estruturada: intenção de
+                projeto → nós/etapas → parâmetros → palavras-guia → causas →
+                consequências → salvaguardas existentes → recomendações. O produto
+                útil para a NR-12 não é a ata “para arquivo”: é a
+                <strong>lista de cenários</strong> que exige guarda, intertravamento,
+                parada de emergência, LOTO, sensor, arquitetura de comando ou mudança
+                de processo. Sem rastreio cenário → barreira → verificação, o HAZOP
+                vira o checklist que se pretendia superar.
+              </p>
+
+              <h3>3) ISO 12100: hierarquia de redução de risco na máquina</h3>
+              <p>
+                A ISO&nbsp;12100 (título acima; texto só via compra/consulta) organiza
+                a estratégia clássica: (1) medidas de projeto inerentemente seguro;
+                (2) salvaguardas e medidas de proteção complementares; (3) informação
+                de uso (incluindo procedimentos e treinamento). Em planta brasileira,
+                isso conversa com a NR-12 e com a hierarquia do GRO: não comece pelo
+                EPI nem pelo “procedimento de cuidado” se ainda dá para eliminar zona
+                de perigo, reduzir energia ou fechar acesso com engenharia.
+              </p>
+
+              <h3>4) ISO 13849: segurança funcional do comando</h3>
+              <p>
+                Quando a redução de risco depende de <em>função de segurança</em> no
+                sistema de comando (ex.: intertravamento que impede movimento com
+                acesso aberto), entra a lógica da ISO&nbsp;13849-1: especificar a
+                função, o Performance Level requerido (PLr) a partir do risco, e
+                demonstrar que a arquitetura/categoria, diagnóstico e confiabilidade
+                atingem o PL. Checklist “tem sensor?” não responde “o canal aguenta
+                falha única?”. Segurança funcional é engenharia de desempenho — não
+                etiqueta no componente.
+              </p>
+
+              <h3>5) O fio SafeEng completo</h3>
+              <p>
+                <strong>Desvio (HAZOP / what-if / outras técnicas 31010)</strong> →
+                <strong>risco e necessidade de redução (12100 + GRO)</strong> →
+                <strong>escolha na hierarquia</strong> → se houver função de comando,
+                <strong>especificação e PL (13849)</strong> →
+                <strong>implementação e verificação alinhadas à NR-12</strong> →
+                evidência no PGR/plano e na manutenção. Checklist entra no fim (e no
+                meio, como auditoria), nunca como substituto do raciocínio.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: do HAZOP à barreira (leitura SafeEng)</h2>
+              <p>
+                Diagrama didático — não reproduz figuras oficiais da ISO nem anexos
+                da NR-12. Contrasta o caminho de engenharia com o atalho do checklist
+                isolado.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Fluxo: HAZOP e técnicas IEC 31010 alimentam cenários; ISO 12100 hierarquia e ISO 13849 funções de segurança; NR-12 como conformidade resultante; checklist sozinho é caminho frágil">
+                  <svg viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <rect width="960" height="720" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="36" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">NR-12 · do HAZOP à hierarquia · SafeEng #15</text>
+                    <text x="480" y="58" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">técnica (IEC 31010) → barreiras → desempenho (13849) → conformidade NR-12</text>
+
+                    <!-- Step 1 -->
+                    <rect x="40" y="90" width="200" height="110" rx="14" fill="#0f766e"/>
+                    <text x="140" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">1 · Técnica</text>
+                    <text x="140" y="152" text-anchor="middle" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="12">HAZOP / what-if</text>
+                    <text x="140" y="172" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">IEC 31010</text>
+                    <text x="140" y="192" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="11">desvios · cenários</text>
+
+                    <path d="M250 145 H290" stroke="#f0c674" stroke-width="3" fill="none" marker-end="url(#arrow15)"/>
+
+                    <!-- Step 2 -->
+                    <rect x="300" y="90" width="200" height="110" rx="14" fill="#b45309"/>
+                    <text x="400" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2 · Redução</text>
+                    <text x="400" y="152" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">ISO 12100</text>
+                    <text x="400" y="172" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="11">hierarquia · inerente</text>
+                    <text x="400" y="192" text-anchor="middle" fill="#fdba74" font-family="system-ui,sans-serif" font-size="11">proteção · informação</text>
+
+                    <path d="M510 145 H550" stroke="#f0c674" stroke-width="3" fill="none"/>
+
+                    <!-- Step 3 -->
+                    <rect x="560" y="90" width="200" height="110" rx="14" fill="#1d4ed8"/>
+                    <text x="660" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">3 · Função</text>
+                    <text x="660" y="152" text-anchor="middle" fill="#dbeafe" font-family="system-ui,sans-serif" font-size="12">ISO 13849-1</text>
+                    <text x="660" y="172" text-anchor="middle" fill="#93c5fd" font-family="system-ui,sans-serif" font-size="11">SRP/CS · PLr / PL</text>
+                    <text x="660" y="192" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="11">segurança funcional</text>
+
+                    <path d="M770 145 H810" stroke="#f0c674" stroke-width="3" fill="none"/>
+
+                    <!-- Step 4 -->
+                    <rect x="820" y="90" width="100" height="110" rx="14" fill="#065f46"/>
+                    <text x="870" y="140" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">4</text>
+                    <text x="870" y="162" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR-12</text>
+                    <text x="870" y="182" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="11">resultado</text>
+
+                    <!-- Hierarchy band -->
+                    <text x="480" y="250" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Hierarquia de controle (máquina · leitura SafeEng)</text>
+                    <rect x="40" y="270" width="210" height="70" rx="12" fill="#134e4a"/>
+                    <text x="145" y="300" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Eliminar / reduzir</text>
+                    <text x="145" y="320" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">projeto inerente</text>
+                    <rect x="270" y="270" width="210" height="70" rx="12" fill="#0f766e"/>
+                    <text x="375" y="300" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Proteções técnicas</text>
+                    <text x="375" y="320" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">guarda · interlock · PL</text>
+                    <rect x="500" y="270" width="210" height="70" rx="12" fill="#b45309"/>
+                    <text x="605" y="300" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Informação / proc.</text>
+                    <text x="605" y="320" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">LOTO · instrução · treino</text>
+                    <rect x="730" y="270" width="190" height="70" rx="12" fill="#7c2d12"/>
+                    <text x="825" y="300" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12" font-weight="700">EPI</text>
+                    <text x="825" y="320" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="11">última linha</text>
+
+                    <!-- Two outcomes -->
+                    <rect x="40" y="390" width="430" height="140" rx="14" fill="#065f46"/>
+                    <text x="255" y="424" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Caminho de engenharia</text>
+                    <text x="255" y="452" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">cenário → barreira → PL → verificação</text>
+                    <text x="255" y="476" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR-12 como conformidade resultante</text>
+                    <text x="255" y="500" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">PGR / manutenção / evidência viva</text>
+
+                    <rect x="490" y="390" width="430" height="140" rx="14" fill="#7f1d1d"/>
+                    <text x="705" y="424" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Atalho do checklist isolado</text>
+                    <text x="705" y="452" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">“tem guarda?” sem desvio nem PL</text>
+                    <text x="705" y="476" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">HAZOP de papel · ata sem barreira</text>
+                    <text x="705" y="500" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">teatro de conformidade</text>
+
+                    <!-- Bottom note -->
+                    <rect x="40" y="560" width="880" height="120" rx="14" fill="#134e4a"/>
+                    <text x="480" y="598" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Checklist verifica presença · HAZOP explora desvio · 13849 prova desempenho da função</text>
+                    <text x="480" y="626" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">ISO 12100 / 13849: títulos + compra/consulta (ISO Store · ABNT) — sem texto pirateado</text>
+                    <text x="480" y="652" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR-12 PDF oficial no gov.br · Manual de aplicação é orientação</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  Leitura de engenharia: técnicas da IEC&nbsp;31010 (HAZOP etc.)
+                  geram cenários; a ISO&nbsp;12100 orienta a hierarquia de redução;
+                  a ISO&nbsp;13849-1 trata o desempenho das funções de segurança no
+                  comando; a NR-12 materializa requisitos nacionais. Checklist isolado
+                  (vermelho) não fecha o ciclo.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Checklist como “análise”</p>
+                <h3>“Fechamos 180 itens da NR-12; a linha segue com bypass no fim de semana”</h3>
+                <p>
+                  A organização apresenta planilha completa de requisitos, fotos de
+                  guardas e certificados de componentes. Não há registro de modos de
+                  operação (produção, setup, limpeza), nem de falha do intertravamento,
+                  nem de por que o PL da função de segurança basta para o acesso à
+                  zona. Operadores relatam (informalmente) jumper “só para
+                  desatolamento”.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> conformidade documental sem
+                  cenário. O checklist marcou presença; a hierarquia e a segurança
+                  funcional não foram exercitadas. HAZOP ou what-if sobre
+                  “intervenção com guarda aberta” teria empurrado barreira e
+                  gestão de mudança — não mais uma linha verde na planilha.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · HAZOP de papel</p>
+                <h3>“Fizemos HAZOP de dois dias; as recomendações não viraram função de segurança”</h3>
+                <p>
+                  Sessão multidisciplinar gera dezenas de desvios (“menos fluxo”,
+                  “sequência invertida”, “falha de sensor”). A ata vai para pasta.
+                  O plano de ação da NR-12/PGR só lista “treinar operadores” e
+                  “reforçar procedimento”. Nenhum item especifica função de segurança,
+                  PLr ou validação do SRP/CS. Seis meses depois, quase-acidente no
+                  mesmo nó do estudo.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> técnica da IEC&nbsp;31010 usada
+                  como teatro. HAZOP sem rastreio até barreira/PL é checklist com
+                  palavras-guia. ISO&nbsp;12100 pediria redução na origem ou proteção;
+                  ISO&nbsp;13849 pediria desempenho do comando — não só EPI cognitivo.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Fio completo (clássico maduro)</p>
+                <h3>Desvio → hierarquia → PL → NR-12 verificável</h3>
+                <p>
+                  Em célula com acesso frequente a zona de perigo, o time aplica
+                  what-if/HAZOP nos modos de manutenção. Eliminam parte do acesso com
+                  mudança de layout (inerente). No acesso remanescente, especificam
+                  função de intertravamento com PLr derivado do risco, arquitetura
+                  compatível com ISO&nbsp;13849-1 (texto consultado legalmente),
+                  validação e manutenção preventiva do SRP/CS. Checklist NR-12 entra
+                  como verificação final e auditoria — não como substituto. Cenários
+                  e controles alimentam inventário/plano do PGR.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> clássico bem feito. Técnica
+                  alimenta barreira; segurança funcional prova desempenho; NR-12
+                  aparece como resultado coerente — não como planilha órfã.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Separe os instrumentos:</strong> checklist NR-12 = verificação; HAZOP/what-if = exploração de desvio (IEC&nbsp;31010); 12100 = estratégia de redução; 13849 = desempenho da função de segurança.</li>
+                <li><strong>Comece pelo cenário, não pelo item:</strong> modos de operação (produção, setup, limpeza, falha) antes de marcar “tem guarda”.</li>
+                <li><strong>Force a hierarquia:</strong> elimine/reduza na origem; proteja com engenharia; informação/procedimento; EPI por último — alinhado a 12100 e ao GRO.</li>
+                <li><strong>Quando o comando for barreira, trate PL de verdade:</strong> especifique função, PLr, arquitetura e validação (ISO&nbsp;13849-1) — “sensor instalado” não basta.</li>
+                <li><strong>Amarre HAZOP a barreira e a dono:</strong> cada recomendação relevante vira ação no plano (máquina + PGR), com verificação — ata sem rastreio é papel.</li>
+                <li><strong>Use só fontes legais de ISO/ABNT:</strong> ISO Store, ABNT Catálogo, ABNT×Confea/Crea; este portal não hospeda texto integral.</li>
+                <li><strong>NR-12 oficial no gov.br:</strong> PDF/CTPP atualizado + Manual de aplicação como orientação; na dúvida, prevalece a NR.</li>
+                <li><strong>Integre ao GRO:</strong> cenários de máquina no inventário, controles no plano, revisão após mudança/acidente (#12, #14).</li>
+                <li><strong>Não confunda volume de checklist com maturidade:</strong> maturidade é barreira que aguenta desvio previsível — com evidência.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> NR-12 e segurança funcional não se
+                resolvem com planilha solitária. O clássico maduro usa
+                <strong>técnicas da IEC&nbsp;31010</strong> (HAZOP entre elas) para
+                revelar desvios, a <strong>ISO&nbsp;12100</strong> para hierarquizar a
+                redução de risco, a <strong>ISO&nbsp;13849</strong> para dimensionar
+                funções de segurança no comando — e a <strong>NR-12</strong> como
+                requisito nacional que esses raciocínios devem satisfazer. Checklist
+                verifica; não substitui engenharia. Compre ou consulte as normas
+                internacionais pelos canais oficiais; leia a NR-12 no gov.br — e
+                transforme cenário em barreira.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-12 vigente, do Manual de aplicação da NR-12, da NR-1/GRO,
+                  nem de normas técnicas ISO/IEC/ABNT aplicáveis (incluindo ISO&nbsp;12100,
+                  ISO&nbsp;13849 e IEC&nbsp;31010 / ISO/IEC&nbsp;31010). Também
+                  <strong>não constitui</strong> aconselhamento jurídico, parecer, projeto de
+                  máquina, especificação de Performance Level, laudo, APR/HAZOP pronto, inventário
+                  de PGR ou substituição da responsabilidade da organização, do fabricante ou do
+                  profissional legalmente habilitado. Este site <strong>não hospeda</strong> textos
+                  integrais protegidos de ISO/ABNT — use ISO Store, ABNT Catálogo ou consulta
+                  autorizada (ex.: ABNT×Confea/Crea). Cenários são didáticos e hipotéticos.
+                  Verifique os PDFs e catálogos oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#nr12-seguranca-funcional-hazop">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="manual-nr1-pdca-gro.html">Artigo #14</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a NR-12, segurança funcional, HAZOP e clássicos de engenharia de máquina para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="manual-nr1-pdca-gro.html">#14 Manual NR-1 · PDCA do GRO</a></li>
+              <li><a href="../curiosidades.html#nr12-seguranca-funcional-hazop">Teaser NR-12 · HAZOP</a></li>
+              <li><a href="../curiosidades.html#tema-classicos-2026">Clássicos 2026</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

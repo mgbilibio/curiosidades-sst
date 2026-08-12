@@ -76,6 +76,7 @@
         { href: "artigos/index.html", label: "Série SafeEng", className: "sidebar-nr-hub" },
         { href: "curiosidades.html#tema-em-alta", label: "Em alta 2026 (teasers)" },
         { href: "curiosidades.html#tema-integracao-tecnica", label: "Integração técnica (teasers)" },
+        { href: "curiosidades.html#tema-classicos-2026", label: "Clássicos 2026 (teasers)" },
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
         { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },
@@ -89,7 +90,8 @@
         { href: "artigos/terceirizadas-interacao-riscos.html", label: "#11 Terceirizadas · interação de riscos" },
         { href: "artigos/perigo-externo-risco-evidente.html", label: "#12 Perigo externo · risco evidente" },
         { href: "artigos/esocial-sst-pgr-inconsistencia.html", label: "#13 eSocial SST × PGR inconsistência" },
-        { href: "artigos/manual-nr1-pdca-gro.html", label: "#14 Manual NR-1 · PDCA do GRO" }
+        { href: "artigos/manual-nr1-pdca-gro.html", label: "#14 Manual NR-1 · PDCA do GRO" },
+        { href: "artigos/nr12-seguranca-funcional-hazop.html", label: "#15 NR-12 · segurança funcional · HAZOP" }
       ]
     },
     {
