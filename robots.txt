@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://curiosidadessst.example/sitemap.xml
+Sitemap: https://mgbilibio.github.io/curiosidades-sst/sitemap.xml

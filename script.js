@@ -23,46 +23,60 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
-  var form = document.getElementById("contact-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var status = document.getElementById("form-status");
-      var nome = form.elements.namedItem("nome");
-      var email = form.elements.namedItem("email");
-      var assunto = form.elements.namedItem("assunto");
-      var mensagem = form.elements.namedItem("mensagem");
+  // Contato: mostrar sucesso FormSubmit (?enviado=1)
+  (function contactSuccess() {
+    var params = new URLSearchParams(window.location.search || "");
+    if (params.get("enviado") !== "1") return;
+    var banner = document.getElementById("form-success");
+    if (banner) {
+      banner.hidden = false;
+      banner.focus && banner.setAttribute("tabindex", "-1");
+      try { banner.focus(); } catch (e) {}
+    }
+  })();
 
-      if (!nome.value.trim() || !email.value.trim() || !mensagem.value.trim()) {
-        if (status) {
-          status.className = "form-status error";
-          status.textContent = "Por favor, preencha os campos obrigatórios.";
-          status.hidden = false;
+  // Curiosidades: abrir accordion do tema que contém o #anchor
+  (function curiosidadesHashAccordion() {
+    var groups = document.querySelectorAll(".theme-accordion");
+    if (!groups.length) return;
+
+    function openForHash(hash) {
+      if (!hash || hash === "#") return;
+      var id = hash.replace(/^#/, "");
+      var target = document.getElementById(id);
+      if (!target) return;
+
+      var details = target.closest ? target.closest(".theme-accordion") : null;
+      if (!details && target.classList.contains("theme-accordion")) {
+        details = target;
+      }
+      if (details && details.tagName === "DETAILS") {
+        details.open = true;
+      }
+
+      // Scroll after open (layout settle)
+      window.requestAnimationFrame(function () {
+        try {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        } catch (e) {
+          target.scrollIntoView(true);
         }
-        return;
-      }
+      });
+    }
 
-      var subject = encodeURIComponent(
-        "[Curiosidades SST] " + (assunto.value || "Contato pelo site")
-      );
-      var body = encodeURIComponent(
-        "Nome: " +
-          nome.value.trim() +
-          "\nE-mail: " +
-          email.value.trim() +
-          "\n\n" +
-          mensagem.value.trim()
-      );
+    openForHash(window.location.hash);
 
-      if (status) {
-        status.className = "form-status success";
-        status.textContent =
-          "Obrigado! Seu aplicativo de e-mail deve abrir para enviar a mensagem. Se isso não acontecer, escreva para engenheirobill@gmail.com.";
-        status.hidden = false;
-      }
-
-      window.location.href =
-        "mailto:engenheirobill@gmail.com?subject=" + subject + "&body=" + body;
+    window.addEventListener("hashchange", function () {
+      openForHash(window.location.hash);
     });
-  }
+
+    // TOC links to theme ids should open that details
+    document.querySelectorAll(".theme-toc a[href^='#tema-']").forEach(function (a) {
+      a.addEventListener("click", function () {
+        var href = a.getAttribute("href") || "";
+        var el = document.getElementById(href.slice(1));
+        if (el && el.tagName === "DETAILS") el.open = true;
+      });
+    });
+  })();
 })();

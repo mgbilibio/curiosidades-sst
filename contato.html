@@ -15,6 +15,48 @@
   <meta property="og:description" content="Sugira temas técnicos ou envie feedback a Margus Giuliano sobre o conteúdo de SST.">
   <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/contato.html">
   <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contato | Curiosidades SST — Margus Giuliano">
+  <meta name="twitter:description" content="Contato profissional: parceria, dúvida técnica ou speaking.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/contato.html#webpage",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/contato.html",
+        "name": "Contato | Curiosidades SST — Margus Giuliano",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "inLanguage": "pt-BR"
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -67,20 +109,28 @@
       <main id="conteudo">
         <header class="page-hero">
           <div class="container">
-            <h1>Contato</h1>
-            <p>Fale com Margus Giuliano: sugestão de insight técnico, correção ou feedback editorial.</p>
+            <h1>Contato profissional</h1>
+            <p>Canal direto com Margus Giuliano para parcerias, dúvidas técnicas pontuais e speaking.</p>
           </div>
         </header>
 
         <section class="section">
           <div class="container">
+            <div id="form-success" class="form-success-banner" hidden>
+              <strong>Mensagem enviada.</strong> Obrigado — retorno em dias úteis, quando possível.
+            </div>
             <div class="contact-grid">
               <div class="contact-info">
-                <h2>Como podemos ajudar</h2>
+                <h2>Quando faz sentido escrever</h2>
                 <p>
-                  Este formulário é para comunicação editorial e feedback sobre o Curiosidades SST.
-                  Não prestamos consultoria técnica individual nem atendimento de emergência por este canal.
+                  Canal B2B simples e honesto. Ideal para alinhamentos profissionais — não substitui
+                  consultoria contratada nem atendimento de emergência.
                 </p>
+                <ul class="contact-reasons">
+                  <li><strong>Parceria</strong> — conteúdos, eventos ou iniciativas educativas em SST.</li>
+                  <li><strong>Dúvida técnica</strong> — esclarecimento pontual sobre temas do site (sem laudo).</li>
+                  <li><strong>Speaking</strong> — palestras, webinars ou mesas técnicas.</li>
+                </ul>
                 <div class="info-item">
                   <div>
                     <strong>Autor</strong>
@@ -89,20 +139,8 @@
                 </div>
                 <div class="info-item">
                   <div>
-                    <strong>E-mail</strong>
-                    <span>engenheirobill@gmail.com</span>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <div>
-                    <strong>Assuntos bem-vindos</strong>
-                    <span>Sugestão de temas técnicos, correções, feedback editorial e parcerias educativas</span>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <div>
-                    <strong>Tempo de resposta</strong>
-                    <span>Mensagens são lidas em dias úteis (quando o canal estiver ativo no ambiente de publicação)</span>
+                    <strong>E-mail (secundário)</strong>
+                    <span><a href="mailto:engenheirobill@gmail.com">engenheirobill@gmail.com</a></span>
                   </div>
                 </div>
                 <div class="info-item">
@@ -115,7 +153,11 @@
 
               <div class="form-card">
                 <h2>Envie sua mensagem</h2>
-                <form id="contact-form" action="mailto:engenheirobill@gmail.com" method="post" enctype="text/plain" novalidate>
+                <form id="contact-form" action="https://formsubmit.co/engenheirobill@gmail.com" method="POST">
+                  <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://mgbilibio.github.io/curiosidades-sst/contato.html?enviado=1">
+                  <input type="hidden" name="_subject" value="[Curiosidades SST] Contato pelo site">
                   <div class="form-group">
                     <label for="nome">Nome <span class="hint">(obrigatório)</span></label>
                     <input type="text" id="nome" name="nome" autocomplete="name" required maxlength="120" placeholder="Seu nome">
@@ -127,22 +169,22 @@
                   <div class="form-group">
                     <label for="assunto">Assunto</label>
                     <select id="assunto" name="assunto">
-                      <option value="Sugestão de tema técnico">Sugestão de tema técnico</option>
-                      <option value="Feedback sobre conteúdo">Feedback sobre conteúdo</option>
+                      <option value="Parceria">Parceria</option>
+                      <option value="Dúvida técnica">Dúvida técnica</option>
+                      <option value="Speaking / palestra">Speaking / palestra</option>
+                      <option value="Sugestão de tema">Sugestão de tema</option>
                       <option value="Correção / atualização">Correção / atualização</option>
-                      <option value="Parceria educativa">Parceria educativa</option>
                       <option value="Outro">Outro</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="mensagem">Mensagem <span class="hint">(obrigatório)</span></label>
-                    <textarea id="mensagem" name="mensagem" required maxlength="4000" placeholder="Escreva sua mensagem com o máximo de detalhes úteis…"></textarea>
+                    <textarea id="mensagem" name="mensagem" required maxlength="4000" placeholder="Contexto, objetivo e prazo (se houver)…"></textarea>
                   </div>
-                  <button class="btn btn-primary" type="submit">Abrir e-mail para enviar</button>
-                  <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
-                  <p class="hint" style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">
-                    Ao enviar, seu aplicativo de e-mail pode abrir com a mensagem preenchida (mailto).
-                    Nenhum dado é armazenado neste site estático.
+                  <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+                  <p class="hint form-note">
+                    O formulário usa <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">FormSubmit</a>.
+                    No primeiro uso, o serviço pode pedir confirmação do e-mail de destino — isso é normal.
                   </p>
                 </form>
               </div>

@@ -120,8 +120,8 @@
         {
           type: "group",
           id: "nr-acesso",
-          label: "Acesso às NR atualizadas",
-          open: true,
+          label: "PDFs oficiais (NR-1 a 38)",
+          open: false,
           items: NR_OFFICIAL_LINKS
         },
         { href: "curiosidades.html#nr1-pgr", label: "Insight: NR-1 GRO" },
@@ -259,6 +259,36 @@
     panel.id = "sidebar-group-" + group.id;
     panel.hidden = !startOpen;
 
+    if (group.id === "nr-acesso") {
+      var filterWrap = document.createElement("li");
+      filterWrap.className = "sidebar-nr-filter-wrap";
+      var filter = document.createElement("input");
+      filter.type = "search";
+      filter.className = "sidebar-nr-filter";
+      filter.placeholder = "Filtrar NR…";
+      filter.setAttribute("aria-label", "Filtrar PDFs oficiais por número ou nome");
+      filter.autocomplete = "off";
+      filterWrap.appendChild(filter);
+      panel.appendChild(filterWrap);
+
+      filter.addEventListener("input", function () {
+        var q = (filter.value || "").trim().toLowerCase();
+        panel.querySelectorAll("li").forEach(function (li) {
+          if (li.classList.contains("sidebar-nr-filter-wrap")) return;
+          var a = li.querySelector("a");
+          var text = a ? (a.textContent || "").toLowerCase() : "";
+          li.hidden = q !== "" && text.indexOf(q) === -1;
+        });
+      });
+
+      filter.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+      filter.addEventListener("keydown", function (e) {
+        e.stopPropagation();
+      });
+    }
+
     (group.items || []).forEach(function (item) {
       appendLinkItem(panel, item, function () {
         btn.setAttribute("aria-expanded", "true");
@@ -352,7 +382,7 @@
 
     var foot = document.createElement("p");
     foot.className = "sidebar-foot";
-    foot.innerHTML = "SafeEng · <strong>Margus Giuliano</strong>";
+    foot.innerHTML = "<strong>Margus Giuliano</strong> · SafeEng";
     nav.appendChild(foot);
 
     root.innerHTML = "";
@@ -379,12 +409,7 @@
         introBtn.setAttribute("aria-expanded", "true");
         introPanel.hidden = false;
       }
-      var groupBtn = document.getElementById("sidebar-group-btn-nr-acesso");
-      var groupPanel = document.getElementById("sidebar-group-nr-acesso");
-      if (groupBtn && groupPanel) {
-        groupBtn.setAttribute("aria-expanded", "true");
-        groupPanel.hidden = false;
-      }
+      // PDFs oficiais permanecem fechados por padrão (mobile incluso)
     }
 
     function setOpen(open) {

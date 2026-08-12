@@ -15,6 +15,48 @@
   <meta property="og:description" content="Teasers técnicos sobre ISO 31010, Bow-Tie, HAZOP, PGR, NRs e ISO 45001 — por Margus Giuliano.">
   <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/curiosidades.html">
   <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curiosidades SST — insights técnicos">
+  <meta name="twitter:description" content="Insights técnicos de SST: ISO 31010, Bow-Tie, HAZOP, PGR e NRs.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html#webpage",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html",
+        "name": "Curiosidades SST — insights técnicos",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "inLanguage": "pt-BR"
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -68,17 +110,35 @@
           <div class="container">
             <h1>Insights técnicos de SST</h1>
             <p>
-              Teasers curtos, em tom de engenharia, por <strong>Margus Giuliano</strong>. Navegue pelos
-              temas na barra lateral — ideais para abrir debate entre pares.
+              Teasers curtos, em tom de engenharia, por <strong>Margus Giuliano</strong>. Use o sumário por tema
+              ou a barra lateral — ideais para abrir debate entre pares.
             </p>
           </div>
         </header>
 
+        <nav class="theme-toc" aria-label="Sumário por tema">
+          <div class="container theme-toc-inner">
+            <p class="theme-toc-label">Sumário por tema</p>
+            <ul class="theme-toc-list">
+              <li><a href="#tema-introducao">Introdução</a></li>
+              <li><a href="#tema-gestao">Gestão de SST</a></li>
+              <li><a href="#tema-organizacao">Organização</a></li>
+              <li><a href="#tema-nr">NR insights</a></li>
+              <li><a href="#tema-gerais">Curiosidades gerais</a></li>
+            </ul>
+          </div>
+        </nav>
+
         <section class="section">
           <div class="container">
-            <div class="article-list">
-
-          <article class="article" id="intro-sst">
+            <div class="theme-groups">
+          <details class="theme-accordion" id="tema-introducao" open>
+            <summary class="theme-accordion-summary">
+              <h2 class="theme-accordion-title">Introdução</h2>
+              <span class="theme-accordion-count">4 insights</span>
+            </summary>
+            <div class="theme-accordion-body article-list">
+<article class="article" id="intro-sst">
             <div class="article-meta">
               <span class="card-tag">Introdução</span>
               <time datetime="2026-06-15">Atualizado em 15/06/2026</time>
@@ -91,14 +151,14 @@
               No Curiosidades SST, <strong>Margus Giuliano</strong> trata segurança ocupacional como disciplina de engenharia — alinhada a ISO 31000/31010, desempenho do PGR e integração com sistemas de gestão (ISO 45001).
             </p>
             <p>
-              Este espaço oferece teasers: profundidade suficiente para abrir debate entre pares, sem pretender substituir o texto normativo ou o dossiê SafeEng completo.
+              Este espaço oferece teasers: profundidade suficiente para abrir debate entre pares, sem pretender substituir o texto normativo ou o dossiê técnico completo.
             </p>
             <p class="note">
-              Por Margus Giuliano — Curiosidades SST / linha SafeEng.
+              Por Margus Giuliano — Curiosidades SST.
             </p>
           </article>
 
-          <article class="article" id="perigo-risco">
+<article class="article" id="perigo-risco">
             <div class="article-meta">
               <span class="card-tag">Fundamentos</span>
               <time datetime="2026-06-12">Atualizado em 12/06/2026</time>
@@ -115,7 +175,7 @@
             </p>
           </article>
 
-          <article class="article" id="percepcao-risco">
+<article class="article" id="percepcao-risco">
             <div class="article-meta">
               <span class="card-tag">Gestão de riscos</span>
               <time datetime="2026-06-10">Atualizado em 10/06/2026</time>
@@ -131,11 +191,11 @@
               Insight prático: documentar <em>como</em> se chegou ao nível de risco importa tanto quanto o nível em si. Sem rastro metodológico, a próxima auditoria (ou o próximo acidente) desmonta a narrativa.
             </p>
             <p class="note">
-              Por Margus Giuliano — Curiosidades SST / linha SafeEng.
+              Por Margus Giuliano — Curiosidades SST.
             </p>
           </article>
 
-          <article class="article" id="gestor-riscos">
+<article class="article" id="gestor-riscos">
             <div class="article-meta">
               <span class="card-tag">Carreira · SST</span>
               <time datetime="2026-06-11">Atualizado em 11/06/2026</time>
@@ -148,11 +208,19 @@
               Essa transição exige repertório: ISO 31010, análise de barreiras, leitura de higiene com incerteza, ergonomia além do checklist e diálogo com a alta direção em linguagem de negócio.
             </p>
             <p>
-              SafeEng e o Curiosidades SST existem para acelerar essa conversa entre pares — sem atalho de compliance cosmético.
+              O Curiosidades SST existe para acelerar essa conversa entre pares — sem atalho de compliance cosmético.
             </p>
           </article>
+            </div>
+          </details>
 
-          <article class="article" id="anatomia-risco">
+          <details class="theme-accordion" id="tema-gestao">
+            <summary class="theme-accordion-summary">
+              <h2 class="theme-accordion-title">Gestão de SST</h2>
+              <span class="theme-accordion-count">8 insights</span>
+            </summary>
+            <div class="theme-accordion-body article-list">
+<article class="article" id="anatomia-risco">
             <div class="article-meta">
               <span class="card-tag">ISO 31000</span>
               <time datetime="2026-05-28">Atualizado em 28/05/2026</time>
@@ -169,7 +237,7 @@
             </p>
           </article>
 
-          <article class="article" id="iso-31010">
+<article class="article" id="iso-31010">
             <div class="article-meta">
               <span class="card-tag">ISO 31010</span>
               <time datetime="2026-06-02">Atualizado em 02/06/2026</time>
@@ -186,7 +254,7 @@
             </p>
           </article>
 
-          <article class="article" id="prob-freq">
+<article class="article" id="prob-freq">
             <div class="article-meta">
               <span class="card-tag amber">PGR · Erro clássico</span>
               <time datetime="2026-04-18">Atualizado em 18/04/2026</time>
@@ -203,7 +271,7 @@
             </p>
           </article>
 
-          <article class="article" id="bow-tie">
+<article class="article" id="bow-tie">
             <div class="article-meta">
               <span class="card-tag">Bow-Tie</span>
               <time datetime="2026-05-12">Atualizado em 12/05/2026</time>
@@ -220,7 +288,7 @@
             </p>
           </article>
 
-          <article class="article" id="analise-barreiras">
+<article class="article" id="analise-barreiras">
             <div class="article-meta">
               <span class="card-tag">Barreiras</span>
               <time datetime="2026-05-20">Atualizado em 20/05/2026</time>
@@ -237,24 +305,7 @@
             </p>
           </article>
 
-          <article class="article" id="hazop-nr12">
-            <div class="article-meta">
-              <span class="card-tag">HAZOP · NR-12</span>
-              <time datetime="2026-03-22">Atualizado em 22/03/2026</time>
-            </div>
-            <h2>HAZOP + NR-12: do checklist à engenharia de processos</h2>
-            <p>
-              Checklist de NR-12 verifica requisitos de proteção de máquinas. HAZOP pergunta o que acontece se parâmetros e intenções de projeto desviarem — mais fluxo, menos pressão, sequência invertida, interface homem–máquina falha.
-            </p>
-            <p>
-              Combinar os dois move a discussão de “tem guarda?” para “em que condições a guarda, o intertravamento ou o LOTO deixam de ser eficazes?”. É engenharia de processos aplicada à segurança de máquina, não teatro de conformidade.
-            </p>
-            <p>
-              Insight: times que só “fecham NR-12” sem analisar desvios descobrem na operação — ou no acidente — os cenários que o HAZOP teria antecipado na sala.
-            </p>
-          </article>
-
-          <article class="article" id="pgr-matriz">
+<article class="article" id="pgr-matriz">
             <div class="article-meta">
               <span class="card-tag">PGR · Matrizes</span>
               <time datetime="2026-04-05">Atualizado em 05/04/2026</time>
@@ -271,7 +322,7 @@
             </p>
           </article>
 
-          <article class="article" id="iso-45001">
+<article class="article" id="iso-45001">
             <div class="article-meta">
               <span class="card-tag">ISO 45001</span>
               <time datetime="2026-02-14">Atualizado em 14/02/2026</time>
@@ -288,7 +339,7 @@
             </p>
           </article>
 
-          <article class="article" id="incerteza-higiene">
+<article class="article" id="incerteza-higiene">
             <div class="article-meta">
               <span class="card-tag">Higiene ocupacional</span>
               <time datetime="2026-05-01">Atualizado em 01/05/2026</time>
@@ -304,8 +355,16 @@
               Insight: higiene de qualidade comunica método, limite de quantificação e incerteza. O PGR que só copia o valor final perde a informação que mais importa para priorizar ações.
             </p>
           </article>
+            </div>
+          </details>
 
-          <article class="article" id="ergonomia">
+          <details class="theme-accordion" id="tema-organizacao">
+            <summary class="theme-accordion-summary">
+              <h2 class="theme-accordion-title">Organização do trabalho</h2>
+              <span class="theme-accordion-count">3 insights</span>
+            </summary>
+            <div class="theme-accordion-body article-list">
+<article class="article" id="ergonomia">
             <div class="article-meta">
               <span class="card-tag">Organização · Ergonomia</span>
               <time datetime="2026-05-25">Atualizado em 25/05/2026</time>
@@ -322,7 +381,7 @@
             </p>
           </article>
 
-          <article class="article" id="fadiga-turnos">
+<article class="article" id="fadiga-turnos">
             <div class="article-meta">
               <span class="card-tag">Organização · Turnos</span>
               <time datetime="2026-05-18">Atualizado em 18/05/2026</time>
@@ -339,7 +398,7 @@
             </p>
           </article>
 
-          <article class="article" id="participacao">
+<article class="article" id="participacao">
             <div class="article-meta">
               <span class="card-tag">ISO 45001 · Cultura</span>
               <time datetime="2026-04-28">Atualizado em 28/04/2026</time>
@@ -355,8 +414,16 @@
               Cuidado: participação sem proteção psicológica vira teatro. Relato só floresce onde aprender vale mais do que culpar.
             </p>
           </article>
+            </div>
+          </details>
 
-          <article class="article" id="nr1-pgr">
+          <details class="theme-accordion" id="tema-nr">
+            <summary class="theme-accordion-summary">
+              <h2 class="theme-accordion-title">NR insights</h2>
+              <span class="theme-accordion-count">4 insights</span>
+            </summary>
+            <div class="theme-accordion-body article-list">
+<article class="article" id="nr1-pgr">
             <div class="article-meta">
               <span class="card-tag">NR-1 · PGR</span>
               <time datetime="2026-06-01">Atualizado em 01/06/2026</time>
@@ -373,7 +440,24 @@
             </p>
           </article>
 
-          <article class="article" id="nr17">
+<article class="article" id="hazop-nr12">
+            <div class="article-meta">
+              <span class="card-tag">HAZOP · NR-12</span>
+              <time datetime="2026-03-22">Atualizado em 22/03/2026</time>
+            </div>
+            <h2>HAZOP + NR-12: do checklist à engenharia de processos</h2>
+            <p>
+              Checklist de NR-12 verifica requisitos de proteção de máquinas. HAZOP pergunta o que acontece se parâmetros e intenções de projeto desviarem — mais fluxo, menos pressão, sequência invertida, interface homem–máquina falha.
+            </p>
+            <p>
+              Combinar os dois move a discussão de “tem guarda?” para “em que condições a guarda, o intertravamento ou o LOTO deixam de ser eficazes?”. É engenharia de processos aplicada à segurança de máquina, não teatro de conformidade.
+            </p>
+            <p>
+              Insight: times que só “fecham NR-12” sem analisar desvios descobrem na operação — ou no acidente — os cenários que o HAZOP teria antecipado na sala.
+            </p>
+          </article>
+
+<article class="article" id="nr17">
             <div class="article-meta">
               <span class="card-tag">NR-17</span>
               <time datetime="2026-04-12">Atualizado em 12/04/2026</time>
@@ -390,7 +474,7 @@
             </p>
           </article>
 
-          <article class="article" id="nr15-higiene">
+<article class="article" id="nr15-higiene">
             <div class="article-meta">
               <span class="card-tag">NR-15 · Higiene</span>
               <time datetime="2026-03-30">Atualizado em 30/03/2026</time>
@@ -406,8 +490,16 @@
               No PGR, agentes físicos, químicos e biológicos precisam de narrativa técnica — não só anexo de planilha copiado do laudo.
             </p>
           </article>
+            </div>
+          </details>
 
-          <article class="article" id="resiliencia">
+          <details class="theme-accordion" id="tema-gerais">
+            <summary class="theme-accordion-summary">
+              <h2 class="theme-accordion-title">Curiosidades gerais</h2>
+              <span class="theme-accordion-count">1 insight</span>
+            </summary>
+            <div class="theme-accordion-body article-list">
+<article class="article" id="resiliencia">
             <div class="article-meta">
               <span class="card-tag">Cultura · Desempenho</span>
               <time datetime="2026-06-08">Atualizado em 08/06/2026</time>
@@ -423,10 +515,12 @@
               Para Margus Giuliano, o salto profissional está aí: usar ISO 31010, Bow-Tie e PGR vivo não para enfeitar arquivo, e sim para decidir antes que a consequência chegue.
             </p>
           </article>
-
+            </div>
+          </details>
             </div>
           </div>
         </section>
+
 
         <section class="cta-band" aria-labelledby="cta-curiosidades">
           <div class="container">
