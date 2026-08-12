@@ -1346,3 +1346,30 @@ main {
   background: var(--amber-pale);
   border: 1px solid rgba(217, 119, 6, 0.35);
 }
+
+.nr-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.nr-page-link {
+  font-size: 0.78rem;
+  color: var(--teal, #0d7377);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.nr-page-link:hover {
+  color: var(--navy, #0b1f2a);
+}
+
+@media (max-width: 700px) {
+  .nr-actions {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
