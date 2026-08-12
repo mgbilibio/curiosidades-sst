@@ -83,10 +83,16 @@
       id: "normas-tecnicas",
       label: "Normas técnicas",
       items: [
-        { href: "curiosidades.html#iso-31010", label: "ISO 31000 / 31010" },
-        { href: "curiosidades.html#iso-45001", label: "ISO 45001" },
-        { href: "curiosidades.html#incerteza-higiene", label: "Incerteza em higiene" },
-        { href: "curiosidades.html#analise-barreiras", label: "Análise de barreiras" }
+        { href: "normas-tecnicas.html", label: "Catálogo e referências", className: "sidebar-nr-hub" },
+        { href: "normas-tecnicas.html#gratuitos", label: "Documentos gratuitos" },
+        { href: "normas-tecnicas.html#oit-construcao", label: "OIT construção" },
+        { href: "normas-tecnicas.html#oit-hfe", label: "OIT + IEA HFE" },
+        { href: "normas-tecnicas.html#referencias", label: "NR → normas técnicas" },
+        { href: "normas-tecnicas.html#internacionais", label: "Principais ISO/IEC" },
+        { href: "curiosidades.html#iso-31010", label: "Insight: ISO 31000 / 31010" },
+        { href: "curiosidades.html#iso-45001", label: "Insight: ISO 45001" },
+        { href: "curiosidades.html#incerteza-higiene", label: "Insight: higiene" },
+        { href: "curiosidades.html#analise-barreiras", label: "Insight: barreiras" }
       ]
     },
     {
@@ -143,6 +149,9 @@
         if (!hash && targetFile === "nrs.html" && targetHash === "#acesso-nrs") {
           return true;
         }
+        if (!hash && targetFile === "normas-tecnicas.html" && targetHash === "#gratuitos") {
+          return true;
+        }
         return hash === targetHash;
       }
       return false;
@@ -153,6 +162,7 @@
   function topicShouldExpand(topic) {
     // Introdução and NR always open on every page
     if (topic.id === "introducao" || topic.id === "nr") return true;
+    if (topic.id === "normas-tecnicas" && currentFile() === "normas-tecnicas.html") return true;
     return false;
   }
 
