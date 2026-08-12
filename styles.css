@@ -1117,3 +1117,128 @@ main {
     transition: none;
   }
 }
+
+/* ===== NR access page ===== */
+.nr-hub-card {
+  margin: 1.75rem 0 0;
+  padding: 1.5rem;
+  background: var(--teal-pale);
+  border: 1px solid rgba(13, 115, 119, 0.2);
+  border-radius: var(--radius);
+}
+
+.nr-hub-card h2 {
+  color: var(--navy);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+}
+
+.nr-hub-card p {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.nr-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.nr-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.nr-item.nr-revogada {
+  background: #f8fafc;
+  border-style: dashed;
+}
+
+.nr-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.nr-num {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nr-title {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.nr-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: var(--amber-pale);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+}
+
+.nr-btn {
+  flex-shrink: 0;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 700px) {
+  .nr-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nr-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Tall sidebar with many NR links */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.sidebar-sub a {
+  font-size: 0.8rem;
+  padding: 0.32rem 0.55rem;
+}
+
+.sidebar-sub a.sidebar-external {
+  color: var(--text-muted);
+}
+
+.sidebar-sub a.sidebar-external:hover {
+  color: var(--teal);
+}
+
+.external-cue {
+  font-size: 0.72em;
+  opacity: 0.7;
+  margin-left: 0.1rem;
+}
