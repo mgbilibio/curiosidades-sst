@@ -78,7 +78,8 @@
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
         { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },
-        { href: "artigos/adpf-1316-sancao-vs-obrigacao.html", label: "#4 ADPF 1316 sanção vs obrigação" }
+        { href: "artigos/adpf-1316-sancao-vs-obrigacao.html", label: "#4 ADPF 1316 sanção vs obrigação" },
+        { href: "artigos/guia-mte-psicossociais-leitura-critica.html", label: "#5 Guia MTE leitura crítica" }
       ]
     },
     {
