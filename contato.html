@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Entre em contato com Margus Giuliano / Curiosidades SST para sugerir temas técnicos, correções ou feedback editorial.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://curiosidadessst.example/contato.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Contato | Curiosidades SST — Margus Giuliano">
+  <meta property="og:description" content="Sugira temas técnicos ou envie feedback a Margus Giuliano sobre o conteúdo de SST.">
+  <meta property="og:url" content="https://curiosidadessst.example/contato.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="page-hero">
+      <div class="container">
+        <h1>Contato</h1>
+        <p>Fale com Margus Giuliano: sugestão de insight técnico, correção ou feedback editorial.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Como podemos ajudar</h2>
+            <p>
+              Este formulário é para comunicação editorial e feedback sobre o Curiosidades SST.
+              Não prestamos consultoria técnica individual nem atendimento de emergência por este canal.
+            </p>
+            <div class="info-item">
+              <div>
+                <strong>Autor</strong>
+                <span>Margus Giuliano</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div>
+                <strong>E-mail</strong>
+                <span>engenheirobill@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div>
+                <strong>Assuntos bem-vindos</strong>
+                <span>Sugestão de temas técnicos, correções, feedback editorial e parcerias educativas</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div>
+                <strong>Tempo de resposta</strong>
+                <span>Mensagens são lidas em dias úteis (quando o canal estiver ativo no ambiente de publicação)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div>
+                <strong>Emergências</strong>
+                <span>Em risco imediato, acione brigada, SAMU (192), Bombeiros (193) ou o responsável local de SST</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Envie sua mensagem</h2>
+            <form id="contact-form" action="mailto:engenheirobill@gmail.com" method="post" enctype="text/plain" novalidate>
+              <div class="form-group">
+                <label for="nome">Nome <span class="hint">(obrigatório)</span></label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required maxlength="120" placeholder="Seu nome">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail <span class="hint">(obrigatório)</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required maxlength="160" placeholder="voce@empresa.com.br">
+              </div>
+              <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto">
+                  <option value="Sugestão de tema técnico">Sugestão de tema técnico</option>
+                  <option value="Feedback sobre conteúdo">Feedback sobre conteúdo</option>
+                  <option value="Correção / atualização">Correção / atualização</option>
+                  <option value="Parceria educativa">Parceria educativa</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem <span class="hint">(obrigatório)</span></label>
+                <textarea id="mensagem" name="mensagem" required maxlength="4000" placeholder="Escreva sua mensagem com o máximo de detalhes úteis…"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Abrir e-mail para enviar</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+              <p class="hint" style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">
+                Ao enviar, seu aplicativo de e-mail pode abrir com a mensagem preenchida (mailto).
+                Nenhum dado é armazenado neste site estático.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#0d7377"/>
+            <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+            <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+            <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+          </svg>
+          <span>Curiosidades SST</span>
+        </a>
+        <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="curiosidades.html#iso-31010">ISO 31010</a></li>
+          <li><a href="curiosidades.html#bow-tie">Bow-Tie</a></li>
+          <li><a href="curiosidades.html#hazop-nr12">HAZOP + NR-12</a></li>
+          <li><a href="curiosidades.html#pgr-matriz">PGR e matrizes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+      <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
