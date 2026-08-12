@@ -70,6 +70,15 @@
       ]
     },
     {
+      id: "artigos",
+      label: "Artigos",
+      items: [
+        { href: "artigos/index.html", label: "Série SafeEng", className: "sidebar-nr-hub" },
+        { href: "curiosidades.html#tema-em-alta", label: "Em alta 2026 (teasers)" },
+        { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" }
+      ]
+    },
+    {
       id: "organizacao",
       label: "Organização do trabalho",
       items: [
@@ -142,39 +151,93 @@
     }
   ];
 
+  function currentPathname() {
+    return window.location.pathname || "";
+  }
+
   function currentFile() {
-    var path = window.location.pathname || "";
+    var path = currentPathname();
     var parts = path.split("/");
     var file = parts[parts.length - 1] || "index.html";
     if (!file || file.indexOf(".") === -1) return "index.html";
     return file;
   }
 
+  /** Site-relative path of current page (e.g. artigos/foo.html or curiosidades.html). */
+  function currentSitePath() {
+    var path = currentPathname();
+    var marker = "/curiosidades-sst/";
+    var idx = path.indexOf(marker);
+    if (idx !== -1) {
+      var rest = path.slice(idx + marker.length);
+      if (!rest || rest.charAt(rest.length - 1) === "/") rest += "index.html";
+      return rest;
+    }
+    // Local file / other hosts: use last segments after stripping leading empties
+    var parts = path.split("/").filter(Boolean);
+    if (!parts.length) return "index.html";
+    if (parts[parts.length - 1].indexOf(".") === -1) parts.push("index.html");
+    // Prefer trailing artigos/... when present
+    var art = parts.indexOf("artigos");
+    if (art !== -1) return parts.slice(art).join("/");
+    return parts[parts.length - 1];
+  }
+
+  function inArtigosSection() {
+    return currentSitePath().indexOf("artigos/") === 0 || currentPathname().indexOf("/artigos/") !== -1;
+  }
+
+  function basePrefix() {
+    return inArtigosSection() ? "../" : "";
+  }
+
+  function resolveHref(href) {
+    if (!href || /^https?:\/\//i.test(href) || href.charAt(0) === "#" || href.charAt(0) === "/") {
+      return href;
+    }
+    return basePrefix() + href;
+  }
+
   function isActiveHref(href) {
     if (/^https?:\/\//i.test(href)) return false;
+    var sitePath = currentSitePath();
     var file = currentFile();
     var hash = window.location.hash || "";
-    if (href.indexOf("#") !== -1) {
-      var parts = href.split("#");
-      var targetFile = parts[0] || file;
-      var targetHash = "#" + parts[1];
-      if (targetFile === file) {
-        if (!hash && targetFile === "nrs.html" && targetHash === "#acesso-nrs") {
-          return true;
-        }
-        if (!hash && targetFile === "normas-tecnicas.html" && targetHash === "#gratuitos") {
-          return true;
-        }
-        return hash === targetHash;
-      }
-      return false;
+    var parts = href.split("#");
+    var targetPath = parts[0];
+    var targetHash = parts[1] ? "#" + parts[1] : "";
+
+    var pathMatches = false;
+    if (!targetPath) {
+      pathMatches = true;
+    } else if (targetPath === sitePath || targetPath === file) {
+      pathMatches = true;
+    } else if (sitePath === targetPath.replace(/^\.\.\//, "")) {
+      pathMatches = true;
+    } else if (sitePath.endsWith("/" + targetPath) || sitePath.endsWith(targetPath)) {
+      pathMatches = true;
     }
-    return href === file || (href === "index.html" && file === "");
+
+    if (!pathMatches) return false;
+
+    if (targetHash) {
+      var targetFile = targetPath || file;
+      var targetFileName = targetFile.split("/").pop();
+      if (!hash && targetFileName === "nrs.html" && targetHash === "#acesso-nrs") {
+        return true;
+      }
+      if (!hash && targetFileName === "normas-tecnicas.html" && targetHash === "#gratuitos") {
+        return true;
+      }
+      return hash === targetHash;
+    }
+    return true;
   }
 
   function topicShouldExpand(topic) {
     // Introdução and NR always open on every page
     if (topic.id === "introducao" || topic.id === "nr") return true;
+    if (topic.id === "artigos" && inArtigosSection()) return true;
     var file = currentFile();
     var normasFiles = {
       "normas-tecnicas.html": true,
@@ -195,7 +258,7 @@
   }
 
   function applyLinkAttrs(a, item) {
-    a.href = item.href;
+    a.href = resolveHref(item.href);
     a.textContent = item.label;
     var classes = [];
     if (item.className) classes.push(item.className);
