@@ -23,7 +23,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 15 | NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist) | **Publicado** | [artigo](nr12-seguranca-funcional-hazop.html) · [teaser](../curiosidades.html#nr12-seguranca-funcional-hazop) |
 | 16 | NR-35: sistema de ancoragem e falha de barreira (não só “cinto e treinamento”) | **Publicado** | [artigo](nr35-ancoragem-falha-barreira.html) · [teaser](../curiosidades.html#nr35-ancoragem-falha-barreira) |
 | 17 | NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico | **Publicado** | [artigo](nr10-energia-residual-bowtie.html) · [teaser](../curiosidades.html#nr10-energia-residual-bowtie) |
-| 18 | Investigação de eventos com contribuintes psicossociais e organizacionais | Pendente | — |
+| 18 | NR-18 / OIT construção: o que o Code of Practice internacional acrescenta ao canteiro brasileiro | **Publicado** | [artigo](nr18-oit-construcao.html) · [teaser](../curiosidades.html#nr18-oit-construcao) |
 | 19 | PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(antecipado em grande parte por #8; foco residual possível)* | Pendente | — |
 | 20 | Documentação auditável: o que registrar e o que não expor indevidamente | Pendente | — |
 | 21 | Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico | Pendente | — |
@@ -213,6 +213,19 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #17
 
 - Mudança organizacional mal conduzida como fator psicossocial *(reagendar em briefing futuro; slot #17 ocupado por NR-10 / energia residual / Bow-Tie em 12/08/2026)*
+
+
+## Nota editorial slot #18
+
+- Tema publicado em #18: NR-18 / OIT construção — o que o Code of Practice *Safety and health in construction* (ILO, 2022) acrescenta ao canteiro brasileiro (briefing 12/08/2026).
+- Bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20); teaser #18 ao lado de #15–#17.
+- Fontes: NR-18 PDF oficial (sidebar.js / gov.br); ILO CoP PDF gratuito (`wcms_861584`) já em `normas-gratuitas.html#oit-construcao` e `normas-por-nr.html#ref-nr-18`; ISO 45001 como **título + compra/consulta** — sem texto pirateado.
+- Distinção crítica: CoP **não é vinculante** e **não substitui** NR-18/NR-1; acrescenta ciclo de vida, deveres de cliente/projetista, SGSSO (mudança/contratação), psicossocial/clima/welfare e orientação técnica Parte II.
+- O antigo slot #18 (Investigação de eventos com contribuintes psicossociais e organizacionais) foi para backlog deslocado.
+
+## Backlog deslocado do slot #18
+
+- Investigação de eventos com contribuintes psicossociais e organizacionais *(reagendar em briefing futuro; slot #18 ocupado por NR-18 / OIT CoP construção em 12/08/2026)*
 
 ## Regra editorial
 
