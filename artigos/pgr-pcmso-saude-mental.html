@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PGR × PCMSO na saúde mental: interface e buracos de auditoria | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Onde PGR e PCMSO se encontram na saúde mental — e onde o auditor costuma achar buraco. Interface NR-1/GRO e NR-7, inconsistências típicas. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/pgr-pcmso-saude-mental.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="PGR × PCMSO na saúde mental: interface e buracos de auditoria | Margus Giuliano">
+  <meta property="og:description" content="PGR inventaria e controla fatores da organização do trabalho; PCMSO planeja vigilância de saúde. Onde se encontram — e a inconsistência típica que o auditor vê.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/pgr-pcmso-saude-mental.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Gestão de SST">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="PGR">
+  <meta property="article:tag" content="PCMSO">
+  <meta property="article:tag" content="NR-7">
+  <meta property="article:tag" content="Saúde mental">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PGR × PCMSO na saúde mental: interface e buracos de auditoria">
+  <meta name="twitter:description" content="Onde PGR e PCMSO se encontram na saúde mental — e onde o auditor costuma achar buraco. Artigo SafeEng por Margus Giuliano.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/pgr-pcmso-saude-mental.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "PGR × PCMSO na saúde mental"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/pgr-pcmso-saude-mental.html#article",
+        "headline": "PGR × PCMSO na saúde mental: onde os dois se encontram e onde o auditor costuma achar buraco",
+        "description": "Interface entre PGR (NR-1/GRO) e PCMSO (NR-7) na saúde mental: papéis, encontro operacional e inconsistências típicas que a auditoria costuma apontar.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/pgr-pcmso-saude-mental.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-1", "PGR", "GRO", "NR-7", "PCMSO", "saúde mental", "riscos psicossociais", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">PGR × PCMSO na saúde mental</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #3 · Em alta 2026</p>
+            <h1>PGR × PCMSO na saúde mental: onde os dois se encontram e onde o auditor costuma achar buraco</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT e médicos do trabalho
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#evolucao">Evolução histórica</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes combinadas</a></li>
+              <li><a href="#analise">Análise didática</a></li>
+              <li><a href="#esquema">Esquema: interface PGR ↔ PCMSO</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Nos artigos #1 e #2, a série SafeEng separou <em>fator de risco da organização do
+                trabalho</em> de <em>diagnóstico clínico</em> e exigiu <em>evidência de metodologia</em>
+                no inventário/PGR. A pergunta seguinte é de interface:
+                <strong>como o PGR (NR-1 / GRO) e o PCMSO (NR-7) se conversam na saúde mental</strong>
+                — e onde essa conversa costuma falhar sob o olhar do auditor?
+              </p>
+              <p>
+                Em muitas organizações, o PGR “cita risco psicossocial” numa linha genérica e o
+                PCMSO segue com exames e textos padronizados, sem lastro no inventário. Ou o
+                contrário: o PCMSO fala em “saúde mental” com linguagem assistencial, sem que o
+                GRO tenha inventariado e priorizado fatores da organização do trabalho. Nos dois
+                extremos, a interface some — e o buraco fica visível.
+              </p>
+              <p>
+                Este artigo #3 trata do <strong>encontro operacional</strong> entre gerenciamento
+                de riscos (PGR) e vigilância da saúde (PCMSO): papéis, fluxos de informação,
+                inconsistências típicas e o que a linha SafeEng recomenda para fechar a trilha
+                sem transformar SST em RH clínico nem inventário em prontuário.
+              </p>
+            </section>
+
+            <section id="evolucao" aria-labelledby="h-evo">
+              <h2 id="h-evo">Evolução histórica</h2>
+              <p>
+                A <strong>NR-7</strong> consolidou, ao longo das revisões, o
+                <strong>Programa de Controle Médico de Saúde Ocupacional (PCMSO)</strong> como
+                instrumento de <em>vigilância da saúde</em> dos trabalhadores — exames
+                admissionais, periódicos, de mudança de risco, retorno e demissionais, além do
+                planejamento médico alinhado aos riscos da organização. A lógica clássica era
+                (e continua sendo) sanitaria/ocupacional: monitorar efeitos na saúde a partir
+                dos riscos do trabalho, com sigilo e responsabilidade técnica do médico
+                coordenador.
+              </p>
+              <p>
+                Em paralelo, a <strong>NR-1</strong> evoluiu das “disposições gerais” para o
+                <strong>Gerenciamento de Riscos Ocupacionais (GRO)</strong>, materializado no
+                <strong>Programa de Gerenciamento de Riscos (PGR)</strong>. Com a
+                <strong>Portaria MTE nº 1.419/2024</strong> e o ciclo de preparação associado a
+                exigências psicossociais em <strong>26/05/2026</strong>, o inventário passa a
+                incorporar, com método, fatores ligados à <strong>organização do trabalho</strong>
+                — sem confundir perigo organizacional com diagnóstico individual (artigo #1).
+              </p>
+              <p>
+                O <strong>Manual GRO/PGR da NR-1 (2026)</strong>, o
+                <strong>Guia da NR-01 (revisão 2025)</strong> — inclusive no eixo de riscos
+                psicossociais — e o material de <strong>Perguntas e Respostas (maio/2026)</strong>
+                reforçam o GRO como processo contínuo. A interface com a saúde ocupacional deixa
+                de ser “anexo burocrático”: o inventário e as medidas de controle do PGR devem
+                informar o planejamento do PCMSO; achados agregados da vigilância (sem quebrar
+                sigilo) devem realimentar a revisão do GRO.
+              </p>
+              <p>
+                Historicamente, SST e medicina do trabalho muitas vezes caminharam em pastas
+                separadas. O momento 2025–2026 exige o contrário na saúde mental relacionada ao
+                trabalho: <strong>mesma empresa, dois instrumentos, uma trilha auditável</strong>
+                — PGR no lado da organização do trabalho e controles; PCMSO no lado da vigilância
+                e do cuidado ocupacional, cada um no seu papel.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Coerência normativa:</strong> NR-1 e NR-7 não competem; o auditor cruza inventário, plano de ação e PCMSO. Lacuna entre os dois é achado recorrente.</li>
+                <li><strong>Proteção real:</strong> citar “psicossocial” no PGR sem desdobramento no PCMSO (e sem controle organizacional) não previne dano — só enche PDF.</li>
+                <li><strong>Fronteira ética:</strong> interface bem desenhada evita patologizar o inventário e evita medicalizar o que é problema de gestão/organização.</li>
+                <li><strong>Sigilo e agregação:</strong> o PCMSO trata do indivíduo com confidencialidade; o PGR trabalha com fatores e dados agregados — a ponte precisa ser desenhada, não improvisada.</li>
+                <li><strong>Priorização de recursos:</strong> vigilância e ações médicas ganham foco quando lastreadas nos riscos priorizados do inventário.</li>
+                <li><strong>Preparação para 2026:</strong> quem alinha PGR × PCMSO agora chega à vigência com processo, não com “dois programas que não se falam”.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes combinadas</h2>
+              <p>
+                Leia sempre o original. A síntese abaixo é autoral e didática — a obrigação
+                está nos textos oficiais vigentes.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">Página oficial da NR-1 (gov.br / CTPP)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2024/portaria-mte-no-1-419-nr-01-gro-nova-redacao.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 1.419/2024 — nova redação NR-01 / GRO (PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/guia-nr-01-revisado.pdf" target="_blank" rel="noopener noreferrer">Guia NR-01 revisado — inclusive riscos psicossociais (PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" target="_blank" rel="noopener noreferrer">Perguntas e Respostas GRO/PGR — maio/2026</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-7-nr-7" target="_blank" rel="noopener noreferrer">Página oficial da NR-7 — PCMSO (gov.br / CTPP)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf" target="_blank" rel="noopener noreferrer">NR-7 atualizada — texto PDF oficial</a>
+                </li>
+              </ul>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: papéis, encontro e buracos típicos</h2>
+              <p>
+                A regra de ouro SafeEng para a interface na saúde mental:
+              </p>
+
+              <h3>PGR (NR-1 / GRO) — inventaria e controla</h3>
+              <p>
+                O PGR identifica, avalia e controla <strong>perigos/fatores da organização do
+                trabalho</strong> (sobrecarga, metas agressivas, baixa autonomia, assédio
+                organizacional, isolamento em teletrabalho, etc.). Entrega inventário, critérios
+                (artigo #2), plano de ação com dono/prazo/verificação e revisões quando o trabalho
+                muda. Não diagnostica trabalhador; não registra CID no inventário.
+              </p>
+
+              <h3>PCMSO (NR-7) — planeja vigilância da saúde</h3>
+              <p>
+                O PCMSO, sob coordenação médica, planeja a <strong>vigilância da saúde</strong>
+                alinhada aos riscos da organização: critérios de exames, periodicidade, mudança
+                de risco, orientações e encaminhamentos ocupacionais. Trata do indivíduo com
+                <strong>sigilo</strong>. Não substitui o redesenho organizacional que cabe ao GRO;
+                não “fecha” sozinho um fator psicossocial inventariado no PGR.
+              </p>
+
+              <h3>Onde os dois se encontram</h3>
+              <ul>
+                <li><strong>Entrada:</strong> riscos priorizados no inventário/PGR informam o planejamento do PCMSO (o que vigiar, com que lógica de grupos/exposição).</li>
+                <li><strong>Saída agregada:</strong> sinais coletivos da vigilância (padrões de afastamento, queixas recorrentes por setor — sem identificar pessoas) podem gatilhar revisão do inventário e do plano de ação.</li>
+                <li><strong>Mudança de risco:</strong> alteração relevante na organização do trabalho (turno, software de metas, layout, terceirização) deve ecoar nos dois lados: atualizar PGR e reavaliar critérios do PCMSO.</li>
+                <li><strong>Fronteira:</strong> assistência clínica/diagnóstico individual permanece no circuito de saúde (PCMSO / rede assistencial); controle na fonte permanece no GRO/PGR.</li>
+              </ul>
+
+              <h3>Inconsistência típica (o buraco do auditor)</h3>
+              <p>
+                Dois padrões aparecem com frequência:
+              </p>
+              <ol>
+                <li>
+                  <strong>PGR cita risco psicossocial sem desdobramento no PCMSO</strong> —
+                  inventário menciona “estresse” ou “psicossocial”, plano de ação vago ou inexistente,
+                  e o PCMSO segue idêntico ao ano anterior, sem lastro nos riscos priorizados.
+                </li>
+                <li>
+                  <strong>PCMSO genérico sem lastro no inventário</strong> —
+                  texto médico padrão sobre “saúde mental”, campanhas genéricas ou checklists
+                  assistenciais, enquanto o inventário do PGR omite ou trata de forma cosmética
+                  os fatores da organização do trabalho.
+                </li>
+              </ol>
+              <p>
+                Em ambos os casos, o auditor (interno, cliente, certificação ou fiscalização)
+                pergunta a trilha: <em>qual fator do inventário justifica este item do PCMSO?</em>
+                e <em>qual medida organizacional fecha o risco que o PGR declarou?</em>
+                Sem resposta cruzada, o buraco está documentado.
+              </p>
+
+              <div class="compare-grid" role="group" aria-label="Comparativo interface coerente versus buraco de auditoria">
+                <div class="compare-card compare-ok">
+                  <h3>Interface coerente (auditável)</h3>
+                  <ul>
+                    <li>Inventário com fatores organizacionais priorizados</li>
+                    <li>Plano de ação no PGR com controles na fonte</li>
+                    <li>PCMSO referencia riscos do inventário vigente</li>
+                    <li>Mudança de risco dispara revisão nos dois lados</li>
+                    <li>Sinais agregados realimentam o GRO (com sigilo)</li>
+                  </ul>
+                </div>
+                <div class="compare-card compare-no">
+                  <h3>Buraco típico de auditoria</h3>
+                  <ul>
+                    <li>PGR “tem psicossocial” só no título da linha</li>
+                    <li>PCMSO genérico, cópia de modelo</li>
+                    <li>Nenhuma ponte inventário ↔ vigilância</li>
+                    <li>Diagnóstico/CID no lugar de fator organizacional</li>
+                    <li>Dois PDFs atualizados na capa, mudos entre si</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: interface PGR ↔ PCMSO</h2>
+              <figure class="article-figure" aria-labelledby="fig-iface-cap">
+                <figcaption id="fig-iface-cap" class="article-figure-cap">
+                  Interface SafeEng: organização do trabalho → inventário/controles (PGR) ↔ vigilância da saúde (PCMSO), com fronteira de sigilo e realimentação agregada.
+                </figcaption>
+                <div class="flow-diagram" role="img" aria-label="Diagrama da interface entre PGR e PCMSO na saúde mental">
+                  <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#0d7377"/>
+                      </marker>
+                      <marker id="arrow3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#d97706"/>
+                      </marker>
+                    </defs>
+
+                    <!-- Top: organização -->
+                    <rect x="280" y="16" width="400" height="52" rx="12" fill="#0b1f2a"/>
+                    <text x="480" y="38" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">Organização do trabalho</text>
+                    <text x="480" y="56" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="11">jornada · metas · autonomia · suporte · assédio org.</text>
+
+                    <!-- Left column: PGR -->
+                    <rect x="40" y="110" width="360" height="220" rx="16" fill="#134e4a" opacity="0.15" stroke="#0d7377" stroke-width="2"/>
+                    <rect x="60" y="128" width="320" height="44" rx="10" fill="#0d7377"/>
+                    <text x="220" y="156" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="16" font-weight="700">PGR · NR-1 / GRO</text>
+
+                    <rect x="70" y="190" width="300" height="40" rx="8" fill="#0d7377"/>
+                    <text x="220" y="215" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="13">Inventaria fatores / perigos</text>
+
+                    <rect x="70" y="242" width="300" height="40" rx="8" fill="#134e4a"/>
+                    <text x="220" y="267" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="13">Controla na fonte + plano de ação</text>
+
+                    <text x="220" y="310" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="12" font-weight="600">≠ prontuário · ≠ CID no inventário</text>
+
+                    <!-- Right column: PCMSO -->
+                    <rect x="560" y="110" width="360" height="220" rx="16" fill="#d97706" opacity="0.12" stroke="#d97706" stroke-width="2"/>
+                    <rect x="580" y="128" width="320" height="44" rx="10" fill="#d97706"/>
+                    <text x="740" y="156" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="16" font-weight="700">PCMSO · NR-7</text>
+
+                    <rect x="590" y="190" width="300" height="40" rx="8" fill="#b45309"/>
+                    <text x="740" y="215" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13">Planeja vigilância da saúde</text>
+
+                    <rect x="590" y="242" width="300" height="40" rx="8" fill="#92400e"/>
+                    <text x="740" y="267" text-anchor="middle" fill="#fde68a" font-family="system-ui,sans-serif" font-size="13">Exames · critérios · sigilo médico</text>
+
+                    <text x="740" y="310" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="12" font-weight="600">≠ redesenho organizacional sozinho</text>
+
+                    <!-- Arrows from org -->
+                    <path d="M400 68 C360 90, 280 100, 220 110" fill="none" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow3)"/>
+                    <path d="M560 68 C600 90, 680 100, 740 110" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrow3a)"/>
+
+                    <!-- Bidirectional interface -->
+                    <path d="M400 210 C460 200, 500 200, 560 210" fill="none" stroke="#0b1f2a" stroke-width="3" marker-end="url(#arrow3)"/>
+                    <path d="M560 250 C500 260, 460 260, 400 250" fill="none" stroke="#0b1f2a" stroke-width="3" marker-end="url(#arrow3)"/>
+                    <rect x="430" y="218" width="100" height="28" rx="8" fill="#0b1f2a"/>
+                    <text x="480" y="237" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="11" font-weight="700">INTERFACE</text>
+
+                    <!-- Bottom callouts -->
+                    <rect x="60" y="360" width="400" height="44" rx="10" fill="#fff" stroke="#0d7377" stroke-width="2"/>
+                    <text x="260" y="387" text-anchor="middle" fill="#0d7377" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Inventário priorizado → lastro do PCMSO</text>
+
+                    <rect x="500" y="360" width="400" height="44" rx="10" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+                    <text x="700" y="387" text-anchor="middle" fill="#b91c1c" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Buraco: citar sem desdobrar / PCMSO genérico</text>
+                  </svg>
+                </div>
+              </figure>
+              <p>
+                Leitura de engenharia: a seta de cima alimenta os dois instrumentos; a ponte do
+                meio é a interface auditável; a faixa vermelha é exatamente o achado que o
+                auditor costuma documentar quando a ponte não existe.
+              </p>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Call center</p>
+                <h3>PGR cita “psicossocial”; PCMSO não muda</h3>
+                <p>
+                  O inventário lista “risco psicossocial — atendimento” como médio. Não há plano
+                  de ação com controle de metas, pausas ou suporte de supervisão. O PCMSO do ano
+                  seguinte é idêntico ao anterior: exames padrão, sem menção aos grupos com
+                  exposição intensificada a pressão de tempo e script rígido.
+                </p>
+                <p>
+                  <strong>Interface coerente:</strong> detalhar o fator (pressão de tempo / baixa
+                  autonomia); priorizar no critério do artigo #2; plano de ação organizacional;
+                  PCMSO referencia o inventário vigente e define lógica de vigilância para o
+                  grupo exposto — sem transformar exame em “teste de estresse” genérico.
+                </p>
+                <p>
+                  <strong>Buraco do auditor:</strong> linha cosmética no PGR + PCMSO desconectado
+                  = dois documentos que não se sustentam mutuamente.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Hospital / plantões</p>
+                <h3>PCMSO fala em saúde mental; inventário omite organização</h3>
+                <p>
+                  O PCMSO inclui parágrafo sobre “promoção da saúde mental” e campanha de
+                  mindfulness. O inventário do PGR não registra sobrecarga de plantão, assédio
+                  organizacional em certas unidades nem falhas de suporte entre turnos. Quando
+                  há pico de afastamentos num setor, nada dispara revisão do GRO.
+                </p>
+                <p>
+                  <strong>Interface coerente:</strong> inventariar fatores da organização do
+                  trabalho com participação/CIPA; controles na escala e na liderança; PCMSO
+                  lastreado nesses riscos; sinais agregados de afastamento realimentam revisão
+                  do inventário — preservando sigilo individual.
+                </p>
+                <p>
+                  <strong>Buraco do auditor:</strong> discurso assistencial sem lastro no
+                  inventário; prevenção organizacional ausente.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Tecnologia / teletrabalho</p>
+                <h3>Mudança de modelo, interface congelada</h3>
+                <p>
+                  Empresa migra metade do time para teletrabalho híbrido com ferramenta de
+                  monitoramento de produtividade. PGR e PCMSO permanecem da fase 100% presencial.
+                  Surgem relatos de isolamento e disponibilidade 24×7; CIPA registra; nenhum dos
+                  dois programas é revisado por “mudança de risco”.
+                </p>
+                <p>
+                  <strong>Interface coerente:</strong> gatilho de revisão no GRO (artigo #2);
+                  atualizar inventário (isolamento, fronteiras de jornada, monitoramento
+                  punitivo); plano de ação; PCMSO reavalia critérios/grupos diante da nova
+                  exposição — sem patologizar quem pede apoio.
+                </p>
+                <p>
+                  <strong>Buraco do auditor:</strong> mudança organizacional óbvia + documentos
+                  congelados = falha de processo contínuo na interface PGR × PCMSO.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Declare papéis:</strong> PGR inventaria/controla organização do trabalho; PCMSO vigia saúde com sigilo — na saúde mental, os dois se encontram, não se fundem.</li>
+                <li><strong>Exija lastro cruzado:</strong> item relevante de psicossocial no inventário deve ter eco no planejamento do PCMSO; item de “saúde mental” no PCMSO deve apontar risco do inventário vigente.</li>
+                <li><strong>Feche o plano de ação no PGR:</strong> vigilância não substitui controle na fonte (metas, jornada, autonomia, suporte, prevenção de assédio organizacional).</li>
+                <li><strong>Desenhe a ponte de dados:</strong> só informação agregada e ética realimenta o GRO; prontuário não vira linha de inventário (artigo #1).</li>
+                <li><strong>Use mudança de risco como gatilho único:</strong> alteração de processo, modelo de trabalho ou indicadores coletivos revisita PGR e PCMSO juntos.</li>
+                <li><strong>Evidencie método:</strong> critério, fonte e participação (artigo #2) na parte psicossocial do inventário — senão a interface nasce frágil.</li>
+                <li><strong>Confronte o oficial:</strong> NR-1, Portaria 1.419/2024, Guia, Manual GRO/PGR, Q&amp;A e NR-7 (página + PDF no gov.br) — sempre o texto vigente.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> na saúde mental relacionada ao trabalho, o auditor
+                não procura “mais um PDF de bem-estar”. Procura a <em>trilha</em> entre fator
+                inventariado, controle organizacional e vigilância coerente. PGR e PCMSO se
+                encontram no lastro mútuo e na revisão conjunta; o buraco típico é citar sem
+                desdobrar — ou vigiar sem inventário. Na linha SafeEng, interface boa é a que um
+                terceiro técnico consegue auditar sem adivinhar.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para fins
+                  informativos e de debate técnico. Verifique sempre os textos oficiais vigentes
+                  no gov.br. Este conteúdo <strong>não é aconselhamento médico nem jurídico</strong>
+                  e <strong>não substitui</strong> avaliação clínica, coordenação do PCMSO, laudos,
+                  assessoria jurídica ou análise específica da sua organização.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#pgr-pcmso-saude-mental">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="metodologia-pgr-evidencias.html">Artigo #2</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a GRO/PGR, NR-1, NR-7 e organização do trabalho para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="metodologia-pgr-evidencias.html">#2 Metodologia no PGR</a></li>
+              <li><a href="../curiosidades.html#pgr-pcmso-saude-mental">Teaser PGR × PCMSO</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+              <li><a href="../curiosidades.html#nr1-pgr">NR-1 e PGR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

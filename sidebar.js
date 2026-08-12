@@ -76,7 +76,8 @@
         { href: "artigos/index.html", label: "Série SafeEng", className: "sidebar-nr-hub" },
         { href: "curiosidades.html#tema-em-alta", label: "Em alta 2026 (teasers)" },
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
-        { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" }
+        { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
+        { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" }
       ]
     },
     {

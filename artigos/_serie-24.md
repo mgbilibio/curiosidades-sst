@@ -8,13 +8,13 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 |---|--------|--------|-----|
 | 1 | Riscos psicossociais no inventário do PGR: o que é fator de risco e o que não é diagnóstico clínico | **Publicado** | [artigo](riscos-psicossociais-inventario-pgr.html) · [teaser](../curiosidades.html#psicossocial-pgr) |
 | 2 | Como evidenciar metodologia (critério, fonte, participação) sem virar documento de gaveta | **Publicado** | [artigo](metodologia-pgr-evidencias.html) · [teaser](../curiosidades.html#metodologia-pgr) |
-| 3 | AEP e inventário: quando a análise ergonômica alimenta o PGR | Pendente | — |
+| 3 | PGR × PCMSO na saúde mental: onde os dois se encontram e onde o auditor costuma achar buraco | **Publicado** | [artigo](pgr-pcmso-saude-mental.html) · [teaser](../curiosidades.html#pgr-pcmso-saude-mental) |
 | 4 | Assédio e violência no trabalho como perigo da organização | Pendente | — |
 | 5 | Sobrecarga cognitiva e metas agressivas: como registrar sem patologizar | Pendente | — |
 | 6 | Home office e teletrabalho no GRO: isolamento, disponibilidade e fronteiras | Pendente | — |
 | 7 | Participação dos trabalhadores na identificação de riscos psicossociais | Pendente | — |
 | 8 | Evidências e indicadores: o que medir sem transformar SST em RH clínico | Pendente | — |
-| 9 | Interface PGR × PCMSO × saúde mental: papéis, limites e encaminhamentos | Pendente | — |
+| 9 | AEP e inventário: quando a análise ergonômica alimenta o PGR *(slot liberado; tema #3 antigo)* | Pendente | — |
 | 10 | Guia, Manual GRO/PGR e Q&A: como ler os documentos oficiais de 2025–2026 | Pendente | — |
 | 11 | Matriz de risco psicossocial: limites, armadilhas e alternativas | Pendente | — |
 | 12 | Segurança psicológica e clima tóxico: fator de proteção versus perigo | Pendente | — |
@@ -34,6 +34,11 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #2
 
 - Inventário de riscos × plano de ação: o elo que mais falha no PGR *(reagendar em briefing futuro)*
+
+## Nota editorial slot #3
+
+- Tema publicado em #3 era o antigo #9 (Interface PGR × PCMSO × saúde mental), alinhado ao briefing de 12/08/2026.
+- AEP e inventário (antigo #3) foi realocado ao slot #9 como pendente.
 
 ## Regra editorial
 
