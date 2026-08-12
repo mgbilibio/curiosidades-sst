@@ -21,7 +21,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 13 | eSocial SST + PGR: inconsistência documental como sinal de fiscalização | **Publicado** | [artigo](esocial-sst-pgr-inconsistencia.html) · [teaser](../curiosidades.html#esocial-sst-pgr-inconsistencia) |
 | 14 | Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia | **Publicado** | [artigo](manual-nr1-pdca-gro.html) · [teaser](../curiosidades.html#manual-nr1-pdca-gro) |
 | 15 | NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist) | **Publicado** | [artigo](nr12-seguranca-funcional-hazop.html) · [teaser](../curiosidades.html#nr12-seguranca-funcional-hazop) |
-| 16 | ISO 45003 e alinhamento com a NR-1 (GRO/PGR) | Pendente | — |
+| 16 | NR-35: sistema de ancoragem e falha de barreira (não só “cinto e treinamento”) | **Publicado** | [artigo](nr35-ancoragem-falha-barreira.html) · [teaser](../curiosidades.html#nr35-ancoragem-falha-barreira) |
 | 17 | Mudança organizacional mal conduzida como fator psicossocial | Pendente | — |
 | 18 | Investigação de eventos com contribuintes psicossociais e organizacionais | Pendente | — |
 | 19 | PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(antecipado em grande parte por #8; foco residual possível)* | Pendente | — |
@@ -187,6 +187,19 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #15
 
 - Terceirização e cadeia de valor: quem gerencia o risco psicossocial? *(reagendar em briefing futuro; slot #15 ocupado por NR-12 / segurança funcional / HAZOP em 12/08/2026)*
+
+
+## Nota editorial slot #16
+
+- Tema publicado em #16: NR-35 — sistema de ancoragem e falha de barreira (não só “cinto e treinamento”) (briefing 12/08/2026).
+- Bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20); teaser #16 ao lado de #15.
+- Fontes: NR-35 PDF oficial (sidebar.js / gov.br); Manual consolidado NR-35; ABNT NBR 16325-1 / 16325-2 como **títulos + links de compra/consulta** (ABNT Catálogo) — sem texto pirateado; EN 795 / EN 365 como referências de catálogo do portal.
+- Distinção crítica: capacitação + EPI = elos; hierarquia + sistema de ancoragem = barreira; falha de barreira se analisa elo a elo (estrutura, dispositivo, clearance, pêndulo, inspeção).
+- O antigo slot #16 (ISO 45003 e alinhamento com a NR-1) foi para backlog deslocado.
+
+## Backlog deslocado do slot #16
+
+- ISO 45003 e alinhamento com a NR-1 (GRO/PGR) *(reagendar em briefing futuro; slot #16 ocupado por NR-35 / ancoragem / falha de barreira em 12/08/2026)*
 
 ## Regra editorial
 
