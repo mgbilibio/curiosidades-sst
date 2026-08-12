@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="NR-33 e permissão de entrada: falhas de classificação, isolamento, PET e resgate que precedem o teste atmosférico. ABNT NBR 16577 como referência de título. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/nr33-espaco-confinado-analise-risco.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="NR-33 · espaço confinado · falha antes do gás | Margus Giuliano">
+  <meta property="og:description" content="Onde a análise de risco falha antes do medidor: classificação errada, isolamento incompleto, PET frágil e resgate improvisado. NR-33 oficial + ABNT NBR 16577 (título).">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/nr33-espaco-confinado-analise-risco.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Clássicos 2026">
+  <meta property="article:tag" content="NR-33">
+  <meta property="article:tag" content="espaço confinado">
+  <meta property="article:tag" content="permissão de entrada">
+  <meta property="article:tag" content="PET">
+  <meta property="article:tag" content="ABNT NBR 16577">
+  <meta property="article:tag" content="análise de risco">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NR-33 · espaço confinado · falha antes do gás · SafeEng #19">
+  <meta name="twitter:description" content="Falhas que precedem o teste atmosférico: classificação, isolamento, PET e resgate.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr33-espaco-confinado-analise-risco.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "NR-33 · espaço confinado · falha antes do gás"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr33-espaco-confinado-analise-risco.html#article",
+        "headline": "Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás",
+        "description": "Leitura SafeEng: falhas de classificação, isolamento, permissão de entrada (PET) e resgate que frequentemente precedem o teste atmosférico. NR-33 oficial (gov.br) e ABNT NBR 16577 como referência de título.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr33-espaco-confinado-analise-risco.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-33", "espaço confinado", "permissão de entrada", "PET", "ABNT NBR 16577", "análise de risco", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">NR-33 · espaço confinado · falha antes do gás</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #19 · Clássicos 2026</p>
+            <h1>Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, supervisores de operação/manutenção e quem trata a NR-33 como sistema de barreiras — e não como “ligar o detector e entrar”
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: NR-33 e NBR 16577</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: falhas antes do gás</a></li>
+              <li><a href="#esquema">Esquema SVG: cascata de barreiras</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                No bloco <strong>Clássicos 2026</strong>, depois de NR-12 (#15), NR-35 (#16),
+                NR-10 (#17) e NR-18 (#18), o clássico de alta fatalidade é o
+                <strong>espaço confinado</strong>. A narrativa operacional mais comum
+                reduz a NR-33 a um gesto: <em>medir O₂ / inflamáveis / tóxicos e entrar</em>.
+                Em SafeEng, o ponto crítico é outro: <strong>muitas falhas da análise de
+                risco ocorrem antes do medidor</strong> — na classificação do espaço, no
+                isolamento de energias e processos, na permissão de entrada (PET) e na
+                preparação de resgate.
+              </p>
+              <p>
+                Este artigo #19 SafeEng ancora na <strong>NR-33</strong> oficial (gov.br /
+                CTPP, PDF e Guia Técnico no sidebar) e cita a
+                <strong>ABNT NBR&nbsp;16577</strong> apenas como <strong>referência de
+                título</strong> (compra/consulta no ABNT Catálogo — sem texto pirateado).
+                A pergunta de engenharia é: <strong>o que tem de estar sólido antes do
+                teste atmosférico para a permissão de entrada não ser teatro?</strong>
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: NR-33 (requisito nacional) e ABNT NBR&nbsp;16577 (título / consulta)</h2>
+              <ul>
+                <li>
+                  <strong>NR-33 (oficial, gov.br):</strong> Norma Regulamentadora —
+                  Segurança e Saúde nos Trabalhos em Espaços Confinados. Define
+                  gestão, identificação/classificação, medidas de prevenção, capacitação,
+                  permissão de entrada e trabalho (PET), vigia, equipe de resgate e
+                  interfaces com outras NRs. Texto vigente no PDF/CTPP; este site aponta
+                  o link oficial, não o substitui.
+                </li>
+                <li>
+                  <strong>Guia Técnico da NR-33:</strong> publicação oficial de apoio à
+                  interpretação (gov.br) — útil para leitura didática, sem substituir o
+                  texto regulamentar.
+                </li>
+                <li>
+                  <strong>ABNT NBR&nbsp;16577:</strong> norma técnica brasileira sobre
+                  trabalho em espaços confinados (título + compra/consulta legal no
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  / consulta autorizada). Em SafeEng: referência de engenharia — <em>não</em>
+                  substitui a NR-33 como obrigação de SST no Brasil. Já listada em
+                  <a href="../normas-por-nr.html#ref-nr-33">Normas por NR · NR-33</a>.
+                </li>
+                <li>
+                  <strong>Interface NR-1 / GRO / PGR:</strong> espaço confinado não “vive
+                  só na PET do dia”. Inventário, plano de ação, interação com terceiros
+                  (#11), revisão após mudança (#12, #14) e isolamento/LOTO (#17) passam
+                  pelo GRO. A PET é barreira operacional — não inventário completo.
+                </li>
+                <li>
+                  <strong>OSHA 1910.146</strong> (permit-required confined spaces) aparece
+                  no catálogo do portal como hub regulatório clássico (EUA) — benchmarking
+                  de linguagem, não obrigação brasileira.
+                </li>
+              </ul>
+              <p>
+                Em SafeEng: <strong>NR-33 + GRO/NR-1 sustentam a conformidade brasileira</strong>;
+                <strong>NBR&nbsp;16577 amplia critérios técnicos via compra/consulta</strong>;
+                o teste de atmosfera é elo necessário — e insuficiente se a cascata
+                anterior estiver furada.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>“Não é espaço confinado” é a primeira falha:</strong> classificação errada apaga PET, vigia, isolamento e resgate — o medidor nem chega a ser pedido.</li>
+                <li><strong>Isolamento incompleto mata com atmosfera “boa”:</strong> produto, vapor, vapor residual, energia mecânica/elétrica/térmica ou inundação podem entrar depois do teste.</li>
+                <li><strong>PET frágil = papel carimbado:</strong> sem análise de risco do serviço, sem vigia ativo e sem condições de saída, a permissão é teatro de compliance.</li>
+                <li><strong>Resgate improvisado multiplica vítimas:</strong> o clássico “entrar atrás do colega” é falha de barreira planejada — não heroísmo.</li>
+                <li><strong>Detector não absolve planejamento:</strong> O₂/LEL/tóxicos medem o instante; não corrigem classificação, LOTO, ventilação inadequada nem ausência de equipe de resgate.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática. A NR-33 e o Guia Técnico
+                são textos oficiais no gov.br.
+                <strong>Não reproduzimos</strong> texto integral da ABNT NBR&nbsp;16577 —
+                só título e links de compra/consulta.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-33-nr-33" target="_blank" rel="noopener noreferrer">Página oficial da NR-33 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-33-atualizada-2022-_retificada.pdf" target="_blank" rel="noopener noreferrer">NR-33 atualizada (PDF oficial)</a>
+                  — Segurança e Saúde nos Trabalhos em Espaços Confinados (mesmo PDF referenciado no sidebar do portal)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-33_guia_tecnico_da_nr_33.pdf" target="_blank" rel="noopener noreferrer">Guia Técnico da NR-33 (PDF oficial)</a>
+                  — apoio à interpretação; não substitui o texto da NR
+                </li>
+                <li>
+                  <strong>ABNT NBR&nbsp;16577</strong> — Espaço confinado (título)
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/confea/" target="_blank" rel="noopener noreferrer">ABNT × Confea/Crea</a>
+                  — também em <a href="../normas-por-nr.html#ref-nr-33">Normas por NR · NR-33</a>
+                  · sem texto pirateado
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">NR-1 / GRO / PGR (gov.br)</a>
+                  — inventário, plano, interação de riscos e revisão
+                </li>
+                <li>
+                  <a href="../curiosidades.html#nr10-energia-residual-bowtie">Artigo #17 (Clássicos): NR-10 · energia residual · Bow-Tie</a>
+                  — isolamento / LOTO como barreira que frequentemente precede o gás
+                </li>
+                <li>
+                  <a href="../nrs.html">NRs oficiais no portal</a>
+                  ·
+                  <a href="../curiosidades.html#nr18-oit-construcao">Artigo #18: NR-18 · OIT construção</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> citar NBR&nbsp;16577 ou OSHA
+                <strong>não</strong> torna a NR-33 “opcional” nem cria PET pronta. Em
+                conflito entre síntese, norma técnica paga e norma regulamentadora,
+                <strong>prevalece o texto oficial da NR-33</strong> (e demais NRs
+                aplicáveis) no DOU/gov.br.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: onde a análise de risco falha <em>antes</em> do gás</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>o teste atmosférico é barreira crítica, mas a cascata que o
+                antecede — classificação, isolamento, PET e resgate — costuma decidir
+                se haverá acidente mesmo com “números verdes” no detector</strong>.
+              </p>
+
+              <h3>1) Classificação errada: o espaço que “não era” confinado</h3>
+              <p>
+                Se o local não entra no inventário de espaços confinados, a NR-33
+                inteira fica de fora: PET, vigia, capacitação tipificada, isolamento
+                formal, plano de resgate. O erro clássico é tratar poço, silo, tanque,
+                galeria, digestor, forno frio, vagão-tanque ou “só um buraco de
+                inspeção” como área comum porque “sempre entramos assim”. Em SafeEng:
+                classificação é a <strong>primeira barreira de gestão</strong>. Sem ela,
+                o gás nem é medido — e o risco permanece.
+              </p>
+
+              <h3>2) Isolamento incompleto: energia e processo ainda “vivos”</h3>
+              <p>
+                Antes (e durante) a entrada, o espaço precisa estar isolado de
+                ingressos perigosos: produto, vapor, gás de processo, inundação,
+                energia elétrica/mecânica/térmica/pneumática, movimentos de partes.
+                Isolamento de fachada — “válvula fechada sem cadeado”, “disjuntor
+                aberto sem LOTO”, “tampa parcialmente removida” — é buraco. O artigo
+                #17 (energia residual / Bow-Tie) conversa direto aqui: <strong>medir
+                atmosfera num espaço ainda conectado ao processo é otimismo, não
+                engenharia</strong>.
+              </p>
+
+              <h3>3) PET frágil: permissão sem análise do serviço</h3>
+              <p>
+                A permissão de entrada e trabalho (PET) não é carimbo de portaria.
+                Precisa refletir o <em>serviço real</em> (solda, jateamento, limpeza
+                química, inspeção), os perigos específicos, os controles (ventilação,
+                EPI/EPC, comunicação), os responsáveis (autorizado, vigia, supervisão)
+                e a validade/condições de cancelamento. PET genérica reutilizada,
+                assinada sem presença, sem vigia nomeado ou sem comunicação contínua
+                é <strong>barreira de papel</strong>.
+              </p>
+
+              <h3>4) Resgate não preparado: a segunda vítima</h3>
+              <p>
+                Entrada sem equipe e meios de resgate dimensionados ao cenário é falha
+                previsível. O padrão histórico — trabalhador cai / desmaia e o colega
+                entra sem proteção nem plano — transforma um evento em múltiplas
+                vítimas. Resgate não é improviso heroico: é barreira planejada
+                (equipamento, capacitação, comunicação com emergência externa quando
+                o cenário exigir).
+              </p>
+
+              <h3>5) Então vem o gás — necessário, não suficiente</h3>
+              <p>
+                Avaliação e monitoramento atmosférico (O₂, inflamáveis, tóxicos
+                pertinentes ao cenário), ventilação e critérios de abandono são
+                elos centrais da NR-33. Em SafeEng, o ponto é de ordem: <strong>só
+                depois</strong> de classificação correta, isolamento efetivo, PET viva
+                e resgate preparado o medidor fecha a cascata. Números bons com
+                cascata furada = falsa segurança.
+              </p>
+
+              <h3>6) O fio SafeEng completo</h3>
+              <p>
+                <strong>Identificar / classificar o espaço</strong> →
+                <strong>análise de risco do serviço</strong> →
+                <strong>isolamento (processo + energias / LOTO)</strong> →
+                <strong>PET com vigia e comunicação</strong> →
+                <strong>atmosfera + ventilação</strong> →
+                <strong>entrada controlada</strong> →
+                <strong>resgate preparado</strong> →
+                <strong>evidência no GRO/PGR e liberação formal</strong> →
+                NR-33 como conformidade resultante. Curso e detector entram no fio —
+                nunca sozinhos no começo e no fim.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema SVG: cascata de barreiras — falhas antes do gás</h2>
+              <p>
+                Diagrama didático — não reproduz figuras oficiais da NR-33, do Guia
+                Técnico nem da ABNT NBR&nbsp;16577. Leitura: cascata de cima para baixo;
+                o teste atmosférico aparece <em>depois</em> de classificação, isolamento
+                e PET; à direita, modos de falha típicos que precedem o medidor.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Cascata: classificar espaço, isolar energias e processo, PET com vigia, depois atmosfera e entrada; à direita falhas típicas antes do gás; resgate como barreira transversal">
+                  <svg viewBox="0 0 960 860" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow19" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                        <path d="M0,0 L6,3 L0,6 Z" fill="#f0c674"/>
+                      </marker>
+                    </defs>
+                    <rect width="960" height="860" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="32" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">NR-33 · espaço confinado · falha antes do gás · SafeEng #19</text>
+                    <text x="480" y="54" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">classificar → isolar → PET/vigia → atmosfera → entrada · resgate preparado</text>
+
+                    <!-- Left cascade -->
+                    <text x="220" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Cascata de barreiras</text>
+
+                    <rect x="60" y="100" width="320" height="52" rx="10" fill="#0f766e"/>
+                    <text x="220" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">1 · Classificar o espaço</text>
+                    <text x="220" y="140" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">inventário · NR-33 aplicável</text>
+
+                    <path d="M220 152 V168" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow19)"/>
+
+                    <rect x="60" y="170" width="320" height="52" rx="10" fill="#0f766e"/>
+                    <text x="220" y="192" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">2 · Isolar processo + energias</text>
+                    <text x="220" y="210" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">LOTO · válvulas · residual (#17)</text>
+
+                    <path d="M220 222 V238" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow19)"/>
+
+                    <rect x="60" y="240" width="320" height="52" rx="10" fill="#0f766e"/>
+                    <text x="220" y="262" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">3 · PET + vigia + comunicação</text>
+                    <text x="220" y="280" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">permissão viva · não carimbo</text>
+
+                    <path d="M220 292 V308" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow19)"/>
+
+                    <rect x="60" y="310" width="320" height="56" rx="10" fill="#b45309" stroke="#f0c674" stroke-width="2"/>
+                    <text x="220" y="334" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">4 · Atmosfera + ventilação</text>
+                    <text x="220" y="354" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">O₂ · LEL · tóxicos · contínuo</text>
+
+                    <path d="M220 366 V382" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow19)"/>
+
+                    <rect x="60" y="384" width="320" height="52" rx="10" fill="#134e4a"/>
+                    <text x="220" y="406" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">5 · Entrada controlada</text>
+                    <text x="220" y="424" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">abandonar se condição mudar</text>
+
+                    <!-- Right: failure modes BEFORE gas -->
+                    <text x="700" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Falhas típicas ANTES do gás</text>
+
+                    <rect x="480" y="100" width="420" height="52" rx="10" fill="#7f1d1d"/>
+                    <text x="690" y="122" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12" font-weight="700">“Não é espaço confinado”</text>
+                    <text x="690" y="140" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">classificação omitida · inventário cego</text>
+
+                    <rect x="480" y="170" width="420" height="52" rx="10" fill="#7f1d1d"/>
+                    <text x="690" y="192" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Isolamento de fachada</text>
+                    <text x="690" y="210" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">válvula sem LOTO · energia residual</text>
+
+                    <rect x="480" y="240" width="420" height="52" rx="10" fill="#7f1d1d"/>
+                    <text x="690" y="262" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12" font-weight="700">PET genérica / sem vigia</text>
+                    <text x="690" y="280" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">carimbo · serviço não analisado</text>
+
+                    <rect x="480" y="310" width="420" height="56" rx="10" fill="#7c2d12"/>
+                    <text x="690" y="334" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Resgate improvisado</text>
+                    <text x="690" y="354" text-anchor="middle" fill="#fdba74" font-family="system-ui,sans-serif" font-size="11">“entrar atrás” · sem meios · 2ª vítima</text>
+
+                    <rect x="480" y="384" width="420" height="52" rx="10" fill="#78350f"/>
+                    <text x="690" y="406" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Detector como talismã</text>
+                    <text x="690" y="424" text-anchor="middle" fill="#fdba74" font-family="system-ui,sans-serif" font-size="11">números verdes · cascata furada</text>
+
+                    <!-- Cross arrows from failures to cascade -->
+                    <path d="M480 126 H390" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M480 196 H390" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M480 266 H390" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+                    <!-- Rescue band -->
+                    <rect x="60" y="460" width="840" height="70" rx="12" fill="#1d4ed8"/>
+                    <text x="480" y="490" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Resgate preparado (transversal) — equipe · meios · comunicação · não improvisar</text>
+                    <text x="480" y="514" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="12">Barreira que deve existir antes da entrada — não depois do desmaio</text>
+
+                    <!-- Bottom boxes -->
+                    <rect x="40" y="560" width="430" height="140" rx="14" fill="#065f46"/>
+                    <text x="255" y="596" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Caminho de engenharia</text>
+                    <text x="255" y="624" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">classificar → isolar → PET/vigia</text>
+                    <text x="255" y="648" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">atmosfera → entrada → evidência GRO</text>
+                    <text x="255" y="672" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">NR-33 como conformidade resultante</text>
+
+                    <rect x="490" y="560" width="430" height="140" rx="14" fill="#7f1d1d"/>
+                    <text x="705" y="596" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Atalho “só o gás”</text>
+                    <text x="705" y="624" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">curso ok · detector na foto</text>
+                    <text x="705" y="648" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">sem classificação · isolamento · PET · resgate</text>
+                    <text x="705" y="672" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">barreira ilusória</text>
+
+                    <rect x="40" y="720" width="880" height="110" rx="14" fill="#134e4a"/>
+                    <text x="480" y="754" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Capacitação habilita · detector informa · classificação + isolamento + PET + resgate sustentam a entrada</text>
+                    <text x="480" y="780" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">ABNT NBR 16577: título + compra/consulta — sem texto pirateado · NR-33 PDF oficial no gov.br</text>
+                    <text x="480" y="806" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">Diagrama didático SafeEng — não é figura oficial NR/ABNT · gás vem depois da cascata, não no lugar dela</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  Cascata didática: classificação, isolamento e PET/vigia antecedem o
+                  teste atmosférico; o resgate é barreira transversal antes da entrada.
+                  À direita, modos de falha que frequentemente tornam o medidor irrelevante
+                  ou tardio. Referência de título: ABNT&nbsp;NBR&nbsp;16577; requisito
+                  nacional: NR-33 no gov.br.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Classificação omitida</p>
+                <h3>“É só um poço de inspeção; nunca usamos PET — o cara desceu e não subiu”</h3>
+                <p>
+                  A planta tem tanques e vasos no inventário de espaços confinados, mas
+                  um poço de bombas / caixa de visita “de rotina” ficou de fora porque
+                  “todo mundo já conhece”. Não há PET, não há vigia nomeado, não há
+                  isolamento formal de linhas próximas. Alguém desce para “dar uma
+                  olhada”; o odor muda; o colega desce atrás sem equipamento.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> falha <em>antes do gás</em>. Sem
+                  classificação, a cascata inteira some. O detector e a NR-33 tipificada
+                  nem entram em cena. Inventário cego + resgate improvisado = clássico
+                  de múltiplas vítimas.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Isolamento e PET de papel</p>
+                <h3>“Medimos O₂ e LEL ok; a válvula de processo ainda pingava vapor”</h3>
+                <p>
+                  Há PET preenchida e capacitação em dia. O time mede atmosfera na
+                  boca do tanque, obtém números aceitáveis e entra. O isolamento da
+                  linha de processo foi “válvula fechada” sem cadeado, sem prova de
+                  estanqueidade e sem LOTO elétrico/mecânico completo. Durante o
+                  serviço, ingresso de produto/vapor altera a atmosfera; o vigia
+                  está “por perto”, no rádio de outro serviço.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> o gás foi medido — e a análise de
+                  risco já tinha falhado no isolamento e na PET viva. NBR&nbsp;16577
+                  (título) e Guia Técnico ajudam a conversa de critérios; a obrigação
+                  a cumprir é a NR-33 vigente. Isolamento frágil invalida o “ok” do
+                  medidor.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Fio completo (clássico maduro)</p>
+                <h3>Classificar → isolar → PET/vigia → atmosfera → entrada → resgate pronto</h3>
+                <p>
+                  Em intervenção programada, o espaço está no inventário; o serviço
+                  específico foi analisado; isolamento de processo e energias (incluindo
+                  residual — #17) está evidenciado; PET nomeia autorizado, vigia e
+                  condições de cancelamento; atmosfera é avaliada e monitorada com
+                  ventilação adequada; equipe e meios de resgate estão dimensionados
+                  <em>antes</em> da entrada. Controles alimentam inventário/plano do
+                  PGR; terceiros na mesma área entram na interação de riscos (#11).
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> clássico bem feito. O medidor é elo —
+                  não talismã. Classificação, isolamento, PET e resgate sustentam a
+                  entrada; a NR-33 aparece como resultado coerente, não como pasta de
+                  formulários.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Comece pela classificação:</strong> inventário vivo de espaços confinados; o que “sempre foi assim” precisa critério — não tradição.</li>
+                <li><strong>Trate isolamento como barreira de engenharia:</strong> processo + energias + residual; LOTO e prova de isolamento — não “válvula fechada na foto”.</li>
+                <li><strong>Faça a PET do serviço, não do formulário:</strong> perigos do trabalho real, vigia ativo, comunicação, validade e cancelamento.</li>
+                <li><strong>Prepare o resgate antes da entrada:</strong> equipe, meios, comunicação com emergência; proíba o improviso “entrar atrás”.</li>
+                <li><strong>Meça e monitore a atmosfera no lugar certo da cascata:</strong> depois de classificar/isolar/autorizar; durante a permanência quando o cenário exigir.</li>
+                <li><strong>Não use o detector para absolver cascata furada:</strong> números verdes com isolamento incompleto ou PET morta = falsa segurança.</li>
+                <li><strong>Use só fontes legais da NBR&nbsp;16577:</strong> ABNT Catálogo / ABNT×Confea/Crea; este portal não hospeda texto integral.</li>
+                <li><strong>NR-33 oficial no gov.br:</strong> PDF + Guia Técnico (sidebar); na dúvida, prevalece a NR sobre síntese e normas estrangeiras.</li>
+                <li><strong>Integre ao GRO:</strong> espaço confinado no inventário, controles no plano, revisão após mudança/quase-acidente (#12, #14); terceiros (#11); LOTO (#17).</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> a NR-33 não se resolve com curso e foto do
+                detector. O clássico maduro trata <strong>classificação, isolamento,
+                permissão de entrada e resgate</strong> como barreiras que frequentemente
+                falham <em>antes</em> do gás; cita a <strong>ABNT NBR&nbsp;16577</strong>
+                como referência de título (texto só via compra/consulta); e analisa a
+                cascata elo a elo — para que a conformidade com a NR-33 no gov.br seja
+                resultado, não teatro. Capacitação e monitoramento atmosférico
+                continuam obrigatórios e úteis; sozinhos, não sustentam quem entra num
+                espaço que a análise de risco já tinha liberado por omissão.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-33 vigente, do Guia Técnico oficial, da NR-1/GRO, de
+                  demais NRs aplicáveis (incluindo NR-10 quando houver isolamento elétrico),
+                  nem da ABNT&nbsp;NBR&nbsp;16577. Também <strong>não constitui</strong>
+                  aconselhamento jurídico, parecer, PET pronta, inventário de espaços
+                  confinados, procedimento de isolamento/LOTO, plano de resgate, APR pronta,
+                  especificação de EPI/EPC, medição, laudo ou substituição da responsabilidade
+                  da organização ou do profissional legalmente habilitado. Este site
+                  <strong>não hospeda</strong> textos integrais protegidos de ABNT/ISO —
+                  use ABNT Catálogo ou consulta autorizada (ex.: ABNT×Confea/Crea). Cenários
+                  e o diagrama são didáticos e hipotéticos. Verifique os PDFs e catálogos
+                  oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#nr33-espaco-confinado-analise-risco">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="nr18-oit-construcao.html">Artigo #18</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a NR-33, espaço confinado, PET, isolamento, resgate e clássicos de engenharia de barreiras para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="nr18-oit-construcao.html">#18 NR-18 · OIT construção · CoP</a></li>
+              <li><a href="../curiosidades.html#nr33-espaco-confinado-analise-risco">Teaser NR-33 · espaço confinado</a></li>
+              <li><a href="../curiosidades.html#tema-classicos-2026">Clássicos 2026</a></li>
+              <li><a href="../normas-por-nr.html#ref-nr-33">Normas por NR · NR-33</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

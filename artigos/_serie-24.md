@@ -24,7 +24,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 16 | NR-35: sistema de ancoragem e falha de barreira (não só “cinto e treinamento”) | **Publicado** | [artigo](nr35-ancoragem-falha-barreira.html) · [teaser](../curiosidades.html#nr35-ancoragem-falha-barreira) |
 | 17 | NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico | **Publicado** | [artigo](nr10-energia-residual-bowtie.html) · [teaser](../curiosidades.html#nr10-energia-residual-bowtie) |
 | 18 | NR-18 / OIT construção: o que o Code of Practice internacional acrescenta ao canteiro brasileiro | **Publicado** | [artigo](nr18-oit-construcao.html) · [teaser](../curiosidades.html#nr18-oit-construcao) |
-| 19 | PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(antecipado em grande parte por #8; foco residual possível)* | Pendente | — |
+| 19 | Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás | **Publicado** | [artigo](nr33-espaco-confinado-analise-risco.html) · [teaser](../curiosidades.html#nr33-espaco-confinado-analise-risco) |
 | 20 | Documentação auditável: o que registrar e o que não expor indevidamente | Pendente | — |
 | 21 | Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico | Pendente | — |
 | 22 | Integração NR-17 × riscos psicossociais na prática do inventário | Pendente | — |
@@ -227,8 +227,21 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Investigação de eventos com contribuintes psicossociais e organizacionais *(reagendar em briefing futuro; slot #18 ocupado por NR-18 / OIT CoP construção em 12/08/2026)*
 
+
+## Nota editorial slot #19
+
+- Tema publicado em #19: Espaço confinado (NR-33) e permissão de entrada — onde a análise de risco falha **antes do gás** (classificação, isolamento, PET, resgate) (briefing 12/08/2026).
+- Bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20); teaser #19 ao lado de #15–#18.
+- Fontes: NR-33 PDF oficial + Guia Técnico (sidebar.js / gov.br); ABNT NBR 16577 como **título + links de compra/consulta** (ABNT Catálogo) — sem texto pirateado; OSHA 1910.146 só como hub de benchmarking no catálogo do portal.
+- Distinção crítica: detector/atmosfera = elo necessário; cascata anterior (classificar → isolar → PET/vigia → resgate preparado) costuma falhar primeiro; PET não é carimbo.
+- O antigo slot #19 (PGR em ME/EPP / proporcionalidade psicossocial) permanece como backlog deslocado; sobreposição parcial com #8 (MEI/ME/EPP · AEP/dispensas).
+
+## Backlog deslocado do slot #19
+
+- PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(reagendar em briefing futuro; slot #19 ocupado por NR-33 / espaço confinado / falha antes do gás em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 18–24 até briefing específico de cada tema.
+- Não publicar 20–24 até briefing específico de cada tema.
