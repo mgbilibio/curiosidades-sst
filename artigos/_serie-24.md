@@ -22,7 +22,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 14 | Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia | **Publicado** | [artigo](manual-nr1-pdca-gro.html) · [teaser](../curiosidades.html#manual-nr1-pdca-gro) |
 | 15 | NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist) | **Publicado** | [artigo](nr12-seguranca-funcional-hazop.html) · [teaser](../curiosidades.html#nr12-seguranca-funcional-hazop) |
 | 16 | NR-35: sistema de ancoragem e falha de barreira (não só “cinto e treinamento”) | **Publicado** | [artigo](nr35-ancoragem-falha-barreira.html) · [teaser](../curiosidades.html#nr35-ancoragem-falha-barreira) |
-| 17 | Mudança organizacional mal conduzida como fator psicossocial | Pendente | — |
+| 17 | NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico | **Publicado** | [artigo](nr10-energia-residual-bowtie.html) · [teaser](../curiosidades.html#nr10-energia-residual-bowtie) |
 | 18 | Investigação de eventos com contribuintes psicossociais e organizacionais | Pendente | — |
 | 19 | PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(antecipado em grande parte por #8; foco residual possível)* | Pendente | — |
 | 20 | Documentação auditável: o que registrar e o que não expor indevidamente | Pendente | — |
@@ -201,8 +201,21 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - ISO 45003 e alinhamento com a NR-1 (GRO/PGR) *(reagendar em briefing futuro; slot #16 ocupado por NR-35 / ancoragem / falha de barreira em 12/08/2026)*
 
+
+## Nota editorial slot #17
+
+- Tema publicado em #17: NR-10 — trabalho elétrico e energia residual sob Bow-Tie (LOTO / residual como barreiras); ABNT NBR 5410 e NFPA 70E como **títulos + links de compra/consulta** (briefing 12/08/2026).
+- Bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20); teaser #17 ao lado de #15–#16.
+- Fontes: NR-10 PDF oficial (sidebar.js / gov.br); ABNT NBR 5410 e NFPA 70E sem texto pirateado; ISO/IEC 31010 como catálogo de técnicas (Bow-Tie).
+- Distinção crítica: curso + “disjuntor aberto” = teatro; LOTO + drenagem/residual + verificação de ausência de tensão = barreiras preventivas; PPE/EPC = mitigação (direita do Bow-Tie), não substituto da desenergização.
+- O antigo slot #17 (Mudança organizacional mal conduzida como fator psicossocial) foi para backlog deslocado.
+
+## Backlog deslocado do slot #17
+
+- Mudança organizacional mal conduzida como fator psicossocial *(reagendar em briefing futuro; slot #17 ocupado por NR-10 / energia residual / Bow-Tie em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 16–24 até briefing específico de cada tema.
+- Não publicar 18–24 até briefing específico de cada tema.

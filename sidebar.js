@@ -92,7 +92,8 @@
         { href: "artigos/esocial-sst-pgr-inconsistencia.html", label: "#13 eSocial SST × PGR inconsistência" },
         { href: "artigos/manual-nr1-pdca-gro.html", label: "#14 Manual NR-1 · PDCA do GRO" },
         { href: "artigos/nr12-seguranca-funcional-hazop.html", label: "#15 NR-12 · segurança funcional · HAZOP" },
-        { href: "artigos/nr35-ancoragem-falha-barreira.html", label: "#16 NR-35 · ancoragem · falha de barreira" }
+        { href: "artigos/nr35-ancoragem-falha-barreira.html", label: "#16 NR-35 · ancoragem · falha de barreira" },
+        { href: "artigos/nr10-energia-residual-bowtie.html", label: "#17 NR-10 · energia residual · Bow-Tie" }
       ]
     },
     {
@@ -153,6 +154,7 @@
         { href: "curiosidades.html#nr1-pgr", label: "Insight: NR-1 GRO" },
         { href: "curiosidades.html#hazop-nr12", label: "Insight: NR-12 HAZOP" },
         { href: "curiosidades.html#nr35-ancoragem-falha-barreira", label: "Insight: NR-35 ancoragem" },
+        { href: "curiosidades.html#nr10-energia-residual-bowtie", label: "Insight: NR-10 energia residual" },
         { href: "curiosidades.html#nr17", label: "Insight: NR-17" },
         { href: "curiosidades.html#nr15-higiene", label: "Insight: NR-15" }
       ]

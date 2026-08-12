@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="NR-10 e energia residual sob olhar Bow-Tie: LOTO, verificação de ausência de tensão e barreiras preventivas/mitigadoras. Referências de título ABNT NBR 5410 e NFPA 70E. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/nr10-energia-residual-bowtie.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="NR-10: energia residual e Bow-Tie | Margus Giuliano">
+  <meta property="og:description" content="Trabalho elétrico como análise de barreiras: LOTO, energia residual e Bow-Tie — NR-10 oficial; NBR 5410 e NFPA 70E como títulos de referência.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/nr10-energia-residual-bowtie.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Clássicos 2026">
+  <meta property="article:tag" content="NR-10">
+  <meta property="article:tag" content="energia residual">
+  <meta property="article:tag" content="LOTO">
+  <meta property="article:tag" content="Bow-Tie">
+  <meta property="article:tag" content="ABNT NBR 5410">
+  <meta property="article:tag" content="NFPA 70E">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NR-10 · energia residual · Bow-Tie">
+  <meta name="twitter:description" content="LOTO e energia residual como barreiras no Bow-Tie. SafeEng.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr10-energia-residual-bowtie.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "NR-10 · energia residual · Bow-Tie"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr10-energia-residual-bowtie.html#article",
+        "headline": "NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico",
+        "description": "Leitura SafeEng: trabalho elétrico e energia residual sob Bow-Tie — LOTO e verificação de ausência de tensão como barreiras; NR-10 oficial; ABNT NBR 5410 e NFPA 70E como referências de título.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/nr10-energia-residual-bowtie.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-10", "energia residual", "LOTO", "Bow-Tie", "ABNT NBR 5410", "NFPA 70E", "trabalho elétrico", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">NR-10 · energia residual · Bow-Tie</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #17 · Clássicos 2026</p>
+            <h1>NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, eletricistas autorizados e quem trata desenergização como sistema de barreiras — não como “desligar o disjuntor”
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: NR-10, LOTO e referências</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: energia residual no Bow-Tie</a></li>
+              <li><a href="#esquema">Esquema SVG: Bow-Tie típico</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                No bloco <strong>Clássicos 2026</strong>, depois da NR-12 (#15) e da
+                NR-35 (#16), o clássico seguinte é o trabalho elétrico. A
+                <strong>NR-10</strong> fixa requisitos brasileiros de segurança em
+                instalações e serviços em eletricidade; o erro editorial e operacional
+                mais comum é reduzir o tema a “curso NR-10 + EPI” — ou, pior, a
+                <strong>“desliguei o disjuntor, está morto”</strong>. Energia residual
+                (capacitores, indutores, baterias, retroalimentação, indução, fontes
+                alternativas) e falha de <strong>LOTO</strong> (bloqueio e etiquetagem /
+                travamento) são causas clássicas de choque e arco elétrico.
+              </p>
+              <p>
+                Este artigo #17 SafeEng desenha o fio correto com
+                <strong>Bow-Tie</strong> (técnica catalogada na família ISO/IEC&nbsp;31010):
+                <strong>ameaças → barreiras preventivas (incluindo LOTO e verificação de
+                ausência de tensão) → evento top (contato / energização indesejada) →
+                barreiras mitigadoras → consequências</strong>. Não hospedamos texto
+                integral de ABNT/NFPA; citamos <em>títulos</em> e links oficiais de
+                compra/consulta. A NR-10 oficial está no gov.br (PDF do sidebar).
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: NR-10, LOTO, energia residual e referências de título</h2>
+              <ul>
+                <li>
+                  <strong>NR-10 (oficial, gov.br):</strong> Norma Regulamentadora —
+                  Segurança em Instalações e Serviços em Eletricidade. Cobre medidas de
+                  controle, desenergização, trabalho em tensão (quando aplicável),
+                  capacitação, autorização, EPI/EPC, procedimentos e prontuário.
+                  Texto vigente no PDF/CTPP; este site aponta o link oficial, não o
+                  substitui.
+                </li>
+                <li>
+                  <strong>Energia residual (leitura de engenharia):</strong> energia que
+                  permanece ou pode reaparecer após o “desligamento aparente” —
+                  carga em capacitores, campos magnéticos/indução, baterias UPS,
+                  geradores, painéis solares, retroalimentação de outro circuito,
+                  testes que reenergizam o sistema. “Aberto o seccionador” ≠ “zero
+                  energia no ponto de trabalho”.
+                </li>
+                <li>
+                  <strong>LOTO (Lockout/Tagout — bloqueio e etiquetagem):</strong>
+                  conjunto de barreiras preventivas: isolar fontes, travar dispositivos
+                  de seccionamento, etiquetar, liberar/drenar energia armazenada,
+                  <em>verificar ausência de tensão</em> no ponto de trabalho e manter
+                  o estado sob controle até a liberação formal. Em SafeEng, LOTO é
+                  <em>sistema</em>, não só cadeado na foto.
+                </li>
+                <li>
+                  <strong>ABNT NBR 5410</strong> —
+                  <em>Instalações elétricas de baixa tensão</em>: referência técnica
+                  brasileira de projeto/instalação (BT). Confirme edição vigente no
+                  ABNT Catálogo. <em>Não</em> hospedamos o texto — comprar/consultar
+                  legalmente. Complementa a NR-10 no eixo instalação adequada.
+                </li>
+                <li>
+                  <strong>NFPA 70E</strong> —
+                  <em>Standard for Electrical Safety in the Workplace</em>: referência
+                  internacional (EUA) de segurança elétrica no trabalho (risco de arco,
+                  limites de aproximação, PPE, procedimentos). Título + compra/consulta
+                  legal (NFPA / canais autorizados) — sem texto pirateado.
+                </li>
+                <li>
+                  <strong>Bow-Tie:</strong> diagrama que liga causas (esquerda) ao
+                  evento top e às consequências (direita), com barreiras preventivas e
+                  mitigadoras. Em cenários de alta severidade elétrica, torna visível
+                  o que a matriz 5×5 comprime em uma célula (ver também teaser
+                  <a href="../curiosidades.html#bow-tie">Bow-Tie</a> no portal).
+                </li>
+              </ul>
+              <p>
+                Em SafeEng: <strong>capacitação habilita pessoas</strong>;
+                <strong>EPI/EPC vestem e protegem o corpo</strong>;
+                <strong>LOTO + verificação de ausência de tensão + controle de energia
+                residual sustentam a barreira preventiva</strong>. Os três se conversam —
+                o primeiro e o segundo não substituem o terceiro.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Choque e arco raramente são “azar”:</strong> costumam ser isolamento incompleto, circuito errado, energia residual não drenada, verificação de tensão omitida ou cadeado compartilhado sem responsabilidade individual.</li>
+                <li><strong>NR-10 sem LOTO vivo vira teatro:</strong> certificado de curso + luva na mochila + “disjuntor desligado” não prova zero energia no ponto de trabalho.</li>
+                <li><strong>NBR 5410 e NFPA 70E mal citadas viram marketing:</strong> “conforme 5410/70E” no folder sem procedimento, teste e liberação não fecha engenharia.</li>
+                <li><strong>Bow-Tie força a pergunta certa:</strong> o que impede o evento top? O que limita a consequência se a prevenção falhar? Barreiras discutíveis na sala — não só célula na matriz.</li>
+                <li><strong>Integra com GRO/PGR:</strong> risco elétrico entra no inventário e no plano (#2, #14); interação com terceiros em subestação/painel (#11) também é barreira compartilhada.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática. <strong>Não
+                reproduzimos</strong> texto normativo pago de ABNT/NFPA — só títulos,
+                links de compra/consulta e leitura de engenharia.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-10-nr-10" target="_blank" rel="noopener noreferrer">Página oficial da NR-10 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-10-atualizada-2026-1.pdf" target="_blank" rel="noopener noreferrer">NR-10 atualizada (PDF oficial)</a>
+                  — Segurança em Instalações e Serviços em Eletricidade (texto vigente no gov.br; mesmo PDF referenciado no sidebar do portal)
+                </li>
+                <li>
+                  <strong>ABNT NBR 5410</strong> —
+                  <em>Instalações elétricas de baixa tensão</em>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/confea/" target="_blank" rel="noopener noreferrer">ABNT × Confea/Crea</a>
+                  (visualização para profissionais adimplentes, quando disponível) — confirme edição vigente
+                </li>
+                <li>
+                  <strong>NFPA 70E</strong> —
+                  <em>Standard for Electrical Safety in the Workplace</em>
+                  ·
+                  <a href="https://www.nfpa.org/product/nfpa-70e-standard-for-electrical-safety-in-the-workplace/p0070ecode" target="_blank" rel="noopener noreferrer">NFPA (produto / compra)</a>
+                  ·
+                  <a href="https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e" target="_blank" rel="noopener noreferrer">página de desenvolvimento NFPA 70E</a>
+                  — consulta/compra legal; confirme edição vigente
+                </li>
+                <li>
+                  <strong>ISO/IEC 31010</strong> (família) — técnicas de avaliação de risco (Bow-Tie entre as catalogadas) —
+                  título + compra/consulta (ISO Store / ABNT); ver teaser
+                  <a href="../curiosidades.html#iso-31010">ISO 31010 no PGR</a>
+                </li>
+                <li>
+                  <a href="../normas-por-nr.html#ref-nr-10">Normas por NR · NR-10</a>
+                  (NBR&nbsp;5410 · IEC&nbsp;60364 · NFPA&nbsp;70E no catálogo do portal)
+                  ·
+                  <a href="../nrs.html">NRs oficiais no portal</a>
+                  ·
+                  <a href="../curiosidades.html#nr35-ancoragem-falha-barreira">Artigo #16 (Clássicos): NR-35 · ancoragem</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> citar NBR&nbsp;5410 ou NFPA&nbsp;70E
+                <strong>não</strong> torna a NR-10 “automática” nem cria procedimento de
+                desenergização. Em conflito entre síntese, norma técnica estrangeira e
+                norma regulamentadora brasileira, <strong>prevalece o texto oficial da
+                NR-10</strong> no DOU/gov.br. Normas ABNT/NFPA exigem aquisição ou
+                consulta legal — este site <strong>não hospeda</strong> o texto integral.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: energia residual e LOTO como barreiras no Bow-Tie</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>curso e EPI são elos; o controle de energia (incluindo residual)
+                e a verificação no ponto de trabalho definem se a barreira preventiva
+                existe de verdade</strong>.
+              </p>
+
+              <h3>1) O mito “desliguei o disjuntor”</h3>
+              <p>
+                Seccionar um dispositivo é <em>um</em> passo — necessário e insuficiente.
+                Sem identificação de <strong>todas</strong> as fontes, sem bloqueio
+                individual, sem drenagem/liberação de energia armazenada e sem
+                <strong>teste de ausência de tensão</strong> no ponto de intervenção,
+                o trabalhador pode encontrar circuito vivo por retroalimentação, UPS,
+                capacitor carregado ou erro de circuito. A foto do disjuntor aberto
+                não é evidência de zero energia.
+              </p>
+
+              <h3>2) Evento top típico no Bow-Tie elétrico</h3>
+              <p>
+                Para o diagrama didático deste artigo, o evento top é:
+                <strong>“trabalhador entra em contato com parte energizada / arco
+                durante intervenção considerada desenergizada”</strong>. À esquerda,
+                ameaças (fontes e falhas humanas/organizacionais); à direita,
+                consequências (choque, queimadura por arco, queda secundária, óbito).
+                No meio do caminho: barreiras preventivas (evitar o top) e
+                mitigadoras (limitar dano se o top ocorrer).
+              </p>
+
+              <h3>3) Barreiras preventivas: LOTO + residual + verificação</h3>
+              <p>
+                Leitura SafeEng (não checklist exaustivo da NR-10): planejar e autorizar
+                a intervenção; identificar fontes (incluindo alternativas e residual);
+                seccionar; <strong>bloquear e etiquetar</strong> (LOTO); drenar /
+                aterrar / curto-circuitar quando o cenário exigir; <strong>verificar
+                ausência de tensão</strong> com instrumento adequado e método seguro;
+                manter zona e comunicação sob controle. Cada elo frágil invalida o
+                conjunto — cadeado compartilhado “da equipe”, etiqueta sem dono,
+                tester não comprovado, capacitor não descarregado.
+              </p>
+
+              <h3>4) Barreiras mitigadoras: quando a prevenção falha</h3>
+              <p>
+                PPE de arco e choque, distância, EPC, procedimentos de emergência e
+                atendimento são barreiras à <em>direita</em> do Bow-Tie. Importantes —
+                e perigosas se usadas para <em>substituir</em> desenergização quando a
+                NR e a análise de risco pediam trabalho sem energia. Mitigação não
+                absolve prevenção omitida.
+              </p>
+
+              <h3>5) NBR 5410 e NFPA 70E no fio (títulos / consulta)</h3>
+              <p>
+                A <strong>ABNT NBR&nbsp;5410</strong> sustenta o eixo
+                <em>instalação</em> (projeto, proteção, seccionamento adequado em BT).
+                A <strong>NFPA&nbsp;70E</strong> é referência clássica de
+                <em>segurança no trabalho elétrico</em> (avaliação de risco de arco,
+                limites, PPE). Em SafeEng: usam-se como <strong>referências de título</strong>
+                para conversa de engenharia — o requisito nacional de SST permanece a
+                <strong>NR-10</strong> no gov.br.
+              </p>
+
+              <h3>6) O fio SafeEng completo</h3>
+              <p>
+                <strong>Intervenção elétrica</strong> →
+                <strong>análise de risco / autorização</strong> →
+                <strong>identificar fontes + residual</strong> →
+                <strong>LOTO + verificar ausência de tensão</strong> →
+                <strong>trabalho sob controle</strong> →
+                <strong>mitigações (PPE/EPC/emergência) dimensionadas</strong> →
+                <strong>evidência no PGR/prontuário e liberação formal</strong> →
+                NR-10 como conformidade resultante. Curso e EPI entram no fio —
+                nunca sozinhos no começo e no fim.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema SVG: Bow-Tie de um cenário típico (leitura SafeEng)</h2>
+              <p>
+                Diagrama didático — não reproduz figuras oficiais da NR-10, ABNT ou
+                NFPA. Cenário tipificado: manutenção em painel BT com risco de energia
+                residual / reenergização indesejada.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Bow-Tie: ameaças à esquerda (falha LOTO, residual, circuito errado, retroalimentação); barreiras preventivas; evento top contato energizado; barreiras mitigadoras; consequências à direita">
+                  <svg viewBox="0 0 960 780" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow17" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                        <path d="M0,0 L6,3 L0,6 Z" fill="#f0c674"/>
+                      </marker>
+                    </defs>
+                    <rect width="960" height="780" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="32" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">NR-10 · energia residual · Bow-Tie · SafeEng #17</text>
+                    <text x="480" y="54" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">ameaças → LOTO / verificação → evento top → mitigação → consequências</text>
+
+                    <!-- Threats (left) -->
+                    <text x="120" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Ameaças (causas)</text>
+                    <rect x="30" y="100" width="180" height="48" rx="10" fill="#7f1d1d"/>
+                    <text x="120" y="130" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="11">LOTO incompleto</text>
+                    <rect x="30" y="160" width="180" height="48" rx="10" fill="#7f1d1d"/>
+                    <text x="120" y="190" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="11">Energia residual</text>
+                    <rect x="30" y="220" width="180" height="48" rx="10" fill="#7f1d1d"/>
+                    <text x="120" y="250" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="11">Circuito errado</text>
+                    <rect x="30" y="280" width="180" height="48" rx="10" fill="#7f1d1d"/>
+                    <text x="120" y="310" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="11">Retroalimentação / UPS</text>
+
+                    <!-- Preventive barriers -->
+                    <text x="320" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Barreiras preventivas</text>
+                    <rect x="240" y="110" width="160" height="56" rx="10" fill="#0f766e"/>
+                    <text x="320" y="134" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">Identificar fontes</text>
+                    <text x="320" y="152" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="10">+ residual</text>
+                    <rect x="240" y="180" width="160" height="56" rx="10" fill="#0f766e"/>
+                    <text x="320" y="204" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">LOTO (lock/tag)</text>
+                    <text x="320" y="222" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="10">bloquear · etiquetar</text>
+                    <rect x="240" y="250" width="160" height="56" rx="10" fill="#0f766e"/>
+                    <text x="320" y="274" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">Drenar / aterrar</text>
+                    <text x="320" y="292" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="10">energia armazenada</text>
+                    <rect x="240" y="320" width="160" height="56" rx="10" fill="#134e4a"/>
+                    <text x="320" y="344" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">Verificar 0 V</text>
+                    <text x="320" y="362" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="10">ponto de trabalho</text>
+
+                    <!-- Arrows threats to barriers -->
+                    <path d="M210 124 H235" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M210 184 H235" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M210 244 H235" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M210 304 H235" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+
+                    <!-- Top event (center knot) -->
+                    <path d="M420 190 L480 120 L540 190 L480 340 Z" fill="#b45309" stroke="#f0c674" stroke-width="2"/>
+                    <text x="480" y="200" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12" font-weight="700">EVENTO TOP</text>
+                    <text x="480" y="222" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">Contato / arco em</text>
+                    <text x="480" y="240" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">intervenção “morta”</text>
+                    <text x="480" y="262" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="10">(energização indesejada)</text>
+
+                    <path d="M400 230 H415" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M545 230 H560" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow17)"/>
+
+                    <!-- Mitigative barriers -->
+                    <text x="640" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Barreiras mitigadoras</text>
+                    <rect x="560" y="120" width="160" height="52" rx="10" fill="#1d4ed8"/>
+                    <text x="640" y="142" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">PPE choque / arco</text>
+                    <text x="640" y="160" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="10">adequado ao cenário</text>
+                    <rect x="560" y="186" width="160" height="52" rx="10" fill="#1d4ed8"/>
+                    <text x="640" y="208" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">EPC / distância</text>
+                    <text x="640" y="226" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="10">zona · barreiras físicas</text>
+                    <rect x="560" y="252" width="160" height="52" rx="10" fill="#1d4ed8"/>
+                    <text x="640" y="274" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">Emergência</text>
+                    <text x="640" y="292" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="10">resgate · primeiros socorros</text>
+                    <rect x="560" y="318" width="160" height="52" rx="10" fill="#1e3a8a"/>
+                    <text x="640" y="340" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="11" font-weight="700">Supervisão</text>
+                    <text x="640" y="358" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="10">autorização viva</text>
+
+                    <!-- Consequences -->
+                    <text x="840" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Consequências</text>
+                    <rect x="750" y="110" width="180" height="48" rx="10" fill="#7c2d12"/>
+                    <text x="840" y="140" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="11">Choque elétrico</text>
+                    <rect x="750" y="170" width="180" height="48" rx="10" fill="#7c2d12"/>
+                    <text x="840" y="200" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="11">Queimadura / arco</text>
+                    <rect x="750" y="230" width="180" height="48" rx="10" fill="#7c2d12"/>
+                    <text x="840" y="260" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="11">Queda secundária</text>
+                    <rect x="750" y="290" width="180" height="48" rx="10" fill="#7f1d1d"/>
+                    <text x="840" y="320" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="11">Óbito / invalidez</text>
+
+                    <path d="M720 146 H745" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M720 206 H745" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M720 266 H745" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+                    <path d="M720 326 H745" stroke="#f0c674" stroke-width="2" fill="none" marker-end="url(#arrow17)"/>
+
+                    <!-- Bottom legend boxes -->
+                    <rect x="40" y="420" width="430" height="130" rx="14" fill="#065f46"/>
+                    <text x="255" y="454" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Caminho de engenharia (esquerda)</text>
+                    <text x="255" y="482" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">fontes + residual → LOTO → drenar/aterrar</text>
+                    <text x="255" y="506" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">verificar ausência de tensão no ponto</text>
+                    <text x="255" y="530" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">NR-10 como conformidade resultante</text>
+
+                    <rect x="490" y="420" width="430" height="130" rx="14" fill="#7f1d1d"/>
+                    <text x="705" y="454" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Atalho “disjuntor + curso”</text>
+                    <text x="705" y="482" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">curso ok · luva na foto · residual ?</text>
+                    <text x="705" y="506" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">sem teste de 0 V · cadeado “da equipe”</text>
+                    <text x="705" y="530" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">barreira ilusória</text>
+
+                    <rect x="40" y="580" width="880" height="160" rx="14" fill="#134e4a"/>
+                    <text x="480" y="618" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Capacitação habilita · EPI/EPC protegem · LOTO + residual + verificação sustentam a prevenção</text>
+                    <text x="480" y="646" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">ABNT NBR 5410 · NFPA 70E: títulos + compra/consulta — sem texto pirateado</text>
+                    <text x="480" y="672" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR-10 PDF oficial no gov.br (sidebar) · Bow-Tie = técnica ISO/IEC 31010 (catálogo)</text>
+                    <text x="480" y="698" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">Mitigação (direita) não substitui desenergização quando a análise pedia zero energia</text>
+                    <text x="480" y="724" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="11">Diagrama didático SafeEng — não é figura oficial NR/ABNT/NFPA</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  Bow-Tie didático: à esquerda, ameaças e barreiras preventivas
+                  (identificar fontes e residual, LOTO, drenar/aterrar, verificar
+                  ausência de tensão); no nó, o evento top; à direita, mitigadoras e
+                  consequências. O atalho “só disjuntor + curso” (vermelho) não fecha
+                  o ciclo. Referências de título: ABNT&nbsp;NBR&nbsp;5410 e NFPA&nbsp;70E;
+                  requisito nacional: NR-10 no gov.br.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · “Disjuntor aberto” como conformidade</p>
+                <h3>“Todo mundo tem NR-10; abri o QGBT e comecei — o capacitor ainda mordia”</h3>
+                <p>
+                  A empresa apresenta certificados de capacitação e fichas de EPI.
+                  Na manutenção de um painel BT com banco de capacitores, o eletricista
+                  abre o disjuntor geral, não aplica cadeado individual, não etiqueta
+                  e não verifica ausência de tensão no ponto. Há UPS e possibilidade
+                  de retroalimentação de outro alimentador. Capacitação genérica de
+                  NR-10 foi feita no ano anterior.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> teatro de pessoas. A NR-10 foi
+                  reduzida a curso + “desligar”; a barreira preventiva (LOTO + residual
+                  + verificação) não foi engenheirada. No Bow-Tie, as ameaças
+                  atravessam o caminho até o evento top sem elos robustos.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · LOTO de papel, residual esquecido</p>
+                <h3>“Temos procedimento LOTO; ninguém drenou o DC do drive”</h3>
+                <p>
+                  Existe procedimento escrito de bloqueio e etiquetagem, com formulário
+                  de liberação. Na prática, o time bloqueia o alimentador AC, mas o
+                  circuito intermediário DC do inversor/drive permanece carregado.
+                  O tester é usado no lado AC “para marcar o check”. PPE de arco está
+                  disponível, mas a tarefa foi classificada como “desenergizada”.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> falha de barreira por
+                  <em>energia residual</em>. LOTO incompleto é LOTO frágil. Mitigação
+                  (PPE) não absolve a prevenção omitida. NBR&nbsp;5410 (instalação) e
+                  NFPA&nbsp;70E (referência de trabalho seguro) ajudam a conversa —
+                  mas o requisito a cumprir no Brasil é a NR-10 vigente.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Fio completo (clássico maduro)</p>
+                <h3>Fontes → LOTO → residual → 0&nbsp;V no ponto → mitigação coerente → NR-10</h3>
+                <p>
+                  Em intervenção programada, o time mapeia fontes (rede, gerador, UPS,
+                  banco de capacitores, possibilidade de indução). Secciona, bloqueia
+                  e etiqueta com responsabilidade individual, drena/aterra o que o
+                  cenário exige, verifica ausência de tensão no ponto de trabalho com
+                  método seguro e só então inicia a tarefa. PPE/EPC e plano de
+                  emergência estão dimensionados ao residual de risco — não como
+                  substituto da desenergização. Controles alimentam inventário/plano
+                  do PGR e prontuário.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> clássico bem feito. Bow-Tie com
+                  barreiras à esquerda e à direita; LOTO e energia residual tratados
+                  como engenharia; curso e EPI como elos — não como substitutos.
+                  NR-10 aparece como resultado coerente.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Pare de reduzir NR-10 a curso + disjuntor:</strong> trate trabalho elétrico como sistema de barreiras (fontes, LOTO, residual, verificação, mitigação, liberação).</li>
+                <li><strong>Desenhe o Bow-Tie do cenário típico:</strong> ameaças → preventivas → evento top → mitigadoras → consequências; discuta cada elo na sala de engenharia.</li>
+                <li><strong>Trate energia residual como ameaça explícita:</strong> capacitores, UPS, drives, solar, indução, retroalimentação — listar é barreira; omitir é buraco.</li>
+                <li><strong>LOTO é sistema, não foto de cadeado:</strong> isolamento + bloqueio individual + etiqueta + liberação de energia armazenada + teste de ausência de tensão no ponto.</li>
+                <li><strong>Verifique 0&nbsp;V onde se trabalha:</strong> não no “disjuntor lá na frente”; no ponto de intervenção, com instrumento e método adequados.</li>
+                <li><strong>Não use PPE para absolver prevenção omitida:</strong> mitigação (direita do Bow-Tie) limita dano — não autoriza fingir desenergização.</li>
+                <li><strong>Use só fontes legais de ABNT/NFPA:</strong> ABNT Catálogo, ABNT×Confea/Crea, canais NFPA; este portal não hospeda texto integral.</li>
+                <li><strong>NR-10 oficial no gov.br:</strong> PDF/CTPP atualizado (sidebar); na dúvida, prevalece a NR sobre síntese e normas estrangeiras.</li>
+                <li><strong>Integre ao GRO:</strong> risco elétrico no inventário, controles no plano, revisão após mudança/quase-acidente (#12, #14); terceiros na mesma instalação (#11).</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> a NR-10 não se resolve com certificado de
+                curso e foto de disjuntor aberto. O clássico maduro usa
+                <strong>Bow-Tie</strong> para tornar barreiras discutíveis, trata
+                <strong>LOTO e energia residual</strong> como núcleo da prevenção,
+                cita <strong>ABNT NBR&nbsp;5410</strong> e <strong>NFPA&nbsp;70E</strong>
+                como referências de título (texto só via compra/consulta) e analisa
+                falha de barreira elo a elo — para que a conformidade com a NR-10 no
+                gov.br seja resultado, não teatro. Capacitação e EPI continuam
+                obrigatórios e úteis; sozinhos, não sustentam o trabalhador diante
+                da energia que “não deveria estar lá”.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-10 vigente, da NR-1/GRO, nem de normas técnicas
+                  ABNT/NFPA/IEC aplicáveis (incluindo ABNT&nbsp;NBR&nbsp;5410 e
+                  NFPA&nbsp;70E). Também <strong>não constitui</strong> aconselhamento jurídico,
+                  parecer, procedimento LOTO pronto, APR pronta, inventário de PGR, projeto
+                  elétrico, especificação de PPE de arco, medição, laudo ou substituição da
+                  responsabilidade da organização ou do profissional legalmente habilitado.
+                  Este site <strong>não hospeda</strong> textos integrais protegidos de
+                  ABNT/NFPA/ISO — use ABNT Catálogo, consulta autorizada (ex.: ABNT×Confea/Crea)
+                  ou canais oficiais NFPA/ISO. Cenários e o diagrama Bow-Tie são didáticos e
+                  hipotéticos. Verifique os PDFs e catálogos oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#nr10-energia-residual-bowtie">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="nr35-ancoragem-falha-barreira.html">Artigo #16</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a NR-10, LOTO, energia residual, Bow-Tie e clássicos de engenharia de barreiras para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="nr35-ancoragem-falha-barreira.html">#16 NR-35 · ancoragem · falha de barreira</a></li>
+              <li><a href="../curiosidades.html#nr10-energia-residual-bowtie">Teaser NR-10 · energia residual · Bow-Tie</a></li>
+              <li><a href="../curiosidades.html#tema-classicos-2026">Clássicos 2026</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
