@@ -81,7 +81,8 @@
         { href: "artigos/adpf-1316-sancao-vs-obrigacao.html", label: "#4 ADPF 1316 sanção vs obrigação" },
         { href: "artigos/guia-mte-psicossociais-leitura-critica.html", label: "#5 Guia MTE leitura crítica" },
         { href: "artigos/lideranca-metas-jornada-perigo-gro.html", label: "#6 Liderança, metas e jornada" },
-        { href: "artigos/canal-denuncia-assedio-barreira.html", label: "#7 Canal denúncia e assédio" }
+        { href: "artigos/canal-denuncia-assedio-barreira.html", label: "#7 Canal denúncia e assédio" },
+        { href: "artigos/mei-me-epp-aep-dispensas.html", label: "#8 MEI/ME/EPP · AEP e dispensas" }
       ]
     },
     {

@@ -13,7 +13,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 5 | Guia MTE de fatores psicossociais: leitura crítica do que vira controle operacional | **Publicado** | [artigo](guia-mte-psicossociais-leitura-critica.html) · [teaser](../curiosidades.html#guia-mte-psicossociais) |
 | 6 | Liderança, metas e jornada como perigo: como registrar no GRO sem moralismo | **Publicado** | [artigo](lideranca-metas-jornada-perigo-gro.html) · [teaser](../curiosidades.html#lideranca-metas-jornada) |
 | 7 | Canal de denúncia e assédio: barreira organizacional ou teatro de compliance? | **Publicado** | [artigo](canal-denuncia-assedio-barreira.html) · [teaser](../curiosidades.html#canal-denuncia-assedio) |
-| 8 | Evidências e indicadores: o que medir sem transformar SST em RH clínico | Pendente | — |
+| 8 | MEI / ME / EPP: AEP, dispensas e o mito de que “empresa pequena não entra” | **Publicado** | [artigo](mei-me-epp-aep-dispensas.html) · [teaser](../curiosidades.html#mei-me-epp-aep-dispensas) |
 | 9 | AEP e inventário: quando a análise ergonômica alimenta o PGR *(slot liberado; tema #3 antigo)* | Pendente | — |
 | 10 | Guia, Manual GRO/PGR e Q&A: como ler os documentos oficiais de 2025–2026 *(parcialmente antecipado em #5; reagendar foco residual)* | Pendente | — |
 | 11 | Matriz de risco psicossocial: limites, armadilhas e alternativas | Pendente | — |
@@ -24,7 +24,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 16 | ISO 45003 e alinhamento com a NR-1 (GRO/PGR) | Pendente | — |
 | 17 | Mudança organizacional mal conduzida como fator psicossocial | Pendente | — |
 | 18 | Investigação de eventos com contribuintes psicossociais e organizacionais | Pendente | — |
-| 19 | PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais | Pendente | — |
+| 19 | PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(antecipado em grande parte por #8; foco residual possível)* | Pendente | — |
 | 20 | Documentação auditável: o que registrar e o que não expor indevidamente | Pendente | — |
 | 21 | Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico | Pendente | — |
 | 22 | Integração NR-17 × riscos psicossociais na prática do inventário | Pendente | — |
@@ -82,6 +82,19 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #7
 
 - Participação dos trabalhadores na identificação de riscos psicossociais *(reagendar em briefing futuro; slot #7 ocupado por canal de denúncia / assédio em 12/08/2026)*
+
+
+
+## Nota editorial slot #8
+
+- Tema publicado em #8: MEI / ME / EPP — AEP, dispensas tipificadas (NR-1 1.8) e o mito “empresa pequena não entra” (briefing 12/08/2026).
+- Evidências e indicadores (antigo #8) foi para backlog deslocado.
+- Distinção crítica do Manual (cap. 16): dispensa de **PGR** ≠ dispensa de **GRO**; AEP permanece (NR-17 / Q&A). Não inventar regras de isenção.
+- Sobreposição com slot #19 (PGR em ME/EPP): #8 cobre dispensas + AEP + mito; #19 permanece com foco residual de proporcionalidade operacional, se briefing futuro pedir aprofundamento.
+
+## Backlog deslocado do slot #8
+
+- Evidências e indicadores: o que medir sem transformar SST em RH clínico *(reagendar em briefing futuro; slot #8 ocupado por MEI/ME/EPP · AEP e dispensas em 12/08/2026)*
 
 ## Regra editorial
 
