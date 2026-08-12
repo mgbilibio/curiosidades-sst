@@ -95,7 +95,8 @@
         { href: "artigos/nr35-ancoragem-falha-barreira.html", label: "#16 NR-35 · ancoragem · falha de barreira" },
         { href: "artigos/nr10-energia-residual-bowtie.html", label: "#17 NR-10 · energia residual · Bow-Tie" },
         { href: "artigos/nr18-oit-construcao.html", label: "#18 NR-18 · OIT construção · CoP" },
-        { href: "artigos/nr33-espaco-confinado-analise-risco.html", label: "#19 NR-33 · espaço confinado · falha antes do gás" }
+        { href: "artigos/nr33-espaco-confinado-analise-risco.html", label: "#19 NR-33 · espaço confinado · falha antes do gás" },
+        { href: "artigos/nr23-incendio-vs-bombeiros.html", label: "#20 NR-23 · incêndio vs IT Bombeiros" }
       ]
     },
     {
@@ -159,6 +160,7 @@
         { href: "curiosidades.html#nr10-energia-residual-bowtie", label: "Insight: NR-10 energia residual" },
         { href: "curiosidades.html#nr18-oit-construcao", label: "Insight: NR-18 · OIT construção" },
         { href: "curiosidades.html#nr33-espaco-confinado-analise-risco", label: "Insight: NR-33 espaço confinado" },
+        { href: "curiosidades.html#nr23-incendio-vs-bombeiros", label: "Insight: NR-23 incêndio vs IT Bombeiros" },
         { href: "curiosidades.html#nr17", label: "Insight: NR-17" },
         { href: "curiosidades.html#nr15-higiene", label: "Insight: NR-15" }
       ]

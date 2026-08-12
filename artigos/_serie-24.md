@@ -25,7 +25,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 17 | NR-10: trabalho elétrico e energia residual — Bow-Tie de um cenário típico | **Publicado** | [artigo](nr10-energia-residual-bowtie.html) · [teaser](../curiosidades.html#nr10-energia-residual-bowtie) |
 | 18 | NR-18 / OIT construção: o que o Code of Practice internacional acrescenta ao canteiro brasileiro | **Publicado** | [artigo](nr18-oit-construcao.html) · [teaser](../curiosidades.html#nr18-oit-construcao) |
 | 19 | Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás | **Publicado** | [artigo](nr33-espaco-confinado-analise-risco.html) · [teaser](../curiosidades.html#nr33-espaco-confinado-analise-risco) |
-| 20 | Documentação auditável: o que registrar e o que não expor indevidamente | Pendente | — |
+| 20 | Incêndio (NR-23) vs IT do Corpo de Bombeiros: NR federal não fecha o projeto sozinha | **Publicado** | [artigo](nr23-incendio-vs-bombeiros.html) · [teaser](../curiosidades.html#nr23-incendio-vs-bombeiros) |
 | 21 | Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico | Pendente | — |
 | 22 | Integração NR-17 × riscos psicossociais na prática do inventário | Pendente | — |
 | 23 | Revisão do PGR após mudanças: gatilhos psicossociais e de processo | Pendente | — |
@@ -239,6 +239,20 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 ## Backlog deslocado do slot #19
 
 - PGR em ME/EPP: proporcionalidade sem omissão dos riscos psicossociais *(reagendar em briefing futuro; slot #19 ocupado por NR-33 / espaço confinado / falha antes do gás em 12/08/2026)*
+
+
+
+## Nota editorial slot #20
+
+- Tema publicado em #20: Incêndio (NR-23) vs IT do Corpo de Bombeiros — NR federal não fecha o projeto sozinha (briefing 12/08/2026).
+- Bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20); teaser #20 ao lado de #15–#19 — fecha o bloco Clássicos.
+- Fontes: NR-23 PDF oficial (sidebar.js / gov.br); hub `orgaos-setoriais.html#orgao-bombeiros` (IT/NTCB estaduais · AVCB/CLCB); ABNT NBR 9077 e NFPA 101 como **títulos + links de compra/consulta** — sem texto pirateado.
+- Distinção crítica: NR-23 = piso federal SST; IT/NTCB + AVCB = camada estadual de projeto/aprovação; NBR 9077 / NFPA 101 = referências técnicas (não substituem IT nem NR).
+- O antigo slot #20 (Documentação auditável / o que registrar e o que não expor) foi para backlog deslocado; sobreposição parcial com #13 (eSocial SST × PGR) permanece.
+
+## Backlog deslocado do slot #20
+
+- Documentação auditável: o que registrar e o que não expor indevidamente *(reagendar em briefing futuro; slot #20 ocupado por NR-23 / IT Bombeiros / NBR 9077 · NFPA 101 em 12/08/2026)*
 
 ## Regra editorial
 
