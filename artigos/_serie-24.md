@@ -29,7 +29,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 21 | IA e checklist digital: antecipação de risco ou só automação de papel? | **Publicado** | [artigo](ia-checklist-digital-risco.html) · [teaser](../curiosidades.html#ia-checklist-digital-risco) |
 | 22 | Sensores / IoT em SST: dado em tempo real vs decisão de engenharia | **Publicado** | [artigo](sensores-iot-sst-decisao.html) · [teaser](../curiosidades.html#sensores-iot-sst-decisao) |
 | 23 | Treinamento imersivo (VR): quando vale e quando é marketing | **Publicado** | [artigo](treinamento-imersivo-vr-sst.html) · [teaser](../curiosidades.html#treinamento-imersivo-vr-sst) |
-| 24 | Checklist SafeEng: preparar o inventário psicossocial para a vigência 26/05/2026 | Pendente | — |
+| 24 | ESG / EHS e “Safety by Design”: como não transformar SST em relatório cosmética | **Publicado** | [artigo](esg-ehs-safety-by-design.html) · [teaser](../curiosidades.html#esg-ehs-safety-by-design) |
 
 ## Backlog deslocado do slot #2
 
@@ -294,8 +294,26 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Revisão do PGR após mudanças: gatilhos psicossociais e de processo *(reagendar em briefing futuro; slot #23 ocupado por treinamento imersivo VR · valor vs marketing em 12/08/2026)*
 
+## Nota editorial slot #24
+
+- Tema publicado em #24 (FINAL): ESG / EHS e “Safety by Design” — como não transformar SST em relatório cosmética (briefing 12/08/2026).
+- Fecha o bloco editorial **Tendências SafeEng** em `curiosidades.html` (artigos 21–24 · count 4) e **conclui a série planejada de 24 temas**.
+- Fontes: NR-1 / GRO + Manual GRO/PGR 2026 (espinha dorsal operacional); ISO 45001 como **título + compra/consulta** (ISO Store / ABNT) — sem texto pirateado; hub oficial gratuito NIOSH/CDC · Prevention through Design (`cdc.gov/niosh/ptd/about` + portfolio).
+- Distinção crítica: ESG/EHS = borda (narrativa · métricas auditáveis); GRO + hierarquia + PtD/Safety by Design = núcleo; vanity metrics / capa “zero harm” sem controle = relatório cosmética.
+- O antigo slot #24 (Checklist SafeEng: inventário psicossocial para vigência 26/05/2026) foi para backlog deslocado.
+
+## Backlog deslocado do slot #24
+
+- Checklist SafeEng: preparar o inventário psicossocial para a vigência 26/05/2026 *(reagendar em briefing futuro; slot #24 ocupado por ESG / EHS · Safety by Design · fecho da série em 12/08/2026)*
+
+## Status da série
+
+- **Série de 24 artigos: COMPLETA** (todos os slots #1–#24 marcados **Publicado** em 12/08/2026).
+- Dual front mantido: teaser em `curiosidades.html` + artigo em `artigos/`.
+- Hubs: Tendências SafeEng · Clássicos 2026 · Integração técnica · Em alta 2026.
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar #24 até briefing específico do tema.
+- Série planejada de 24 temas encerrada com o briefing #24 (12/08/2026); novos temas exigem briefing futuro (backlogs deslocados permanecem elegíveis).

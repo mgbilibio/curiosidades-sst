@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESG / EHS e Safety by Design: como não transformar SST em relatório cosmética | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="ESG/EHS só sustentam reputação quando conectam métricas a controles reais e eliminação de perigos no projeto (Prevention through Design / Safety by Design). NR-1 GRO no núcleo; ISO 45001 como título; NIOSH PtD. Artigo SafeEng #24 por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/esg-ehs-safety-by-design.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="ESG / EHS e Safety by Design · SST sem relatório cosmética | Margus Giuliano">
+  <meta property="og:description" content="Métricas ESG/EHS precisam ligar a controles reais e Safety by Design (PtD). NR-1 GRO no núcleo; ISO 45001 como título; NIOSH PtD. Sem vanity metrics.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/esg-ehs-safety-by-design.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Tendências SafeEng">
+  <meta property="article:tag" content="ESG">
+  <meta property="article:tag" content="EHS">
+  <meta property="article:tag" content="Safety by Design">
+  <meta property="article:tag" content="Prevention through Design">
+  <meta property="article:tag" content="ISO 45001">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="GRO">
+  <meta property="article:tag" content="NIOSH">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ESG / EHS e Safety by Design · SafeEng #24 (final)">
+  <meta name="twitter:description" content="Relatório ESG/EHS sem controle real e sem design-stage é cosmética. NR-1 GRO + PtD + ISO 45001 (título).">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esg-ehs-safety-by-design.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ESG / EHS · Safety by Design"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esg-ehs-safety-by-design.html#article",
+        "headline": "ESG / EHS e “Safety by Design”: como não transformar SST em relatório cosmética",
+        "description": "Leitura SafeEng: ESG/EHS precisam conectar métricas a controles reais e eliminação de perigos no estágio de projeto (Prevention through Design / Safety by Design), com NR-1 GRO como espinha dorsal operacional.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esg-ehs-safety-by-design.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["ESG", "EHS", "Safety by Design", "Prevention through Design", "ISO 45001", "NR-1", "GRO", "NIOSH", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">ESG / EHS · Safety by Design</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #24 (FINAL) · Tendências SafeEng</p>
+            <h1>ESG / EHS e “Safety by Design”: como não transformar SST em relatório cosmética</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura crítica para engenheiros, SESMT, gestores EHS e equipes ESG
+              que precisam ligar <em>métrica de relatório</em> a
+              <em>controle real</em> e a <em>eliminação de perigo no projeto</em>
+              — sem vanity metrics
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: relatório ≠ controle</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: cosmética vs Safety by Design</a></li>
+              <li><a href="#esquema">Esquema SVG: métrica na borda · GRO + PtD no núcleo</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Fecha o bloco editorial <strong>Tendências SafeEng</strong>
+                (artigos #21–#24) e a série planejada de 24 temas. Depois do
+                #21 (checklist digital / IA), do #22 (sensores / IoT) e do #23
+                (treinamento imersivo VR), a pressão corporativa empurra outra
+                promessa: <em>“nosso relatório ESG/EHS prova excelência em
+                SST”</em>. Em SafeEng, o ponto é sóbrio:
+                <strong>métricas ESG/EHS só sustentam reputação quando
+                conectam a controles reais</strong> e, sempre que possível, a
+                <strong>eliminação de perigos no estágio de projeto</strong>
+                — <em>Prevention through Design</em> (PtD) / <em>Safety by
+                Design</em> — e <strong>não quando viram vanity metrics</strong>
+                descoladas do chão de fábrica.
+              </p>
+              <p>
+                Este artigo #24 ancora na <strong>NR-1 / GRO</strong> como
+                <strong>espinha dorsal operacional</strong> (inventário,
+                hierarquia de controles, plano de ação, PDCA), cita o
+                <strong>Manual GRO/PGR da NR-1 (2026)</strong> para o processo,
+                trata a <strong>ISO&nbsp;45001</strong> como
+                <strong>referência de título</strong> (compra/consulta — sem
+                texto pirateado) e aponta o hub oficial gratuito
+                <strong>NIOSH/CDC · Prevention through Design</strong>. A
+                pergunta de engenharia é:
+                <strong>o slide ESG descreve barreiras que existem — ou
+                cosmética que o auditor de risco não encontra no PGR?</strong>
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: relatório ≠ controle</h2>
+              <ul>
+                <li>
+                  <strong>NR-1 / GRO / PGR (gov.br):</strong> o gerenciamento
+                  de riscos ocupacionais é o processo obrigatório — identificação
+                  de perigos, avaliação, hierarquia de controles, plano de ação,
+                  acompanhamento e melhoria. Relatório ESG/EHS
+                  <em>pode</em> comunicar desempenho desse processo;
+                  <strong>não</strong> o substitui. Texto oficial — este site
+                  aponta, não substitui.
+                </li>
+                <li>
+                  <strong>Manual GRO/PGR da NR-1 (2026):</strong> enquadra o GRO
+                  no PDCA e exige critério, evidência e melhoria contínua.
+                  Indicador sem vínculo a perigo, controle e revisão é PDCA
+                  truncado — eco do #14 e do fio Tendências (#21–#23): ferramenta
+                  ou métrica na borda, método no núcleo.
+                </li>
+                <li>
+                  <strong>ISO&nbsp;45001 (Occupational health and safety
+                  management systems):</strong> referência internacional de
+                  <em>sistema de gestão</em> de SSO. Em SafeEng citamos
+                  <strong>título + canal de compra/consulta</strong>
+                  (ISO Store / ABNT Catálogo / hub interno) — sem reproduzir
+                  texto normativo protegido. Certificação ISO&nbsp;45001
+                  <strong>não</strong> apaga NR-1 nem transforma dashboard ESG
+                  em inventário.
+                </li>
+                <li>
+                  <strong>NIOSH / CDC · Prevention through Design (PtD):</strong>
+                  iniciativa oficial que promove
+                  <strong>projetar para eliminar ou minimizar perigos</strong>
+                  ao longo do ciclo de vida de instalações, processos,
+                  equipamentos e organização do trabalho — alinhada ao topo da
+                  hierarquia de controles. Benchmarking internacional gratuito
+                  de “Safety by Design”; <strong>não</strong> cria obrigação
+                  brasileira nem “homologa” selo ESG.
+                  <a href="https://www.cdc.gov/niosh/ptd/about/index.html" target="_blank" rel="noopener noreferrer">cdc.gov/niosh/ptd/about</a>
+                </li>
+                <li>
+                  <strong>ESG / EHS no mercado:</strong> frameworks, ratings,
+                  relatórios integrados, “zero harm” em capa, LTIFR/TRIR
+                  sem contexto, horas de treinamento sem competência, fotos de
+                  campanha. Em SafeEng: <strong>camada de comunicação e
+                  accountability</strong> — não inventário, não barreira, não
+                  ART/RRT. Métrica sem elo com controle e com design é
+                  <strong>relatório cosmética</strong>.
+                </li>
+              </ul>
+              <p>
+                Em SafeEng: <strong>NR-1 / GRO permanece o núcleo
+                operacional</strong>; <strong>Safety by Design / PtD entra como
+                disciplina de eliminação no projeto e no redesenho</strong>;
+                <strong>ISO&nbsp;45001 entra como referência de sistema (título)</strong>;
+                <strong>ESG/EHS entram na borda — narrativa e indicadores
+                auditáveis</strong>. Confundir “nota alta no rating” com
+                hierarquia de controles madura é o equivalente corporativo da
+                automação de papel (#21), do dashboard sem método (#22) e do
+                headset sem competência (#23).
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Investidor e cliente olham narrativa; fiscal e acidente olham barreira:</strong> cosmética ESG não segura energia residual, queda nem confinado.</li>
+                <li><strong>Hierarquia de controles começa no projeto:</strong> PtD / Safety by Design ataca eliminação e engenharia antes de EPI e campanha.</li>
+                <li><strong>GRO é o elo auditável no Brasil:</strong> inventário, plano de ação e evidências do Manual NR-1 sustentam (ou desmentem) o slide.</li>
+                <li><strong>Vanity metrics geram risco reputacional inverso:</strong> LTIFR “verde” com quase-acidentes ocultos e PGR raso explode na primeira crise.</li>
+                <li><strong>Série SafeEng fecha no mesmo fio:</strong> método no núcleo, tendência na borda — ESG/EHS sem PtD e sem GRO é teatro de relatório.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática. NR e Manual são
+                textos oficiais no gov.br. O hub NIOSH PtD é página oficial
+                gratuita. ISO&nbsp;45001 é citada apenas como
+                <strong>título</strong> com canais de compra/consulta.
+                <strong>Não afirmamos</strong> que relatório ESG, rating ou
+                certificação substituem GRO/PGR nem “cumpram” NR por si.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">NR-1 / GRO / PGR (gov.br / CTPP)</a>
+                  — espinha dorsal operacional do gerenciamento de riscos (leia o texto vigente)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — processo, PDCA, evidências e melhoria contínua
+                </li>
+                <li>
+                  <strong>ISO 45001</strong> — Occupational health and safety management systems (título):
+                  <a href="https://www.iso.org/store.html" target="_blank" rel="noopener noreferrer">ISO Store</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="../normas-internacionais.html#iso-45001">Normas internacionais · ISO 45001</a>
+                  — sem texto pirateado
+                </li>
+                <li>
+                  <a href="https://www.cdc.gov/niosh/ptd/about/index.html" target="_blank" rel="noopener noreferrer">NIOSH / CDC · Prevention through Design (About)</a>
+                  — hub oficial gratuito; projetar para eliminar/minimizar perigos
+                </li>
+                <li>
+                  <a href="https://www.cdc.gov/niosh/research-programs/portfolio/ptd.html" target="_blank" rel="noopener noreferrer">NIOSH · Prevention through Design Program (portfolio)</a>
+                  — programa de pesquisa e prática PtD
+                </li>
+                <li>
+                  <a href="../curiosidades.html#manual-nr1-pdca-gro">Artigo #14: Manual NR-1 · PDCA</a>
+                  ·
+                  <a href="../curiosidades.html#ia-checklist-digital-risco">Artigo #21: IA · checklist</a>
+                  ·
+                  <a href="../curiosidades.html#sensores-iot-sst-decisao">Artigo #22: sensores / IoT</a>
+                  ·
+                  <a href="../curiosidades.html#treinamento-imersivo-vr-sst">Artigo #23: treinamento VR</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> citar NIOSH PtD e
+                ISO&nbsp;45001 <strong>não</strong> cria obrigação de framework
+                ESG estrangeiro, não “homologa” rating e não importa requisito
+                dos EUA no lugar da NR-1. Em conflito entre síntese, orientação
+                NIOSH, norma ISO e NR vigente, <strong>prevalece o texto oficial
+                do domínio correspondente</strong>: NR-1 / GRO no Brasil;
+                ISO&nbsp;45001 no escopo contratual/certificação quando adotada;
+                NIOSH como benchmarking técnico gratuito de PtD.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: cosmética ESG — e quando Safety by Design segura o relatório</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>indicador sem barreira é acelerar o marketing</strong>.
+                Relatório bom traduz controles e decisões de projeto;
+                relatório cosmética multiplica “zero harm” sobre inventário
+                raso e hierarquia invertida.
+              </p>
+
+              <h3>1) Núcleo que não se terceiriza ao slide: GRO + hierarquia + evidência</h3>
+              <p>
+                A NR-1 exige gerenciamento de riscos com método. Nenhum
+                framework ESG “cumpre a NR-1” no lugar da organização. O
+                relatório no máximo <em>comunica</em> desempenho — inventário,
+                controles, plano de ação e revisão continuam obrigatórios onde
+                a norma os exige. ISO&nbsp;45001, quando adotada, organiza
+                sistema; <strong>não</strong> apaga o texto federal brasileiro.
+              </p>
+
+              <h3>2) O que é Safety by Design / Prevention through Design</h3>
+              <p>
+                Eliminar ou minimizar o perigo <em>antes</em> de depender de
+                comportamento e EPI: layout, processo, máquina, substância,
+                organização do trabalho e ciclo de vida (construção, uso,
+                manutenção, descarte). O NIOSH PtD descreve exatamente esse
+                deslocamento para o topo da hierarquia. Em SafeEng: PtD é
+                <strong>engenharia de prevenção no projeto e no redesenho</strong>
+                — não slogan de capa ESG.
+              </p>
+
+              <h3>3) Critérios SafeEng de relatório “não cosmética”</h3>
+              <ul>
+                <li><strong>Elo métrica → perigo → controle → evidência</strong> no GRO/PGR — não KPI órfão.</li>
+                <li><strong>Preferência por indicadores de barreira e de processo</strong> (eliminação, engenharia, conformidade de LOTO/PET/ancoragem) — não só LTIFR/TRIR sem contexto.</li>
+                <li><strong>Decisões de projeto documentadas</strong> (PtD): o que foi eliminado no desenho vs o que ficou em EPI/campanha.</li>
+                <li><strong>Quase-acidentes e falhas de barreira visíveis</strong> no ciclo PDCA — não só “dias sem acidente”.</li>
+                <li><strong>Consistência com eSocial / inventário / plano de ação</strong> (#13): contradição documental é sinal, não detalhe.</li>
+                <li><strong>ISO&nbsp;45001 como sistema (se adotada), não como selo decorativo</strong> no rodapé do PDF ESG.</li>
+              </ul>
+
+              <h3>4) Sinais de relatório cosmética (vanity ESG/EHS)</h3>
+              <p>
+                Capa “zero harm” com inventário desatualizado; LTIFR em queda
+                por subnotificação; horas de treinamento sem competência
+                tipificada (#23); IoT/dashboard sem calibração nem decisão
+                (#22); checklist digital sem hierarquia (#21); fotos de EPI
+                novo sem eliminação no projeto; rating alto com plano de ação
+                vazio. Em SafeEng: isso é cosmética com tipografia premium —
+                não EHS de engenharia.
+              </p>
+
+              <h3>5) Hierarquia de controles acima do framework</h3>
+              <p>
+                Reportar “cultura” sem eliminar risco no layout; celebrar
+                campanha sem isolar energia; “engajar” sem ancoragem madura —
+                são sintomas de ESG no andar de baixo da hierarquia. O relatório
+                serve para <em>tornar visível</em> eliminação, engenharia e
+                procedimento; se só gera nota de rating e “ficamos atentos no
+                protótipo de slides”, o investimento ESG virou teatro.
+              </p>
+
+              <h3>6) O fio SafeEng completo (série #21–#24)</h3>
+              <p>
+                <strong>GRO / Manual NR-1 (núcleo)</strong> →
+                <strong>hierarquia + Safety by Design / PtD</strong> →
+                <strong>controles e evidências</strong> →
+                <strong>ferramentas na borda</strong> (digital #21 · IoT #22 · VR #23) →
+                <strong>ESG/EHS como narrativa auditável</strong> →
+                <strong>ISO&nbsp;45001 (título/sistema) + NIOSH PtD (benchmark), sem substituir NR</strong>.
+                O relatório entra no fio — nunca no lugar do controle.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema SVG: métrica na borda · GRO + PtD no núcleo</h2>
+              <p>
+                Diagrama didático — não reproduz figuras oficiais da NR-1, do Manual
+                GRO/PGR, da ISO&nbsp;45001 nem do NIOSH. Leitura: à esquerda, o
+                ciclo com método e design; à direita, o atalho “rating = SST
+                excelente”.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Núcleo NR-1 GRO com Safety by Design e hierarquia; borda com métricas ESG EHS; à direita relatório cosmética sem controle">
+                  <svg viewBox="0 0 960 900" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow24" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                        <path d="M0,0 L6,3 L0,6 Z" fill="#f0c674"/>
+                      </marker>
+                    </defs>
+                    <rect width="960" height="900" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="32" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">ESG / EHS · Safety by Design · SafeEng #24</text>
+                    <text x="480" y="54" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">métrica comunica · GRO + PtD decidem e eliminam</text>
+
+                    <text x="240" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Caminho de engenharia</text>
+
+                    <rect x="40" y="100" width="400" height="70" rx="10" fill="#0f766e"/>
+                    <text x="240" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">1 · NR-1 / GRO (núcleo)</text>
+                    <text x="240" y="150" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">inventário · critérios · PDCA</text>
+
+                    <path d="M240 170 V186" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow24)"/>
+
+                    <rect x="40" y="188" width="400" height="70" rx="10" fill="#1d4ed8"/>
+                    <text x="240" y="216" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2 · Safety by Design / PtD</text>
+                    <text x="240" y="238" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="11">eliminar no projeto · ciclo de vida</text>
+
+                    <path d="M240 258 V274" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow24)"/>
+
+                    <rect x="40" y="276" width="400" height="70" rx="10" fill="#b45309" stroke="#f0c674" stroke-width="2"/>
+                    <text x="240" y="304" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">3 · Hierarquia + evidências</text>
+                    <text x="240" y="326" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">engenharia · procedimento · plano</text>
+
+                    <path d="M240 346 V362" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow24)"/>
+
+                    <rect x="40" y="364" width="400" height="70" rx="10" fill="#134e4a"/>
+                    <text x="240" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">4 · ESG / EHS (borda)</text>
+                    <text x="240" y="414" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">métricas auditáveis · narrativa</text>
+
+                    <text x="720" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Atalho “rating = SST”</text>
+
+                    <rect x="500" y="100" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="128" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Capa “zero harm”</text>
+                    <text x="710" y="150" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">inventário raso · PGR de gaveta</text>
+
+                    <rect x="500" y="188" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="216" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Vanity LTIFR / horas treino</text>
+                    <text x="710" y="238" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">sem elo com barreira / competência</text>
+
+                    <rect x="500" y="276" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="304" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Selo ISO / rating sem sistema</text>
+                    <text x="710" y="326" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">título no rodapé · GRO intocado</text>
+
+                    <rect x="500" y="364" width="420" height="70" rx="10" fill="#78350f"/>
+                    <text x="710" y="392" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Projeto sem PtD</text>
+                    <text x="710" y="414" text-anchor="middle" fill="#fdba74" font-family="system-ui,sans-serif" font-size="11">EPI e campanha compensam layout ruim</text>
+
+                    <path d="M500 135 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M500 223 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M500 311 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+                    <rect x="40" y="460" width="880" height="70" rx="12" fill="#065f46"/>
+                    <text x="480" y="490" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Referências: NR-1 + Manual GRO/PGR 2026 · ISO 45001 (título) · NIOSH PtD (hub oficial)</text>
+                    <text x="480" y="514" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR manda no Brasil · ISO é sistema/título · PtD não homologa rating ESG</text>
+
+                    <rect x="40" y="555" width="430" height="150" rx="14" fill="#065f46"/>
+                    <text x="255" y="595" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Ganho real ESG/EHS</text>
+                    <text x="255" y="625" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">métrica ligada a controle</text>
+                    <text x="255" y="649" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">PtD no projeto / redesenho</text>
+                    <text x="255" y="673" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">narrativa auditável no PDCA</text>
+
+                    <rect x="490" y="555" width="430" height="150" rx="14" fill="#7f1d1d"/>
+                    <text x="705" y="595" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Relatório cosmética</text>
+                    <text x="705" y="625" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">capa verde · inventário raso</text>
+                    <text x="705" y="649" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">vanity KPI · sem PtD</text>
+                    <text x="705" y="673" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">selo/rating · GRO intocado</text>
+
+                    <rect x="40" y="730" width="880" height="140" rx="14" fill="#134e4a"/>
+                    <text x="480" y="770" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">ESG/EHS comunica · GRO + Safety by Design sustentam a prevenção</text>
+                    <text x="480" y="798" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">NIOSH PtD: hub oficial gratuito · ISO 45001: título + compra/consulta · Manual NR-1 no gov.br</text>
+                    <text x="480" y="826" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">Diagrama didático SafeEng — não é figura oficial NR / Manual / ISO / NIOSH · borda ≠ núcleo</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  À esquerda: NR-1/GRO no núcleo, Safety by Design / PtD,
+                  hierarquia e evidências, ESG/EHS na borda (métricas
+                  auditáveis). À direita: relatório cosmética — capa “zero
+                  harm”, vanity LTIFR, selo/rating sem sistema e projeto sem
+                  PtD. NIOSH PtD e ISO&nbsp;45001 via links na seção Fontes.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais nem frameworks comerciais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Cosmética de capa</p>
+                <h3>“O relatório ESG ganhou prêmio — o inventário de altura e o plano de ação de energia residual continuam de 2019”</h3>
+                <p>
+                  A organização celebra nota alta no rating. LTIFR caiu após
+                  mudança de critério de registro. Fotos de campanha e horas de
+                  e-learning enchem o capítulo Social/EHS. Quase-quedas e
+                  falhas de LOTO não aparecem. O PGR não cita decisões de
+                  projeto nem eliminação de perigos.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> vanity metrics sobre GRO
+                  frágil. Sem elo métrica → controle → evidência, o prêmio ESG
+                  só acelera falsa segurança reputacional.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Selo sem sistema / layout sem PtD</p>
+                <h3>“Temos ISO 45001 no rodapé e ‘Safety by Design’ no site — a linha nova foi inaugurada com EPI e checklist, sem eliminar o risco no layout”</h3>
+                <p>
+                  Capex de planta nova priorizou prazo. Acesso em altura e
+                  pontos de isolamento nasceram difíceis. A equipe EHS
+                  “compensa” com treinamento VR (#23) e sensores (#22). O
+                  relatório cita ISO&nbsp;45001 e PtD como palavras — sem
+                  registro de o que foi projetado para fora.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> título ISO e slogan PtD não
+                  substituem decisão de engenharia no projeto. Hierarquia
+                  invertida com maquiagem ESG é teatro de ciclo de vida.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Narrativa auditável com GRO + PtD</p>
+                <h3>Indicadores ligados a barreiras + decisões de eliminação no projeto + PDCA do Manual NR-1</h3>
+                <p>
+                  Perigos e controles saem do GRO (Manual/NR-1). Capex e
+                  redesenho registram o que foi eliminado ou engenheirado
+                  (espírito NIOSH PtD) versus o que permanece em
+                  procedimento/EPI. KPIs ESG/EHS priorizam saúde de barreiras,
+                  conformidade de controles críticos e revisão de quase-eventos
+                  — LTIFR, se usado, vem com contexto. ISO&nbsp;45001, se
+                  adotada, alinha sistema sem apagar NR. Digital, IoT e VR
+                  (#21–#23) entram como borda com método. O relatório traduz o
+                  PDCA — não o inventa.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> tendência madura. ESG/EHS
+                  comunica prevenção real; a SST continua sendo GRO + hierarquia
+                  + Safety by Design — não o PDF premiado.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Comece pelo GRO, não pelo framework:</strong> leia NR-1 e Manual GRO/PGR 2026; defina perigos, hierarquia e plano de ação antes do capítulo ESG.</li>
+                <li><strong>Exija elo métrica → perigo → controle → evidência:</strong> KPI órfão é vanity metric.</li>
+                <li><strong>Trate Safety by Design / PtD como decisão de projeto:</strong> registre o que foi eliminado no desenho e no redesenho — eco do hub NIOSH PtD.</li>
+                <li><strong>Prefira indicadores de barreira e de processo:</strong> saúde de controles críticos acima de “dias sem acidente” isolados.</li>
+                <li><strong>Use ISO&nbsp;45001 como título/sistema (se adotada):</strong> compra/consulta autorizada — sem texto pirateado e sem selo decorativo.</li>
+                <li><strong>Alinhe narrativa ESG ao inventário e ao eSocial:</strong> contradição documental é sinal de fiscalização (#13), não detalhe de comunicação.</li>
+                <li><strong>Integre tendências na borda:</strong> digital, IoT e VR (#21–#23) só entram no relatório se servirem ao método — não o contrário.</li>
+                <li><strong>Exponha falhas de barreira no PDCA:</strong> cosmética esconde; engenharia aprende.</li>
+                <li><strong>Recuse hype:</strong> tendência SafeEng é ESG/EHS a serviço da hierarquia — não hierarquia a serviço do rating.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> ESG/EHS podem
+                <strong>comunicar desempenho de SST com accountability</strong>;
+                <strong>não substituem</strong> o GRO da NR-1 nem a eliminação
+                de perigos no projeto. Valor aparece quando métricas ligam a
+                controles e a decisões PtD / Safety by Design — processo do
+                Manual da NR-1, eventualmente alinhado a um SGSSO
+                ISO&nbsp;45001 (título) e iluminado pelo hub oficial NIOSH PtD.
+                Sem isso, o que se publica como “excelência EHS” é só
+                <strong>relatório cosmética</strong>. Com este #24, a série
+                planejada de 24 artigos SafeEng / Curiosidades SST está
+                <strong>completa</strong>.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-1 vigente, do Manual GRO/PGR da NR-1, das NR
+                  aplicáveis, das orientações NIOSH/CDC nem do texto integral da
+                  ISO&nbsp;45001 (obtenha por canal autorizado). Também
+                  <strong>não constitui</strong> aconselhamento jurídico, parecer,
+                  relatório ESG/EHS pronto, rating, certificação, inventário de
+                  riscos, plano de ação, projeto de engenharia, laudo, ART/RRT ou
+                  substituição da responsabilidade da organização ou do profissional
+                  legalmente habilitado. Este site <strong>não afirma</strong> que
+                  frameworks ESG, ratings ou selos cumprem, por si, requisitos da
+                  NR-1. Cenários e o diagrama são didáticos e hipotéticos; não
+                  endossam fornecedores nem frameworks comerciais. Verifique PDFs e
+                  páginas oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#esg-ehs-safety-by-design">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="treinamento-imersivo-vr-sst.html">Artigo #23</a>
+                <a class="btn btn-primary" href="index.html">Índice da série (completa)</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Série de 24 artigos concluída — e agora?</h2>
+            <p>Explore os hubs em Curiosidades (Tendências SafeEng, Clássicos 2026, Integração técnica, Em alta 2026) ou envie ideias para novos briefings SafeEng a Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../curiosidades.html#tema-tendencias-safeeng">Abrir Tendências SafeEng</a>
+            <a class="btn btn-outline" href="../contato.html" style="margin-left:0.5rem">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng (série completa)</a></li>
+              <li><a href="treinamento-imersivo-vr-sst.html">#23 Treinamento imersivo VR</a></li>
+              <li><a href="../curiosidades.html#esg-ehs-safety-by-design">Teaser ESG / EHS · PtD</a></li>
+              <li><a href="../curiosidades.html#tema-tendencias-safeeng">Tendências SafeEng</a></li>
+              <li><a href="https://www.cdc.gov/niosh/ptd/about/index.html" target="_blank" rel="noopener noreferrer">NIOSH PtD (oficial)</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
