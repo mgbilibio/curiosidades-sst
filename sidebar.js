@@ -84,7 +84,8 @@
         { href: "artigos/lideranca-metas-jornada-perigo-gro.html", label: "#6 Liderança, metas e jornada" },
         { href: "artigos/canal-denuncia-assedio-barreira.html", label: "#7 Canal denúncia e assédio" },
         { href: "artigos/mei-me-epp-aep-dispensas.html", label: "#8 MEI/ME/EPP · AEP e dispensas" },
-        { href: "artigos/integracao-nr1-nr17-aep-aet.html", label: "#9 Integração NR-1 × NR-17 · AEP/AET" }
+        { href: "artigos/integracao-nr1-nr17-aep-aet.html", label: "#9 Integração NR-1 × NR-17 · AEP/AET" },
+        { href: "artigos/nr9-gro-maduro-agentes-classicos.html", label: "#10 NR-9 · agentes clássicos no GRO" }
       ]
     },
     {
