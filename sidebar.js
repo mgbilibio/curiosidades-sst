@@ -83,34 +83,29 @@
       id: "normas-tecnicas",
       label: "Normas técnicas",
       items: [
-        { href: "normas-tecnicas.html", label: "Catálogo e referências", className: "sidebar-nr-hub" },
-        { href: "normas-tecnicas.html#gratuitos", label: "Documentos gratuitos" },
-        { href: "normas-tecnicas.html#oit-construcao", label: "OIT construção" },
-        { href: "normas-tecnicas.html#oit-hfe", label: "OIT + IEA HFE" },
-        { href: "normas-tecnicas.html#referencias", label: "NR → normas técnicas" },
-        { href: "normas-tecnicas.html#orgaos-setoriais", label: "Órgãos setoriais" },
-        { href: "normas-tecnicas.html#internacionais", label: "Principais ISO/IEC" },
-        { href: "curiosidades.html#iso-31010", label: "Insight: ISO 31000 / 31010" },
-        { href: "curiosidades.html#iso-45001", label: "Insight: ISO 45001" },
-        { href: "curiosidades.html#incerteza-higiene", label: "Insight: higiene" },
-        { href: "curiosidades.html#analise-barreiras", label: "Insight: barreiras" }
-      ]
-    },
-    {
-      id: "orgaos-setoriais",
-      label: "Órgãos setoriais",
-      items: [
-        { href: "normas-tecnicas.html#orgaos-setoriais", label: "Visão geral", className: "sidebar-nr-hub" },
-        { href: "normas-tecnicas.html#orgao-anm", label: "ANM · Mineração (NR-22)" },
-        { href: "normas-tecnicas.html#orgao-marinha", label: "Marinha · Portos/aquaviário (NR-29/30)" },
-        { href: "normas-tecnicas.html#orgao-anp", label: "ANP · Petróleo e gás (NR-37)" },
-        { href: "normas-tecnicas.html#orgao-dfpc", label: "Exército/DFPC · Explosivos (NR-19)" },
-        { href: "normas-tecnicas.html#orgao-anvisa", label: "Anvisa · Saúde (NR-32)" },
-        { href: "normas-tecnicas.html#orgao-mapa", label: "MAPA · Agro (NR-31)" },
-        { href: "normas-tecnicas.html#orgao-bombeiros", label: "Bombeiros · Incêndio (NR-23)" },
-        { href: "normas-tecnicas.html#orgao-aneel", label: "ANEEL · Eletricidade (NR-10)" },
-        { href: "normas-tecnicas.html#orgao-inflamaveis", label: "ANP/IBAMA · Inflamáveis (NR-20)" },
-        { href: "normas-tecnicas.html#orgao-ibama", label: "CONAMA/IBAMA · Resíduos (NR-38)" }
+        { href: "normas-tecnicas.html", label: "Visão geral", className: "sidebar-nr-hub" },
+        { href: "normas-gratuitas.html", label: "Gratuitas" },
+        { href: "normas-internacionais.html", label: "Internacionais" },
+        { href: "normas-por-nr.html", label: "Por NR" },
+        {
+          type: "group",
+          id: "orgaos-setoriais",
+          label: "Órgãos setoriais",
+          open: false,
+          items: [
+            { href: "orgaos-setoriais.html", label: "Visão geral", className: "sidebar-nr-hub" },
+            { href: "orgaos-setoriais.html#orgao-anm", label: "ANM" },
+            { href: "orgaos-setoriais.html#orgao-marinha", label: "Marinha / DPC" },
+            { href: "orgaos-setoriais.html#orgao-anp", label: "ANP" },
+            { href: "orgaos-setoriais.html#orgao-dfpc", label: "Exército / DFPC" },
+            { href: "orgaos-setoriais.html#orgao-anvisa", label: "Anvisa" },
+            { href: "orgaos-setoriais.html#orgao-mapa", label: "MAPA" },
+            { href: "orgaos-setoriais.html#orgao-bombeiros", label: "Bombeiros" },
+            { href: "orgaos-setoriais.html#orgao-aneel", label: "ANEEL" },
+            { href: "orgaos-setoriais.html#orgao-inflamaveis", label: "ANP / IBAMA" },
+            { href: "orgaos-setoriais.html#orgao-ibama", label: "CONAMA / IBAMA" }
+          ]
+        }
       ]
     },
     {
@@ -180,14 +175,22 @@
   function topicShouldExpand(topic) {
     // Introdução and NR always open on every page
     if (topic.id === "introducao" || topic.id === "nr") return true;
-    if (topic.id === "normas-tecnicas" && currentFile() === "normas-tecnicas.html") return true;
-    if (topic.id === "orgaos-setoriais" && currentFile() === "normas-tecnicas.html") return true;
+    var file = currentFile();
+    var normasFiles = {
+      "normas-tecnicas.html": true,
+      "normas-gratuitas.html": true,
+      "normas-internacionais.html": true,
+      "normas-por-nr.html": true,
+      "orgaos-setoriais.html": true
+    };
+    if (topic.id === "normas-tecnicas" && normasFiles[file]) return true;
     return false;
   }
 
   function groupShouldExpand(group) {
     if (group.open) return true;
     if (group.id === "nr-acesso" && currentFile() === "nrs.html") return true;
+    if (group.id === "orgaos-setoriais" && currentFile() === "orgaos-setoriais.html") return true;
     return false;
   }
 

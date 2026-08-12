@@ -1702,3 +1702,397 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== IA hub / chapters / progressive disclosure ===== */
+.breadcrumb {
+  padding: 1rem 0 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.breadcrumb .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.15rem;
+}
+
+.breadcrumb a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  color: var(--amber);
+  text-decoration: underline;
+}
+
+.breadcrumb .bc-sep {
+  margin: 0 0.35rem;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.chapter-back {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cards-chapter {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.35rem;
+}
+
+.chapter-card {
+  padding: 1.5rem 1.6rem;
+  min-height: 11rem;
+}
+
+.chapter-card h3 {
+  margin: 0.35rem 0 0.65rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.chapter-card h3 a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.chapter-card h3 a:hover,
+.chapter-card h3 a:focus-visible {
+  color: var(--teal);
+}
+
+.chapter-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.hub-stub-note code {
+  font-size: 0.85em;
+  background: var(--teal-pale);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .cards-chapter {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Compact NR index */
+.nr-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0.65rem;
+}
+
+.nr-index-row {
+  margin: 0;
+}
+
+.nr-index-row.nr-revogada .nr-index-link {
+  background: #fffbeb;
+  border-style: dashed;
+}
+
+.nr-index-link {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr minmax(8rem, 1.2fr);
+  gap: 0.75rem 1rem;
+  align-items: center;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.nr-index-link:hover,
+.nr-index-link:focus-visible {
+  border-color: rgba(13, 115, 119, 0.45);
+  box-shadow: var(--shadow);
+  background: var(--teal-pale);
+  color: inherit;
+}
+
+.nr-index-num {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nr-index-title {
+  font-size: 0.92rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.nr-index-std {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 800px) {
+  .nr-index-link {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+/* NR accordion details */
+.nr-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.nr-details {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.nr-details-revogada {
+  background: #fffbeb;
+  border-color: rgba(217, 119, 6, 0.35);
+}
+
+.nr-details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.65rem 0.9rem;
+  align-items: center;
+  padding: 0.9rem 1.1rem;
+  user-select: none;
+}
+
+.nr-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nr-details > summary .card-tag {
+  margin: 0;
+}
+
+.nr-details-title {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.nr-details-cue {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: var(--teal-pale);
+  border: 1px solid rgba(13, 115, 119, 0.2);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+}
+
+.nr-details[open] > summary {
+  border-bottom: 1px solid var(--border);
+  background: rgba(13, 115, 119, 0.04);
+}
+
+.nr-details[open] .nr-details-cue {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+}
+
+.nr-details-body {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.nr-details-body .ref-normas,
+.nr-details-body .ref-resumo,
+.nr-details-body .ref-importa,
+.nr-details-body .ref-orgao {
+  margin-bottom: 0.55rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.nr-details-body .ref-normas {
+  color: var(--text);
+}
+
+.nr-details-body .ref-normas strong,
+.nr-details-body .ref-resumo strong,
+.nr-details-body .ref-importa strong,
+.nr-details-body .ref-orgao strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.nr-details-body .ref-importa {
+  padding-top: 0.35rem;
+  border-top: 1px dashed var(--border);
+}
+
+.nr-details-body .ref-orgao {
+  margin: 0.55rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px dashed var(--border);
+  color: var(--text);
+}
+
+.nr-details-body .ref-orgao a {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .nr-details > summary {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .nr-details-cue {
+    justify-self: start;
+  }
+}
+
+/* Órgão sections with nested instruments details */
+.orgao-section {
+  margin: 0 0 1.5rem;
+  padding: 1.35rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.orgao-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.orgao-section-head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--navy);
+  flex: 1 1 14rem;
+}
+
+.orgao-section .ref-normas,
+.orgao-section .ref-resumo,
+.orgao-section .ref-importa {
+  margin-bottom: 0.55rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.orgao-section .ref-normas {
+  color: var(--text);
+}
+
+.orgao-section .ref-normas strong,
+.orgao-section .ref-resumo strong,
+.orgao-section .ref-importa strong {
+  color: var(--navy);
+}
+
+.orgao-section .ref-importa {
+  padding-top: 0.35rem;
+  border-top: 1px dashed var(--border);
+  margin-bottom: 0.9rem;
+}
+
+.orgao-instruments-details {
+  border: 1px solid rgba(13, 115, 119, 0.22);
+  border-radius: 10px;
+  background: var(--teal-pale);
+  overflow: hidden;
+}
+
+.orgao-instruments-details > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--teal);
+  user-select: none;
+}
+
+.orgao-instruments-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.orgao-instruments-details[open] > summary {
+  border-bottom: 1px solid rgba(13, 115, 119, 0.18);
+  background: rgba(13, 115, 119, 0.08);
+}
+
+.orgao-instruments-body {
+  padding: 0.9rem 1rem 1.1rem;
+  background: #fff;
+}
+
+.orgao-instruments-body .orgao-list-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.92rem;
+  color: var(--navy);
+}
+
+.orgao-instruments-body .orgao-instruments {
+  margin: 0 0 0.85rem;
+  padding-left: 1.15rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.orgao-instruments-body .orgao-instruments li {
+  margin-bottom: 0.35rem;
+}
+
+.orgao-instruments-body .orgao-instruments strong {
+  color: var(--navy);
+}
+
+.orgao-teaser p {
+  margin-bottom: 0.85rem;
+}
+
+/* Extra breathing room on hub chapter grids */
+.section-alt .cards-chapter {
+  margin-top: 0.5rem;
+}
