@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensores / IoT em SST: dado em tempo real vs decisão de engenharia | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Sensores e IoT alimentam monitoramento em tempo real, mas não substituem avaliação de risco, calibração, análise de falso positivo/negativo nem hierarquia de controles. Artigo SafeEng por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/sensores-iot-sst-decisao.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Sensores / IoT em SST · dado em tempo real vs decisão de engenharia | Margus Giuliano">
+  <meta property="og:description" content="IoT e sensores alimentam monitoramento; não substituem GRO, calibração, FP/FN nem hierarquia de controles. Sem hype de dashboard.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/sensores-iot-sst-decisao.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Tendências SafeEng">
+  <meta property="article:tag" content="sensores">
+  <meta property="article:tag" content="IoT">
+  <meta property="article:tag" content="GRO">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="ISO 45001">
+  <meta property="article:tag" content="NIOSH">
+  <meta property="article:tag" content="hierarquia de controles">
+  <meta property="article:tag" content="calibração">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sensores / IoT em SST · SafeEng #22">
+  <meta name="twitter:description" content="Dado em tempo real alimenta monitoramento; decisão de engenharia exige GRO, calibração, FP/FN e hierarquia.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/sensores-iot-sst-decisao.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Sensores / IoT · decisão de engenharia"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/sensores-iot-sst-decisao.html#article",
+        "headline": "Sensores / IoT em SST: dado em tempo real vs decisão de engenharia",
+        "description": "Leitura SafeEng: sensores e IoT alimentam monitoramento em tempo real, mas não substituem avaliação de risco, calibração, análise de falso positivo/negativo nem hierarquia de controles.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/sensores-iot-sst-decisao.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["sensores", "IoT", "GRO", "NR-1", "ISO 45001", "NIOSH", "calibração", "hierarquia de controles", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">Sensores / IoT · decisão de engenharia</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #22 · Tendências SafeEng</p>
+            <h1>Sensores / IoT em SST: dado em tempo real vs decisão de engenharia</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura crítica para engenheiros, higienistas, SESMT e gestores que
+              tratam rede de sensores e dashboard IoT como <em>insumo</em> de
+              monitoramento — não como substituto da avaliação de risco
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: sinal ≠ decisão</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: o que o sensor entrega e o que exige engenharia</a></li>
+              <li><a href="#esquema">Esquema SVG: dado na borda · decisão no núcleo</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Continua o bloco editorial <strong>Tendências SafeEng</strong>
+                (artigos #21–#24). Depois do #21 (checklist digital / IA na borda
+                do GRO), a pressão comercial empurra outra promessa:
+                <em>sensorizar a planta, “IoT de SST” e decidir pelo dashboard</em>.
+                Em SafeEng, o ponto é sóbrio: <strong>sensores e redes IoT podem
+                alimentar monitoramento em tempo quase real</strong> — e
+                <strong>não substituem</strong> avaliação de risco, calibração e
+                manutenção metrológica, análise de <strong>falso positivo /
+                falso negativo</strong> nem a <strong>hierarquia de controles</strong>
+                do GRO.
+              </p>
+              <p>
+                Este artigo #22 ancora no <strong>Manual GRO/PGR da NR-1 (2026)</strong>
+                para o processo, cita <strong>ISO&nbsp;45001</strong> apenas como
+                <strong>referência de título</strong> (compra/consulta legal — sem
+                texto pirateado) e, quando útil, aponta hubs oficiais gratuitos do
+                <strong>NIOSH/CDC</strong> sobre direct-reading e sensores
+                ocupacionais. A pergunta de engenharia é:
+                <strong>o dado em tempo real está informando uma decisão de
+                controle — ou o gráfico verde está disfarçando ausência de
+                método?</strong>
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: sinal de sensor ≠ decisão de engenharia</h2>
+              <ul>
+                <li>
+                  <strong>NR-1 / GRO / PGR (gov.br):</strong> gerenciamento de riscos
+                  ocupacionais é processo contínuo — identificar perigos, avaliar,
+                  controlar na hierarquia, planejar, acompanhar e revisar. Monitorar
+                  exposição ou condição crítica <em>pode</em> entrar no ciclo; o
+                  sensor sozinho não fecha o GRO. Texto oficial + Manual — este site
+                  aponta, não substitui.
+                </li>
+                <li>
+                  <strong>Manual GRO/PGR da NR-1 (2026):</strong> enquadra o GRO no
+                  PDCA e exige critério, evidência e melhoria contínua. Em SafeEng
+                  (#14): processo vivo versus documento (ou dashboard) de gaveta.
+                  Dado contínuo sem revisão de controle é PDCA truncado.
+                </li>
+                <li>
+                  <strong>ISO&nbsp;45001 (título · compra/consulta):</strong> sistema
+                  de gestão de SSO — planejamento de riscos/oportunidades, operação,
+                  monitoramento/medição, avaliação de desempenho e melhoria. Útil
+                  para estruturar SGSSO e a lógica “medir o que controlamos”;
+                  <em>não</em> é obrigação automática brasileira nem “selo IoT”.
+                  Hub: <a href="../normas-internacionais.html#iso-45001">Normas internacionais · ISO 45001</a>.
+                </li>
+                <li>
+                  <strong>NIOSH / CDC — Center for Direct Reading and Sensor Technologies (CDRST):</strong>
+                  hub oficial gratuito sobre métodos de leitura direta e sensores
+                  ocupacionais (orientação, treinamento, desempenho, transformação
+                  de dado em informação acionável). Benchmarking técnico
+                  internacional — <strong>não</strong> substitui NR-1 nem NR-9 no
+                  Brasil.
+                  <a href="https://www.cdc.gov/niosh/centers/direct-reading-sensor.html" target="_blank" rel="noopener noreferrer">cdc.gov/niosh/centers/direct-reading-sensor</a>
+                </li>
+                <li>
+                  <strong>NIOSH Exposure Assessment Program:</strong> programa oficial
+                  de avaliação de exposição (estratégias, métodos, sensores no
+                  portfólio de pesquisa). Reforça que exposição se <em>avalia</em>
+                  com estratégia — não só se “plota” em tempo real.
+                  <a href="https://www.cdc.gov/niosh/research-programs/portfolio/exposure-assess.html" target="_blank" rel="noopener noreferrer">cdc.gov/niosh · Exposure Assessment</a>
+                </li>
+                <li>
+                  <strong>Sensores / IoT em SST (mercado):</strong> gás, poeira,
+                  ruído, vibração, calor, proximidade, postura, localização, “wearables”.
+                  Em SafeEng: <strong>camada de aquisição e alerta</strong> — não
+                  inventário, não hierarquia, não calibração automática, não
+                  análise de FP/FN. IoT sem metrologia é gráfico bonito sobre
+                  incerteza desconhecida.
+                </li>
+              </ul>
+              <p>
+                Em SafeEng: <strong>o GRO (NR-1 + Manual) permanece o núcleo de
+                decisão</strong>; <strong>ISO&nbsp;45001 entra como título de
+                SGSSO</strong>; <strong>NIOSH/CDC entram como hubs oficiais de
+                sensor/exposição (gratuito)</strong>; <strong>sensores/IoT entram
+                na borda — sinal, série temporal, alarme</strong>. Confundir
+                alarme com controle é o equivalente IoT da automação de papel do #21.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Tempo real sem critério vira ruído:</strong> mil pontos/minuto não corrigem inventário raso nem limiar arbitrário.</li>
+                <li><strong>Calibração e manutenção são parte do controle:</strong> sensor driftado gera FP (alarme inútil) ou FN (silêncio perigoso).</li>
+                <li><strong>Hierarquia não nasce do MQTT:</strong> eliminar/substituir/engenharizar não se resolve com mais nós na rede.</li>
+                <li><strong>FP/FN têm custo de engenharia e de cultura:</strong> alarme crônico → dessensibilização; FN → falsa segurança.</li>
+                <li><strong>Auditor e fiscal olham processo e evidência:</strong> Manual/NR-1 pedem método do GRO — não print de heatmap IoT sem vínculo a perigo, limiar e ação.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática. A NR-1 e o Manual
+                são textos oficiais no gov.br. Hubs NIOSH/CDC são páginas oficiais
+                gratuitas. <strong>Não reproduzimos</strong> texto integral da
+                ISO&nbsp;45001 — só título e links de compra/consulta.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">NR-1 / GRO / PGR (gov.br / CTPP)</a>
+                  — processo de gerenciamento de riscos ocupacionais (cap. 1.5)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — processo, PDCA, evidências e melhoria contínua (referência de processo deste artigo)
+                </li>
+                <li>
+                  <strong>ISO&nbsp;45001</strong> — Sistemas de gestão de SSO (título)
+                  ·
+                  <a href="https://www.iso.org/store.html" target="_blank" rel="noopener noreferrer">ISO Store</a>
+                  ·
+                  <a href="https://www.abntcatalogo.com.br/" target="_blank" rel="noopener noreferrer">ABNT Catálogo</a>
+                  ·
+                  <a href="../normas-internacionais.html#iso-45001">Normas internacionais · ISO 45001</a>
+                  — sem texto pirateado
+                </li>
+                <li>
+                  <a href="https://www.cdc.gov/niosh/centers/direct-reading-sensor.html" target="_blank" rel="noopener noreferrer">NIOSH / CDC · Center for Direct Reading and Sensor Technologies (CDRST)</a>
+                  — hub oficial gratuito (orientação, desempenho, dado → informação acionável)
+                </li>
+                <li>
+                  <a href="https://www.cdc.gov/niosh/research-programs/portfolio/exposure-assess.html" target="_blank" rel="noopener noreferrer">NIOSH / CDC · Exposure Assessment Program</a>
+                  — hub oficial de avaliação de exposição (estratégias e métodos)
+                </li>
+                <li>
+                  <a href="../curiosidades.html#manual-nr1-pdca-gro">Artigo #14: Manual NR-1 · PDCA do GRO</a>
+                  ·
+                  <a href="../curiosidades.html#ia-checklist-digital-risco">Artigo #21: IA · checklist digital</a>
+                  ·
+                  <a href="../curiosidades.html#nr9-gro-maduro-agentes-classicos">Artigo #10: NR-9 · agentes clássicos</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> citar ISO&nbsp;45001 ou NIOSH
+                <strong>não</strong> cria obrigação de plataforma IoT, certificação
+                ou “sensor homologado pelo MTE”. Em conflito entre síntese, norma
+                técnica paga, orientação NIOSH e NR-1 vigente,
+                <strong>prevalece o texto oficial do domínio correspondente</strong>:
+                NR-1/Manual (e NR aplicável, ex. NR-9) no GRO brasileiro; ISO como
+                referência de SGSSO via compra/consulta; NIOSH como benchmarking
+                técnico gratuito.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: o que o sensor entrega — e o que exige decisão de engenharia</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>sensorizar sem método é acelerar o ruído</strong>.
+                Rede boa reduz latência de detecção, fecha loop de alarme e
+                documenta série temporal; rede mal posicionada multiplica
+                notificações sobre perigos mal identificados e limiares sem dono.
+              </p>
+
+              <h3>1) Núcleo que não se terceiriza ao IoT: GRO / Manual NR-1</h3>
+              <p>
+                Identificar perigos, avaliar com critério declarado, aplicar
+                <strong>hierarquia de controles</strong>, planejar ações,
+                acompanhar e revisar após mudança — isso é o GRO. O Manual 2026
+                sustenta o PDCA. Nenhum gateway “cumpre a NR-1” no lugar da
+                organização. O sensor no máximo <em>informa</em> elos do ciclo
+                (ex.: tendência de exposição, falha de ventilação, condição
+                atmosférica em espaço confinado — quando o projeto técnico assim
+                define).
+              </p>
+
+              <h3>2) Onde sensores/IoT agregam de verdade</h3>
+              <p>
+                Alarme de condição crítica com procedimento de resposta; série
+                temporal para priorizar higiene e engenharia; confirmação de
+                eficácia de controle (antes/depois); gatilho de revisão do plano
+                quando o padrão muda; trilha de evidência com timestamp. Isso é
+                <strong>infraestrutura de monitoramento</strong> — alinhável a
+                lógica de SGSSO (ISO&nbsp;45001 como título) sem confundir
+                heatmap com sistema de gestão maduro. Eco do #21: ferramenta na
+                borda, método no núcleo.
+              </p>
+
+              <h3>3) Calibração, desempenho e “direct-reading”</h3>
+              <p>
+                O hub NIOSH CDRST enfatiza orientação sobre seleção, uso,
+                desempenho e transformação de dado em informação acionável —
+                não basta “estar online”. Em SafeEng: definir grandeza, faixa,
+                interferentes, intervalo de calibração/verificação, critério de
+                fora-de-tolerância e responsável. Sensor sem metrologia é
+                opinião eletrônica.
+              </p>
+
+              <h3>4) Falso positivo e falso negativo: análise obrigatória</h3>
+              <p>
+                <strong>FP:</strong> alarme sem perigo real → fadiga de alarme,
+                bypass cultural, descrédito do sistema.
+                <strong>FN:</strong> silêncio com perigo presente → falsa
+                segurança pior que ausência de sensor.
+                Decisão de engenharia inclui taxa aceitável, redundância quando
+                crítica, validação cruzada (medição clássica / inspeção) e
+                revisão de limiar com base em cenário — não só no default de
+                fábrica.
+              </p>
+
+              <h3>5) Hierarquia de controles acima do dashboard</h3>
+              <p>
+                Monitorar ruído sem enclausurar fonte; saturá-lo de wearables
+                sem isolar processo; alarmar gás sem ventilação/isolamento
+                adequados — são sintomas de IoT no andar de baixo da hierarquia.
+                Em SafeEng: o dado serve para <em>empurrar</em> eliminação,
+                substituição e engenharia; se só gera campanha de EPI e “fique
+                atento ao app”, o investimento sensorial virou teatro digital.
+              </p>
+
+              <h3>6) O fio SafeEng completo</h3>
+              <p>
+                <strong>GRO / Manual NR-1 (núcleo de decisão)</strong> →
+                <strong>perigo + critério + hierarquia + plano</strong> →
+                <strong>estratégia de monitoramento (quando cabível)</strong> →
+                <strong>sensor/IoT na borda (sinal · calibração · FP/FN · alerta)</strong> →
+                <strong>ação e revisão no PDCA</strong> →
+                <strong>SGSSO de referência (45001 como título), se a organização adotar</strong> →
+                <strong>benchmark NIOSH/CDC (hubs oficiais), sem importar obrigação</strong>.
+                O dado entra no fio — nunca no lugar da decisão.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema SVG: dado na borda · decisão no núcleo</h2>
+              <p>
+                Diagrama didático — não reproduz figuras oficiais da NR-1, do Manual
+                GRO/PGR, da ISO&nbsp;45001 nem do NIOSH. Leitura: à esquerda, o
+                ciclo de decisão de engenharia; à direita, o atalho “dashboard =
+                prevenção”.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Núcleo GRO Manual NR-1 com avaliação, hierarquia e PDCA; borda com sensores IoT calibração e análise FP FN; à direita dashboard verde sem método">
+                  <svg viewBox="0 0 960 900" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow22" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                        <path d="M0,0 L6,3 L0,6 Z" fill="#f0c674"/>
+                      </marker>
+                    </defs>
+                    <rect width="960" height="900" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="32" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">Sensores / IoT em SST · SafeEng #22</text>
+                    <text x="480" y="54" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">dado em tempo real informa · decisão de engenharia decide</text>
+
+                    <text x="240" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Caminho de engenharia</text>
+
+                    <rect x="40" y="100" width="400" height="70" rx="10" fill="#0f766e"/>
+                    <text x="240" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">1 · GRO / Manual NR-1 (núcleo)</text>
+                    <text x="240" y="150" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">identificar · avaliar · controlar · revisar</text>
+
+                    <path d="M240 170 V186" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow22)"/>
+
+                    <rect x="40" y="188" width="400" height="70" rx="10" fill="#1d4ed8"/>
+                    <text x="240" y="216" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">2 · Hierarquia + plano de ação</text>
+                    <text x="240" y="238" text-anchor="middle" fill="#bfdbfe" font-family="system-ui,sans-serif" font-size="11">eliminar → engenharia → admin → EPI</text>
+
+                    <path d="M240 258 V274" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow22)"/>
+
+                    <rect x="40" y="276" width="400" height="70" rx="10" fill="#b45309" stroke="#f0c674" stroke-width="2"/>
+                    <text x="240" y="304" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">3 · Estratégia de monitoramento</text>
+                    <text x="240" y="326" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="11">limiar · dono · resposta · revisão</text>
+
+                    <path d="M240 346 V362" stroke="#f0c674" stroke-width="2.5" fill="none" marker-end="url(#arrow22)"/>
+
+                    <rect x="40" y="364" width="400" height="70" rx="10" fill="#134e4a"/>
+                    <text x="240" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">4 · Sensor / IoT (borda)</text>
+                    <text x="240" y="414" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">sinal · calibração · FP/FN · alerta</text>
+
+                    <text x="720" y="88" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Atalho “IoT = prevenção”</text>
+
+                    <rect x="500" y="100" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="128" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Sensorizar sem inventário</text>
+                    <text x="710" y="150" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">nós na rede · perigo indefinido</text>
+
+                    <rect x="500" y="188" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="216" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Dashboard verde · sem calibração</text>
+                    <text x="710" y="238" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">drift · FN silencioso</text>
+
+                    <rect x="500" y="276" width="420" height="70" rx="10" fill="#7f1d1d"/>
+                    <text x="710" y="304" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Alarme crônico (FP)</text>
+                    <text x="710" y="326" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="11">bypass cultural · dessensibilização</text>
+
+                    <rect x="500" y="364" width="420" height="70" rx="10" fill="#78350f"/>
+                    <text x="710" y="392" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Só EPI / “olhe o app”</text>
+                    <text x="710" y="414" text-anchor="middle" fill="#fdba74" font-family="system-ui,sans-serif" font-size="11">hierarquia intocada</text>
+
+                    <path d="M500 135 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M500 223 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                    <path d="M500 311 H450" stroke="#fca5a5" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+                    <rect x="40" y="460" width="880" height="70" rx="12" fill="#065f46"/>
+                    <text x="480" y="490" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Referências: Manual GRO/PGR 2026 · ISO 45001 (título) · NIOSH CDRST / Exposure Assessment (hubs oficiais)</text>
+                    <text x="480" y="514" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">NR-1 manda no GRO brasileiro · NIOSH não importa obrigação · sem texto pirateado ISO</text>
+
+                    <rect x="40" y="555" width="430" height="150" rx="14" fill="#065f46"/>
+                    <text x="255" y="595" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Ganho real do sensor/IoT</text>
+                    <text x="255" y="625" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">latência · série temporal · evidência</text>
+                    <text x="255" y="649" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">confirma eficácia de controle</text>
+                    <text x="255" y="673" text-anchor="middle" fill="#6ee7b7" font-family="system-ui,sans-serif" font-size="12">alerta com dono e procedimento</text>
+
+                    <rect x="490" y="555" width="430" height="150" rx="14" fill="#7f1d1d"/>
+                    <text x="705" y="595" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Teatro de dashboard</text>
+                    <text x="705" y="625" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">heatmap · inventário raso</text>
+                    <text x="705" y="649" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">sem calibração / FP-FN</text>
+                    <text x="705" y="673" text-anchor="middle" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="12">controle só administrativo/EPI</text>
+
+                    <rect x="40" y="730" width="880" height="140" rx="14" fill="#134e4a"/>
+                    <text x="480" y="770" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Sensor melhora monitoramento · GRO + hierarquia + metrologia sustentam a decisão</text>
+                    <text x="480" y="798" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">ISO 45001: título + compra/consulta · Manual NR-1 no gov.br · NIOSH CDRST gratuito</text>
+                    <text x="480" y="826" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">Diagrama didático SafeEng — não é figura oficial NR / Manual / ISO / NIOSH · borda ≠ núcleo</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  À esquerda: GRO/Manual no núcleo, hierarquia e plano, estratégia
+                  de monitoramento, sensor/IoT na borda (calibração e FP/FN). À
+                  direita: teatro de dashboard — sensor sem inventário, drift, alarme
+                  crônico e só EPI. ISO&nbsp;45001 em
+                  <a href="../normas-internacionais.html">Normas internacionais</a>;
+                  NIOSH via links oficiais na seção Fontes.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais nem produtos comerciais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Dashboard sem método</p>
+                <h3>“Instalámos 80 sensores de gás e o mapa ficou verde — o inventário e a ventilação continuam de 2018”</h3>
+                <p>
+                  A organização celebra cobertura IoT. Limiares vieram de fábrica.
+                  Não há vínculo claro a perigos do PGR, nem plano de resposta por
+                  zona, nem revisão de engenharia quando o padrão sobe. Quase-eventos
+                  por isolamento inadequado não entram na série temporal.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> sensorizou o vazio metodológico.
+                  Sem GRO atualizado e hierarquia (Manual/NR-1), o heatmap só
+                  acelera falsa segurança.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · FP/FN ignorados</p>
+                <h3>“O wearable dispara o dia inteiro — a equipe silencia o alarme; no turno da noite o sensor falhou e ninguém viu”</h3>
+                <p>
+                  Alarmes crônicos (FP) geram bypass cultural. Calibração atrasada
+                  e bateria crítica produzem FN. A gestão interpreta “poucos
+                  alertas no dashboard” como sucesso. Não há análise de desempenho
+                  do monitor nem validação cruzada com medição clássica.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> tempo real sem metrologia e sem
+                  gestão de FP/FN é risco operacional. O hub NIOSH CDRST existe
+                  justamente para lembrar seleção, uso e interpretação — não só
+                  conectividade.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Dado na borda, decisão no núcleo</p>
+                <h3>Inventário vivo + hierarquia + sensores com limiar, dono, calibração e gatilho de revisão</h3>
+                <p>
+                  Perigos e controles saem do GRO (Manual/NR-1). Sensores cobrem
+                  grandezas definidas (ex.: atmosfera em espaço confinado, ruído em
+                  célula crítica) com calibração, procedimento de alarme e
+                  responsável. Série temporal confirma eficácia de engenharia e
+                  dispara revisão do plano — não só push no celular. ISO&nbsp;45001,
+                  se adotada, estrutura monitoramento/medição no SGSSO. NIOSH
+                  CDRST/Exposure Assessment informam boas práticas — sem importar
+                  obrigação. Dashboard serve ao PDCA, não ao slide de “planta
+                  inteligente”.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> tendência madura. Dado em tempo
+                  real melhora monitoramento; a decisão continua sendo avaliação +
+                  hierarquia + revisão — não o logo da plataforma IoT.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Comece pelo GRO, não pelo gateway:</strong> leia NR-1 e Manual GRO/PGR 2026; defina perigos, critérios e hierarquia antes de comprar nós IoT.</li>
+                <li><strong>Exija vínculo sensor → perigo → limiar → ação → plano:</strong> heatmap órfão é teatro digital.</li>
+                <li><strong>Trate calibração e verificação como controle:</strong> intervalo, tolerância, responsável e registro — sem isso, o dado não sustenta decisão.</li>
+                <li><strong>Analise FP e FN de propósito:</strong> taxa, causa, impacto cultural e mitigação (redundância, validação cruzada, limiar revisado).</li>
+                <li><strong>Preserve hierarquia de controles:</strong> sensor que só cobra EPI/procedimento sem empurrar engenharia reforça o andar de baixo.</li>
+                <li><strong>Use NIOSH/CDC como benchmarking oficial gratuito:</strong> CDRST e Exposure Assessment — sem confundir com obrigação brasileira.</li>
+                <li><strong>Trate ISO&nbsp;45001 como referência de SGSSO (compra/consulta):</strong> monitoramento/medição no sistema — não selo da plataforma IoT.</li>
+                <li><strong>Feche o PDCA:</strong> padrão anômalo deve revisar plano/PGR; série temporal sem decisão é arquivo morto em tempo real.</li>
+                <li><strong>Recuse hype:</strong> tendência SafeEng é dado a serviço da engenharia — não engenharia a serviço do slide de IoT.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> sensores e IoT podem
+                <strong>alimentar monitoramento em tempo real</strong>;
+                <strong>não decidem risco sozinhos</strong>. Decisão de engenharia
+                exige identificação de perigos, avaliação com critério, hierarquia
+                de controles, calibração, análise de FP/FN e revisão no GRO —
+                processo do Manual da NR-1 — eventualmente apoiado por estrutura
+                de SGSSO (ISO&nbsp;45001 como título) e por orientação técnica
+                NIOSH/CDC (hubs oficiais). Sem isso, o que se publica como
+                “planta inteligente” é só <strong>dashboard sem método</strong>.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-1 vigente, do Manual GRO/PGR da NR-1, das NR
+                  aplicáveis (ex.: NR-9), nem da ISO&nbsp;45001, tampouco das orientações
+                  NIOSH/CDC. Também <strong>não constitui</strong> aconselhamento jurídico,
+                  parecer, especificação de sensor/plataforma IoT, homologação de produto,
+                  protocolo de calibração pronto, inventário de riscos, plano de ação,
+                  sistema de gestão certificado, laudo, ART/RRT ou substituição da
+                  responsabilidade da organização ou do profissional legalmente habilitado.
+                  Este site <strong>não hospeda</strong> textos integrais protegidos de
+                  ISO/ABNT — use ISO Store, ABNT Catálogo ou consulta autorizada
+                  (ex.: ABNT×Confea/Crea). Cenários e o diagrama são didáticos e
+                  hipotéticos; não endossam fornecedores. Verifique PDFs e páginas
+                  oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#sensores-iot-sst-decisao">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="ia-checklist-digital-risco.html">Artigo #21</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a tendências de SST digital, sensores/IoT com método, GRO/PGR e hierarquia de controles para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="ia-checklist-digital-risco.html">#21 IA · checklist digital · risco</a></li>
+              <li><a href="../curiosidades.html#sensores-iot-sst-decisao">Teaser sensores / IoT</a></li>
+              <li><a href="../curiosidades.html#tema-tendencias-safeeng">Tendências SafeEng</a></li>
+              <li><a href="../normas-internacionais.html#iso-45001">ISO 45001 (título)</a></li>
+              <li><a href="https://www.cdc.gov/niosh/centers/direct-reading-sensor.html" target="_blank" rel="noopener noreferrer">NIOSH CDRST (oficial)</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

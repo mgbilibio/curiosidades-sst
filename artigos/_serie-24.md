@@ -27,7 +27,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 19 | Espaço confinado (NR-33) e permissão de entrada: onde a análise de risco falha antes do gás | **Publicado** | [artigo](nr33-espaco-confinado-analise-risco.html) · [teaser](../curiosidades.html#nr33-espaco-confinado-analise-risco) |
 | 20 | Incêndio (NR-23) vs IT do Corpo de Bombeiros: NR federal não fecha o projeto sozinha | **Publicado** | [artigo](nr23-incendio-vs-bombeiros.html) · [teaser](../curiosidades.html#nr23-incendio-vs-bombeiros) |
 | 21 | IA e checklist digital: antecipação de risco ou só automação de papel? | **Publicado** | [artigo](ia-checklist-digital-risco.html) · [teaser](../curiosidades.html#ia-checklist-digital-risco) |
-| 22 | Integração NR-17 × riscos psicossociais na prática do inventário | Pendente | — |
+| 22 | Sensores / IoT em SST: dado em tempo real vs decisão de engenharia | **Publicado** | [artigo](sensores-iot-sst-decisao.html) · [teaser](../curiosidades.html#sensores-iot-sst-decisao) |
 | 23 | Revisão do PGR após mudanças: gatilhos psicossociais e de processo | Pendente | — |
 | 24 | Checklist SafeEng: preparar o inventário psicossocial para a vigência 26/05/2026 | Pendente | — |
 
@@ -268,8 +268,21 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico *(reagendar em briefing futuro; slot #21 ocupado por IA / checklist digital · automação de papel em 12/08/2026)*
 
+
+## Nota editorial slot #22
+
+- Tema publicado em #22: Sensores / IoT em SST — dado em tempo real vs decisão de engenharia (briefing 12/08/2026).
+- Bloco editorial **Tendências SafeEng** em `curiosidades.html` (artigos 21–24); teaser #22 ao lado de #21.
+- Fontes: Manual GRO/PGR da NR-1 (2026) para processo; ISO 45001 como **título + compra/consulta** (ISO Store / ABNT) — sem texto pirateado; hubs oficiais gratuitos NIOSH/CDC — Center for Direct Reading and Sensor Technologies (CDRST) e Exposure Assessment Program.
+- Distinção crítica: sensor/IoT = borda (sinal · calibração · FP/FN · alerta); GRO + hierarquia de controles = núcleo de decisão; dashboard sem método = teatro digital.
+- O antigo slot #22 (Integração NR-17 × riscos psicossociais na prática do inventário) foi para backlog deslocado; sobreposição residual com #9 (AEP/AET) permanece.
+
+## Backlog deslocado do slot #22
+
+- Integração NR-17 × riscos psicossociais na prática do inventário *(reagendar em briefing futuro; slot #22 ocupado por sensores / IoT · dado vs decisão de engenharia em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 22–24 até briefing específico de cada tema.
+- Não publicar 23–24 até briefing específico de cada tema.

@@ -98,7 +98,8 @@
         { href: "artigos/nr18-oit-construcao.html", label: "#18 NR-18 · OIT construção · CoP" },
         { href: "artigos/nr33-espaco-confinado-analise-risco.html", label: "#19 NR-33 · espaço confinado · falha antes do gás" },
         { href: "artigos/nr23-incendio-vs-bombeiros.html", label: "#20 NR-23 · incêndio vs IT Bombeiros" },
-        { href: "artigos/ia-checklist-digital-risco.html", label: "#21 IA · checklist digital · risco" }
+        { href: "artigos/ia-checklist-digital-risco.html", label: "#21 IA · checklist digital · risco" },
+        { href: "artigos/sensores-iot-sst-decisao.html", label: "#22 Sensores / IoT · decisão de engenharia" }
       ]
     },
     {
