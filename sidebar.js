@@ -80,7 +80,8 @@
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },
         { href: "artigos/adpf-1316-sancao-vs-obrigacao.html", label: "#4 ADPF 1316 sanção vs obrigação" },
         { href: "artigos/guia-mte-psicossociais-leitura-critica.html", label: "#5 Guia MTE leitura crítica" },
-        { href: "artigos/lideranca-metas-jornada-perigo-gro.html", label: "#6 Liderança, metas e jornada" }
+        { href: "artigos/lideranca-metas-jornada-perigo-gro.html", label: "#6 Liderança, metas e jornada" },
+        { href: "artigos/canal-denuncia-assedio-barreira.html", label: "#7 Canal denúncia e assédio" }
       ]
     },
     {

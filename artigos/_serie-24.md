@@ -12,7 +12,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 4 | ADPF 1316 / suspensão de multas: o que muda na prática (sanção vs obrigação técnica) | **Publicado** | [artigo](adpf-1316-sancao-vs-obrigacao.html) · [teaser](../curiosidades.html#adpf-1316-sancao) |
 | 5 | Guia MTE de fatores psicossociais: leitura crítica do que vira controle operacional | **Publicado** | [artigo](guia-mte-psicossociais-leitura-critica.html) · [teaser](../curiosidades.html#guia-mte-psicossociais) |
 | 6 | Liderança, metas e jornada como perigo: como registrar no GRO sem moralismo | **Publicado** | [artigo](lideranca-metas-jornada-perigo-gro.html) · [teaser](../curiosidades.html#lideranca-metas-jornada) |
-| 7 | Participação dos trabalhadores na identificação de riscos psicossociais | Pendente | — |
+| 7 | Canal de denúncia e assédio: barreira organizacional ou teatro de compliance? | **Publicado** | [artigo](canal-denuncia-assedio-barreira.html) · [teaser](../curiosidades.html#canal-denuncia-assedio) |
 | 8 | Evidências e indicadores: o que medir sem transformar SST em RH clínico | Pendente | — |
 | 9 | AEP e inventário: quando a análise ergonômica alimenta o PGR *(slot liberado; tema #3 antigo)* | Pendente | — |
 | 10 | Guia, Manual GRO/PGR e Q&A: como ler os documentos oficiais de 2025–2026 *(parcialmente antecipado em #5; reagendar foco residual)* | Pendente | — |
@@ -71,8 +71,20 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Home office e teletrabalho no GRO: isolamento, disponibilidade e fronteiras *(reagendar em briefing futuro; slot #6 ocupado por liderança/metas/jornada em 12/08/2026)*
 
+
+## Nota editorial slot #7
+
+- Tema publicado em #7: Canal de denúncia e assédio — barreira vs teatro de compliance (briefing 12/08/2026).
+- Participação dos trabalhadores na identificação de riscos psicossociais (antigo #7) foi para backlog deslocado.
+- Conecta o backlog de “Assédio e violência no trabalho como perigo da organização” (deslocado do #4): #7 cobre o canal/procedimento como barreira e elo com o PGR; o registro do perigo em si permanece aprofundável em briefing futuro.
+- Lei 14.457/2022 citada com link Planalto (art. 23 — procedimentos / CIPA); não é parecer jurídico.
+
+## Backlog deslocado do slot #7
+
+- Participação dos trabalhadores na identificação de riscos psicossociais *(reagendar em briefing futuro; slot #7 ocupado por canal de denúncia / assédio em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 6–24 até briefing específico de cada tema.
+- Não publicar 8–24 até briefing específico de cada tema.
