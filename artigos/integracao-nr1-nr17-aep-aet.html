@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integração NR-1 + NR-17: AEP obrigatória e quando a AET deixa de ser “opcional” | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="AEP é interface obrigatória GRO/NR-17; AET deixa de ser “opcional” nas hipóteses do 17.3.2. Leitura SafeEng com NR-17, NR-1, Manual, Guia e Q&amp;A — por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/integracao-nr1-nr17-aep-aet.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Integração NR-1 + NR-17: AEP obrigatória e AET condicional | Margus Giuliano">
+  <meta property="og:description" content="AEP alimenta o inventário/GRO; AET é aprofundamento obrigatório quando o 17.3.2 dispara — não folklore de “opcional”.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/integracao-nr1-nr17-aep-aet.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Integração técnica">
+  <meta property="article:tag" content="AEP">
+  <meta property="article:tag" content="AET">
+  <meta property="article:tag" content="NR-17">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="GRO">
+  <meta property="article:tag" content="PGR">
+  <meta property="article:tag" content="Ergonomia">
+  <meta property="article:tag" content="Riscos psicossociais">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Integração NR-1 + NR-17: AEP obrigatória e AET condicional">
+  <meta name="twitter:description" content="AEP é interface GRO/NR-17; AET dispara nas hipóteses do 17.3.2 — não é “opcional” folklore.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/integracao-nr1-nr17-aep-aet.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Integração NR-1 + NR-17 · AEP e AET"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/integracao-nr1-nr17-aep-aet.html#article",
+        "headline": "Integração NR-1 + NR-17: AEP obrigatória e quando a AET deixa de ser “opcional”",
+        "description": "A Avaliação Ergonômica Preliminar (AEP) é interface obrigatória entre GRO/NR-1 e NR-17; a Análise Ergonômica do Trabalho (AET) torna-se obrigatória nas hipóteses tipificadas do item 17.3.2 — não folklore de opcionalidade.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/integracao-nr1-nr17-aep-aet.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["AEP", "AET", "NR-17", "NR-1", "GRO", "PGR", "ergonomia", "riscos psicossociais", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">Integração NR-1 + NR-17 · AEP e AET</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #9 · Integração técnica</p>
+            <h1>Integração NR-1 + NR-17: AEP obrigatória e quando a AET deixa de ser “opcional”</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, ergonomistas e gestores de GRO/PGR
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: AEP na interface GRO × NR-17</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: AEP obrigatória × AET condicional</a></li>
+              <li><a href="#esquema">Esquema: AEP → inventário → gatilhos AET</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Depois de inventário psicossocial (#1), metodologia (#2), PGR × PCMSO (#3),
+                sanção vs obrigação (#4), Guia (#5), liderança/metas/jornada (#6), canal de
+                denúncia (#7) e MEI/ME/EPP (#8), o próximo mito técnico é outro:
+                tratar a <strong>Avaliação Ergonômica Preliminar (AEP)</strong> como “checklist de
+                cadeira” opcional e a <strong>Análise Ergonômica do Trabalho (AET)</strong> como
+                documento que “só se faz se o cliente pedir” — folklore de opcionalidade.
+              </p>
+              <p>
+                Este artigo #9 SafeEng abre o bloco editorial
+                <strong>Integração técnica</strong>: a AEP é a
+                <strong>interface obrigatória</strong> entre o GRO/NR-1 e a NR-17; a AET
+                <strong>deixa de ser “opcional”</strong> quando dispara qualquer hipótese do
+                item <strong>17.3.2</strong>. Não é parecer jurídico nem AEP/AET pronta — é
+                leitura de engenharia com fontes oficiais.
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: AEP na interface GRO × NR-17</h2>
+              <p>
+                A <strong>NR-17</strong> (item <strong>17.3.1</strong>) determina que a organização
+                realize a avaliação ergonômica preliminar das situações de trabalho que, pela
+                natureza e conteúdo das atividades, demandam adaptação às características
+                psicofisiológicas dos trabalhadores — para subsidiar medidas de prevenção e
+                adequações. A abordagem pode ser qualitativa, semiquantitativa, quantitativa ou
+                combinada (<strong>17.3.1.1</strong>). O resultado
+                <strong>deve ser registrado</strong> (<strong>17.3.1.2.1</strong>).
+              </p>
+              <p>
+                O elo com a <strong>NR-1 / GRO</strong> está no próprio texto: a AEP
+                <strong>pode ser contemplada</strong> nas etapas de identificação de perigos e
+                avaliação de riscos do item 1.5.4 da NR-01 (<strong>17.3.1.2</strong>). Em
+                linguagem SafeEng: a AEP não é “anexo de mobiliário” paralelo ao PGR — é
+                <strong>insumo do inventário</strong> (ou documentação específica equivalente,
+                especialmente quando há dispensa de PGR — ver #8 / Manual cap. 16 / Q&amp;A).
+              </p>
+              <p>
+                A <strong>AET</strong> (item <strong>17.3.2</strong>) não é a etapa “sempre
+                opcional” da apresentação comercial. A organização
+                <strong>deve</strong> realizá-la quando:
+              </p>
+              <ul>
+                <li><strong>a)</strong> observada a necessidade de avaliação mais aprofundada da situação;</li>
+                <li><strong>b)</strong> identificadas inadequações ou insuficiência das ações adotadas;</li>
+                <li><strong>c)</strong> sugerida pelo acompanhamento de saúde (PCMSO) e pela alínea “c” do subitem 1.5.5.1.1 da NR-01; ou</li>
+                <li><strong>d)</strong> indicada causa relacionada às condições de trabalho na análise de acidentes e doenças (PGR).</li>
+              </ul>
+              <p>
+                Ou seja: a AET é <em>condicional</em> — e, nas hipóteses tipificadas,
+                <strong>obrigatória</strong>. Chamar de “opcional” o que a norma amarra a
+                gatilhos técnicos é folklore. ME/EPP graus 1 e 2 e MEI têm regra própria quanto
+                à AET no <strong>17.3.4</strong> (com ressalvas do 17.3.4.1), mas isso
+                <strong>não apaga a AEP</strong> nem os demais requisitos aplicáveis da NR-17
+                (organização do trabalho no 17.4 incluída).
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Interface auditável:</strong> AEP sem lastro no inventário/plano de ação (ou documento específico) vira PDF paralelo — buraco clássico de auditoria (#2 e #3).</li>
+                <li><strong>Psicossocial no radar ergonômico:</strong> organização do trabalho (17.4) e fatores psicossociais entram pela AEP/GRO — não por prontuário (#1, #5, #6).</li>
+                <li><strong>AET com gatilho:</strong> acidente/doença, falha de medida, sugestão do PCMSO ou necessidade de aprofundamento → AET deixa de ser “se der tempo”.</li>
+                <li><strong>Proporcionalidade sem omissão:</strong> AEP pode ser enxuta; não pode ser inexistente. Dispensa de PGR não dispensa AEP (#8).</li>
+                <li><strong>Vigência 26/05/2026:</strong> integração NR-1 × NR-17 deixa de ser “tema de consultoria” e vira prova de processo contínuo.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática — a obrigação e o detalhe estão
+                nos textos oficiais vigentes. URL da NR-17 PDF conferida com
+                <code>sidebar.js</code> / <code>nrs.html</code> do portal.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-17-nr-17" target="_blank" rel="noopener noreferrer">Página oficial da NR-17 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-17-atualizada-2023.pdf" target="_blank" rel="noopener noreferrer">NR-17 atualizada (PDF)</a>
+                  — 17.3.1 (AEP); 17.3.1.1–17.3.1.2.1 (abordagens e registro); 17.3.2 (AET / hipóteses a–d); 17.3.3 (etapas da AET); 17.3.4 / 17.3.4.1 (ME/EPP/MEI); 17.3.8 (participação); 17.4 (organização do trabalho)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">Página oficial da NR-1 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf" target="_blank" rel="noopener noreferrer">NR-1 atualizada (PDF)</a>
+                  — GRO (1.5); inventário / plano de ação; tratamento diferenciado (1.8); interface com 17.3.1.2
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2024/portaria-mte-no-1-419-nr-01-gro-nova-redacao.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 1.419/2024 — nova redação NR-01 / GRO (PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — integração aspectos ergonômicos / AEP × AET; cap. sobre dispensa de PGR ≠ dispensa de AEP; registro da AEP
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" target="_blank" rel="noopener noreferrer">Perguntas e Respostas GRO/PGR — maio/2026</a>
+                  — AEP / psicossociais; AEP como evidência quando há dispensa de PGR
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/guia-nr-01-revisado.pdf" target="_blank" rel="noopener noreferrer">Guia NR-01 revisado — Fatores de Riscos Psicossociais (PDF, 2025)</a>
+                  — listagens exemplificativas → critério → controle (ver #5)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr" target="_blank" rel="noopener noreferrer">Página MTE — Programa de Gerenciamento de Riscos (PGR)</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> Manual, Guia e Q&amp;A são
+                <em>orientativos</em> e não substituem o texto normativo. Em tensão entre
+                síntese e NR, <strong>prevalece a NR vigente</strong>. Confira sempre o PDF
+                oficial atualizado no gov.br.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: AEP obrigatória × AET condicional (não “opcional”)</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>AEP é ponto de partida obrigatório; AET é aprofundamento com gatilho normativo</strong>.
+                Quem vende “AET opcional sempre” está confundindo <em>condicionalidade</em> com
+                <em>livre escolha comercial</em>.
+              </p>
+
+              <h3>1) O que a AEP faz na integração NR-1 × NR-17</h3>
+              <ul>
+                <li>Identifica perigos ergonômicos (físicos, cognitivos, organizacionais / psicossociais no desenho do trabalho) das situações aplicáveis.</li>
+                <li>Produz informação para o <strong>planejamento de medidas</strong> (17.3.1) e para o <strong>inventário / plano de ação</strong> do GRO-PGR (17.3.1.2 + NR-1 1.5).</li>
+                <li>Exige <strong>registro</strong> (17.3.1.2.1) — observação, critério, participação (17.3.8) e histórico, não slide genérico (#2).</li>
+                <li>Pode ser proporcional (qualitativa/enxuta), mas <strong>não pode ser teatro</strong>: “temos AEP” sem lastro operacional falha auditoria.</li>
+              </ul>
+
+              <h3>2) Quando a AET deixa de ser “opcional”</h3>
+              <p>
+                Nas quatro hipóteses do <strong>17.3.2</strong>, a norma usa
+                <strong>“deve realizar”</strong>. Tradução de engenharia:
+              </p>
+              <ul>
+                <li><strong>Aprofundamento necessário (a):</strong> AEP apontou complexidade, causa não óbvia ou risco que não se resolve com medida imediata simples.</li>
+                <li><strong>Medidas insuficientes (b):</strong> ações já adotadas não eliminaram / controlaram a inadequação — aprofundar, não repetir o mesmo checklist.</li>
+                <li><strong>Sinal do PCMSO (c):</strong> vigilância da saúde sugere relação com condições de trabalho — interface #3; AET não é prontuário, mas responde ao sinal.</li>
+                <li><strong>Acidente / doença (d):</strong> análise no PGR indica causa ligada às condições de trabalho — AET integra a aprendizagem do evento.</li>
+              </ul>
+              <p>
+                Condicional ≠ opcional. Se o gatilho existe e a organização “optou por não fazer”,
+                o folklore colide com o texto.
+              </p>
+
+              <h3>3) O que a AET não é</h3>
+              <ul>
+                <li>Não é substituto automático da AEP em todas as situações (a sequência normativa começa na preliminar).</li>
+                <li>Não é laudo de “cadeira boa” desconectado da atividade real (work-as-done).</li>
+                <li>Não é protocolo clínico / diagnóstico de trabalhador (#1).</li>
+                <li>Não é obrigatória “por default” em ME/EPP GR 1–2 e MEI na regra geral do 17.3.4 — mas as ressalvas do 17.3.4.1 e os <em>demais</em> requisitos da NR-17 (AEP incluída) permanecem.</li>
+              </ul>
+
+              <h3>4) Comparativo rápido</h3>
+              <div class="compare-grid" role="group" aria-label="Comparativo AEP versus AET na integração NR-1 NR-17">
+                <div class="compare-card compare-ok">
+                  <h3>Leitura alinhada ao texto oficial</h3>
+                  <ul>
+                    <li>AEP registrada das situações aplicáveis (17.3.1)</li>
+                    <li>Resultados no inventário / plano de ação (ou doc. específica)</li>
+                    <li>Organização do trabalho / psicossociais no radar (17.4 + Guia)</li>
+                    <li>AET quando 17.3.2 a–d dispara</li>
+                    <li>Participação dos trabalhadores (17.3.8)</li>
+                    <li>Método declarado — sem PDF de gaveta (#2)</li>
+                  </ul>
+                </div>
+                <div class="compare-card compare-no">
+                  <h3>Folklore de “opcional”</h3>
+                  <ul>
+                    <li>“AEP é só para quem tem SESMT grande”</li>
+                    <li>Checklist de mobiliário sem atividade real</li>
+                    <li>AET “só se o cliente contratar pacote”</li>
+                    <li>Ignorar gatilho de acidente / PCMSO / medida falha</li>
+                    <li>Psicossocial só no RH clínico, fora da AEP</li>
+                    <li>Dispensa de PGR = “zero ergonomia” (#8)</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: AEP → inventário GRO → gatilhos da AET</h2>
+              <figure class="article-figure" aria-labelledby="fig-aep-cap">
+                <figcaption id="fig-aep-cap" class="article-figure-cap">
+                  SafeEng: a AEP é interface obrigatória NR-17 × GRO/NR-1; a AET torna-se obrigatória nas hipóteses tipificadas do 17.3.2 — condicional, não folklore de opcionalidade.
+                </figcaption>
+                <div class="flow-diagram" role="img" aria-label="Diagrama da integração NR-1 e NR-17: AEP obrigatória alimenta o inventário e gatilhos disparam AET">
+                  <svg viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow9" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#0d7377"/>
+                      </marker>
+                    </defs>
+
+                    <rect x="40" y="16" width="880" height="48" rx="12" fill="#0b1f2a"/>
+                    <text x="480" y="38" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">Integração NR-1 × NR-17 · AEP → GRO → AET</text>
+                    <text x="480" y="54" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12">17.3.1 obrigatória · 17.3.2 gatilhos · Manual / Guia / Q&amp;A</text>
+
+                    <rect x="36" y="90" width="200" height="100" rx="12" fill="#0d7377"/>
+                    <text x="136" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Situações de trabalho</text>
+                    <text x="136" y="144" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="11">natureza / conteúdo</text>
+                    <text x="136" y="164" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">adaptação psicofisiológica</text>
+                    <line x1="236" y1="140" x2="264" y2="140" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow9)"/>
+
+                    <rect x="266" y="90" width="200" height="100" rx="12" fill="#d97706"/>
+                    <text x="366" y="122" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="14" font-weight="700">AEP (17.3.1)</text>
+                    <text x="366" y="144" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="11">obrigatória · registrada</text>
+                    <text x="366" y="164" text-anchor="middle" fill="#422006" font-family="system-ui,sans-serif" font-size="11">qualitativa → quantitativa</text>
+                    <line x1="466" y1="140" x2="494" y2="140" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow9)"/>
+
+                    <rect x="496" y="90" width="200" height="100" rx="12" fill="#134e4a"/>
+                    <text x="596" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Inventário GRO/PGR</text>
+                    <text x="596" y="144" text-anchor="middle" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="11">17.3.1.2 · NR-1 1.5</text>
+                    <text x="596" y="164" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">plano de ação / medidas</text>
+                    <line x1="696" y1="140" x2="724" y2="140" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow9)"/>
+
+                    <rect x="726" y="90" width="198" height="100" rx="12" fill="#0b1f2a"/>
+                    <text x="825" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Controles</text>
+                    <text x="825" y="144" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="11">redesenho · hierarquia</text>
+                    <text x="825" y="164" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">acompanhamento</text>
+
+                    <rect x="80" y="230" width="800" height="36" rx="10" fill="#134e4a"/>
+                    <text x="480" y="254" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Gatilhos 17.3.2 — AET deixa de ser “opcional”</text>
+
+                    <rect x="48" y="286" width="200" height="78" rx="12" fill="#fff" stroke="#0d7377" stroke-width="2"/>
+                    <text x="148" y="318" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="12" font-weight="700">(a) Aprofundar</text>
+                    <text x="148" y="340" text-anchor="middle" fill="#134e4a" font-family="system-ui,sans-serif" font-size="11">necessidade da AEP</text>
+
+                    <rect x="268" y="286" width="200" height="78" rx="12" fill="#fff" stroke="#0d7377" stroke-width="2"/>
+                    <text x="368" y="318" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="12" font-weight="700">(b) Medidas falhas</text>
+                    <text x="368" y="340" text-anchor="middle" fill="#134e4a" font-family="system-ui,sans-serif" font-size="11">inadequadas / insuficientes</text>
+
+                    <rect x="488" y="286" width="200" height="78" rx="12" fill="#fff" stroke="#0d7377" stroke-width="2"/>
+                    <text x="588" y="318" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="12" font-weight="700">(c) Sinal PCMSO</text>
+                    <text x="588" y="340" text-anchor="middle" fill="#134e4a" font-family="system-ui,sans-serif" font-size="11">NR-1 1.5.5.1.1 “c”</text>
+
+                    <rect x="708" y="286" width="200" height="78" rx="12" fill="#fff" stroke="#0d7377" stroke-width="2"/>
+                    <text x="808" y="318" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="12" font-weight="700">(d) Acidente/doença</text>
+                    <text x="808" y="340" text-anchor="middle" fill="#134e4a" font-family="system-ui,sans-serif" font-size="11">causa nas condições</text>
+
+                    <line x1="480" y1="364" x2="480" y2="392" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow9)"/>
+
+                    <rect x="220" y="396" width="520" height="56" rx="12" fill="#d97706"/>
+                    <text x="480" y="422" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="15" font-weight="700">AET (17.3.2 / 17.3.3) — aprofundamento obrigatório</text>
+                    <text x="480" y="442" text-anchor="middle" fill="#422006" font-family="system-ui,sans-serif" font-size="12">demanda · atividade · métodos · recomendações · validação</text>
+
+                    <rect x="120" y="474" width="720" height="48" rx="12" fill="#0b1f2a"/>
+                    <text x="480" y="504" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Condicional ≠ opcional · AEP nunca some · cite NR-17 + NR-1 + Manual/Q&amp;A</text>
+                  </svg>
+                </div>
+              </figure>
+              <p>
+                Leitura de engenharia: a seta âmbar (AEP) alimenta o inventário; os quatro
+                cartões do 17.3.2 são <em>interruptores</em> da AET — não botões de “upgrade
+                comercial”.
+              </p>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Indústria / AEP “de gaveta”</p>
+                <h3>“Temos AEP em PDF — o inventário não cita ergonomia”</h3>
+                <p>
+                  A empresa mantém um PDF chamado “AEP 2024” com fotos de cadeiras e alturas de
+                  monitor. O inventário do PGR lista químicos e máquinas, mas não incorpora
+                  perigos da organização do trabalho (ritmo, repetitividade, pressão de meta)
+                  apontados de passagem naquele PDF. Não há plano de ação ergonômico coerente.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> falha de interface 17.3.1.2 × NR-1 1.5.
+                  AEP registrada que não alimenta inventário/plano vira documento de gaveta (#2).
+                  Caminho: reconciliar AEP → linhas do inventário → medidas na hierarquia;
+                  psicossocial como fator da organização, não CID (#1).
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Serviços / gatilho 17.3.2 ignorado</p>
+                <h3>“AET é opcional — mesmo após LER e medida que não funcionou”</h3>
+                <p>
+                  Após casos de LER/DORT em posto de atendimento e reincidência apesar de
+                  “ginástica laboral + mousepad”, a organização insiste que “AET é opcional” e
+                  só renova a AEP genérica. O PCMSO sinaliza relação com condições de trabalho;
+                  a análise de eventos no PGR aponta sobrecarga e ausência de micro-pausas reais.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> hipóteses <strong>(b)</strong>,
+                  <strong>(c)</strong> e potencialmente <strong>(d)</strong> do 17.3.2 estão
+                  acesas. Condicional virou obrigação. AET com etapas do 17.3.3 (demanda,
+                  atividade real, métodos justificados, recomendações) — sem transformar o
+                  documento em prontuário coletivo.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · ME grau 2 / integração proporcional</p>
+                <h3>AEP enxuta no GRO + AET só se o gatilho existir</h3>
+                <p>
+                  ME grau 2 (com ou sem dispensa de PGR — ver #8) registra AEP proporcional:
+                  observação da atividade, diálogo com trabalhadores (17.3.8), critérios simples
+                  de postura, ritmo e carga mental. Resultados entram no inventário (ou
+                  documentação específica se dispensada de PGR). Não há gatilho 17.3.2 ativo;
+                  medidas simples resolvem as inadequações identificadas. Se amanhã o PCMSO ou
+                  um evento apontar causa nas condições, a AET entra no plano — sem folklore de
+                  “nunca” nem de “sempre”.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> integração correta. AEP obrigatória e viva;
+                  AET condicional respeitada; proporcionalidade sem omissão. É o oposto do
+                  teatro “ergonomia = cadeira” e do mito “AET opcional sempre”.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Trate a AEP como interface, não como anexo:</strong> 17.3.1 + 17.3.1.2 → inventário / plano de ação do GRO-PGR (ou doc. específica se dispensa de PGR).</li>
+                <li><strong>Registre método:</strong> abordagem (17.3.1.1), critérios, fontes, participação (17.3.8) e revisões — evidência de processo (#2).</li>
+                <li><strong>Inclua organização do trabalho (17.4)</strong> e fatores psicossociais quando as condições o exigirem — sem diagnóstico clínico (#1, #5, #6).</li>
+                <li><strong>Monitore os quatro gatilhos do 17.3.2:</strong> aprofundamento, medida insuficiente, sinal do PCMSO, acidente/doença com causa nas condições.</li>
+                <li><strong>Quando o gatilho acender, planeje a AET</strong> com as etapas do 17.3.3 — não “upgrade comercial” improvisado.</li>
+                <li><strong>Respeite 17.3.4 / 17.3.4.1</strong> para ME/EPP GR 1–2 e MEI quanto à AET, sem apagar a AEP nem o GRO (#8).</li>
+                <li><strong>Feche o laço com o PCMSO</strong> na saúde (#3): sinal clínico/ocupacional pode disparar AET; AET não substitui vigilância nem vira prontuário.</li>
+                <li><strong>Não use folklore de opcionalidade</strong> nem liminar/sanção (#4) como desculpa para omitir interface técnica NR-1 × NR-17.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> na integração NR-1 + NR-17, a
+                <strong>AEP é obrigatória</strong> como avaliação preliminar registrada das
+                situações aplicáveis e como <strong>insumo do GRO/PGR</strong>. A
+                <strong>AET</strong> é aprofundamento <em>condicional</em> — e, nas hipóteses do
+                <strong>17.3.2</strong>, <strong>obrigatória</strong>. Chamar isso de “opcional”
+                é folklore. Na linha SafeEng:
+                <strong>registre a AEP, alimente o inventário, respeite os gatilhos da AET e cite
+                o texto oficial</strong>.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-17, da NR-1, da NR-7, do Guia NR-01, do Manual GRO/PGR,
+                  do Q&amp;A nem de outros atos oficiais vigentes. Também
+                  <strong>não constitui</strong> aconselhamento jurídico, AEP/AET completa, laudo
+                  ergonômico, protocolo clínico, enquadramento definitivo de porte/grau de risco
+                  ou substituição da coordenação do PCMSO / médico do trabalho. Cenários e
+                  exemplos são didáticos e hipotéticos. A existência de gatilho para AET e o
+                  conteúdo da AEP dependem da realidade da organização e do texto normativo
+                  aplicável. Verifique sempre os PDFs oficiais atualizados no gov.br antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#integracao-nr1-nr17-aep-aet">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="mei-me-epp-aep-dispensas.html">Artigo #8</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a GRO/PGR, NR-1, NR-17 e integração técnica para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="mei-me-epp-aep-dispensas.html">#8 MEI/ME/EPP · AEP e dispensas</a></li>
+              <li><a href="../curiosidades.html#integracao-nr1-nr17-aep-aet">Teaser Integração NR-1 × NR-17</a></li>
+              <li><a href="../curiosidades.html#tema-integracao-tecnica">Integração técnica</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

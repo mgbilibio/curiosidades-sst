@@ -75,6 +75,7 @@
       items: [
         { href: "artigos/index.html", label: "Série SafeEng", className: "sidebar-nr-hub" },
         { href: "curiosidades.html#tema-em-alta", label: "Em alta 2026 (teasers)" },
+        { href: "curiosidades.html#tema-integracao-tecnica", label: "Integração técnica (teasers)" },
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
         { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },
@@ -82,7 +83,8 @@
         { href: "artigos/guia-mte-psicossociais-leitura-critica.html", label: "#5 Guia MTE leitura crítica" },
         { href: "artigos/lideranca-metas-jornada-perigo-gro.html", label: "#6 Liderança, metas e jornada" },
         { href: "artigos/canal-denuncia-assedio-barreira.html", label: "#7 Canal denúncia e assédio" },
-        { href: "artigos/mei-me-epp-aep-dispensas.html", label: "#8 MEI/ME/EPP · AEP e dispensas" }
+        { href: "artigos/mei-me-epp-aep-dispensas.html", label: "#8 MEI/ME/EPP · AEP e dispensas" },
+        { href: "artigos/integracao-nr1-nr17-aep-aet.html", label: "#9 Integração NR-1 × NR-17 · AEP/AET" }
       ]
     },
     {
