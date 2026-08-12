@@ -19,7 +19,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 11 | Terceirizadas e item de interação de riscos: comunicação bidirecional que aguenta fiscalização | **Publicado** | [artigo](terceirizadas-interacao-riscos.html) · [teaser](../curiosidades.html#terceirizadas-interacao-riscos) |
 | 12 | Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar | **Publicado** | [artigo](perigo-externo-risco-evidente.html) · [teaser](../curiosidades.html#perigo-externo-risco-evidente) |
 | 13 | eSocial SST + PGR: inconsistência documental como sinal de fiscalização | **Publicado** | [artigo](esocial-sst-pgr-inconsistencia.html) · [teaser](../curiosidades.html#esocial-sst-pgr-inconsistencia) |
-| 14 | Liderança, autonomia e suporte social como controles organizacionais | Pendente | — |
+| 14 | Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia | **Publicado** | [artigo](manual-nr1-pdca-gro.html) · [teaser](../curiosidades.html#manual-nr1-pdca-gro) |
 | 15 | Terceirização e cadeia de valor: quem gerencia o risco psicossocial? | Pendente | — |
 | 16 | ISO 45003 e alinhamento com a NR-1 (GRO/PGR) | Pendente | — |
 | 17 | Mudança organizacional mal conduzida como fator psicossocial | Pendente | — |
@@ -160,8 +160,22 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Jornada, turnos e fadiga no inventário do PGR *(reagendar em briefing futuro; slot #13 ocupado por eSocial SST × PGR inconsistência documental em 12/08/2026)*
 
+
+
+## Nota editorial slot #14
+
+- Tema publicado em #14: Manual de interpretação do cap. 1.5 da NR-1 — PDCA do GRO na prática de engenharia (briefing 12/08/2026).
+- Bloco editorial **Integração técnica** em `curiosidades.html` (artigos 9+); teaser #14 ao lado de #9–#13.
+- Fontes: Manual GRO/PGR 2026 (Figura 3 PDCA; caps. 2–5, 8, 11–13), NR-1 1.5.3.2 / 1.5.3.4 / 1.5.4.4.6 / 1.5.5 / 1.5.7, Q&A maio/2026 (processo contínuo vs documento; evidências; inventário/plano).
+- O antigo slot #14 (Liderança, autonomia e suporte social como controles organizacionais) foi para backlog deslocado.
+- Distinção crítica: GRO = processo; PGR = documentação; melhoria contínua ≠ só status do plano de ação (Manual 5.4).
+
+## Backlog deslocado do slot #14
+
+- Liderança, autonomia e suporte social como controles organizacionais *(reagendar em briefing futuro; slot #14 ocupado por Manual NR-1 / PDCA do GRO em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 13–24 até briefing específico de cada tema.
+- Não publicar 15–24 até briefing específico de cada tema.

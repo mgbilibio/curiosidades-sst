@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Manual GRO/PGR 2026 e ciclo PDCA (Plan-Do-Check-Act) do capítulo 1.5 da NR-1: como o engenheiro opera o GRO de verdade versus documento de gaveta — leitura SafeEng com NR-1, Manual e Q&A, por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/manual-nr1-pdca-gro.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática | Margus Giuliano">
+  <meta property="og:description" content="O Manual GRO/PGR 2026 enquadra o GRO no PDCA contínuo. Como engenheiros usam Plan-Do-Check-Act operacionalmente — e o que vira documento de gaveta.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/manual-nr1-pdca-gro.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Integração técnica">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="GRO">
+  <meta property="article:tag" content="PGR">
+  <meta property="article:tag" content="PDCA">
+  <meta property="article:tag" content="Manual GRO/PGR">
+  <meta property="article:tag" content="Melhoria contínua">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Manual NR-1 · PDCA do GRO na prática de engenharia">
+  <meta name="twitter:description" content="Cap. 1.5 da NR-1 + Manual GRO/PGR 2026: ciclo PDCA operacional versus PGR de gaveta — SafeEng.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/manual-nr1-pdca-gro.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "PDCA do GRO · Manual NR-1"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/manual-nr1-pdca-gro.html#article",
+        "headline": "Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia",
+        "description": "Leitura SafeEng do Manual GRO/PGR 2026 e do ciclo PDCA no capítulo 1.5 da NR-1 — uso operacional por engenheiros versus documento de gaveta, com NR-1, Manual e Q&A.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/manual-nr1-pdca-gro.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-1", "GRO", "PGR", "PDCA", "Manual GRO/PGR", "melhoria contínua", "SafeEng", "engenharia"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">PDCA do GRO · Manual NR-1</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #14 · Integração técnica</p>
+            <h1>Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, gestores de planta e quem transforma Manual em rotina — não em PDF de arquivo
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: Manual, cap. 1.5 e PDCA</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: PDCA operacional × gaveta</a></li>
+              <li><a href="#esquema">Esquema: loop PDCA do GRO</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Depois das interfaces de inventário, terceiros, filtro preliminar e
+                coerência digital (#9–#13), o buraco muda de endereço outra vez: o
+                <strong>GRO vira ciclo</strong> — ou vira <strong>arquivo</strong>. O
+                <strong>Manual de interpretação e aplicação do capítulo 1.5 da NR-1</strong>
+                (Manual GRO/PGR, MTE, 2026) não inventa moda de gestão: ele deixa
+                explícito que a estruturação normativa do GRO adotou a abordagem do
+                ciclo <strong>PDCA</strong> (<em>Plan-Do-Check-Act</em> /
+                Planejar–Fazer–Verificar–Agir), com a Figura 3 dedicada ao
+                “Ciclo PDCA para integração do GRO”.
+              </p>
+              <p>
+                Este artigo #14 SafeEng (bloco <strong>Integração técnica</strong>) lê
+                esse enquadramento com óculos de engenharia: como o PDCA aparece nos
+                itens <strong>1.5.3.2</strong> e <strong>1.5.3.4</strong> da NR-1, no
+                Manual (caps. 2–5, 8, 11–13) e no Q&amp;A — e o que muda quando a
+                organização trata inventário + plano como <em>produto anual</em> em
+                vez de <em>processo contínuo</em>. Não substitui o Manual nem a NR;
+                não é ISO 45001 certificável “pronta”. É o mapa operacional para não
+                deixar o PGR na gaveta.
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: Manual, capítulo 1.5 e o PDCA</h2>
+              <p>
+                O próprio Manual se apresenta como publicação da Coordenação-Geral de
+                Normatização e Registros para <strong>interpretação e aplicação do
+                capítulo 1.5</strong> da NR-1 (GRO), com referência ao texto da
+                Portaria MTE nº 1.419/2024 e alterações posteriores, vigência prevista
+                para <strong>26/05/2026</strong> (Portaria MTE nº 765/2025). Caráter
+                <strong>orientativo</strong>: em dúvida, prevalece o texto oficial da
+                NR no DOU.
+              </p>
+              <ul>
+                <li>
+                  <strong>GRO (Anexo I / Manual cap. 3):</strong> processo contínuo e
+                  sistemático de identificação de perigos, avaliação e controle de
+                  riscos, com finalidade de locais seguros e saudáveis e de
+                  <em>melhorar o desempenho</em> em SST.
+                </li>
+                <li>
+                  <strong>PGR (1.5.3.1.1 / Anexo I):</strong> conjunto coordenado de
+                  ações da organização, <em>formalmente documentado</em> — inventário,
+                  plano de ação e critérios (quadro mínimo do Manual).
+                </li>
+                <li>
+                  <strong>PDCA no GRO:</strong> Manual caps. 2–3 — sistemas de gestão
+                  (OIT / ISO 45001) compartilham a lógica PDCA; a NR-1 materializa
+                  isso em requisito. Subitens <strong>1.5.3.2</strong> e
+                  <strong>1.5.3.4</strong>: processos cuja estrutura segue o PDCA,
+                  com responsabilidade de <strong>melhoria contínua</strong> do
+                  desempenho em SST.
+                </li>
+                <li>
+                  <strong>Importante do Manual (5.4 / caixa):</strong> melhoria
+                  contínua <em>não se limita</em> ao acompanhamento do plano de ação —
+                  é preciso monitorar identificação, avaliação, medidas, comunicação,
+                  participação e análise de acidentes/doenças.
+                </li>
+              </ul>
+              <p>
+                O Q&amp;A GRO/PGR (maio/2026) reforça o mesmo fio: a gestão “não se
+                resume à elaboração de documentos”; inventário, plano e critérios são
+                obrigatórios, mas a prova de gestão é processo + implementação +
+                acompanhamento (perguntas 2, 15, 16, 22). Em SafeEng: o PDCA é o
+                <strong>sistema nervoso</strong>; o PGR é o <strong>registro</strong>
+                que prova que o nervo está vivo.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Engenharia opera ciclo, não PDF:</strong> Plan (critérios, escopo, preparação) → Do (identificar/avaliar/controlar) → Check (acompanhar desempenho 1.5.5.3.2) → Act (revisão 1.5.4.4.6 + melhoria 1.5.3.4).</li>
+                <li><strong>Documento de gaveta falha no Check/Act:</strong> inventário “bonito” sem monitoramento planejado nem revisão após mudança/acidente é PDCA amputado.</li>
+                <li><strong>Fiscalização olha coerência de processo:</strong> Q&amp;A 15–16 e 22 — menos ferramenta mágica, mais implementação, responsáveis, prazos e evidência in loco.</li>
+                <li><strong>Integra com a série:</strong> metodologia (#2), PGR×PCMSO (#3), AEP (#9), higiene (#10), terceiros (#11), preliminar (#12), eSocial (#13) são <em>estações</em> do mesmo loop.</li>
+                <li><strong>Vigência 26/05/2026:</strong> Manual + Q&amp;A existem para uniformizar interpretação <em>antes</em> da cobrança plena — usar o intervalo para fechar o ciclo, não para “esperar o modelo perfeito”.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática — obrigação e redação
+                estão nos textos oficiais vigentes. Manual e Q&amp;A são
+                <em>orientação</em>; a NR prevalece no mérito.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — “Manual de interpretação e aplicação do capítulo 1.5”; caps. 2–5 (sistema / GRO / PDCA / responsabilidades / melhoria contínua); Figura 3 (ciclo PDCA); caps. 8, 11–13 (planejamento, avaliação/revisão, documentação)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">Página oficial da NR-1 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf" target="_blank" rel="noopener noreferrer">NR-1 atualizada (PDF)</a>
+                  — capítulo <strong>1.5</strong> (GRO); em especial <strong>1.5.3.2</strong>, <strong>1.5.3.4</strong>, <strong>1.5.4.4.6</strong>, <strong>1.5.5</strong>, <strong>1.5.7</strong>; Anexo I (GRO, PGR, prevenção)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2024/portaria-mte-no-1-419-nr-01-gro-nova-redacao.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 1.419/2024 — nova redação NR-01 / GRO (PDF)</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" target="_blank" rel="noopener noreferrer">Perguntas e Respostas GRO/PGR — maio/2026</a>
+                  — processo contínuo vs. documento (2); eficácia e evidências (15–16); inventário/plano na fiscalização (22); revisão (12)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr" target="_blank" rel="noopener noreferrer">Página MTE — Programa de Gerenciamento de Riscos (PGR)</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> o Manual cita ISO 45001 e diretrizes
+                da OIT como <em>contexto</em> de sistemas de gestão — isso
+                <strong>não</strong> transforma a NR-1 em certificação ISO. Em tensão
+                entre síntese, Manual e norma, <strong>prevalece o texto oficial da
+                NR-1</strong>. Confira sempre o PDF atualizado no gov.br.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: PDCA operacional × documento de gaveta</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>usar o Manual para operar o ciclo — não para decorar o
+                sumário</strong>. O PDCA do GRO não é slide de kickoff; é a forma como
+                a NR-1 espera que identificação, controle e revisão se encadeiem o ano
+                inteiro.
+              </p>
+
+              <h3>1) Plan — o que a engenharia realmente planeja</h3>
+              <p>
+                No Manual (cap. 8), o planejamento cobre níveis estratégico, tático e
+                operacional: política/compromisso, recursos, participação, critérios
+                de severidade/probabilidade/níveis/classificação (1.5.4.4.2.2), escopo
+                do PGR (por estabelecimento / unidade / setor), se o levantamento
+                preliminar será etapa separada ou integrada (1.5.4.2.1.4), e como o
+                PGR conversa com PCMSO, PPR, procedimentos etc. Em planta: isso vira
+                <em>cronograma de campanhas</em>, <em>lista referencial de perigos</em>,
+                <em>equipe multidisciplinar</em> e <em>documento de critérios</em>
+                assinado — não “vamos ver no dia da visita”.
+              </p>
+
+              <h3>2) Do — executar GRO, não “fazer o PGR”</h3>
+              <p>
+                O Do do Manual é o miolo do 1.5: levantamento preliminar (agir no
+                evidente), identificação (descrição / fontes / grupo), avaliação
+                (nível + classificação), medidas na hierarquia, plano de ação
+                (1.5.5.2), emergência, interação com terceiros. O Q&amp;A insiste:
+                documentação prova o processo, mas <em>não o substitui</em>. Em
+                SafeEng: se a única evidência do Do é a data de assinatura do PDF, o
+                ciclo já morreu.
+              </p>
+
+              <h3>3) Check — onde a gaveta costuma vencer</h3>
+              <p>
+                Aqui está o diferencial do Manual 5.4 e do 1.5.5.3.2: acompanhamento
+                <strong>planejado</strong> do desempenho das medidas — e verificação
+                contínua de <em>todos</em> os processos do GRO, não só “status do
+                plano”. Indicadores de engenharia típicos: eficácia de EPC, desvios
+                em procedimentos, reincidência de quase-acidentes, feedback da CIPA,
+                coerência PGR×PCMSO×eSocial (#3, #13). Sem Check, o Act vira achismo.
+              </p>
+
+              <h3>4) Act — revisão e melhoria contínua (1.5.3.4 / 1.5.4.4.6)</h3>
+              <p>
+                A NR-1 amarra o Act: revisão periódica (2 anos; até 3 com SGSST
+                certificado válido, sem gatilhos) <em>e</em> revisão imediata nas
+                hipóteses “a” a “f” do 1.5.4.4.6 (pós-medida, mudança, ineficácia,
+                acidente/doença, mudança legal, solicitação justificada de
+                trabalhador/CIPA). O Manual 11.7 detalha cada gatilho. Melhoria
+                contínua (1.5.3.4) é responsabilidade da organização — não “projeto
+                ISO paralelo” ao PGR.
+              </p>
+
+              <h3>5) Gaveta = PDCA com três fases mortas</h3>
+              <p>
+                Sintoma clássico: Plan teatral (matriz linda), Do concentrado em
+                novembro, Check = zero, Act = “renovamos o PDF”. O Manual e o Q&amp;A
+                empurram o contrário: processo dinâmico, evidências de implementação,
+                participação e revisão. A fiscalização (Q&amp;A 22) combina documento
+                <em>e</em> condição real — inventário/plano sem lastro in loco é o
+                teatro que o ciclo PDCA deveria ter matado.
+              </p>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: loop PDCA do GRO (leitura SafeEng)</h2>
+              <p>
+                Diagrama didático alinhado à Figura 3 do Manual (ciclo PDCA para
+                integração do GRO) e aos subitens 1.5.3.2 / 1.5.3.4 — sem pretender
+                reproduzir a arte oficial.
+              </p>
+              <figure class="article-figure">
+                <div class="flow-diagram" role="img" aria-label="Loop PDCA do GRO: Plan, Do, Check e Act com inventário, plano de ação e melhoria contínua">
+                  <svg viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <rect width="960" height="640" rx="16" fill="#0b1f2a"/>
+                    <text x="480" y="36" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="15" font-weight="700">PDCA do GRO · cap. 1.5 NR-1 · Manual GRO/PGR 2026</text>
+                    <text x="480" y="58" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">processo contínuo (GRO) · documentação viva (PGR) · não é PDF de gaveta</text>
+
+                    <!-- circular arrows hint -->
+                    <circle cx="480" cy="320" r="168" fill="none" stroke="#134e4a" stroke-width="10"/>
+                    <circle cx="480" cy="320" r="168" fill="none" stroke="#0d7377" stroke-width="2" stroke-dasharray="8 10"/>
+
+                    <!-- PLAN -->
+                    <rect x="330" y="110" width="300" height="100" rx="14" fill="#0f766e"/>
+                    <text x="480" y="142" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="18" font-weight="700">PLAN · Planejar</text>
+                    <text x="480" y="168" text-anchor="middle" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="12">critérios · escopo · recursos · preparação</text>
+                    <text x="480" y="188" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">Manual cap. 8 · 1.5.4.4.2.2</text>
+
+                    <!-- DO -->
+                    <rect x="620" y="270" width="300" height="100" rx="14" fill="#b45309"/>
+                    <text x="770" y="302" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="18" font-weight="700">DO · Fazer</text>
+                    <text x="770" y="328" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">identificar · avaliar · controlar · plano</text>
+                    <text x="770" y="348" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="12">1.5.4 · 1.5.5 · inventário 1.5.7</text>
+
+                    <!-- CHECK -->
+                    <rect x="330" y="430" width="300" height="100" rx="14" fill="#1d4ed8"/>
+                    <text x="480" y="462" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="18" font-weight="700">CHECK · Verificar</text>
+                    <text x="480" y="488" text-anchor="middle" fill="#dbeafe" font-family="system-ui,sans-serif" font-size="12">desempenho das medidas · todos os processos</text>
+                    <text x="480" y="508" text-anchor="middle" fill="#93c5fd" font-family="system-ui,sans-serif" font-size="12">1.5.5.3.2 · Manual 5.4</text>
+
+                    <!-- ACT -->
+                    <rect x="40" y="270" width="300" height="100" rx="14" fill="#9a3412"/>
+                    <text x="190" y="302" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="18" font-weight="700">ACT · Agir</text>
+                    <text x="190" y="328" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">revisão · melhoria contínua · gatilhos</text>
+                    <text x="190" y="348" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="12">1.5.3.4 · 1.5.4.4.6</text>
+
+                    <!-- center -->
+                    <circle cx="480" cy="320" r="72" fill="#134e4a"/>
+                    <text x="480" y="310" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="14" font-weight="700">GRO</text>
+                    <text x="480" y="332" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12">processo</text>
+                    <text x="480" y="350" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">PGR = registro</text>
+
+                    <!-- bottom callouts -->
+                    <rect x="48" y="560" width="420" height="56" rx="12" fill="#065f46"/>
+                    <text x="258" y="584" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Operacional (SafeEng)</text>
+                    <text x="258" y="604" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">ciclo vivo · evidência · participação · revisão</text>
+
+                    <rect x="492" y="560" width="420" height="56" rx="12" fill="#7f1d1d"/>
+                    <text x="702" y="584" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Documento de gaveta</text>
+                    <text x="702" y="604" text-anchor="middle" fill="#fecaca" font-family="system-ui,sans-serif" font-size="12">PDF anual · Check/Act mortos · teatro</text>
+                  </svg>
+                </div>
+                <figcaption>
+                  Leitura de engenharia: o anel é o GRO; o PGR documenta cada volta.
+                  Plan define critérios e escopo; Do executa inventário/plano; Check
+                  mede eficácia (além do “status do plano”); Act revisa e melhora
+                  (1.5.3.4 / 1.5.4.4.6). Verde = ciclo vivo; vermelho = gaveta.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · PGR de gaveta (PDCA amputado)</p>
+                <h3>“Assinamos o inventário em dezembro; o plano ninguém abre”</h3>
+                <p>
+                  A organização entrega inventário e plano datados, com matriz e
+                  critérios no PDF. Não há cronograma de acompanhamento das medidas
+                  (1.5.5.3.2), não há registro de verificação de EPC, não há ata de
+                  revisão após mudança de layout. Quando a CIPA pede revisão
+                  justificada, a resposta é “só no próximo ciclo de dois anos”.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> Plan/Do teatrais; Check e Act
+                  mortos. O Manual (5.4) e o Q&amp;A (2, 15–16, 22) tratam isso como
+                  falha de <em>processo</em>, não de “modelo de planilha”. Gaveta
+                  clássica.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Check só no plano (melhoria estreita)</p>
+                <h3>“Atualizamos o Gantt do plano; a identificação ficou de 2024”</h3>
+                <p>
+                  O SESMT marca status das ações (prazo, responsável) com disciplina.
+                  Porém a lista de perigos não foi revisitada após introdução de nova
+                  linha e contratação massiva de terceiros; psicossocial e agentes
+                  clássicos seguem do inventário antigo; o eSocial (#13) e o PCMSO
+                  (#3) já divergem do mapa.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> o Manual alerta que melhoria
+                  contínua <em>não se limita</em> ao plano de ação. Check parcial =
+                  Act cego. Gatilho 1.5.4.4.6 “b” (mudança) e interação 1.5.8 (#11)
+                  pediam reabertura do loop inteiro.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Loop operacional maduro</p>
+                <h3>Campanhas trimestrais · Check amplo · Act com gatilho</h3>
+                <p>
+                  Critérios documentados (Plan). Campanhas rotativas de identificação
+                  por unidade + AEP (#9) e higiene NR-9 (#10) alimentando o mesmo
+                  inventário (Do). Painel mensal de desempenho de medidas + amostragem
+                  de participação e coerência PGR×PCMSO×S-2240 (Check). Após CAT e
+                  após troca de processo, revisão imediata do risco residual e do plano
+                  (Act), com comunicação aos trabalhadores.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> PDCA do Manual em operação. O PGR
+                  é a fotografia atualizada do ciclo — não o ciclo em si. Isso é o
+                  oposto do documento de gaveta.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Separe GRO e PGR:</strong> GRO = processo contínuo; PGR = documentação mínima (inventário, plano, critérios) — Manual Figura 4 / quadro 1.</li>
+                <li><strong>Desenhe o PDCA da planta:</strong> quem faz Plan/Do/Check/Act, com que frequência, com quais evidências — amarre a 1.5.3.2 e 1.5.3.4.</li>
+                <li><strong>Feche o Plan com critérios:</strong> severidade, probabilidade, níveis, classificação e tomada de decisão (1.5.4.4.2.2) antes de “colorir matriz”.</li>
+                <li><strong>Trate o Do como campanha viva:</strong> preliminar, identificação, avaliação, hierarquia e plano — não como mutirão de fim de ano.</li>
+                <li><strong>Amplie o Check:</strong> 1.5.5.3.2 + monitoramento de todos os processos do GRO (Manual 5.4), não só status do Gantt.</li>
+                <li><strong>Programe o Act:</strong> calendário de revisão periódica e gatilhos do 1.5.4.4.6 (incl. solicitação justificada de trabalhador/CIPA).</li>
+                <li><strong>Use Manual + Q&amp;A como roteiro:</strong> orientação uniforme; na dúvida, prevalece o texto da NR-1.</li>
+                <li><strong>Integre as estações da série:</strong> metodologia, AEP, higiene, terceiros, preliminar e eSocial são voltas do mesmo anel PDCA.</li>
+                <li><strong>Mate a gaveta com evidência:</strong> implementação, participação e coerência in loco (Q&amp;A 16–17, 22) — PDF sozinho não fecha o ciclo.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> o Manual de interpretação do capítulo 1.5
+                da NR-1 enquadra o GRO no <strong>PDCA contínuo</strong> — a mesma
+                lógica que sustenta sistemas de gestão modernos, agora como requisito
+                normativo brasileiro. Para a engenharia SafeEng, isso significa
+                operar Plan–Do–Check–Act com inventário e plano como
+                <em>registro vivo</em>, não como produto de prateleira. Documento de
+                gaveta é PDCA com Check e Act desligados. Feche o loop — o Manual já
+                desenhou o anel; falta girar.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-1 (capítulo 1.5 e Anexo I), do Manual GRO/PGR da NR-1
+                  (2026), do Q&amp;A GRO/PGR, das Portarias MTE aplicáveis, do Guia de fatores
+                  de riscos psicossociais nem de outros atos oficiais vigentes. Também
+                  <strong>não constitui</strong> aconselhamento jurídico, parecer, inventário
+                  pronto, plano de ação, sistema de gestão certificado (ISO 45001 ou outro) ou
+                  substituição da responsabilidade da organização. Referências a ISO/OIT no
+                  Manual são contexto de sistemas de gestão — não criam, por si, obrigação de
+                  certificação. Cenários são didáticos e hipotéticos. Verifique os PDFs
+                  oficiais atualizados antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#manual-nr1-pdca-gro">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="esocial-sst-pgr-inconsistencia.html">Artigo #13</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a GRO/PGR, Manual NR-1, PDCA operacional e integração técnica para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="esocial-sst-pgr-inconsistencia.html">#13 eSocial SST × PGR</a></li>
+              <li><a href="../curiosidades.html#manual-nr1-pdca-gro">Teaser PDCA do GRO</a></li>
+              <li><a href="../curiosidades.html#tema-integracao-tecnica">Integração técnica</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

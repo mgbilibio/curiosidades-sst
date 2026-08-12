@@ -88,7 +88,8 @@
         { href: "artigos/nr9-gro-maduro-agentes-classicos.html", label: "#10 NR-9 · agentes clássicos no GRO" },
         { href: "artigos/terceirizadas-interacao-riscos.html", label: "#11 Terceirizadas · interação de riscos" },
         { href: "artigos/perigo-externo-risco-evidente.html", label: "#12 Perigo externo · risco evidente" },
-        { href: "artigos/esocial-sst-pgr-inconsistencia.html", label: "#13 eSocial SST × PGR inconsistência" }
+        { href: "artigos/esocial-sst-pgr-inconsistencia.html", label: "#13 eSocial SST × PGR inconsistência" },
+        { href: "artigos/manual-nr1-pdca-gro.html", label: "#14 Manual NR-1 · PDCA do GRO" }
       ]
     },
     {
