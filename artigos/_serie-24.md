@@ -17,7 +17,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 9 | Integração NR-1 + NR-17: AEP obrigatória e quando a AET deixa de ser “opcional” | **Publicado** | [artigo](integracao-nr1-nr17-aep-aet.html) · [teaser](../curiosidades.html#integracao-nr1-nr17-aep-aet) |
 | 10 | NR-9 depois do GRO maduro: agentes clássicos ainda importam (e como não sumirem no PGR “mental”) | **Publicado** | [artigo](nr9-gro-maduro-agentes-classicos.html) · [teaser](../curiosidades.html#nr9-gro-maduro-agentes-classicos) |
 | 11 | Terceirizadas e item de interação de riscos: comunicação bidirecional que aguenta fiscalização | **Publicado** | [artigo](terceirizadas-interacao-riscos.html) · [teaser](../curiosidades.html#terceirizadas-interacao-riscos) |
-| 12 | Segurança psicológica e clima tóxico: fator de proteção versus perigo | Pendente | — |
+| 12 | Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar | **Publicado** | [artigo](perigo-externo-risco-evidente.html) · [teaser](../curiosidades.html#perigo-externo-risco-evidente) |
 | 13 | Jornada, turnos e fadiga no inventário do PGR | Pendente | — |
 | 14 | Liderança, autonomia e suporte social como controles organizacionais | Pendente | — |
 | 15 | Terceirização e cadeia de valor: quem gerencia o risco psicossocial? | Pendente | — |
@@ -133,8 +133,21 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Matriz de risco psicossocial: limites, armadilhas e alternativas *(reagendar em briefing futuro; slot #11 ocupado por terceirizadas / interação de riscos · 1.5.8 em 12/08/2026)*
 
+
+
+## Nota editorial slot #12
+
+- Tema publicado em #12: Perigo externo e risco evidente — o que a “nova NR-1” empurra para o levantamento preliminar (1.5.4.2) e a identificação de perigos externos (1.5.4.3.2 / Anexo I); Manual GRO/PGR (levantamento preliminar + 10.5) (briefing 12/08/2026).
+- Bloco editorial **Integração técnica** em `curiosidades.html` (artigos 9+); teaser #12 ao lado de #9–#11.
+- O antigo slot #12 (Segurança psicológica e clima tóxico) foi para backlog deslocado.
+- Não inventar definições: citar Anexo I (risco ocupacional evidente; perigo externo) e Manual; 1.5.4.2.1.4 permite integrar etapas sem apagar ação imediata no evidente.
+
+## Backlog deslocado do slot #12
+
+- Segurança psicológica e clima tóxico: fator de proteção versus perigo *(reagendar em briefing futuro; slot #12 ocupado por perigo externo / risco evidente · levantamento preliminar em 12/08/2026)*
+
 ## Regra editorial
 
 - Dual front: teaser em `curiosidades.html` + artigo completo em `artigos/`.
 - Tom de engenharia SafeEng; citar fontes oficiais; disclaimer padrão.
-- Não publicar 11–24 até briefing específico de cada tema.
+- Não publicar 13–24 até briefing específico de cada tema.

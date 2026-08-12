@@ -86,7 +86,8 @@
         { href: "artigos/mei-me-epp-aep-dispensas.html", label: "#8 MEI/ME/EPP · AEP e dispensas" },
         { href: "artigos/integracao-nr1-nr17-aep-aet.html", label: "#9 Integração NR-1 × NR-17 · AEP/AET" },
         { href: "artigos/nr9-gro-maduro-agentes-classicos.html", label: "#10 NR-9 · agentes clássicos no GRO" },
-        { href: "artigos/terceirizadas-interacao-riscos.html", label: "#11 Terceirizadas · interação de riscos" }
+        { href: "artigos/terceirizadas-interacao-riscos.html", label: "#11 Terceirizadas · interação de riscos" },
+        { href: "artigos/perigo-externo-risco-evidente.html", label: "#12 Perigo externo · risco evidente" }
       ]
     },
     {

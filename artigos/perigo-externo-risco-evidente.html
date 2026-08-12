@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="NR-1 1.5.4.2 e Anexo I: risco ocupacional evidente no levantamento preliminar e perigo externo previsível na identificação — leitura SafeEng com Manual GRO/PGR, por Margus Giuliano.">
+  <meta name="author" content="Margus Giuliano">
+  <meta name="theme-color" content="#0b1f2a">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/perigo-externo-risco-evidente.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Perigo externo e risco evidente no levantamento preliminar | Margus Giuliano">
+  <meta property="og:description" content="O que a NR-1 (1.5.4.2 / 1.5.4.3.2 / Anexo I) e o Manual GRO/PGR empurram: agir no risco evidente e abordar perigos externos previsíveis — sem inventar definição.">
+  <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/perigo-externo-risco-evidente.html">
+  <meta property="og:site_name" content="Curiosidades SST">
+  <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Curiosidades SST — SafeEng · Margus Giuliano">
+  <meta property="article:author" content="Margus Giuliano">
+  <meta property="article:published_time" content="2026-08-12">
+  <meta property="article:section" content="Integração técnica">
+  <meta property="article:tag" content="NR-1">
+  <meta property="article:tag" content="GRO">
+  <meta property="article:tag" content="PGR">
+  <meta property="article:tag" content="Levantamento preliminar">
+  <meta property="article:tag" content="Risco evidente">
+  <meta property="article:tag" content="Perigo externo">
+  <meta property="article:tag" content="1.5.4.2">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Perigo externo e risco evidente no levantamento preliminar">
+  <meta name="twitter:description" content="NR-1 1.5.4.2 / Anexo I + Manual: agir no risco óbvio e abordar perigos externos previsíveis — mitigação possível, sem inventar definição.">
+  <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#website",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "name": "Curiosidades SST",
+        "description": "Insights técnicos de SST e gestão de riscos por Margus Giuliano.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/#person",
+        "name": "Margus Giuliano",
+        "email": "engenheirobill@gmail.com",
+        "url": "https://mgbilibio.github.io/curiosidades-sst/",
+        "jobTitle": "Engenheiro de SST",
+        "worksFor": { "@type": "Organization", "name": "SafeEng" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/perigo-externo-risco-evidente.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Curiosidades",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/curiosidades.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artigo",
+            "item": "https://mgbilibio.github.io/curiosidades-sst/artigos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Perigo externo · risco evidente"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/perigo-externo-risco-evidente.html#article",
+        "headline": "Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar",
+        "description": "Leitura SafeEng do levantamento preliminar (NR-1 1.5.4.2), do risco ocupacional evidente e do perigo externo (Anexo I / 1.5.4.3.2) com Manual GRO/PGR — agir no óbvio e mitigar o previsível fora do controle da organização.",
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "publisher": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#person" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/perigo-externo-risco-evidente.html"
+        },
+        "image": "https://mgbilibio.github.io/curiosidades-sst/og-image.png",
+        "isPartOf": { "@id": "https://mgbilibio.github.io/curiosidades-sst/#website" },
+        "keywords": ["NR-1", "GRO", "PGR", "levantamento preliminar", "risco evidente", "perigo externo", "1.5.4.2", "1.5.4.3.2", "SafeEng"]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="../index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0d7377"/>
+          <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+          <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+          <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+        </svg>
+        <span>Curiosidades SST</span>
+      </a>
+      <div class="header-actions">
+        <button class="sidebar-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" aria-label="Abrir temas">Temas</button>
+        <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../curiosidades.html">Curiosidades</a></li>
+          <li><a href="../nrs.html">NRs</a></li>
+          <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+  <div class="layout-shell">
+    <aside class="site-sidebar" id="site-sidebar" aria-label="Navegação por temas">
+      <nav class="sidebar-nav" aria-label="Temas de SST">
+        <p class="sidebar-heading">Temas</p>
+        <ul class="sidebar-topics">
+          <li class="sidebar-topic">
+            <a class="sidebar-nr-hub" href="../nrs.html#acesso-nrs">NR · Acesso às NR atualizadas</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="layout-content">
+
+      <main id="conteudo">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <div class="container">
+            <a href="../curiosidades.html">Curiosidades</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <a href="index.html">Artigo</a>
+            <span class="bc-sep" aria-hidden="true">›</span>
+            <span aria-current="page">Perigo externo · risco evidente</span>
+          </div>
+        </nav>
+
+        <header class="page-hero">
+          <div class="container">
+            <p class="eyebrow">Série SafeEng · Artigo #12 · Integração técnica</p>
+            <h1>Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar</h1>
+            <p>
+              Por <strong>Margus Giuliano</strong> · SafeEng ·
+              <time datetime="2026-08-12">12/08/2026</time>
+              · Leitura técnica para engenheiros, SESMT, projetistas, gestores de GRO/PGR e quem monta inventário
+            </p>
+          </div>
+        </header>
+
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <div class="container">
+            <p class="article-toc-label">Neste artigo</p>
+            <ol class="article-toc-list">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto: 1.5.4.2 e Anexo I</a></li>
+              <li><a href="#importancia">Importância</a></li>
+              <li><a href="#fontes">Fontes</a></li>
+              <li><a href="#analise">Análise: óbvio agora × externo previsível</a></li>
+              <li><a href="#esquema">Esquema: filtro preliminar → identificação</a></li>
+              <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#orientacoes">Orientações e conclusão</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article class="section article-prose">
+          <div class="container">
+
+            <section id="introducao" aria-labelledby="h-intro">
+              <h2 id="h-intro">Introdução</h2>
+              <p>
+                Depois de implicações psicossociais e de integração (#1–#11), o buraco muda de
+                endereço outra vez: o <strong>filtro inicial</strong> do GRO. Muita organização
+                trata o levantamento preliminar como “planilha que depois vira inventário” —
+                e deixa risco óbvio sem ação enquanto a matriz “amadurece”. Outras ignoram
+                o que a NR-1 chama de <strong>perigo externo</strong>: previsível, fora do
+                controle da organização, mas ainda assim no radar do gerenciamento.
+              </p>
+              <p>
+                Este artigo #12 SafeEng (bloco <strong>Integração técnica</strong>) lê o
+                <strong>1.5.4.2</strong> (levantamento preliminar), o
+                <strong>1.5.4.3.2</strong> (perigos externos na identificação) e as
+                definições do <strong>Anexo I</strong> com o Manual GRO/PGR — sem inventar
+                conceito. “Nova NR-1” aqui é atalho editorial para a redação consolidada
+                pós-Portaria MTE nº&nbsp;1.419/2024 (e textos correlatos vigentes): o que ela
+                <em>empurra</em> é agir no óbvio e abordar o previsível fora do muro. Não é
+                parecer jurídico nem checklist genérico.
+              </p>
+            </section>
+
+            <section id="contexto" aria-labelledby="h-ctx">
+              <h2 id="h-ctx">Contexto: levantamento preliminar (1.5.4.2) e Anexo I</h2>
+              <p>
+                O capítulo <strong>1.5</strong> estrutura o GRO/PGR. O bloco
+                <strong>1.5.4.2</strong> trata do <strong>levantamento preliminar de perigos
+                e riscos</strong>. Em síntese normativa (leia o PDF oficial):
+              </p>
+              <ul>
+                <li>
+                  <strong>1.5.4.2.1</strong> — o levantamento preliminar deve ser realizado:
+                  (a) antes do início do funcionamento do estabelecimento ou novas
+                  instalações; (b) para as atividades existentes; e (c) nas mudanças e
+                  introdução de novos processos ou atividades de trabalho.
+                </li>
+                <li>
+                  <strong>1.5.4.2.1.1</strong> — finalidade: (a) identificar situações em que
+                  é possível <strong>evitar ou eliminar</strong> perigos; e (b) identificar
+                  situações de <strong>risco ocupacional evidente</strong> nas quais a
+                  organização deve adotar medidas de redução ou controle
+                  <strong>imediatamente</strong>.
+                </li>
+                <li>
+                  <strong>1.5.4.2.1.2</strong> — se o perigo não puder ser evitado ou
+                  eliminado, a organização deve implementar a identificação de perigos e a
+                  avaliação de riscos (1.5.4.3 e 1.5.4.4).
+                </li>
+                <li>
+                  <strong>1.5.4.2.1.3</strong> — se não for possível adotar medidas imediatas
+                  para o risco evidente, as medidas entram no <strong>plano de ação</strong>
+                  e o risco no <strong>inventário</strong>.
+                </li>
+                <li>
+                  <strong>1.5.4.2.1.4</strong> — a critério da organização, o levantamento
+                  preliminar pode estar contemplado na etapa de identificação de perigos
+                  (Manual: desde que a <em>ação imediata</em> no risco evidente seja
+                  assegurada — não é licença para “só documentar depois”).
+                </li>
+              </ul>
+              <p>
+                Definições do <strong>Anexo I</strong> (texto oficial — não parafraseamos
+                além do necessário):
+              </p>
+              <ul>
+                <li>
+                  <strong>Risco ocupacional evidente:</strong> “situação de risco óbvio e não
+                  controlado, que não requer análise aprofundada e pode ser reduzido ou
+                  controlado pela adoção imediata de medidas de prevenção.”
+                </li>
+                <li>
+                  <strong>Perigo externo:</strong> “situações previsíveis não controladas
+                  pela organização, fora dos limites do estabelecimento, da frente ou local
+                  de trabalho, que possam causar lesões e agravos à saúde dos trabalhadores,
+                  para as quais se deve adotar medidas de prevenção
+                  <strong>mitigadoras possíveis</strong>.”
+                </li>
+              </ul>
+              <p>
+                O Manual (seção sobre levantamento preliminar) amarra: prevenção começa
+                <strong>antes</strong> de iniciar atividades ou
+                <strong>imediatamente</strong> ao identificar riscos evidentes — não se
+                espera avaliação detalhada de severidade/probabilidade para agir no óbvio.
+                Já o <strong>1.5.4.3.2</strong> (Manual 10.5) manda a identificação
+                <strong>também</strong> abordar perigos externos previsíveis relacionados
+                ao trabalho.
+              </p>
+            </section>
+
+            <section id="importancia" aria-labelledby="h-imp">
+              <h2 id="h-imp">Importância</h2>
+              <ul>
+                <li><strong>Óbvio não espera matriz:</strong> risco evidente pede medida imediata (1.5.4.2.1.1 “b”) — análise fina vem depois, se ainda couber.</li>
+                <li><strong>Filtro ≠ inventário completo:</strong> preliminar prioriza evitar/eliminar e controlar o óbvio; o que não sai daí segue para 1.5.4.3/1.5.4.4.</li>
+                <li><strong>Fora do muro ainda é GRO:</strong> perigo externo previsível entra na identificação (1.5.4.3.2) com mitigação possível — não “não é nosso”.</li>
+                <li><strong>Integração não apaga urgência:</strong> 1.5.4.2.1.4 permite fundir etapas; Manual exige que a ação imediata no evidente continue viva.</li>
+                <li><strong>Mudança e projeto:</strong> 1.5.4.2.1 “a/c” empurram análise preventiva em novas instalações e mudanças — clássico buraco de gestão de mudança.</li>
+                <li><strong>Coerência com a série:</strong> metodologia evidenciada (#2), agentes clássicos (#10) e interfaces (#11) só fecham se o filtro inicial não for teatro de planilha.</li>
+              </ul>
+            </section>
+
+            <section id="fontes" aria-labelledby="h-fontes">
+              <h2 id="h-fontes">Fontes</h2>
+              <p>
+                Leia o original. A síntese SafeEng é didática — obrigação e detalhe estão nos
+                textos oficiais vigentes. Manual e Q&amp;A são <em>orientativos</em>.
+              </p>
+              <ul class="source-list">
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1" target="_blank" rel="noopener noreferrer">Página oficial da NR-1 (gov.br / CTPP)</a>
+                  ·
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf" target="_blank" rel="noopener noreferrer">NR-1 atualizada (PDF)</a>
+                  — <strong>1.5.4.2</strong> (levantamento preliminar); <strong>1.5.4.3.2</strong> (perigos externos na identificação); <strong>Anexo I</strong> (risco ocupacional evidente; perigo externo)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2024/portaria-mte-no-1-419-nr-01-gro-nova-redacao.pdf" target="_blank" rel="noopener noreferrer">Portaria MTE nº 1.419/2024 — nova redação NR-01 / GRO (PDF)</a>
+                  — inserção/consolidação relevante das definições de perigo externo e risco ocupacional evidente no Anexo I (confira vigência no texto oficial)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf" target="_blank" rel="noopener noreferrer">Manual GRO/PGR da NR-1 (2026, PDF)</a>
+                  — levantamento preliminar (evitar/eliminar; risco evidente; obrigatoriedade; integração com identificação — 1.5.4.2.1.4); <strong>10.5 Perigos externos</strong> (duas linhas: atividades fora do estabelecimento × entorno / acidentes ampliados; mitigação mesmo sem controle da fonte)
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" target="_blank" rel="noopener noreferrer">Perguntas e Respostas GRO/PGR — maio/2026</a>
+                  — caráter orientativo; use para esclarecer leitura, não para substituir a NR
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr" target="_blank" rel="noopener noreferrer">Página MTE — Programa de Gerenciamento de Riscos (PGR)</a>
+                </li>
+              </ul>
+              <p>
+                <strong>Leitura cuidadosa:</strong> Manual e Q&amp;A
+                <em>não substituem</em> a NR. Em tensão entre síntese e texto normativo,
+                <strong>prevalece a NR vigente</strong>. Não inventamos exemplos de
+                “perigo externo” além do que o Manual ilustra (trânsito em frente de
+                varrição; entorno de refinaria/química; rodovia com produto perigoso;
+                desastres naturais). Confira sempre o PDF oficial atualizado no gov.br.
+              </p>
+            </section>
+
+            <section id="analise" aria-labelledby="h-analise">
+              <h2 id="h-analise">Análise didática: óbvio agora × externo previsível</h2>
+              <p>
+                Regra SafeEng para este tema:
+                <strong>agir no risco evidente sem esperar a matriz</strong> e
+                <strong>abordar perigo externo previsível com mitigação possível</strong>
+                — dois empurrões distintos da NR-1, que o Manual amarra ao fluxo do GRO.
+              </p>
+
+              <h3>1) Levantamento preliminar = filtro de decisão (não “rascunho do inventário”)</h3>
+              <p>
+                O Manual define a finalidade (Anexo I / NR-1): agir proativamente para
+                <strong>evitar ou eliminar perigos</strong> e
+                <strong>reduzir ou controlar riscos ocupacionais evidentes</strong>, com
+                medidas <em>imediatas</em>. Em engenharia: é o momento de cortar o perigo
+                na raiz (projeto / layout / processo) ou, se não der, estabilizar o óbvio
+                agora. Quem usa o preliminar só para preencher coluna da planilha inverte
+                a prioridade que a norma coloca.
+              </p>
+
+              <h3>2) Risco evidente: óbvio + não controlado + ação imediata</h3>
+              <p>
+                A definição do Anexo I é estreita de propósito. O Manual exemplifica obra
+                com periferia sem proteção no último pavimento: risco óbvio de morte/lesão
+                grave por queda — <strong>não</strong> exige análise aprofundada de
+                severidade × probabilidade para justificar proteção. Atenção crítica do
+                Manual: não é admissível manter trabalhadores expostos a riscos óbvios
+                enquanto se faz análise detalhada. Se a medida imediata não puder ser
+                adotada na hora, 1.5.4.2.1.3 manda plano de ação + registro no inventário —
+                não “fica amarelo até a próxima revisão”.
+              </p>
+
+              <h3>3) Perigo externo: previsível, fora do controle, mitigação possível</h3>
+              <p>
+                Aqui o empurrão é outro. O perigo <em>não é controlado</em> pela
+                organização (origem fora do estabelecimento / frente / local), mas a
+                identificação (1.5.4.3.2) deve abordá-lo quando previsível e relacionado ao
+                trabalho. O Manual (10.5) separa duas linhas:
+              </p>
+              <ul>
+                <li>
+                  <strong>Linha 1 — atividades externas:</strong> coleta de resíduos,
+                  rodovias, infraestrutura, telecom, água/esgoto, entrega etc. Ex.: varrição
+                  urbana e perigo de acidente de trânsito — não inerente à tarefa, mas
+                  presente como perigo externo a tratar no GRO.
+                </li>
+                <li>
+                  <strong>Linha 2 — entorno do estabelecimento:</strong> acidentes
+                  industriais maiores / ampliados (Convenção OIT 174 citada pelo Manual) —
+                  vizinho a refinaria/química, rodovia com produtos perigosos, área sujeita
+                  a enchentes/deslizamentos. Cabe identificar e trabalhar a
+                  <strong>redução das consequências</strong> (resposta a emergências —
+                  Manual aponta o capítulo de emergência).
+                </li>
+              </ul>
+              <p>
+                Atenção do Manual: mesmo sem controlar a fonte, a organização tem
+                responsabilidade de se preparar para mitigar consequências (evacuação,
+                treinamento, equipamentos de emergência etc.). Em SafeEng: “não é nosso
+                processo” ≠ “fora do PGR”.
+              </p>
+
+              <h3>4) Flexibilidade 1.5.4.2.1.4 — sem esvaziar a urgência</h3>
+              <p>
+                Pode-se demonstrar o levantamento preliminar <em>dentro</em> da
+                identificação de perigos. O Manual é explícito: não é obrigatório etapa
+                separada — <strong>desde que</strong> a ação imediata nos riscos evidentes
+                seja assegurada. Integração documental ≠ adiamento da estabilização do óbvio.
+              </p>
+
+              <h3>5) Comparativo rápido</h3>
+              <div class="compare-grid" role="group" aria-label="Comparativo filtro preliminar maduro versus planilha sem ação">
+                <div class="compare-card compare-ok">
+                  <h3>Filtro que a NR-1 empurra</h3>
+                  <ul>
+                    <li>Evitar/eliminar no projeto e na mudança</li>
+                    <li>Risco evidente com medida imediata</li>
+                    <li>Se não estabilizar agora → plano + inventário (1.5.4.2.1.3)</li>
+                    <li>Perigo externo previsível na identificação (1.5.4.3.2)</li>
+                    <li>Mitigação possível / emergência (Manual 10.5)</li>
+                    <li>Integração de etapas sem perder urgência (1.5.4.2.1.4)</li>
+                  </ul>
+                </div>
+                <div class="compare-card compare-no">
+                  <h3>Teatro de planilha preliminar</h3>
+                  <ul>
+                    <li>“Depois a gente avalia na matriz”</li>
+                    <li>Óbvio fica amarelo até o relatório anual</li>
+                    <li>Periferia sem proteção “aguardando HAZOP”</li>
+                    <li>“Trânsito/vizinho não é nosso processo”</li>
+                    <li>Zero plano de mitigação no entorno</li>
+                    <li>Etapa “integrada” = urgência apagada</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="esquema" aria-labelledby="h-esquema">
+              <h2 id="h-esquema">Esquema: filtro preliminar → identificação (com externo)</h2>
+              <figure class="article-figure" aria-labelledby="fig-prel-cap">
+                <figcaption id="fig-prel-cap" class="article-figure-cap">
+                  SafeEng / NR-1 1.5.4.2 + 1.5.4.3.2 + Manual: risco evidente pede ação imediata; perigo externo previsível entra na identificação com mitigação possível — planilha sem urgência não fecha o filtro.
+                </figcaption>
+                <div class="flow-diagram" role="img" aria-label="Diagrama do levantamento preliminar com risco evidente e da identificação de perigos externos">
+                  <svg viewBox="0 0 960 620" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                    <defs>
+                      <marker id="arrow12" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#0d7377"/>
+                      </marker>
+                      <marker id="arrow12a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#d97706"/>
+                      </marker>
+                    </defs>
+
+                    <rect x="40" y="16" width="880" height="52" rx="12" fill="#0b1f2a"/>
+                    <text x="480" y="38" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="15" font-weight="700">NR-1 · Levantamento preliminar (1.5.4.2) + perigos externos (1.5.4.3.2)</text>
+                    <text x="480" y="56" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12">Anexo I · Manual · agir no óbvio · mitigar o previsível fora do muro</text>
+
+                    <rect x="48" y="90" width="864" height="56" rx="12" fill="#134e4a"/>
+                    <text x="480" y="114" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Quando: novas instalações · atividades existentes · mudanças (1.5.4.2.1)</text>
+                    <text x="480" y="134" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">filtro inicial do GRO — não é rascunho opcional da planilha</text>
+
+                    <line x1="480" y1="146" x2="480" y2="178" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow12)"/>
+
+                    <rect x="48" y="182" width="420" height="120" rx="12" fill="#0d7377"/>
+                    <text x="258" y="214" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Evitar / eliminar perigo</text>
+                    <text x="258" y="238" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="12">1.5.4.2.1.1 “a”</text>
+                    <text x="258" y="260" text-anchor="middle" fill="#e6fffb" font-family="system-ui,sans-serif" font-size="12">projeto · layout · processo</text>
+                    <text x="258" y="282" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="11">maior eficácia na hierarquia</text>
+
+                    <rect x="492" y="182" width="420" height="120" rx="12" fill="#d97706"/>
+                    <text x="702" y="214" text-anchor="middle" fill="#0b1f2a" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Risco ocupacional evidente</text>
+                    <text x="702" y="238" text-anchor="middle" fill="#422006" font-family="system-ui,sans-serif" font-size="12">óbvio · não controlado · Anexo I</text>
+                    <text x="702" y="260" text-anchor="middle" fill="#422006" font-family="system-ui,sans-serif" font-size="12">medida IMEDIATA (1.5.4.2.1.1 “b”)</text>
+                    <text x="702" y="282" text-anchor="middle" fill="#78350f" font-family="system-ui,sans-serif" font-size="11">não esperar matriz de risco</text>
+
+                    <line x1="258" y1="302" x2="258" y2="338" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow12)"/>
+                    <line x1="702" y1="302" x2="702" y2="338" stroke="#d97706" stroke-width="3" marker-end="url(#arrow12a)"/>
+
+                    <rect x="48" y="342" width="420" height="70" rx="12" fill="#0d7377"/>
+                    <text x="258" y="370" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Se não eliminar → 1.5.4.3 / 1.5.4.4</text>
+                    <text x="258" y="392" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">identificação + avaliação (1.5.4.2.1.2)</text>
+
+                    <rect x="492" y="342" width="420" height="70" rx="12" fill="#b45309"/>
+                    <text x="702" y="370" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Se não estabilizar agora → 1.5.4.2.1.3</text>
+                    <text x="702" y="392" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">plano de ação + inventário</text>
+
+                    <line x1="480" y1="412" x2="480" y2="448" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow12)"/>
+
+                    <rect x="80" y="452" width="800" height="88" rx="12" fill="#134e4a"/>
+                    <text x="480" y="480" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Perigos externos previsíveis (1.5.4.3.2 · Manual 10.5)</text>
+                    <text x="480" y="504" text-anchor="middle" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="12">Linha 1: atividades fora do estabelecimento · Linha 2: entorno / acidente ampliado</text>
+                    <text x="480" y="524" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="12">fonte pode não ser controlada · mitigação possível + emergência</text>
+
+                    <rect x="100" y="560" width="760" height="44" rx="12" fill="#7f1d1d"/>
+                    <text x="480" y="588" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Armadilha: “depois a matriz avalia” · óbvio sem ação · externo “não é nosso”</text>
+                  </svg>
+                </div>
+              </figure>
+              <p>
+                Leitura de engenharia: o cartão âmbar é urgência (risco evidente); o bloco
+                teal inferior é alcance (perigo externo previsível). Os dois empurrões
+                convivem no mesmo GRO — um no filtro preliminar, o outro na identificação.
+              </p>
+            </section>
+
+            <section id="cenarios" aria-labelledby="h-cenarios">
+              <h2 id="h-cenarios">Cenários hipotéticos</h2>
+              <p>Os três blocos abaixo são <strong>hipotéticos</strong> e didáticos — não descrevem empresas reais.</p>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético A · Risco evidente adiados à matriz</p>
+                <h3>“Já mapeamos a queda — a nota sai na próxima reunião do PGR”</h3>
+                <p>
+                  Em obra, a periferia do último pavimento está sem proteção coletiva.
+                  A equipe de SST registra o perigo na planilha de levantamento e agenda
+                  avaliação de severidade/probabilidade para daqui a três semanas. Enquanto
+                  isso, o trabalho continua. Compras aguarda “definição do nível de risco”
+                  para liberar guarda-corpo.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> clássico risco ocupacional evidente
+                  (Anexo I + exemplo do Manual). A norma empurra medida
+                  <em>imediata</em> — não é admissível manter exposição óbvia aguardando
+                  matriz. Se a estabilização plena não couber na hora, 1.5.4.2.1.3 manda
+                  plano de ação + inventário, sem esvaziar a urgência de controle.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético B · Perigo externo omitido (atividades externas)</p>
+                <h3>“Trânsito não é perigo da varrição — é da rua”</h3>
+                <p>
+                  Organização de limpeza urbana inventaria esforços, postura e ferramentas
+                  da frente de varrição. Acidente de trânsito na via é tratado como
+                  “externo à atividade” e fica fora do GRO. Não há medidas mitigadoras
+                  (sinalização, procedimentos de posicionamento, treinamento específico,
+                  comunicação com trânsito) no inventário/plano.
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> Manual 10.5, Linha 1 — o próprio exemplo
+                  de varrição. Perigo externo previsível, não controlado na origem, mas
+                  relacionado ao trabalho: entra na identificação (1.5.4.3.2) com
+                  <em>mitigação possível</em>. “Não controlamos a rua” não apaga o dever
+                  de preparar a frente.
+                </p>
+              </div>
+
+              <div class="scenario-box">
+                <p class="scenario-label">Cenário hipotético C · Entorno + filtro preliminar saudável</p>
+                <h3>Projeto novo com eliminação na origem e plano de entorno</h3>
+                <p>
+                  Antes de inaugurar linha em galpão vizinho a área com transporte de
+                  produtos perigosos, a organização usa o levantamento preliminar
+                  (1.5.4.2.1 “a”) para eliminar posturas forçadas no layout e, na
+                  identificação, registra o perigo externo do entorno (Manual Linha 2):
+                  rotas de evacuação, treinamento, integração com resposta a emergências.
+                  Riscos evidentes detectados na montagem são estabilizados na hora; o que
+                  não fecha imediatamente vai a plano + inventário (1.5.4.2.1.3).
+                </p>
+                <p>
+                  <strong>Leitura SafeEng:</strong> os dois empurrões da “nova NR-1” no
+                  mesmo ciclo — filtro preliminar com urgência no óbvio e identificação
+                  com alcance no externo previsível. Integração de etapas (1.5.4.2.1.4)
+                  sem apagar a ação imediata.
+                </p>
+              </div>
+            </section>
+
+            <section id="orientacoes" aria-labelledby="h-ori">
+              <h2 id="h-ori">Orientações práticas e conclusão</h2>
+              <ol>
+                <li><strong>Trate o preliminar como filtro de decisão:</strong> evitar/eliminar primeiro; risco evidente com medida imediata (1.5.4.2.1.1).</li>
+                <li><strong>Não espere a matriz para o óbvio:</strong> definição do Anexo I + alerta do Manual — exposição evidente não “aguarda nota”.</li>
+                <li><strong>Se não estabilizar na hora:</strong> 1.5.4.2.1.3 — plano de ação + inventário; continue a sequência do GRO.</li>
+                <li><strong>Use 1.5.4.2.1.4 com disciplina:</strong> integrar etapas ok; apagar urgência do evidente não.</li>
+                <li><strong>Aborde perigos externos previsíveis (1.5.4.3.2):</strong> atividades fora do estabelecimento e entorno — Manual 10.5.</li>
+                <li><strong>Mitigação possível ≠ controle da fonte:</strong> evacuação, treinamento, emergência — responsabilidade de preparação permanece.</li>
+                <li><strong>Amarre projeto e mudança:</strong> 1.5.4.2.1 “a/c” — novas instalações e mudanças são gatilhos, não “fase 2 do inventário”.</li>
+                <li><strong>Mantenha coerência com a série:</strong> evidência de método (#2), higiene clássica (#10) e interfaces (#11) dependem de filtro inicial honesto.</li>
+                <li><strong>Cite o oficial na dúvida:</strong> NR-1 1.5.4.2 / 1.5.4.3.2 / Anexo I, Manual (levantamento preliminar + 10.5), Q&amp;A orientativo — prevalece a NR.</li>
+              </ol>
+              <p>
+                <strong>Conclusão:</strong> a “nova NR-1” não inventa drama — ela
+                <strong>empurra o levantamento preliminar</strong> a ser filtro com
+                urgência (risco ocupacional evidente) e a
+                <strong>identificação</strong> a não fingir que o muro da planta é o fim
+                do GRO (perigo externo previsível, com mitigação possível). Na linha
+                SafeEng: aja no óbvio agora; mitigue o previsível fora do controle —
+                planilha sem ação não é gerenciamento.
+              </p>
+
+              <aside class="legal-callout article-disclaimer" aria-label="Aviso">
+                <p>
+                  <strong>Disclaimer:</strong> síntese autoral de Margus Giuliano / SafeEng para
+                  fins informativos e de debate técnico em SST. <strong>Não substitui</strong> a
+                  leitura integral da NR-1 (em especial 1.5.4.2, 1.5.4.3.2 e Anexo I), do
+                  Manual GRO/PGR, do Q&amp;A nem de outros atos oficiais vigentes.
+                  Também <strong>não constitui</strong> aconselhamento jurídico, inventário de
+                  riscos pronto, plano de emergência, laudo ou substituição da
+                  responsabilidade da organização. Cenários e exemplos são didáticos e
+                  hipotéticos; ilustrações de perigo externo seguem a linha do Manual
+                  (não são lista taxativa). A configuração do estabelecimento, da frente
+                  de trabalho e do entorno dependem do caso concreto e do texto normativo
+                  aplicável. Verifique sempre os PDFs oficiais atualizados no gov.br
+                  antes de decidir.
+                </p>
+              </aside>
+
+              <p class="article-nav-links">
+                <a class="btn btn-outline" href="../curiosidades.html#perigo-externo-risco-evidente">← Voltar ao teaser</a>
+                <a class="btn btn-outline" href="terceirizadas-interacao-riscos.html">Artigo #11</a>
+                <a class="btn btn-primary" href="index.html">Índice de artigos</a>
+              </p>
+            </section>
+
+          </div>
+        </article>
+
+        <section class="cta-band" aria-labelledby="cta-artigo">
+          <div class="container">
+            <h2 id="cta-artigo">Quer sugerir o próximo tema da série?</h2>
+            <p>Envie ideias alinhadas a GRO/PGR, levantamento preliminar, perigo externo e integração técnica para Margus Giuliano.</p>
+            <a class="btn btn-primary" href="../contato.html">Enviar sugestão</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="logo" href="../index.html">
+              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect width="64" height="64" rx="14" fill="#0d7377"/>
+                <path d="M32 12c-1 0-1.9.6-2.3 1.5L18 40.5c-.3.8-.1 1.6.5 2.1.5.5 1.4.6 2.1.2l5-2.7c.5-.3 1.1 0 1.4.5l2 4c.4.8 1.3 1.4 2.3 1.4s1.9-.5 2.3-1.4l2-4c.3-.5.9-.8 1.4-.5l5 2.7c.7.4 1.5.3 2.1-.2.6-.5.8-1.3.5-2.1L34.3 13.5C33.9 12.6 33 12 32 12z" fill="#d97706"/>
+                <circle cx="32" cy="27" r="2.6" fill="#0b1f2a"/>
+                <rect x="30.7" y="31.5" width="2.6" height="7.5" rx="1.2" fill="#0b1f2a"/>
+              </svg>
+              <span>Curiosidades SST</span>
+            </a>
+            <p>Insights técnicos de SST e gestão de riscos por Margus Giuliano — linha SafeEng.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../curiosidades.html">Curiosidades</a></li>
+              <li><a href="../nrs.html">NRs oficiais</a></li>
+              <li><a href="../normas-tecnicas.html">Normas técnicas</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Temas</h3>
+            <ul>
+              <li><a href="index.html">Artigos SafeEng</a></li>
+              <li><a href="terceirizadas-interacao-riscos.html">#11 Terceirizadas · interação</a></li>
+              <li><a href="../curiosidades.html#perigo-externo-risco-evidente">Teaser perigo externo · risco evidente</a></li>
+              <li><a href="../curiosidades.html#tema-integracao-tecnica">Integração técnica</a></li>
+              <li><a href="../nrs.html#acesso-nrs">Acesso às NR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Curiosidades SST · Margus Giuliano. Todos os direitos reservados.</p>
+          <p class="disclaimer">Conteúdo informativo. Não substitui avaliação técnica, laudos ou orientação jurídica.</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="../sidebar.js" defer></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
