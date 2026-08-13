@@ -255,5 +255,12 @@ window.SST_SEARCH_INDEX = [
     type: "artigo",
     summary: "Especial SafeEng: PNSB, ANM, PAEBM, CRI/DPA, liquefação, ZAS e casos (Herculano, Fundão, Brumadinho, Vajont, Teton) com fontes.",
     tags: ["barragem", "barragens", "PNSB", "ANM", "Brumadinho", "Mariana", "PAEBM", "rejeitos", "liquefação", "ZAS", "SIGBM", "SNISB", "Fundão", "Herculano"]
+  },
+  {
+    title: "Por que a NR-9 pula o Anexo II? Benzeno em postos e NR-20",
+    url: "artigos/anexo-2-nr9-benzeno-postos-nr20.html",
+    type: "artigo",
+    summary: "Especial SafeEng: Anexo II da NR-9 (benzeno em PRC) revogado em 03/01/2022 e migrado para o Anexo IV da NR-20. II vago de propósito. Homônimo NR-15 Anexo 2 = ruído. 13-A é indústria.",
+    tags: ["NR-9", "Anexo II", "benzeno", "NR-20", "PRC", "posto", "13-A", "PPEOB", "NR-15", "higiene"]
   }
 ];

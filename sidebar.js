@@ -80,6 +80,7 @@
         { href: "curiosidades.html#tema-tendencias-safeeng", label: "Tendências SafeEng (teasers)" },
         { href: "curiosidades.html#tema-barragens-estruturas", label: "Barragens e estruturas críticas" },
         { href: "artigos/seguranca-barragens-legislacao-casos.html", label: "EXTRA · Segurança de barragens" },
+        { href: "artigos/anexo-2-nr9-benzeno-postos-nr20.html", label: "EXTRA · Anexo II NR-9 · benzeno / NR-20" },
         { href: "artigos/riscos-psicossociais-inventario-pgr.html", label: "#1 Psicossocial no PGR" },
         { href: "artigos/metodologia-pgr-evidencias.html", label: "#2 Metodologia no PGR" },
         { href: "artigos/pgr-pcmso-saude-mental.html", label: "#3 PGR × PCMSO saúde mental" },
