@@ -15,6 +15,7 @@
   var panelEl = null;
   var toggleEl = null;
   var activeIndex = -1;
+  var contentPromise = null;
 
   function currentPathname() {
     return window.location.pathname || "";
@@ -124,19 +125,23 @@
 
   function hayContainsToken(hay, token) {
     var i;
+    function hasWholeToken(value, candidate) {
+      var padded = " " + value + " ";
+      return padded.indexOf(" " + candidate + " ") !== -1;
+    }
+
     // NR: match por token inteiro (nr1 ≠ nr12)
     if (/^nr-?\d+$/.test(token)) {
       var num = token.replace(/^nr-?/, "");
       var forms = unique(["nr" + num, "nr-" + num]);
-      var padded = " " + hay + " ";
       for (i = 0; i < forms.length; i++) {
-        if (padded.indexOf(" " + forms[i] + " ") !== -1) return true;
+        if (hasWholeToken(hay, forms[i])) return true;
       }
       return false;
     }
     var variants = expandToken(token);
     for (i = 0; i < variants.length; i++) {
-      if (hay.indexOf(variants[i]) !== -1) return true;
+      if (hasWholeToken(hay, variants[i])) return true;
     }
     // Prefixo generoso para tokens longos (ex.: psicossocia…)
     if (token.length >= 6) {
@@ -154,7 +159,7 @@
   }
 
   function haystackFor(item) {
-    var parts = [item.title, item.summary, item.type];
+    var parts = [item.title, item.summary, item.type, item.content];
     if (item.tags && item.tags.length) parts = parts.concat(item.tags);
     return normalize(parts.join(" "));
   }
@@ -216,6 +221,34 @@
     return indexPromise;
   }
 
+  function loadFullContent() {
+    if (contentPromise) return contentPromise;
+    contentPromise = loadIndex().then(function (items) {
+      if (!window.fetch || !window.DOMParser) return items;
+      return Promise.all(
+        items.map(function (item) {
+          return window
+            .fetch(resolveUrl(item.url), { credentials: "same-origin", cache: "force-cache" })
+            .then(function (response) {
+              if (!response.ok) throw new Error("Falha ao buscar " + item.url);
+              return response.text();
+            })
+            .then(function (html) {
+              var doc = new DOMParser().parseFromString(html, "text/html");
+              var main = doc.querySelector("main") || doc.body;
+              item.content = normalize(main ? main.textContent : "");
+              item._hay = null;
+              return item;
+            })
+            .catch(function () {
+              return item;
+            });
+        })
+      );
+    });
+    return contentPromise;
+  }
+
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -224,8 +257,17 @@
       .replace(/"/g, "&quot;");
   }
 
-  function snippetFor(item) {
+  function snippetFor(item, query) {
     if (item.summary) return item.summary;
+    if (item.content) {
+      var firstToken = tokenize(query || "")[0];
+      var start = firstToken ? item.content.indexOf(firstToken) : -1;
+      if (start !== -1) {
+        var from = Math.max(0, start - 70);
+        var excerpt = item.content.slice(from, from + 180);
+        return (from > 0 ? "…" : "") + excerpt + (from + 180 < item.content.length ? "…" : "");
+      }
+    }
     if (item.tags && item.tags.length) return item.tags.slice(0, 5).join(" · ");
     return "";
   }
@@ -237,11 +279,15 @@
       panelEl.hidden = true;
       panelEl.innerHTML = "";
       panelEl.removeAttribute("role");
+      panelEl.removeAttribute("aria-busy");
+      if (inputEl) inputEl.setAttribute("aria-expanded", "false");
       return;
     }
     panelEl.hidden = false;
     panelEl.setAttribute("role", "listbox");
     panelEl.setAttribute("aria-label", "Resultados da busca");
+    panelEl.removeAttribute("aria-busy");
+    if (inputEl) inputEl.setAttribute("aria-expanded", "true");
 
     if (!results.length) {
       panelEl.innerHTML =
@@ -278,7 +324,7 @@
           "</span>" +
           "</span>" +
           '<span class="site-search-snippet">' +
-          escapeHtml(snippetFor(item)) +
+          escapeHtml(snippetFor(item, query)) +
           "</span>" +
           tags +
           "</a>"
@@ -311,7 +357,11 @@
       panelEl.innerHTML = "";
     }
     activeIndex = -1;
-    if (inputEl) inputEl.removeAttribute("aria-activedescendant");
+    if (inputEl) {
+      inputEl.removeAttribute("aria-activedescendant");
+      inputEl.setAttribute("aria-expanded", "false");
+    }
+    if (panelEl) panelEl.removeAttribute("aria-busy");
   }
 
   function collapseMobile() {
@@ -340,6 +390,11 @@
       loadIndex()
         .then(function () {
           renderResults(search(q), q);
+          if (panelEl) panelEl.setAttribute("aria-busy", "true");
+          return loadFullContent();
+        })
+        .then(function () {
+          if (inputEl && inputEl.value === q) renderResults(search(q), q);
         })
         .catch(function () {
           panelEl.hidden = false;
@@ -445,7 +500,10 @@
       }
       if (e.key === "ArrowDown") {
         e.preventDefault();
-        if (panelEl.hidden && inputEl.value.trim()) onInput();
+        if (panelEl.hidden || !items.length) {
+          if (inputEl.value.trim()) onInput();
+          return;
+        }
         setActive(activeIndex + 1);
         return;
       }

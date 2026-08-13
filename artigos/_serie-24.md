@@ -18,7 +18,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 | 10 | NR-9 depois do GRO maduro: agentes clássicos ainda importam (e como não sumirem no PGR “mental”) | **Publicado** | [artigo](nr9-gro-maduro-agentes-classicos.html) · [teaser](../curiosidades.html#nr9-gro-maduro-agentes-classicos) |
 | 11 | Terceirizadas e item de interação de riscos: comunicação bidirecional que aguenta fiscalização | **Publicado** | [artigo](terceirizadas-interacao-riscos.html) · [teaser](../curiosidades.html#terceirizadas-interacao-riscos) |
 | 12 | Perigo externo e risco evidente: o que a “nova NR-1” empurra pro levantamento preliminar | **Publicado** | [artigo](perigo-externo-risco-evidente.html) · [teaser](../curiosidades.html#perigo-externo-risco-evidente) |
-| 13 | eSocial SST + PGR: inconsistência documental como sinal de fiscalização | **Publicado** | [artigo](esocial-sst-pgr-inconsistencia.html) · [teaser](../curiosidades.html#esocial-sst-pgr-inconsistencia) |
+| 13 | eSocial SST + PGR: inconsistência documental e limites de escopo | **Publicado** | [artigo](esocial-sst-pgr-inconsistencia.html) · [teaser](../curiosidades.html#esocial-sst-pgr-inconsistencia) |
 | 14 | Manual de interpretação do cap. 1.5 da NR-1: PDCA do GRO na prática de engenharia | **Publicado** | [artigo](manual-nr1-pdca-gro.html) · [teaser](../curiosidades.html#manual-nr1-pdca-gro) |
 | 15 | NR-12 e segurança funcional: do HAZOP à hierarquia de controle (sem confundir com checklist) | **Publicado** | [artigo](nr12-seguranca-funcional-hazop.html) · [teaser](../curiosidades.html#nr12-seguranca-funcional-hazop) |
 | 16 | NR-35: sistema de ancoragem e falha de barreira (não só “cinto e treinamento”) | **Publicado** | [artigo](nr35-ancoragem-falha-barreira.html) · [teaser](../curiosidades.html#nr35-ancoragem-falha-barreira) |
@@ -150,7 +150,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 ## Nota editorial slot #13
 
-- Tema publicado em #13: eSocial SST + PGR — inconsistência documental como sinal de fiscalização; alinhamento inventário/controles (NR-1 1.5.7) × eventos MOS S-2210 / S-2220 / S-2240 (briefing 12/08/2026).
+- Tema publicado em #13: eSocial SST + PGR — inconsistência documental e limites de escopo; alinhamento inventário/controles (NR-1 1.5.7) × eventos MOS S-2210 / S-2220 / S-2240 (briefing 12/08/2026).
 - Bloco editorial **Integração técnica** em `curiosidades.html` (artigos 9+); teaser #13 ao lado de #9–#12.
 - Códigos de evento citados após verificação no MOS S-1.3 consolidado até NO 11/2026 (retificado), cap. 19; não inventar evento/tabela. Tabela 24 = Anexo IV Decreto 3.048/1999 ≠ inventário completo do GRO.
 - O antigo slot #13 (Jornada, turnos e fadiga no inventário do PGR) foi para backlog deslocado.
@@ -180,7 +180,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Tema publicado em #15: NR-12 e segurança funcional — do HAZOP à hierarquia de controle (sem confundir com checklist) (briefing 12/08/2026).
 - Abre o bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20), para manter o bloco Integração técnica limpo (#9–#14).
-- Fontes: NR-12 PDF oficial (sidebar.js / gov.br); ISO 12100 e ISO 13849-1 como **títulos + links de compra/consulta** (ISO Store / ABNT) — sem texto pirateado; IEC 31010 / ISO/IEC 31010 como catálogo de técnicas (HAZOP).
+- Fontes: NR-12 PDF oficial (sidebar.js / gov.br); ISO 12100 e ISO 13849-1 como **títulos + links de compra/consulta** (ISO Store / ABNT) — sem texto pirateado; IEC 31010:2019 / ISO/IEC 31010:2019 como catálogo de técnicas (HAZOP).
 - Distinção crítica: checklist NR-12 = verificação; HAZOP = técnica que alimenta barreiras; 12100 = hierarquia de redução; 13849 = desempenho de funções de segurança (SRP/CS / PL).
 - O antigo slot #15 (Terceirização e cadeia de valor / psicossocial) foi para backlog deslocado; sobreposição parcial com #11 (1.5.8 interação) permanece.
 
@@ -206,7 +206,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Tema publicado em #17: NR-10 — trabalho elétrico e energia residual sob Bow-Tie (LOTO / residual como barreiras); ABNT NBR 5410 e NFPA 70E como **títulos + links de compra/consulta** (briefing 12/08/2026).
 - Bloco editorial **Clássicos 2026** em `curiosidades.html` (artigos 15–20); teaser #17 ao lado de #15–#16.
-- Fontes: NR-10 PDF oficial (sidebar.js / gov.br); ABNT NBR 5410 e NFPA 70E sem texto pirateado; ISO/IEC 31010 como catálogo de técnicas (Bow-Tie).
+- Fontes: NR-10 PDF oficial (sidebar.js / gov.br); ABNT NBR 5410 e NFPA 70E sem texto pirateado; ISO/IEC 31010:2019 como catálogo de técnicas (Bow-Tie).
 - Distinção crítica: curso + “disjuntor aberto” = teatro; LOTO + drenagem/residual + verificação de ausência de tensão = barreiras preventivas; PPE/EPC = mitigação (direita do Bow-Tie), não substituto da desenergização.
 - O antigo slot #17 (Mudança organizacional mal conduzida como fator psicossocial) foi para backlog deslocado.
 
@@ -260,7 +260,7 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 
 - Tema publicado em #21: IA e checklist digital — antecipação de risco vs automação de papel (briefing 12/08/2026).
 - Abre o bloco editorial **Tendências SafeEng** em `curiosidades.html` (artigos 21–24), após fechar Clássicos 2026 (#15–#20).
-- Fontes: Manual GRO/PGR da NR-1 (2026) para processo; ISO 45001 e ISO/IEC 31010 (IEC 31010) como **títulos + links de compra/consulta** (ISO Store / ABNT) — sem texto pirateado; NR-1 oficial no gov.br.
+- Fontes: Manual GRO/PGR da NR-1 (2026) para processo; ISO 45001 e ISO/IEC 31010:2019 (IEC 31010:2019) como **títulos + links de compra/consulta** (ISO Store / ABNT) — sem texto pirateado; NR-1 oficial no gov.br.
 - Distinção crítica: checklist digital/IA = borda (cadência · dados · alertas); GRO + hierarquia de controles = núcleo; digitalizar item frágil = automação de papel; sem hype de “previsão de acidente”.
 - O antigo slot #21 (Capacitação de gestores: prevenção na organização do trabalho, sem diagnóstico) foi para backlog deslocado.
 
@@ -329,4 +329,3 @@ Atualizado: 2026-08-12 (America/Cuiaba)
 - Artigo longo SafeEng fora da meta dos 24: PNSB (Leis 12.334/2010 e 14.066/2020), CNRH 241/2024, ANM 95/2022 e transição 220/2025, instrumentos (CRI/DPA, PSB, PAEBM, DCE, SIGBM, SNISB), normas ABNT só via catálogo, GISTM/ICMM, NR-22, casos Herculano/Fundão/Brumadinho/Vajont/Teton com fontes.
 - Teaser em accordion próprio **Barragens e estruturas críticas** (`#tema-barragens-estruturas`), não desloca Integração técnica / Clássicos / Tendências.
 - Disclaimer forte sobre cronograma de vigência da Res. ANM 220/2025 — verificar hub oficial.
-
