@@ -179,7 +179,7 @@
         { href: "curiosidades.html#resiliencia", label: "Resiliência versus reação" },
         { href: "curiosidades.html#pgr-matriz", label: "Fragilidade das matrizes" },
         { href: "curiosidades.html", label: "Todos os insights" },
-        { href: "sobre.html", label: "Sobre o autor" }
+        { href: "sobre.html", label: "Quem sou" }
       ]
     }
   ];

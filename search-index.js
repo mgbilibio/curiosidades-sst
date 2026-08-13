@@ -63,14 +63,14 @@ window.SST_SEARCH_INDEX = [
     title: "Sobre — Margus Giuliano / SafeEng",
     url: "sobre.html",
     type: "página",
-    summary: "Sobre o Curiosidades SST e o autor Margus Giuliano: linha editorial SafeEng de gestão de riscos.",
+    summary: "Sou engenheiro de SST. Este espaço é onde organizo o que uso na prática — linha SafeEng.",
     tags: ["sobre", "autor", "Margus Giuliano", "SafeEng"]
   },
   {
     title: "Contato",
     url: "contato.html",
     type: "página",
-    summary: "Contato para sugerir temas técnicos, correções ou feedback editorial.",
+    summary: "Me escreva para sugerir temas técnicos, correções ou feedback editorial.",
     tags: ["contato", "email", "feedback"]
   },
   {
