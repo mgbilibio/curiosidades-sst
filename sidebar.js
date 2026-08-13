@@ -61,7 +61,7 @@
       id: "gestao-sst",
       label: "Gestão de SST",
       items: [
-        { href: "curiosidades.html#iso-31010", label: "ISO 31010 no PGR" },
+        { href: "curiosidades.html#iso-31010", label: "IEC 31010:2019 no PGR" },
         { href: "curiosidades.html#anatomia-risco", label: "Anatomia do risco" },
         { href: "curiosidades.html#prob-freq", label: "Probabilidade vs frequência" },
         { href: "curiosidades.html#bow-tie", label: "Bow-Tie e barreiras" },

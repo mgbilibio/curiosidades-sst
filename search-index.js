@@ -7,15 +7,15 @@ window.SST_SEARCH_INDEX = [
     title: "Início — Curiosidades SST",
     url: "index.html",
     type: "página",
-    summary: "Insights técnicos de gestão de riscos para engenheiros e profissionais de SST: ISO 31010, Bow-Tie, HAZOP, PGR e ISO 45001.",
-    tags: ["início", "home", "SST", "SafeEng", "gestão de riscos", "ISO 31010", "PGR", "ISO 45001"]
+    summary: "Insights técnicos de gestão de riscos para engenheiros e profissionais de SST: IEC 31010:2019, Bow-Tie, HAZOP, PGR e ISO 45001.",
+    tags: ["início", "home", "SST", "SafeEng", "gestão de riscos", "IEC 31010:2019", "PGR", "ISO 45001"]
   },
   {
     title: "Curiosidades SST — insights técnicos",
     url: "curiosidades.html",
     type: "página",
-    summary: "Hub de curiosidades: perigo vs risco, ISO 31010, Bow-Tie, PGR, ergonomia, NRs, higiene ocupacional e ISO 45001.",
-    tags: ["curiosidades", "perigo", "risco", "Bow-Tie", "ergonomia", "PGR", "GRO", "ISO 31010", "ISO 45001", "higiene"]
+    summary: "Hub de curiosidades: perigo vs risco, IEC 31010:2019, Bow-Tie, PGR, ergonomia, NRs, higiene ocupacional e ISO 45001.",
+    tags: ["curiosidades", "perigo", "risco", "Bow-Tie", "ergonomia", "PGR", "GRO", "IEC 31010:2019", "ISO 45001", "higiene"]
   },
   {
     title: "Acesso às NR atualizadas",
@@ -42,8 +42,8 @@ window.SST_SEARCH_INDEX = [
     title: "Normas internacionais ISO/IEC de SST",
     url: "normas-internacionais.html",
     type: "página",
-    summary: "ISO 45001, 45002, 45003, 31000, IEC 31010 e ISO 12100 — valor para a prática de SST.",
-    tags: ["ISO 45001", "ISO 45003", "ISO 31000", "IEC 31010", "ISO 12100", "internacional"]
+    summary: "ISO 45001, 45002, 45003, 31000, IEC 31010:2019 e ISO 12100 — valor para a prática de SST.",
+    tags: ["ISO 45001", "ISO 45003", "ISO 31000", "IEC 31010:2019", "ISO 12100", "internacional"]
   },
   {
     title: "Referências técnicas por NR (catálogo)",
@@ -169,7 +169,7 @@ window.SST_SEARCH_INDEX = [
     title: "eSocial SST + PGR: inconsistência documental",
     url: "artigos/esocial-sst-pgr-inconsistencia.html",
     type: "artigo",
-    summary: "Alinhamento inventário/controles do PGR e eventos eSocial (S-2210, S-2220, S-2240) como sinal de fiscalização.",
+    summary: "Alinhamento inventário/controles do PGR e eventos eSocial (S-2210, S-2220, S-2240), distinguindo contradição de diferença legítima de escopo.",
     tags: ["eSocial", "S-2210", "S-2220", "S-2240", "PGR", "NR-1", "fiscalização", "inconsistência", "SST"]
   },
   {
@@ -183,7 +183,7 @@ window.SST_SEARCH_INDEX = [
     title: "NR-12 e segurança funcional: HAZOP e hierarquia de controle",
     url: "artigos/nr12-seguranca-funcional-hazop.html",
     type: "artigo",
-    summary: "NR-12, segurança funcional e HAZOP: ISO 12100 / ISO 13849, IEC 31010 e hierarquia — sem reduzir máquina a checklist.",
+    summary: "NR-12, segurança funcional e HAZOP: ISO 12100 / ISO 13849, IEC 31010:2019 e hierarquia — sem reduzir máquina a checklist.",
     tags: ["NR-12", "NR12", "segurança funcional", "HAZOP", "ISO 12100", "ISO 13849", "máquinas", "hierarquia de controle"]
   },
   {
@@ -257,4 +257,3 @@ window.SST_SEARCH_INDEX = [
     tags: ["barragem", "barragens", "PNSB", "ANM", "Brumadinho", "Mariana", "PAEBM", "rejeitos", "liquefação", "ZAS", "SIGBM", "SNISB", "Fundão", "Herculano"]
   }
 ];
-

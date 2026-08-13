@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>eSocial SST + PGR: inconsistência documental como sinal de fiscalização | Curiosidades SST — Margus Giuliano</title>
-  <meta name="description" content="Alinhamento entre inventário/controles do PGR e eventos eSocial SST (S-2210, S-2220, S-2240): inconsistência documental como sinal de fiscalização — leitura SafeEng com MOS e NR-1, por Margus Giuliano.">
+  <title>eSocial SST + PGR: inconsistência documental e limites de escopo | Curiosidades SST — Margus Giuliano</title>
+  <meta name="description" content="Alinhamento entre inventário/controles do PGR e eventos eSocial SST (S-2210, S-2220, S-2240): como distinguir contradição documental de diferença legítima de escopo — leitura SafeEng com MOS e NR-1, por Margus Giuliano.">
   <meta name="author" content="Margus Giuliano">
   <meta name="theme-color" content="#0b1f2a">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="eSocial SST + PGR: inconsistência documental como sinal de fiscalização | Margus Giuliano">
-  <meta property="og:description" content="PGR inventário/controles × eventos eSocial SST (S-2210, S-2220, S-2240): coerência documental; inconsistência é sinal de fiscalização — sem inventar código de evento.">
+  <meta property="og:title" content="eSocial SST + PGR: inconsistência documental e limites de escopo | Margus Giuliano">
+  <meta property="og:description" content="PGR inventário/controles × eventos eSocial SST (S-2210, S-2220, S-2240): coerência documental, diferença legítima de escopo e apuração de contradições — sem inventar código de evento.">
   <meta property="og:url" content="https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html">
   <meta property="og:site_name" content="Curiosidades SST">
   <meta property="og:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
@@ -31,8 +31,8 @@
   <meta property="article:tag" content="NR-1">
   <meta property="article:tag" content="Fiscalização">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="eSocial SST + PGR: inconsistência documental como sinal de fiscalização">
-  <meta name="twitter:description" content="MOS S-1.3 + NR-1: alinhar inventário/controles do PGR aos eventos S-2210, S-2220 e S-2240 — inconsistência é bandeira vermelha.">
+  <meta name="twitter:title" content="eSocial SST + PGR: inconsistência documental e limites de escopo">
+  <meta name="twitter:description" content="MOS S-1.3 + NR-1: alinhar inventário/controles do PGR aos eventos S-2210, S-2220 e S-2240 — contradições exigem apuração; escopos não são idênticos.">
   <meta name="twitter:image" content="https://mgbilibio.github.io/curiosidades-sst/og-image.png">
   <script type="application/ld+json">
   {
@@ -82,8 +82,8 @@
       {
         "@type": "Article",
         "@id": "https://mgbilibio.github.io/curiosidades-sst/artigos/esocial-sst-pgr-inconsistencia.html#article",
-        "headline": "eSocial SST + PGR: inconsistência documental como sinal de fiscalização",
-        "description": "Leitura SafeEng do alinhamento entre inventário/controles do PGR (NR-1) e eventos eSocial SST S-2210, S-2220 e S-2240 (MOS) — inconsistência documental como sinal de fiscalização, sem inventar código de evento.",
+        "headline": "eSocial SST + PGR: inconsistência documental e limites de escopo",
+        "description": "Leitura SafeEng do alinhamento entre inventário/controles do PGR (NR-1) e eventos eSocial SST S-2210, S-2220 e S-2240 (MOS) — como distinguir contradição documental de diferença legítima de escopo, sem inventar código de evento.",
         "datePublished": "2026-08-12",
         "dateModified": "2026-08-12",
         "inLanguage": "pt-BR",
@@ -162,7 +162,7 @@
         <header class="page-hero">
           <div class="container">
             <p class="eyebrow">Série SafeEng · Artigo #13 · Integração técnica</p>
-            <h1>eSocial SST + PGR: inconsistência documental como sinal de fiscalização</h1>
+            <h1>eSocial SST + PGR: inconsistência documental e limites de escopo</h1>
             <p>
               Por <strong>Margus Giuliano</strong> · SafeEng ·
               <time datetime="2026-08-12">12/08/2026</time>
@@ -182,6 +182,7 @@
               <li><a href="#analise">Análise: alinhamento × falsa equivalência</a></li>
               <li><a href="#esquema">Esquema: PGR ↔ eSocial SST</a></li>
               <li><a href="#cenarios">Cenários hipotéticos</a></li>
+              <li><a href="#equivocos">Controvérsias e equívocos comuns</a></li>
               <li><a href="#orientacoes">Orientações e conclusão</a></li>
             </ol>
           </div>
@@ -198,9 +199,9 @@
                 organização diz gerenciar</strong> e os <strong>eventos de SST que ela
                 declara no eSocial</strong>. Em muita planta, o inventário e o plano de
                 ação vivem no SESMT; o XML mora no DP/RH ou no software de folha. Quando
-                os dois mundos não se falam, a fiscalização — trabalhista, previdenciária
-                ou de inspeção — encontra um sinal clássico: <em>documento A</em> conta
-                uma história de exposição e controle; <em>evento B</em> conta outra.
+                os dois mundos não se falam, surge uma divergência que a organização
+                precisa apurar: <em>documento A</em> conta uma história de exposição e
+                controle; <em>evento B</em> conta outra.
               </p>
               <p>
                 Este artigo #13 SafeEng (bloco <strong>Integração técnica</strong>) lê o
@@ -211,9 +212,9 @@
                 <strong>verificados</strong> no MOS oficial; não inventamos evento nem
                 tabela. Também não trataremos “inconsistência” como sinônimo de
                 “qualquer diferença de escopo”: o S-2240 <em>não</em> é espelho integral
-                do inventário do PGR. A bandeira vermelha é a
-                <strong>contradição documental</strong>, não a diferença legítima de
-                finalidade. Não é parecer jurídico nem tutorial de XML.
+                do inventário do PGR. O ponto de atenção é a
+                <strong>contradição documental sem critério explicado</strong>, não a
+                diferença legítima de finalidade. Não é parecer jurídico nem tutorial de XML.
               </p>
             </section>
 
@@ -265,8 +266,8 @@
             <section id="importancia" aria-labelledby="h-imp">
               <h2 id="h-imp">Importância</h2>
               <ul>
-                <li><strong>Fiscalização cruza mundos:</strong> inventário/plano (NR-1) × ASO/PCMSO (NR-7) × CAT/PPP digitais (eSocial) — inconsistência vira pergunta na visita.</li>
-                <li><strong>Sinal ≠ multa automática:</strong> o ponto SafeEng é engenharia de coerência: se A e B se contradizem, o auditor não precisa “inventar” o buraco.</li>
+                <li><strong>Governança cruza mundos:</strong> inventário/plano (NR-1) × ASO/PCMSO (NR-7) × CAT/PPP digitais (eSocial) — a organização precisa explicar diferenças de finalidade e corrigir contradições.</li>
+                <li><strong>Divergência ≠ multa automática:</strong> uma contradição exige apuração e documentação do critério; ela não permite inferir, sozinha, uma atuação fiscalizatória ou uma sanção.</li>
                 <li><strong>Escopo diferente ≠ incoerência:</strong> Tabela 24 (aposentadoria especial) ≠ inventário completo do GRO; confundir os dois gera tanto omissão indevida quanto “pânico de XML”.</li>
                 <li><strong>Controles também contam:</strong> PGR com EPI/EPC e S-2240 com exposição sem EPC/EPI (ou o inverso sem lastro) é narrativa quebrada.</li>
                 <li><strong>Saúde ocupacional amarra:</strong> S-2220 puxa exames do PCMSO conforme o risco — PCMSO sem lastro no inventário (ou inventário sem eco no ASO) é o buraco do #3 em versão digital.</li>
@@ -326,7 +327,7 @@
               <p>
                 Regra SafeEng para este tema:
                 <strong>reconciliar PGR ↔ eSocial SST sem forçar espelhamento cego</strong>.
-                O que a fiscalização cheira de longe é contradição; o que o engenheiro
+                O que uma revisão de coerência procura é contradição; o que o engenheiro
                 precisa dominar é <em>onde</em> os escopos se cruzam e onde divergem por
                 desenho.
               </p>
@@ -416,16 +417,17 @@
                 PGR × PCMSO (#3). Em versão digital: se o inventário/PCMSO prevê
                 monitoramento por agente X e os ASO/S-2220 nunca refletem a família de
                 exames — ou refletem exames “órfãos” sem risco correspondente — a
-                inconsistência documental escala do dossiê para a base federal.
+                inconsistência documental aumenta a necessidade de revisão interna e de
+                registro do critério adotado.
               </p>
 
               <h3>5) S-2210 como termômetro de narrativa</h3>
               <p>
                 CAT recorrente de um posto/agente que o inventário classifica como
-                “inexistente” ou “sob controle total” sem plano vivo é sinal de gestão
-                (e de fiscalização). O inverso também: inventário inflamado de risco grave
-                e zero aprendizado pós-CAT. O eSocial não inventa a investigação; ele
-                torna o padrão <em>visível</em> e cruzável.
+                “inexistente” ou “sob controle total” sem plano vivo é gatilho para revisão
+                de gestão. O inverso também: inventário inflamado de risco grave e zero
+                aprendizado pós-CAT. O eSocial não inventa a investigação; ele torna o
+                padrão <em>comparável</em> entre os registros que a organização governa.
               </p>
 
               <h3>6) Comparativo rápido</h3>
@@ -442,7 +444,7 @@
                   </ul>
                 </div>
                 <div class="compare-card compare-no">
-                  <h3>Teatro de silos (sinal de fiscalização)</h3>
+                  <h3>Silos documentais que exigem apuração</h3>
                   <ul>
                     <li>PGR “rico” e S-2240 eterno 09.01.001 sem critério</li>
                     <li>Exames no PCMSO sem eco no ASO/S-2220 (ou o inverso)</li>
@@ -494,7 +496,7 @@
                     <line x1="492" y1="185" x2="468" y2="185" stroke="#0d7377" stroke-width="3" marker-end="url(#arrow13)"/>
 
                     <rect x="80" y="268" width="800" height="70" rx="12" fill="#0b1f2a"/>
-                    <text x="480" y="298" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Zona de cruzamento (sinal se rachar)</text>
+                    <text x="480" y="298" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Zona de cruzamento (ponto de atenção)</text>
                     <text x="480" y="320" text-anchor="middle" fill="#f0c674" font-family="system-ui,sans-serif" font-size="12">exposição Anexo IV · exames do PCMSO · CAT × posto · EPC/EPI declarados</text>
 
                     <rect x="48" y="360" width="420" height="120" rx="12" fill="#065f46"/>
@@ -504,7 +506,7 @@
                     <text x="258" y="460" text-anchor="middle" fill="#a7f3d0" font-family="system-ui,sans-serif" font-size="12">Tabela 24 ≠ inventário completo</text>
 
                     <rect x="492" y="360" width="420" height="120" rx="12" fill="#9a3412"/>
-                    <text x="702" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Contradição = bandeira</text>
+                    <text x="702" y="392" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Contradição = apurar</text>
                     <text x="702" y="416" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">PGR afirma Anexo IV · S-2240 nega</text>
                     <text x="702" y="438" text-anchor="middle" fill="#ffedd5" font-family="system-ui,sans-serif" font-size="12">PCMSO/ASO ≠ risco do inventário</text>
                     <text x="702" y="460" text-anchor="middle" fill="#fed7aa" font-family="system-ui,sans-serif" font-size="12">CAT recorrente · plano mudo</text>
@@ -522,7 +524,7 @@
                 Leitura de engenharia: a seta âmbar é o que o PGR <em>empurra</em> para o
                 digital; a seta teal é o retorno (CAT, ASO, críticas de preenchimento) que
                 deve realimentar inventário e plano. O cartão verde é diferença legítima;
-                o cartão terracota é o sinal de fiscalização.
+                o cartão terracota é o ponto que exige apuração documentada.
               </p>
             </section>
 
@@ -544,7 +546,7 @@
                   <strong>Leitura SafeEng:</strong> contradição documental clássica. O MOS
                   liga a declaração de inexistência de riscos físicos/químicos/biológicos
                   do Anexo IV ao inventário do PGR (1.5.7) quando for o caso — não a um
-                  atalho de folha. Aqui o sinal de fiscalização escreve sozinho.
+                  atalho de folha. Aqui a contradição exige revisão documentada.
                 </p>
               </div>
 
@@ -562,7 +564,8 @@
                   <strong>Leitura SafeEng:</strong> o trio rachou no meio. S-2220 puxa
                   exames do PCMSO conforme o risco; se o risco não está no inventário (ou
                   no S-2240 quando Anexo IV couber), a narrativa digital e a trabalhista
-                  se desencontram — eco do buraco PGR × PCMSO (#3), agora cruzável na base.
+                  se desencontram — eco do buraco PGR × PCMSO (#3), agora comparável na
+                  reconciliação interna.
                 </p>
               </div>
 
@@ -586,6 +589,14 @@
               </div>
             </section>
 
+            <section id="equivocos" aria-labelledby="h-equivocos">
+              <h2 id="h-equivocos">Controvérsias e equívocos comuns — e como evitar</h2>
+              <ul>
+                <li><strong>Tratar S-2240 como cópia do inventário:</strong> o evento tem finalidade e campos próprios ligados às condições ambientais/agentes nocivos e ao PPP; não representa todos os perigos do PGR. Faça mapeamento de origem, não replicação cega. Fontes originais: <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica" target="_blank" rel="noopener noreferrer">MOS vigente</a> e <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-v-1.3/tabelas.html" target="_blank" rel="noopener noreferrer">tabelas do eSocial</a>.</li>
+                <li><strong>Chamar toda divergência de infração automática:</strong> incoerência é sinal para apuração, não conclusão jurídica por si só. Verifique período de validade, população obrigada, retificações e finalidade de S-2210, S-2220 e S-2240 no <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica" target="_blank" rel="noopener noreferrer">MOS oficial</a>.</li>
+              </ul>
+            </section>
+
             <section id="orientacoes" aria-labelledby="h-ori">
               <h2 id="h-ori">Orientações práticas e conclusão</h2>
               <ol>
@@ -605,8 +616,8 @@
                 trio S-2210 / S-2220 / S-2240 e até amarra o inventário do PGR à declaração
                 de ausência de riscos Anexo IV. A NR-1 exige inventário e plano vivos. Na
                 linha SafeEng: alinhe o que você gerencia ao que você declara; preserve a
-                diferença legítima de escopo; mate a contradição documental — porque
-                inconsistência, para a fiscalização, já é sinal.
+                diferença legítima de escopo; corrija a contradição documental — porque
+                inconsistência sem explicação é falha de governança.
               </p>
 
               <aside class="legal-callout article-disclaimer" aria-label="Aviso">
@@ -630,6 +641,7 @@
               <p class="article-nav-links">
                 <a class="btn btn-outline" href="../curiosidades.html#esocial-sst-pgr-inconsistencia">← Voltar ao teaser</a>
                 <a class="btn btn-outline" href="perigo-externo-risco-evidente.html">Artigo #12</a>
+                <a class="btn btn-outline" href="manual-nr1-pdca-gro.html">Próximo · #14 →</a>
                 <a class="btn btn-primary" href="index.html">Índice de artigos</a>
               </p>
             </section>
